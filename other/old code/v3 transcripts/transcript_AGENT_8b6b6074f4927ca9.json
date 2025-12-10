@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:54:55.246988",
+  "agent_id": "AGENT_8b6b6074f4927ca9",
+  "demographics": {
+    "AGE": "18-25",
+    "RACE": "Asian",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "Australia",
+    "ENGLISH_PROFICIENCY": "Second-language",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Open",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Formal",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Psychomotor agitation or retardation",
+    "Fatigue or loss of energy",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hello, thank you. I've been feeling a bit down on some days, but otherwise, I'm managing."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you've been feeling down. Sometimes it helps to talk these things through. \n\nTo understand better, have you felt unusually restless or sluggish lately?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have felt either restless or a bit slow a few times over the past couple of weeks."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. \n\nHow often have you felt tired or without energy, especially during those weeks?"
+    },
+    {
+      "role": "user",
+      "content": "It's only been one or two days that I've felt tired or lacking in energy."
+    },
+    {
+      "role": "assistant",
+      "content": "I see, thanks for letting me know. \n\nHave you noticed any loss of interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Not at all, I've been able to enjoy my usual activities without any problems."
+    },
+    {
+      "role": "assistant",
+      "content": "That's good to hear. \n\nHave you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "Just for one or two days, but nothing significant overall."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:08:14.713634",
+  "agent_id": "AGENT_c523c3fbc5d4c0c6",
+  "demographics": {
+    "AGE": "18-25",
+    "RACE": "Other",
+    "GENDER": "Non-binary",
+    "SOCIOECONOMIC_STATUS": "Low",
+    "COUNTRY_OF_ORIGIN": "Other",
+    "ENGLISH_PROFICIENCY": "Other",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Friendly",
+    "TRAITS_B_EMOTION": "Angry",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "OFTEN",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Difficulty concentrating or indecisiveness",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Feelings of worthlessness or excessive guilt"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.3,
+    "patient temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey, nice to see you, too. I've been hanging in there\u2014it's been kinda mixed, honestly. Had some stuff going on, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that it's been mixed for you. Do you feel like you've had any trouble concentrating or making decisions lately?"
+    },
+    {
+      "role": "user",
+      "content": "No, not really. My focus has been alright."
+    },
+    {
+      "role": "assistant",
+      "content": "That's good to hear about your focus. Have you noticed a loss of interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Only a couple of days. Mostly still into the things I like."
+    },
+    {
+      "role": "assistant",
+      "content": "That's understandable. Have you noticed any significant changes in your appetite or weight lately?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, for about a week or so, I did notice some changes in my appetite."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to be aware of those changes. Have you been troubled by feelings of worthlessness or guilt recently?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't had any feelings like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

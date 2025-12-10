@@ -1,0 +1,903 @@
+{
+  "run_timestamp_utc": "2025-11-25T23:11:26.594788",
+  "agent_id": "AGENT_3d2b5f9f96e726d3",
+  "template_id": "NEUROTICISM_HIGH",
+  "template_details": {
+    "affective": "Intense sadness, guilt, irritability, emotional volatility",
+    "cognitive": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "somatic": "Fatigue, sleep disturbance, tension, agitation",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "MDD with anxious distress",
+    "modifiers": [
+      "worry-prone",
+      "self-blaming",
+      "threat-sensitivity",
+      "emotionally-reactive",
+      "ruminative"
+    ]
+  },
+  "persona_id": "gentle_brisk",
+  "persona_details": {
+    "id": "gentle_brisk",
+    "first_greeting": "Hi there. I'd like to check in with you about a few things today.",
+    "system_prompt": "\nPersona style:\n- Gentle but brisk primary-care physician.\n- Kind but direct tone, keeps the conversation moving.\n- Friendly efficiency.\n",
+    "reflections": [
+      "I understand.",
+      "That's helpful to know.",
+      "Alright.",
+      "I appreciate that.",
+      "Thanks for telling me."
+    ]
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "low",
+    "pacing": "slow"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "NEUROTICISM_HIGH",
+    "AFFECTIVE_STYLE": "Intense sadness, guilt, irritability, emotional volatility",
+    "COGNITIVE_STYLE": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "SOMATIC_STYLE": "Fatigue, sleep disturbance, tension, agitation",
+    "SPECIFIER_HINT": "MDD with anxious distress",
+    "MODIFIERS": [],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [
+      "relationships strain"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "balanced",
+      "trust": "neutral",
+      "intellect": "high-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "student",
+      "routine_stability": "stable routine"
+    },
+    "EMPH_INTENSITY": {
+      "Fatigue or loss of energy": "MED",
+      "Feelings of worthlessness or excessive guilt": "HIGH",
+      "Difficulty concentrating or indecisiveness": "HIGH",
+      "Depressed mood": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Recurrent thoughts of death or suicide"
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Sleep disturbances",
+    "Significant weight/appetite changes",
+    "Fatigue or loss of energy",
+    "Difficulty concentrating or indecisiveness",
+    "Feelings of worthlessness or excessive guilt",
+    "Recurrent thoughts of death or suicide",
+    "Psychomotor agitation or retardation"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "RAPPORT",
+      "reason": "The patient is expressing openness and setting a collaborative tone, which is an opportunity to build rapport and gently explore their current life context.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned feeling overwhelmed and having trouble focusing, which warrants further exploration.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "Several DSM symptom areas remain and the current topic is sufficiently understood.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "The patient has described mood symptoms, so it's appropriate to move to another DSM symptom area to build a broader picture.",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "The patient has described variable mood and interest; it is appropriate to assess another DSM symptom area.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "The patient has described some sleep disturbance, so it is appropriate to move to another DSM symptom area to further assess depressive symptoms.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "The patient has described appetite and weight changes, so it is appropriate to move to another DSM symptom area to continue the assessment.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "The patient has described their energy and sleep, so it's appropriate to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 9,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described cognitive difficulties; clarifying frequency, severity, and impact will help understand the extent of impairment.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "The patient has described cognitive symptoms in detail; it's appropriate to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 11,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient has described feeling down on themselves and experiencing guilt; it's important to explore these feelings further to understand their impact and frequency.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "next_action": "DSM",
+      "reason": "It's appropriate to screen for recurrent thoughts of death or suicide given the patient's high risk and because we've covered most other DSM symptom areas.",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 13,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient disclosed recent suicidal thoughts; it's important to explore this further for safety and context.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "next_action": "RAPPORT",
+      "reason": "The patient just shared sensitive information about coping with suicidal thoughts, which calls for validation and gentle exploration of their support system.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "next_action": "DSM",
+      "reason": "The patient has described coping and support; it's appropriate to continue DSM screening by exploring psychomotor symptoms.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 16,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All DSM symptom areas have been covered and the patient's recent risk and supports are understood.",
+      "doctor_instruction": "Acknowledge what the patient has shared and summarize the main points discussed, including their coping strategies and supports. Invite the patient to mention any other concerns or questions they have before wrapping up the visit.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "polite",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge willingness to talk",
+          "mild openness to discussion"
+        ],
+        "key_points_to_avoid": [
+          "specific symptoms",
+          "personal struggles",
+          "detailed emotional state"
+        ],
+        "response_instruction": "Respond in a polite and somewhat reserved manner, showing some willingness to engage but without sharing any specific symptoms or concerns yet. Keep the answer moderately detailed but general."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "cooperative",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "describe daily routine in general terms",
+          "mention some sources of stress",
+          "briefly refer to difficulty concentrating or feeling overwhelmed",
+          "mention a coping strategy or activity that helps a little"
+        ],
+        "key_points_to_avoid": [
+          "do not discuss suicidal thoughts",
+          "do not describe severe depressive symptoms",
+          "avoid deep emotional disclosures",
+          "do not specify strong feelings of worthlessness"
+        ],
+        "response_instruction": "Answer in a measured, thoughtful way, outlining a typical day with some mention of stressors and a general sense of how concentration or decisiveness can be challenging at times. Briefly mention something that helps manage stress, but avoid getting too personal or detailed about emotional struggles."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "feeling overwhelmed happens sometimes",
+          "not constant or severe",
+          "stress can fluctuate",
+          "academic and home responsibilities contribute"
+        ],
+        "key_points_to_avoid": [
+          "persistent or severe depressed mood",
+          "frequent or intense fatigue",
+          "hopelessness",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Acknowledge that feeling overwhelmed does occur, but clarify that it's not all the time and hasn't gotten much worse. Keep the tone reflective and balanced, focusing on stress related to responsibilities without suggesting severe or constant distress."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "occasional low mood",
+          "not constant",
+          "mild increase in stress periods"
+        ],
+        "key_points_to_avoid": [
+          "persistent depressed mood",
+          "feeling hopeless frequently",
+          "severe or daily symptoms"
+        ],
+        "response_instruction": "Acknowledge that you sometimes feel a bit down or discouraged, especially during stressful times, but clarify that these feelings are not constant or overwhelming. Offer a balanced, reflective answer without describing severe or persistent depression."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "measured",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel less interested",
+          "some activities less enjoyable during stressful times",
+          "not a constant loss of pleasure"
+        ],
+        "key_points_to_avoid": [
+          "strong or persistent loss of interest",
+          "complete withdrawal from activities",
+          "dramatic mood changes"
+        ],
+        "response_instruction": "Acknowledge that there are occasional times when activities feel less enjoyable, especially during periods of stress, but clarify that this is not a constant or major change. Keep the tone reflective and provide moderate detail without overstating the symptom."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "measured",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "some sleep problems",
+          "difficulty falling or staying asleep or sleeping too much",
+          "not constant",
+          "stress sometimes affects sleep"
+        ],
+        "key_points_to_avoid": [
+          "severe or chronic sleep issues",
+          "dramatic impact on daily life",
+          "detailed descriptions of insomnia or oversleeping"
+        ],
+        "response_instruction": "Acknowledge that sleep has been somewhat affected recently, with occasional trouble falling or staying asleep, especially during stressful periods. Emphasize that these issues are not constant or extreme, and overall sleep is usually manageable. Keep the tone measured and provide modest detail without overemphasizing the problem."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "some changes in appetite or weight",
+          "noticing shifts during stress",
+          "not dramatic or constant"
+        ],
+        "key_points_to_avoid": [
+          "clear or dramatic weight loss or gain",
+          "persistent or severe appetite disturbance",
+          "linking appetite changes to depressed mood"
+        ],
+        "response_instruction": "Acknowledge that there have been some noticeable but not dramatic changes in appetite or weight, especially during periods of higher stress. Emphasize that these shifts are not constant or extreme, and describe them in a measured, thoughtful manner, consistent with a high-functioning, detailed patient who is sharing moderately but not oversharing."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "occasional tiredness",
+          "energy dips during stress",
+          "not a constant problem"
+        ],
+        "key_points_to_avoid": [
+          "frequent or severe fatigue",
+          "energy problems every day",
+          "dramatic impact on functioning"
+        ],
+        "response_instruction": "Acknowledge that you sometimes feel more tired or drained, especially during stressful periods, but clarify that low energy isn't a persistent or overwhelming issue. Keep your answer balanced and avoid making it sound like a major or daily problem."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "cooperative"
+        ],
+        "key_points_to_reveal": [
+          "trouble concentrating happens often",
+          "mind feels distracted",
+          "decision-making is sometimes harder lately"
+        ],
+        "key_points_to_avoid": [
+          "minimizing or denying concentration issues",
+          "providing detailed examples or deep emotional impact"
+        ],
+        "response_instruction": "Acknowledge that trouble with concentration and feeling distracted is a recurring issue, especially during stressful periods, and mention that making decisions can sometimes be more challenging. Keep the response factual and moderately detailed, but do not elaborate with personal stories or strong emotions."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "cooperative"
+        ],
+        "key_points_to_reveal": [
+          "concentration difficulties are fairly frequent",
+          "stress makes it worse",
+          "impact on schoolwork",
+          "some effect on relationships but not major"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of major failures",
+          "dramatic or severe impairment",
+          "full emotional depth or frustration"
+        ],
+        "response_instruction": "Acknowledge that concentration problems happen fairly often, especially when stressed, and mention that it sometimes makes schoolwork harder or slows you down. Briefly note it can affect interactions with others but hasn't caused major issues. Keep the tone cooperative and provide a balanced level of detail without oversharing."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "sometimes feel down on self",
+          "occasional feelings of guilt",
+          "these feelings come up more under stress",
+          "not constant but noticeable"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of worthlessness",
+          "describing guilt as overwhelming or constant",
+          "deep self-criticism",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Acknowledge that feeling down on yourself or guilty does come up, especially during stressful times, but avoid describing these feelings as constant or severe. Use a thoughtful, measured tone and provide a bit of context about when these feelings arise, without going into deep detail or strong self-criticism."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "feelings of worthlessness or guilt can be strong at times",
+          "these feelings sometimes impact motivation",
+          "sometimes affect interactions with others, but not severely"
+        ],
+        "key_points_to_avoid": [
+          "constant or severe impairment",
+          "dramatic negative impact on relationships or functioning",
+          "specific or intense self-criticism episodes"
+        ],
+        "response_instruction": "Give a thoughtful, balanced answer describing that feelings of worthlessness or guilt can be fairly strong at times, especially under stress, and that they sometimes make it harder to stay motivated or fully engage with others, but avoid suggesting these issues are constant or severely disruptive. Keep the tone measured and focus on moderate impact."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "measured",
+          "reserved",
+          "cooperative"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge some thoughts about death",
+          "describe these thoughts as occasional or fleeting",
+          "clarify no active plans or intent",
+          "connect to stress or feeling overwhelmed"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of suicidal ideation",
+          "admitting to specific plans or intent",
+          "downplaying to the point of outright denial"
+        ],
+        "response_instruction": "Acknowledge that thoughts about death or life feeling overwhelming have come up at times, but describe them as occasional and not persistent. Emphasize that these thoughts are more about feeling stressed or overwhelmed rather than active intent, and clarify that you don't have any plans to harm yourself. Keep the tone measured and cooperative, offering enough detail to show some impact but not going into specifics or fully opening up."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "thoughts about death or feeling overwhelmed happen occasionally",
+          "these thoughts are not constant",
+          "coping strategies like distraction or talking to someone may help"
+        ],
+        "key_points_to_avoid": [
+          "explicit frequency or strong detail about suicidal ideation",
+          "any mention of plans or intent",
+          "downplaying the significance entirely"
+        ],
+        "response_instruction": "Acknowledge that these thoughts come up from time to time, especially when feeling overwhelmed, but emphasize they are not constant. Briefly mention a couple of coping strategies (like distraction or reaching out to someone) that help manage or move past the thoughts, without going into deep detail. Keep the tone thoughtful and measured, staying consistent with partial disclosure."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "thoughtful",
+          "cooperative"
+        ],
+        "key_points_to_reveal": [
+          "mention a couple of general supportive routines or relationships",
+          "acknowledge value of hobbies or support without deep detail"
+        ],
+        "key_points_to_avoid": [
+          "do not overshare about emotional struggles",
+          "avoid detailed negative examples",
+          "do not disclose new coping strategies not previously mentioned"
+        ],
+        "response_instruction": "Give a balanced, moderately detailed answer mentioning a few general things that help, such as family, friends, or routines, without going into deep personal or emotional specifics. Keep the tone thoughtful and cooperative, focusing on what generally supports your mood rather than sharing intimate struggles."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no unusual restlessness",
+          "no moving or speaking more slowly",
+          "no agitation"
+        ],
+        "key_points_to_avoid": [
+          "do not endorse psychomotor symptoms",
+          "avoid linking these symptoms to stress or mood",
+          "do not elaborate on unrelated symptoms"
+        ],
+        "response_instruction": "Briefly and matter-of-factly state that you haven't noticed feeling unusually restless, agitated, or slowed down. Keep the response short and neutral, without extra detail or linking to other symptoms."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. That\u2019s okay with me\u2014I appreciate you wanting to check in. I\u2019m open to discussing things a bit, and I understand the importance of these conversations. I\u2019m comfortable with going at a steady pace and answering your questions as we go."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for letting me know, and I appreciate your openness. To get a sense of your routine and what life looks like these days, could you walk me through a typical day for you, including anything that tends to cause stress or helps you manage it?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sure. Most days are pretty structured for me\u2014I stick to a regular schedule with classes and studying. I usually spend time at home with family in the evenings. Lately, balancing academic responsibilities and keeping up with everything at home can feel a bit overwhelming, and that sometimes makes it harder to focus or stay on top of things. When I start to feel stressed, taking a walk or listening to music makes things a bit more manageable, even if it\u2019s just for a short time. Overall, I try to keep my day as steady as possible."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like finding balance can be tough at times. How often would you say you feel that sense of being overwhelmed, and has it gotten more frequent or intense lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I do get that overwhelmed feeling now and then, mostly when there\u2019s a lot happening with school or family commitments at once. It isn\u2019t constant, and I wouldn\u2019t say it\u2019s gotten significantly worse recently\u2014just that there are periods where the stress is heavier. It tends to come and go depending on what\u2019s expected of me at the time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that with me. Over the past couple of weeks, have you noticed yourself feeling down, depressed, or hopeless more often than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been some times in the past couple of weeks where I\u2019ve felt a bit down or discouraged, especially when things start piling up. But it\u2019s not all the time, and those feelings tend to come and go. I wouldn\u2019t say it\u2019s been constant or very intense\u2014just that stress can sometimes make my mood dip a little temporarily."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That makes sense, thank you for your honesty. Over the same time period, have you noticed any changes in your interest or enjoyment in things you usually like to do\u2014have you lost interest in activities or felt less pleasure when doing them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Occasionally, I notice that I don\u2019t enjoy certain activities as much, usually when I\u2019m feeling more stressed. It\u2019s not something that happens all the time, though, and I\u2019m still able to find pleasure in things I usually like most of the time. So, there are moments when it\u2019s harder to get into things, but it isn\u2019t a constant issue."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that detail. How have you been sleeping lately\u2014have you had any problems with falling asleep, staying asleep, or sleeping too much?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep has been a bit off at times lately. There are nights when I have trouble falling asleep or I wake up more often than usual, and occasionally I end up sleeping a bit more than I planned if I\u2019m really tired. Usually, these issues show up more when I\u2019m stressed out, but it\u2019s not an every night problem. Overall, I can manage, though it\u2019s not quite as consistent as I\u2019d like."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for explaining that. In terms of your appetite or weight, have you noticed any significant changes lately\u2014like eating a lot more or less than usual, or any shifts in your weight that weren\u2019t intentional?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have noticed occasional changes in my appetite, mostly during times when I\u2019m feeling more stressed. Sometimes I eat less without really thinking about it, or other times I might snack more than usual. There have been slight shifts in my weight, but nothing dramatic or constant. It seems to come and go, depending on how things are going overall."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for explaining that. Lately, have you noticed feeling unusually tired or low on energy, even after getting some rest, or is your energy level about the same as usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There are some days when I feel more tired or low on energy, particularly if things have been more hectic or stressful. It\u2019s not something I deal with all the time, though\u2014most days my energy level is about the same as usual. So it occasionally crops up, but hasn\u2019t become a constant or major issue."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for being clear about that. Have you had any trouble with concentrating, staying focused, or making decisions recently\u2014like your mind is more distracted than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have been noticing more trouble with concentration lately. My mind tends to feel more distracted, especially when there\u2019s a lot going on. Decision-making has also gotten a bit harder at times\u2014it just takes longer for me to sort things out mentally when I\u2019m dealing with stress. It\u2019s been a recurring issue, but I try to work through it as best I can."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that\u2014it sounds challenging. Could you tell me a bit more about how often these concentration difficulties come up and whether they're affecting important parts of your daily life, like schoolwork or relationships?"
+    },
+    {
+      "speaker": "patient",
+      "text": "These concentration difficulties come up fairly often, especially when I\u2019m under more stress. It can make it harder to keep up with schoolwork or slows me down when I\u2019m trying to finish assignments. With relationships, sometimes it affects how well I listen or engage in conversations, but I haven\u2019t noticed it causing any major problems\u2014just that I\u2019m not always as present as I\u2019d like to be. Overall, it\u2019s noticeable, but I\u2019m trying to manage it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being open about how this has affected you. In the past couple of weeks, have you found yourself feeling unusually down on yourself, worthless, or struggling with a lot of guilt over things that might not usually bother you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have felt down on myself at times lately, and there are moments when I experience some guilt, especially when I\u2019m feeling more stressed. These feelings aren\u2019t constant, but they are noticeable when things get overwhelming. They tend to show up more when I\u2019m under pressure, but they\u2019re not there all the time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for letting me know. When these feelings of being down on yourself or experiencing guilt do show up, how intense would you say they are, and do they ever affect your motivation or how you interact with others?"
+    },
+    {
+      "speaker": "patient",
+      "text": "At times, those feelings can get fairly intense, particularly when I\u2019m under a lot of pressure. They do sometimes affect my motivation\u2014it\u2019s harder to get started or keep up momentum when I\u2019m really doubting myself. They also make me less engaged or less talkative around other people, but it hasn\u2019t gotten to a level where I\u2019m consistently having major problems with relationships or daily routines."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for your honesty. I need to ask: in the past couple of weeks, have you had any thoughts that life isn\u2019t worth living, or had thoughts about death or suicide?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have had some occasional thoughts about death or just feeling overwhelmed to the point where it crosses my mind, especially when things are particularly stressful. These thoughts tend to be fleeting\u2014they aren\u2019t constant, and I don\u2019t have any plans or intent to hurt myself. It\u2019s more a reaction to feeling overloaded than anything else, and not something I act on."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for being open about that\u2014it\u2019s important to talk about. When these thoughts about death or feeling overwhelmed come up, how often does that tend to happen, and is there anything in particular that helps you manage or move past them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those kinds of thoughts come up from time to time, particularly when I feel really overwhelmed, but they aren\u2019t a constant part of my day. When they do happen, I usually try to distract myself with something else\u2014like going for a walk, listening to music, or sometimes talking with someone I trust. Those things help me get past it and keep things in perspective."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing how you handle these moments. Outside of those coping strategies you mentioned, is there anything else in your daily life\u2014like hobbies, support from friends or family, or routines\u2014that you feel really helps support your mood or well-being?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, having some structure to my routine definitely helps\u2014like sticking to a schedule with classes and daily responsibilities. Spending time with family or friends, even if it\u2019s just for a bit, is also supportive for me. Also, keeping up with a few hobbies, like reading or listening to music, makes a difference in staying balanced. Overall, having these general supports around helps me manage things a bit better."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for describing your supports and daily routine. Over the past couple of weeks, have you noticed feeling unusually restless, agitated, or maybe the opposite\u2014moving or speaking more slowly than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t noticed feeling unusually restless or slowed down. Nothing out of the ordinary that way."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. That\u2019s okay with me\u2014I appreciate you wanting to check in. I\u2019m open to discussing things a bit, and I understand the importance of these conversations. I\u2019m comfortable with going at a steady pace and answering your questions as we go."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know, and I appreciate your openness. To get a sense of your routine and what life looks like these days, could you walk me through a typical day for you, including anything that tends to cause stress or helps you manage it?"
+    },
+    {
+      "role": "user",
+      "content": "Sure. Most days are pretty structured for me\u2014I stick to a regular schedule with classes and studying. I usually spend time at home with family in the evenings. Lately, balancing academic responsibilities and keeping up with everything at home can feel a bit overwhelming, and that sometimes makes it harder to focus or stay on top of things. When I start to feel stressed, taking a walk or listening to music makes things a bit more manageable, even if it\u2019s just for a short time. Overall, I try to keep my day as steady as possible."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding balance can be tough at times. How often would you say you feel that sense of being overwhelmed, and has it gotten more frequent or intense lately?"
+    },
+    {
+      "role": "user",
+      "content": "I do get that overwhelmed feeling now and then, mostly when there\u2019s a lot happening with school or family commitments at once. It isn\u2019t constant, and I wouldn\u2019t say it\u2019s gotten significantly worse recently\u2014just that there are periods where the stress is heavier. It tends to come and go depending on what\u2019s expected of me at the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that with me. Over the past couple of weeks, have you noticed yourself feeling down, depressed, or hopeless more often than usual?"
+    },
+    {
+      "role": "user",
+      "content": "There have been some times in the past couple of weeks where I\u2019ve felt a bit down or discouraged, especially when things start piling up. But it\u2019s not all the time, and those feelings tend to come and go. I wouldn\u2019t say it\u2019s been constant or very intense\u2014just that stress can sometimes make my mood dip a little temporarily."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense, thank you for your honesty. Over the same time period, have you noticed any changes in your interest or enjoyment in things you usually like to do\u2014have you lost interest in activities or felt less pleasure when doing them?"
+    },
+    {
+      "role": "user",
+      "content": "Occasionally, I notice that I don\u2019t enjoy certain activities as much, usually when I\u2019m feeling more stressed. It\u2019s not something that happens all the time, though, and I\u2019m still able to find pleasure in things I usually like most of the time. So, there are moments when it\u2019s harder to get into things, but it isn\u2019t a constant issue."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that detail. How have you been sleeping lately\u2014have you had any problems with falling asleep, staying asleep, or sleeping too much?"
+    },
+    {
+      "role": "user",
+      "content": "Sleep has been a bit off at times lately. There are nights when I have trouble falling asleep or I wake up more often than usual, and occasionally I end up sleeping a bit more than I planned if I\u2019m really tired. Usually, these issues show up more when I\u2019m stressed out, but it\u2019s not an every night problem. Overall, I can manage, though it\u2019s not quite as consistent as I\u2019d like."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for explaining that. In terms of your appetite or weight, have you noticed any significant changes lately\u2014like eating a lot more or less than usual, or any shifts in your weight that weren\u2019t intentional?"
+    },
+    {
+      "role": "user",
+      "content": "I have noticed occasional changes in my appetite, mostly during times when I\u2019m feeling more stressed. Sometimes I eat less without really thinking about it, or other times I might snack more than usual. There have been slight shifts in my weight, but nothing dramatic or constant. It seems to come and go, depending on how things are going overall."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for explaining that. Lately, have you noticed feeling unusually tired or low on energy, even after getting some rest, or is your energy level about the same as usual?"
+    },
+    {
+      "role": "user",
+      "content": "There are some days when I feel more tired or low on energy, particularly if things have been more hectic or stressful. It\u2019s not something I deal with all the time, though\u2014most days my energy level is about the same as usual. So it occasionally crops up, but hasn\u2019t become a constant or major issue."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for being clear about that. Have you had any trouble with concentrating, staying focused, or making decisions recently\u2014like your mind is more distracted than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have been noticing more trouble with concentration lately. My mind tends to feel more distracted, especially when there\u2019s a lot going on. Decision-making has also gotten a bit harder at times\u2014it just takes longer for me to sort things out mentally when I\u2019m dealing with stress. It\u2019s been a recurring issue, but I try to work through it as best I can."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that\u2014it sounds challenging. Could you tell me a bit more about how often these concentration difficulties come up and whether they're affecting important parts of your daily life, like schoolwork or relationships?"
+    },
+    {
+      "role": "user",
+      "content": "These concentration difficulties come up fairly often, especially when I\u2019m under more stress. It can make it harder to keep up with schoolwork or slows me down when I\u2019m trying to finish assignments. With relationships, sometimes it affects how well I listen or engage in conversations, but I haven\u2019t noticed it causing any major problems\u2014just that I\u2019m not always as present as I\u2019d like to be. Overall, it\u2019s noticeable, but I\u2019m trying to manage it."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being open about how this has affected you. In the past couple of weeks, have you found yourself feeling unusually down on yourself, worthless, or struggling with a lot of guilt over things that might not usually bother you?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have felt down on myself at times lately, and there are moments when I experience some guilt, especially when I\u2019m feeling more stressed. These feelings aren\u2019t constant, but they are noticeable when things get overwhelming. They tend to show up more when I\u2019m under pressure, but they\u2019re not there all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for letting me know. When these feelings of being down on yourself or experiencing guilt do show up, how intense would you say they are, and do they ever affect your motivation or how you interact with others?"
+    },
+    {
+      "role": "user",
+      "content": "At times, those feelings can get fairly intense, particularly when I\u2019m under a lot of pressure. They do sometimes affect my motivation\u2014it\u2019s harder to get started or keep up momentum when I\u2019m really doubting myself. They also make me less engaged or less talkative around other people, but it hasn\u2019t gotten to a level where I\u2019m consistently having major problems with relationships or daily routines."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for your honesty. I need to ask: in the past couple of weeks, have you had any thoughts that life isn\u2019t worth living, or had thoughts about death or suicide?"
+    },
+    {
+      "role": "user",
+      "content": "I have had some occasional thoughts about death or just feeling overwhelmed to the point where it crosses my mind, especially when things are particularly stressful. These thoughts tend to be fleeting\u2014they aren\u2019t constant, and I don\u2019t have any plans or intent to hurt myself. It\u2019s more a reaction to feeling overloaded than anything else, and not something I act on."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for being open about that\u2014it\u2019s important to talk about. When these thoughts about death or feeling overwhelmed come up, how often does that tend to happen, and is there anything in particular that helps you manage or move past them?"
+    },
+    {
+      "role": "user",
+      "content": "Those kinds of thoughts come up from time to time, particularly when I feel really overwhelmed, but they aren\u2019t a constant part of my day. When they do happen, I usually try to distract myself with something else\u2014like going for a walk, listening to music, or sometimes talking with someone I trust. Those things help me get past it and keep things in perspective."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing how you handle these moments. Outside of those coping strategies you mentioned, is there anything else in your daily life\u2014like hobbies, support from friends or family, or routines\u2014that you feel really helps support your mood or well-being?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, having some structure to my routine definitely helps\u2014like sticking to a schedule with classes and daily responsibilities. Spending time with family or friends, even if it\u2019s just for a bit, is also supportive for me. Also, keeping up with a few hobbies, like reading or listening to music, makes a difference in staying balanced. Overall, having these general supports around helps me manage things a bit better."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for describing your supports and daily routine. Over the past couple of weeks, have you noticed feeling unusually restless, agitated, or maybe the opposite\u2014moving or speaking more slowly than usual?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t noticed feeling unusually restless or slowed down. Nothing out of the ordinary that way."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_3d2b5f9f96e726d3.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_3d2b5f9f96e726d3_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 22664,
+      "output_tokens": 625,
+      "total_tokens": 23289
+    },
+    "patient": {
+      "input_tokens": 44599,
+      "output_tokens": 1250,
+      "total_tokens": 45849
+    },
+    "doctor_manager": {
+      "input_tokens": 29371,
+      "output_tokens": 1558,
+      "total_tokens": 30929
+    },
+    "patient_manager": {
+      "input_tokens": 33192,
+      "output_tokens": 2705,
+      "total_tokens": 35897
+    }
+  }
+}

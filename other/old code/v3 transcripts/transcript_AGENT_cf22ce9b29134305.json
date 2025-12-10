@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:55:18.293896",
+  "agent_id": "AGENT_cf22ce9b29134305",
+  "demographics": {
+    "AGE": "46-55",
+    "RACE": "Asian",
+    "GENDER": "Non-binary",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "Other",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Master's"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Casual",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "OFTEN",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Significant weight/appetite changes",
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure",
+    "Sleep disturbances"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey, it's nice to see you too. I've been okay, I guess. Kind of up and down. I've had some days with no energy and trouble sleeping, and just haven't been interested in much."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear you're experiencing that. Have you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, it's just been a day or two where things were out of the norm. Nothing major."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad it hasn't been anything major. Have you experienced thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I've had some thoughts about death like six to ten days recently. It's been on my mind more than usual."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m sorry to hear that, and I appreciate you sharing it with me. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I haven't really felt like doing much for the past six to ten days. It\u2019s been hard to find the motivation."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds challenging. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "They've been pretty disrupted for about six to ten days. Hard to get a good night's sleep."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

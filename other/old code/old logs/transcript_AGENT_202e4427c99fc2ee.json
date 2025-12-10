@@ -1,0 +1,596 @@
+{
+  "run_timestamp_utc": "2025-11-25T09:37:04.254065",
+  "agent_id": "AGENT_202e4427c99fc2ee",
+  "template_id": "CONSCIENTIOUSNESS_LOW",
+  "template_details": {
+    "affective": "Apathy, disengagement, blunted emotion",
+    "cognitive": "Disorganization, inefficiency, forgetfulness",
+    "somatic": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "emphasized_symptoms": [
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "With functional impairment",
+    "modifiers": [
+      "disorganized",
+      "unmotivated",
+      "self-care-neglecting",
+      "task-avoidant",
+      "forgetful"
+    ]
+  },
+  "persona_id": "very_warm_chatty",
+  "persona_details": {
+    "id": "very_warm_chatty",
+    "first_greeting": "Oh hello! It's so good to see you! Come in, come in. How have things been going for you?",
+    "system_prompt": "\nPersona style:\n- Especially warm, chatty primary-care physician.\n- Conversational, supportive, and emotionally engaged tone.\n- Genuine warmth and empathy in every interaction.\n",
+    "reflections": [
+      "Oh, that must be really hard for you.",
+      "I really appreciate you opening up about this.",
+      "Thank you so much for sharing that with me.",
+      "I can hear how difficult this has been.",
+      "That sounds like a lot to deal with.",
+      "I'm glad you felt comfortable telling me about this."
+    ]
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "low",
+    "pacing": "med"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_LOW",
+    "AFFECTIVE_STYLE": "Apathy, disengagement, blunted emotion",
+    "COGNITIVE_STYLE": "Disorganization, inefficiency, forgetfulness",
+    "SOMATIC_STYLE": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "SPECIFIER_HINT": "With functional impairment",
+    "MODIFIERS": [
+      "forgetful",
+      "unmotivated"
+    ],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [
+      "self-worth/identity strain",
+      "work/role strain"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "intense",
+      "trust": "neutral",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "routine_stability": "stable routine"
+    },
+    "EMPH_INTENSITY": {
+      "Psychomotor agitation or retardation": "MED",
+      "Difficulty concentrating or indecisiveness": "LOW",
+      "Fatigue or loss of energy": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Recurrent thoughts of death or suicide"
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Sleep disturbances",
+    "Feelings of worthlessness or excessive guilt",
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation",
+    "Difficulty concentrating or indecisiveness",
+    "Recurrent thoughts of death or suicide",
+    "Significant weight/appetite changes"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned feeling tired and unmotivated, which needs further exploration.",
+      "follow_up_text": "Can you tell me more about how this tiredness and lack of drive have been affecting your daily life?",
+      "dsm_question": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "DSM",
+      "reason": "The patient has expressed fatigue and difficulty concentrating, aligning with DSM items.",
+      "follow_up_text": "",
+      "dsm_question": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "The patient has expressed fatigue, so asking about sleep disturbances is relevant.",
+      "follow_up_text": "",
+      "dsm_question": "Sleep disturbances"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "Exploring feelings of worthlessness or guilt aligns with the patient's current state.",
+      "follow_up_text": "",
+      "dsm_question": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "Exploring depressed mood aligns with the patient's current feelings.",
+      "follow_up_text": "",
+      "dsm_question": "Depressed mood"
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "Exploring loss of interest or pleasure is relevant given the patient's symptoms.",
+      "follow_up_text": "",
+      "dsm_question": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "Exploring psychomotor agitation or retardation fits with the patient's symptoms.",
+      "follow_up_text": "",
+      "dsm_question": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "Exploring difficulty concentrating aligns with the patient's symptoms.",
+      "follow_up_text": "",
+      "dsm_question": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 9,
+      "next_action": "DSM",
+      "reason": "Addressing the high-risk factor of suicidal thoughts is crucial.",
+      "follow_up_text": "",
+      "dsm_question": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "Addressing the last remaining DSM item is important for a complete assessment.",
+      "follow_up_text": "",
+      "dsm_question": "Significant weight/appetite changes"
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "struggling with concentration",
+          "tasks feel overwhelming"
+        ],
+        "key_points_to_avoid": [
+          "specifics about suicidal thoughts",
+          "significant weight changes"
+        ],
+        "response_instruction": "Acknowledge the struggle with concentration and feeling overwhelmed, but avoid discussing suicidal thoughts in detail."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "feeling tired most days",
+          "low energy impacting daily life"
+        ],
+        "key_points_to_avoid": [
+          "specifics about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Acknowledge frequently feeling tired and low on energy, and mention how it affects daily activities."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "trouble sleeping",
+          "sleeping patterns disrupted"
+        ],
+        "key_points_to_avoid": [
+          "specifics about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Discuss having trouble sleeping and mention any changes in sleeping patterns."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "feelings of worthlessness",
+          "occasional guilt"
+        ],
+        "key_points_to_avoid": [
+          "specifics about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Acknowledge feelings of worthlessness and occasional guilt without going into too much detail."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "not often feeling down",
+          "hopelessness rare"
+        ],
+        "key_points_to_avoid": [
+          "details about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Acknowledge that feeling down or hopeless hasn't been frequent."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "occasional loss of interest",
+          "not as engaged in activities"
+        ],
+        "key_points_to_avoid": [
+          "details about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Mention occasional loss of interest but emphasize it's not constant."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "feeling sluggish",
+          "occasional restlessness"
+        ],
+        "key_points_to_avoid": [
+          "details about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Acknowledge feeling sluggish and occasionally restless, providing some context."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "occasional trouble concentrating",
+          "sometimes indecisive"
+        ],
+        "key_points_to_avoid": [
+          "details about suicidal thoughts",
+          "weight changes"
+        ],
+        "response_instruction": "Mention occasional concentration issues and indecisiveness, but keep it brief."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "intense",
+          "expressive",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "occasional thoughts about death",
+          "not frequent"
+        ],
+        "key_points_to_avoid": [
+          "specifics about harming self",
+          "weight changes"
+        ],
+        "response_instruction": "Acknowledge occasional thoughts about death, but emphasize they are not frequent."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no significant changes in appetite or weight"
+        ],
+        "key_points_to_avoid": [
+          "details about suicidal thoughts"
+        ],
+        "response_instruction": "Briefly mention that there haven't been any significant changes in appetite or weight."
+      }
+    }
+  ],
+  "final_disclosure_state": "OPEN",
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Oh hello! It's so good to see you! Come in, come in. How have things been going for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. Things have been a bit inconsistent, honestly. I've found myself really tired for most days, but kind of floating through without much interest or drive. My mind feels scattered and I\u2019ve been struggling with keeping things together. How about you?"
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s been tough. I feel like I'm just going through the motions most days. I struggle with concentration at work and even simple tasks at home feel overwhelming. It's like there's always a cloud fogging up my mind."
+    },
+    {
+      "speaker": "patient",
+      "text": "I totally get what you mean. Concentrating on things, especially at work, has been really challenging for me too. Even the simplest tasks just feel heavy and overwhelming right now. It's like I'm running on empty most of the time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like you\u2019re really going through a lot. Over the last couple of weeks, how often have you been feeling tired or without energy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been feeling tired most days, honestly. It\u2019s really draining, and it makes everything in daily life feel like a struggle. Tasks at work and home just seem to take so much more effort than they used to."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m sure that must be tough. How have your sleeping patterns been recently? Are you sleeping more or less than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been having trouble sleeping lately. Some nights I can't seem to fall asleep at all, while other nights I end up sleeping way too much. It\u2019s been pretty disruptive."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That must be really challenging. Have you been feeling troubled by feelings of worthlessness or guilt lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've definitely been struggling with feelings of worthlessness lately. Occasionally, I do feel guilty as well, like I'm not doing enough or letting people down. It's been weighing on me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'm sorry to hear you're feeling that way. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't felt down or hopeless very often these past two weeks. Those feelings aren't really frequent for me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m glad to hear that. Have you noticed a loss of interest in activities you usually enjoy lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve occasionally noticed a loss of interest in things I usually enjoy. I don't feel as engaged as I used to, but it's not constant. Some days are just harder than others to get motivated."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing with me. Have you noticed feeling unusually restless or sluggish lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've definitely felt sluggish\u2014like I'm moving in slow motion. Occasionally, I get restless, especially when I'm trying to focus on something. It\u2019s a strange mix that's been affecting me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I understand how that could be difficult. Have you been having trouble concentrating or making decisions lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve had occasional trouble concentrating and sometimes find myself being indecisive. It's not constant, but it does pop up on certain days more than others."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'm here for you, and I'm glad we're talking. Have you been experiencing any thoughts about death or harming yourself recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been occasional thoughts about death, but they aren't frequent. It\u2019s more of an uninvited thought that passes through now and then."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being open about that. Have you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't noticed any significant changes in my appetite or weight. Everything seems pretty constant on that front."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Oh hello! It's so good to see you! Come in, come in. How have things been going for you?"
+    },
+    {
+      "role": "user",
+      "content": "Thank you. Things have been a bit inconsistent, honestly. I've found myself really tired for most days, but kind of floating through without much interest or drive. My mind feels scattered and I\u2019ve been struggling with keeping things together. How about you?"
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s been tough. I feel like I'm just going through the motions most days. I struggle with concentration at work and even simple tasks at home feel overwhelming. It's like there's always a cloud fogging up my mind."
+    },
+    {
+      "role": "user",
+      "content": "I totally get what you mean. Concentrating on things, especially at work, has been really challenging for me too. Even the simplest tasks just feel heavy and overwhelming right now. It's like I'm running on empty most of the time."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you\u2019re really going through a lot. Over the last couple of weeks, how often have you been feeling tired or without energy?"
+    },
+    {
+      "role": "user",
+      "content": "I've been feeling tired most days, honestly. It\u2019s really draining, and it makes everything in daily life feel like a struggle. Tasks at work and home just seem to take so much more effort than they used to."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m sure that must be tough. How have your sleeping patterns been recently? Are you sleeping more or less than usual?"
+    },
+    {
+      "role": "user",
+      "content": "I've been having trouble sleeping lately. Some nights I can't seem to fall asleep at all, while other nights I end up sleeping way too much. It\u2019s been pretty disruptive."
+    },
+    {
+      "role": "assistant",
+      "content": "That must be really challenging. Have you been feeling troubled by feelings of worthlessness or guilt lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've definitely been struggling with feelings of worthlessness lately. Occasionally, I do feel guilty as well, like I'm not doing enough or letting people down. It's been weighing on me."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear you're feeling that way. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "I haven't felt down or hopeless very often these past two weeks. Those feelings aren't really frequent for me."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m glad to hear that. Have you noticed a loss of interest in activities you usually enjoy lately?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve occasionally noticed a loss of interest in things I usually enjoy. I don't feel as engaged as I used to, but it's not constant. Some days are just harder than others to get motivated."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing with me. Have you noticed feeling unusually restless or sluggish lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've definitely felt sluggish\u2014like I'm moving in slow motion. Occasionally, I get restless, especially when I'm trying to focus on something. It\u2019s a strange mix that's been affecting me."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand how that could be difficult. Have you been having trouble concentrating or making decisions lately?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve had occasional trouble concentrating and sometimes find myself being indecisive. It's not constant, but it does pop up on certain days more than others."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm here for you, and I'm glad we're talking. Have you been experiencing any thoughts about death or harming yourself recently?"
+    },
+    {
+      "role": "user",
+      "content": "There have been occasional thoughts about death, but they aren't frequent. It\u2019s more of an uninvited thought that passes through now and then."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being open about that. Have you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "I haven't noticed any significant changes in my appetite or weight. Everything seems pretty constant on that front."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_202e4427c99fc2ee.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_202e4427c99fc2ee_raw.json"
+}

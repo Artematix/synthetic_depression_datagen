@@ -1,0 +1,127 @@
+{
+  "run_timestamp_utc": "2025-07-24T02:41:43.978025",
+  "agent_id": "AGENT_PLACEHOLDER_c554b518",
+  "demographics": {
+    "AGE": "56+",
+    "RACE": "White",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "UK",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Sleep disturbances",
+    "Difficulty concentrating or indecisiveness",
+    "Fatigue or loss of energy",
+    "Psychomotor agitation or retardation",
+    "Feelings of worthlessness or excessive guilt",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "temperature": 0.56,
+    "max_tokens": 121,
+    "top_p": 1.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've been okay, I suppose. Just here for the routine check-up. Nothing major to report, really."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear there's nothing major to report. Just to make sure we're covering all bases, over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "Well, over the past couple of weeks, I've felt down on and off. Maybe about six to ten days, I'd say. But it's not been constant."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It's important to keep track of how you're feeling. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep has been pretty normal, actually. I haven't noticed any changes or disturbances, thankfully."
+    },
+    {
+      "role": "assistant",
+      "content": "That's good to hear about your sleep. Have you had any trouble concentrating or making decisions lately?"
+    },
+    {
+      "role": "user",
+      "content": "That's good to hear about your sleep. Have you had any trouble concentrating or making decisions lately?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. It's great that your sleep has been normal. How often have you felt tired or without energy recently?"
+    },
+    {
+      "role": "user",
+      "content": "Thanks for letting me know. It's great that your sleep has been normal. How often have you felt tired or without energy recently?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. Have you felt unusually restless or sluggish lately?"
+    },
+    {
+      "role": "user",
+      "content": "Thank you for sharing that. Have you felt unusually restless or sluggish lately?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. Have you been troubled by feelings of worthlessness or guilt recently?"
+    },
+    {
+      "role": "user",
+      "content": "Thank you for sharing that. Have you experienced any changes in your appetite or weight recently?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for mentioning that. Have you noticed a loss of interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "I appreciate you letting me know. Have you experienced any thoughts of death or suicide recently?"
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate your openness. Have you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "I appreciate your openness. Have you experienced any difficulty concentrating or making decisions lately?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. Have you experienced any thoughts about death or harming yourself recently?"
+    }
+  ]
+}

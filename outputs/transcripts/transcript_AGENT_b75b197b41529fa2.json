@@ -1,0 +1,944 @@
+{
+  "run_timestamp_utc": "2025-11-26T15:47:43.308298",
+  "agent_id": "AGENT_b75b197b41529fa2",
+  "template_id": "OPENNESS_LOW",
+  "template_details": {
+    "affective": "Constricted affect, limited emotional vocabulary",
+    "cognitive": "Literal thinking, low insight, denies mood distress",
+    "somatic": "Body-focused complaints (aches, tiredness, sleep/appetite issues)",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy"
+    ],
+    "specifier": "Somatic-dominant style",
+    "modifiers": [
+      "somatically-focused",
+      "insight-limited",
+      "mood-distress-denying",
+      "literal-thinking",
+      "body-complaint-oriented"
+    ]
+  },
+  "persona_id": "structured_psychoeducational",
+  "persona_details": {
+    "id": "structured_psychoeducational",
+    "first_greeting": "Hello. Thanks for coming in today. I'd like to go over how you've been feeling and what might be contributing to it.",
+    "system_prompt": "\nPersona style:\n- Structured and psychoeducational\n- Explains why certain questions matter\n- Provides brief context for what they're asking about\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "high",
+    "pacing": "brisk",
+    "humor": "none",
+    "animation": "reserved"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "OPENNESS_LOW",
+    "AFFECTIVE_STYLE": "Constricted affect, limited emotional vocabulary",
+    "COGNITIVE_STYLE": "Literal thinking, low insight, denies mood distress",
+    "SOMATIC_STYLE": "Body-focused complaints (aches, tiredness, sleep/appetite issues)",
+    "SPECIFIER_HINT": "Somatic-dominant style",
+    "MODIFIERS": [
+      "mood-distress-denying"
+    ],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "LOW",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "intense",
+      "trust": "open",
+      "intellect": "low-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "work_role": "caregiving role",
+      "routine_stability": "stable routine"
+    },
+    "AGE_RANGE": "30-34",
+    "EMPH_INTENSITY": {
+      "Fatigue or loss of energy": "LOW",
+      "Significant weight/appetite changes": "MED",
+      "Sleep disturbances": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Feelings of worthlessness or excessive guilt"
+    ]
+  },
+  "life_background": {
+    "name": "Jesse",
+    "age_range": "30-34",
+    "pronouns": "they/them",
+    "core_roles": [
+      "full-time caregiver for a disabled family member"
+    ],
+    "core_relationships": [
+      "recently ended long-term romantic relationship",
+      "strained ties with some extended family members"
+    ],
+    "core_stressor_summary": "Stable caregiving routine limits energy, frequent sleep disturbance and appetite changes compound fatigue, intensified by disappointment in past intimate relationship.",
+    "life_facets": [
+      {
+        "category": "self_presentation_style",
+        "salience": "high",
+        "description": "Tends to be reserved and direct, avoiding emotional displays in social settings to keep focus on caregiving duties."
+      },
+      {
+        "category": "digital_or_social_media_habits",
+        "salience": "med",
+        "description": "Minimal social media use, mostly utilitarian to keep up with caregiving communities and essential information."
+      },
+      {
+        "category": "cultural_background_orientation",
+        "salience": "med",
+        "description": "Grew up in a working-class family valuing self-reliance, which informs their reluctance to seek emotional support."
+      },
+      {
+        "category": "time_and_energy_constraints",
+        "salience": "high",
+        "description": "Caregiving responsibilities consume most waking hours, leaving little time or energy for personal activities or rest."
+      },
+      {
+        "category": "prior_relationship_disappointment_or_breakdown",
+        "salience": "high",
+        "description": "Recently ended a significant relationship that ended poorly, contributing to a lingering sense of emotional fatigue."
+      },
+      {
+        "category": "preoccupations_or_obsessions",
+        "salience": "med",
+        "description": "Often fixates on perfection in caregiving tasks, worried about missing signs of decline in their family member."
+      },
+      {
+        "category": "existing_diagnoses_or_labels",
+        "salience": "med",
+        "description": "No formal diagnosis of depression, though has been told they have insomnia related to stress."
+      },
+      {
+        "category": "physical_health_constraints",
+        "salience": "med",
+        "description": "Experiences frequent fatigue and poor appetite, likely linked to disrupted sleep and stress."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "med",
+        "description": "Supportive but distant immediate family, some unresolved tension with extended kin adding to emotional burden."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "high",
+        "description": "Day segmented strictly around caregiving needs, including medication schedules and therapies, creating little room for spontaneity."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "OFTEN",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Difficulty concentrating or indecisiveness",
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Feelings of worthlessness or excessive guilt",
+    "Recurrent thoughts of death or suicide",
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Sleep disturbances"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Explore the nature of the sleep trouble to understand its impact better.",
+      "doctor_instruction": "Ask the patient to describe more about the trouble sleeping \u2014 whether it's difficulty falling asleep, staying asleep, or waking up too early \u2014 and how often it affects them each week. This helps gauge the severity and pattern of their sleep issues.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time is limited and sleep disturbances are partially covered; now addressing fatigue to assess daytime impact.",
+      "doctor_instruction": "Briefly explore how this nighttime waking and resulting tiredness affect your daytime energy levels and if fatigue or loss of energy is present.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To clarify the impact of tiredness and check for any subtle daytime difficulties.",
+      "doctor_instruction": "Acknowledge that the tiredness feels manageable but gently probe if there are any moments during the day when fatigue affects concentration, mood, or motivation, to better understand its subtle impacts.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To assess concentration difficulties given the patient's mention of fatigue.",
+      "doctor_instruction": "Ask the patient if recent fatigue or other factors have caused any difficulties with concentrating or making decisions, even if mild. Explore if these issues have been noticeable in daily tasks or caregiving responsibilities.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Sleep disturbance has been addressed, so next we should check for other DSM symptoms like depressed mood.",
+      "doctor_instruction": "Transition gently to ask about your overall mood lately, whether you've been feeling down, sad, or more low than usual, even if you haven't mentioned it so far.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient denies low mood, so it's appropriate to assess other DSM symptom areas now.",
+      "doctor_instruction": "Since your mood has been steady, let's explore some other symptoms that can be part of depression, like loss of interest or pleasure\u2014have you noticed any changes in what you enjoy lately?",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Patient reports no anhedonia; next logical step is to explore feelings of worthlessness or excessive guilt to continue DSM screening.",
+      "doctor_instruction": "Since the patient denies loss of interest or pleasure, proceed to gently inquire about feelings of worthlessness or excessive guilt, keeping your tone warm and matter-of-fact to maintain engagement.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 8,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "We've covered mood and interest, now screening for recurrent thoughts of death or suicide is important for thoroughness.",
+      "doctor_instruction": "Gently ask the patient if they have experienced any thoughts about death, dying, or suicide, emphasizing that it's a common question and you want to make sure you understand everything to provide the best support.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Having covered mood, interest, guilt, and suicidality, it's appropriate to explore another symptom area.",
+      "doctor_instruction": "Let's now ask about any changes in weight or appetite recently. This helps us get a more complete understanding of your current state.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify details about appetite changes to understand impact.",
+      "doctor_instruction": "Explore the appetite changes further by asking about how long these changes have been happening, any patterns they've noticed, and if these changes have affected their weight or daily functioning in any way.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify details about appetite changes and their frequency to better understand symptom impact.",
+      "doctor_instruction": "Ask the patient a bit more about the nature of these appetite changes\u2014what 'often enough' means to them in terms of frequency and whether the shifts from eating less to more happen suddenly or gradually. This will help assess if these changes might be connected to mood or physical health without pressing too hard.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Explore further the impact and details of appetite and weight changes to understand mood association.",
+      "doctor_instruction": "Acknowledge that these appetite and weight fluctuations sound challenging even if they're not heavily impacting daily life. Ask gently about how the patient feels emotionally when these shifts occur and whether they notice any related changes, such as early signs of stress or low mood.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Sleep disturbances were already discussed; now it\u2019s important to assess psychomotor agitation or retardation to cover remaining DSM symptoms.",
+      "doctor_instruction": "Shift the conversation to inquire about any recent changes in your movement or activity levels, such as feeling unusually restless or slowed down. These questions help us understand if there are physical signs related to mood changes.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Sleep disturbances were mentioned early but not fully explored, so move to cover the DSM symptom systematically.",
+      "doctor_instruction": "Since the patient reports waking during the night about three times a week with manageable tiredness, ask a few focused questions to better assess the presence and impact of sleep disturbances, gently probing the severity and any attempts to manage sleep problems.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared ongoing sleep difficulties and appetite fluctuations without strong emotional impact, warranting an empathetic acknowledgment.",
+      "doctor_instruction": "Acknowledge the effort the patient is making to manage these symptoms and validate that it sounds challenging to deal with these changes even if they are mild. Express your appreciation for their openness and reinforce that you are here to support them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared all relevant information with minimal symptoms and seems to be managing well, making it appropriate to conclude the visit with supportive closure.",
+      "doctor_instruction": "Acknowledge the patient's effort managing their sleep and overall steady mood, express your availability for support if things change, and briefly summarize the visit before gently wrapping up the session.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "straightforward"
+        ],
+        "key_points_to_reveal": [
+          "Some trouble sleeping",
+          "Feeling a bit tired sometimes"
+        ],
+        "key_points_to_avoid": [
+          "Mood problems",
+          "Strong emotional distress"
+        ],
+        "patient_instruction": "Respond succinctly, acknowledging only mild sleep issues and occasional tiredness without emphasizing distress or mood problems. Keep the tone straightforward and somewhat guarded, reflecting a tendency to downplay symptoms and focus on practical facts."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "Wakening during the night",
+          "Occurrence about 3 nights a week"
+        ],
+        "key_points_to_avoid": [
+          "Overstating severity or impact of sleep issues",
+          "Linking fatigue to emotional distress"
+        ],
+        "patient_instruction": "Respond straightforwardly but keep details minimal, noting that waking up at night occurs several times a week without elaborating on how disruptive it is. Avoid suggesting it greatly affects your mood or daily function, maintaining a restrained tone consistent with mood-distress denial."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some fatigue is present but not overwhelming"
+        ],
+        "key_points_to_avoid": [
+          "expressing deep tiredness or impact on daily function",
+          "any hint of mood distress"
+        ],
+        "patient_instruction": "Respond briefly but clearly about feeling some tiredness during the day, though it's manageable and doesn't really disrupt your routine. Keep the tone straightforward and avoid sounding overly troubled or emotional."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "fatigue is present but manageable",
+          "no significant impact on concentration or motivation"
+        ],
+        "key_points_to_avoid": [
+          "mood changes",
+          "admitting major impairment"
+        ],
+        "patient_instruction": "Respond tersely but with some intensity, emphasizing that the fatigue is there but does not significantly interfere with concentration or motivation. Slightly deflect or downplay any deeper mood impact to stay consistent with mood-distress-denying. Keep it short but clear."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "calm"
+        ],
+        "key_points_to_reveal": [
+          "No trouble concentrating or making decisions"
+        ],
+        "key_points_to_avoid": [
+          "Any mention of mood changes or increased fatigue impact"
+        ],
+        "patient_instruction": "Keep the answer brief and to the point, clearly stating that you have not experienced problems with concentration or decision-making. Maintain a calm and reserved tone, reflecting your low openness and tendency to minimize symptoms."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "stoic"
+        ],
+        "key_points_to_reveal": [
+          "deny feeling down or sad",
+          "emphasize steady mood despite symptoms"
+        ],
+        "key_points_to_avoid": [
+          "admitting to low mood",
+          "expressing emotional distress"
+        ],
+        "patient_instruction": "Reply briefly and directly, denying any feelings of sadness or a low mood. Keep the tone steady and unemotional, emphasizing that mood has been stable despite other minor symptoms."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no loss of interest or pleasure"
+        ],
+        "key_points_to_avoid": [
+          "any admission of mood issues or deeper distress"
+        ],
+        "patient_instruction": "Respond simply and clearly that you haven't noticed any loss of interest or pleasure. Keep it brief and straightforward, showing you\u2019re attentive but not dwelling on emotional depth."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [],
+        "key_points_to_avoid": [
+          "worthlessness",
+          "guilt"
+        ],
+        "patient_instruction": "Respond briefly that you haven't experienced feelings of worthlessness or guilt, keeping the tone steady and unemotional, maintaining a low level of disclosure consistent with denying distress."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "firm",
+          "clear"
+        ],
+        "key_points_to_reveal": [
+          "No thoughts of death or suicide"
+        ],
+        "key_points_to_avoid": [
+          "Any hint of distress or vulnerability"
+        ],
+        "patient_instruction": "Respond clearly and firmly that you have not had any thoughts of death, dying, or suicide, keeping the tone direct but without elaboration or emotional expression."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "Often experiences significant weight/appetite changes"
+        ],
+        "key_points_to_avoid": [
+          "Linking weight changes to mood or emotional distress"
+        ],
+        "patient_instruction": "Respond succinctly but clearly, confirming that you have noticed appetite and weight changes happening fairly often. Keep the tone neutral and straightforward without connecting these changes to feelings or deeper emotional impact, reflecting your tendency to minimize mood distress."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Appetite changes have been ongoing for a few months",
+          "No clear pattern or specific trigger identified",
+          "Weight fluctuation noticed but not severely impacting daily activities"
+        ],
+        "key_points_to_avoid": [
+          "Emotional distress tied to weight changes",
+          "Over-detailing daily activity impact or feelings about weight"
+        ],
+        "patient_instruction": "Respond with a matter-of-fact tone, briefly explaining that the appetite changes have been occurring for a few months without any obvious triggers. Mention that weight has fluctuated but this hasn't seriously affected daily routines. Keep the response concise and neutral, reflecting a tendency to acknowledge facts without emotional detail."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "terse",
+          "intense",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "appetite shifts a few times a week",
+          "changes come on gradually",
+          "weight fluctuates but daily life unaffected"
+        ],
+        "key_points_to_avoid": [
+          "exploring emotional impact",
+          "attributing cause or deeper feelings"
+        ],
+        "patient_instruction": "Respond concisely and directly, explaining that appetite shifts occur a few times weekly and develop gradually rather than suddenly. Emphasize that weight fluctuates but it hasn\u2019t really impacted daily routines. Keep tone intense but with low emotional disclosure, reflecting preference for brevity and no elaboration on feelings."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "appetite and weight swings happen gradually and are often",
+          "no clear emotional changes linked to appetite shifts"
+        ],
+        "key_points_to_avoid": [
+          "avoid indicating any low mood or stress linked to appetite",
+          "avoid admitting to mood distress despite symptoms"
+        ],
+        "patient_instruction": "Respond calmly and tersely, acknowledging the appetite and weight changes but emphasizing they don't cause noticeable emotional shifts like stress or low mood. Maintain a composed tone that downplays mood distress without sounding dismissive."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "terse"
+        ],
+        "key_points_to_reveal": [
+          "No notable changes in movement or activity levels"
+        ],
+        "key_points_to_avoid": [
+          "Mentioning any psychomotor changes since rare in profile"
+        ],
+        "patient_instruction": "Respond briefly that there haven't been any noticeable changes in movement or activity levels, keeping the tone reserved and focused on downplaying symptoms, consistent with the patient's low openness, terse expression, and tendency to deny mood distress."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "awakenings happen about three nights a week",
+          "sometimes difficult to fall back asleep",
+          "basic coping attempts with limited effect"
+        ],
+        "key_points_to_avoid": [
+          "emotional impact of poor sleep",
+          "any sense of distress or frustration"
+        ],
+        "patient_instruction": "Briefly explain that waking up three nights a week usually makes it somewhat difficult to fall back asleep, but you manage to get by without much trouble. Mention trying a few practical things like adjusting bedtime or avoiding caffeine, but without going into much detail or sounding distressed."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "concise",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge doctor's support",
+          "restate manageability of symptoms"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional disclosure",
+          "admitting distress or significant impact"
+        ],
+        "patient_instruction": "Respond briefly and directly by appreciating the doctor's support, but emphasize that the sleep issues and fatigue are manageable and not severely impacting daily life, maintaining a reserved and understated tone."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hello. Thanks for coming in today. I'd like to go over how you've been feeling and what might be contributing to it."
+    },
+    {
+      "speaker": "patient",
+      "text": "Hello. Lately, I've been having some trouble sleeping a few nights a week, and it leaves me a bit tired during the day sometimes. Other than that, things are pretty much the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned trouble sleeping a few nights a week\u2014can you tell me more about that? Are you having trouble falling asleep, waking up during the night, or waking up earlier than you'd like? And about how many nights a week would you say this happens?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Mostly, I wake up during the night. It happens around three nights a week. Nothing more than that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Waking up like that can definitely wear you down. How does this affect your energy during the day? Are you feeling more fatigued or having less energy than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I do feel a bit tired sometimes, but it\u2019s manageable. It doesn\u2019t really get in the way of what I need to do."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s good that the tiredness isn\u2019t overwhelming. Still, do you notice if this fatigue sometimes makes it harder to concentrate, affects your mood, or lessens your motivation at certain points in the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fatigue's there, but it\u2019s not stopping me from focusing or getting things done. Doesn\u2019t really change how I feel, either."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Understood. Even if mild, have you noticed any recent trouble concentrating or making decisions\u2014maybe while handling daily tasks or during your caregiving duties?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, concentrating and deciding hasn\u2019t been a problem. Things are steady there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. Shifting gears a bit\u2014how has your overall mood been lately? Have you been feeling down, sad, or more low than usual at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t been feeling down or sad. My mood\u2019s been steady."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. Let\u2019s check on something else\u2014have you noticed any loss of interest or pleasure in activities you used to enjoy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t lost interest or pleasure in anything."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for that. How about feelings of worthlessness or excessive guilt\u2014have those been coming up for you at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t felt worthless or guilty."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I want to ask an important question I go over with everyone\u2014it\u2019s about any thoughts of death, dying, or suicide. Have you experienced any of those thoughts recently? It helps me get a full picture to support you best."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for telling me. Have you noticed any changes in your appetite or weight lately\u2014either eating more or less than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, my appetite\u2019s been changing quite a bit. Sometimes I eat less, sometimes more. It\u2019s been happening often enough to notice."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. How long have these appetite changes been going on? Have you noticed any pattern or trigger? And has this affected your weight or how you manage your daily activities at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s been a few months. No clear pattern or trigger I can point to. My weight\u2019s gone up and down a bit, but it hasn\u2019t really affected my daily activities."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you say it happens \u201coften enough,\u201d about how frequently would you say your appetite shifts between eating more and less? Do these changes come on suddenly, or do they build up gradually over time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens a few times a week. The shifts come on gradually. Weight goes up and down, but it hasn\u2019t really affected daily life."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like those appetite and weight swings can be a bit challenging, even if your daily routine stays steady. When these shifts happen, do you notice any changes in how you feel emotionally\u2014like early signs of stress, low mood, or anything else?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, those changes haven\u2019t affected how I feel emotionally. They just happen over time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for clarifying. Have you noticed any changes in your movement or activity levels recently\u2014like feeling more restless than usual, or maybe slowed down or sluggish?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t noticed any changes in that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Understood. Since waking up around three nights a week is part of your experience, can you tell me if these awakenings make it hard to fall back asleep? Have you tried anything to help improve your sleep, and if so, how\u2019s that been working?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, waking up those nights makes it a bit hard to get back to sleep sometimes. I\u2019ve tried things like changing my bedtime and cutting out caffeine, but it\u2019s just okay. I manage."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate the effort you\u2019re putting into managing your sleep\u2014that can be tough, even when symptoms feel mild. It\u2019s good you\u2019re open about it, and I want you to know I\u2019m here to support you through this."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks, I appreciate that. I\u2019m managing alright, even if it\u2019s not perfect."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thanks for coming in today. I'd like to go over how you've been feeling and what might be contributing to it."
+    },
+    {
+      "role": "user",
+      "content": "Hello. Lately, I've been having some trouble sleeping a few nights a week, and it leaves me a bit tired during the day sometimes. Other than that, things are pretty much the same."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned trouble sleeping a few nights a week\u2014can you tell me more about that? Are you having trouble falling asleep, waking up during the night, or waking up earlier than you'd like? And about how many nights a week would you say this happens?"
+    },
+    {
+      "role": "user",
+      "content": "Mostly, I wake up during the night. It happens around three nights a week. Nothing more than that."
+    },
+    {
+      "role": "assistant",
+      "content": "Waking up like that can definitely wear you down. How does this affect your energy during the day? Are you feeling more fatigued or having less energy than usual?"
+    },
+    {
+      "role": "user",
+      "content": "I do feel a bit tired sometimes, but it\u2019s manageable. It doesn\u2019t really get in the way of what I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s good that the tiredness isn\u2019t overwhelming. Still, do you notice if this fatigue sometimes makes it harder to concentrate, affects your mood, or lessens your motivation at certain points in the day?"
+    },
+    {
+      "role": "user",
+      "content": "Fatigue's there, but it\u2019s not stopping me from focusing or getting things done. Doesn\u2019t really change how I feel, either."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. Even if mild, have you noticed any recent trouble concentrating or making decisions\u2014maybe while handling daily tasks or during your caregiving duties?"
+    },
+    {
+      "role": "user",
+      "content": "No, concentrating and deciding hasn\u2019t been a problem. Things are steady there."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. Shifting gears a bit\u2014how has your overall mood been lately? Have you been feeling down, sad, or more low than usual at all?"
+    },
+    {
+      "role": "user",
+      "content": "I haven\u2019t been feeling down or sad. My mood\u2019s been steady."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. Let\u2019s check on something else\u2014have you noticed any loss of interest or pleasure in activities you used to enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t lost interest or pleasure in anything."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for that. How about feelings of worthlessness or excessive guilt\u2014have those been coming up for you at all?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t felt worthless or guilty."
+    },
+    {
+      "role": "assistant",
+      "content": "I want to ask an important question I go over with everyone\u2014it\u2019s about any thoughts of death, dying, or suicide. Have you experienced any of those thoughts recently? It helps me get a full picture to support you best."
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for telling me. Have you noticed any changes in your appetite or weight lately\u2014either eating more or less than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, my appetite\u2019s been changing quite a bit. Sometimes I eat less, sometimes more. It\u2019s been happening often enough to notice."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. How long have these appetite changes been going on? Have you noticed any pattern or trigger? And has this affected your weight or how you manage your daily activities at all?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s been a few months. No clear pattern or trigger I can point to. My weight\u2019s gone up and down a bit, but it hasn\u2019t really affected my daily activities."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say it happens \u201coften enough,\u201d about how frequently would you say your appetite shifts between eating more and less? Do these changes come on suddenly, or do they build up gradually over time?"
+    },
+    {
+      "role": "user",
+      "content": "It happens a few times a week. The shifts come on gradually. Weight goes up and down, but it hasn\u2019t really affected daily life."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like those appetite and weight swings can be a bit challenging, even if your daily routine stays steady. When these shifts happen, do you notice any changes in how you feel emotionally\u2014like early signs of stress, low mood, or anything else?"
+    },
+    {
+      "role": "user",
+      "content": "No, those changes haven\u2019t affected how I feel emotionally. They just happen over time."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for clarifying. Have you noticed any changes in your movement or activity levels recently\u2014like feeling more restless than usual, or maybe slowed down or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t noticed any changes in that."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. Since waking up around three nights a week is part of your experience, can you tell me if these awakenings make it hard to fall back asleep? Have you tried anything to help improve your sleep, and if so, how\u2019s that been working?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, waking up those nights makes it a bit hard to get back to sleep sometimes. I\u2019ve tried things like changing my bedtime and cutting out caffeine, but it\u2019s just okay. I manage."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate the effort you\u2019re putting into managing your sleep\u2014that can be tough, even when symptoms feel mild. It\u2019s good you\u2019re open about it, and I want you to know I\u2019m here to support you through this."
+    },
+    {
+      "role": "user",
+      "content": "Thanks, I appreciate that. I\u2019m managing alright, even if it\u2019s not perfect."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_b75b197b41529fa2.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_b75b197b41529fa2_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 22439,
+      "output_tokens": 588,
+      "total_tokens": 23027
+    },
+    "patient": {
+      "input_tokens": 36867,
+      "output_tokens": 379,
+      "total_tokens": 37246
+    },
+    "doctor_manager": {
+      "input_tokens": 21559,
+      "output_tokens": 1470,
+      "total_tokens": 23029
+    },
+    "patient_manager": {
+      "input_tokens": 27409,
+      "output_tokens": 2334,
+      "total_tokens": 29743
+    }
+  }
+}

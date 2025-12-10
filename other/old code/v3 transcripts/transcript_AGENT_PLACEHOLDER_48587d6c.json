@@ -1,0 +1,135 @@
+{
+  "run_timestamp_utc": "2025-07-24T02:42:32.864947",
+  "agent_id": "AGENT_PLACEHOLDER_48587d6c",
+  "demographics": {
+    "AGE": "56+",
+    "RACE": "White",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "UK",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Sleep disturbances",
+    "Difficulty concentrating or indecisiveness",
+    "Fatigue or loss of energy",
+    "Psychomotor agitation or retardation",
+    "Feelings of worthlessness or excessive guilt",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "temperature": 0.56,
+    "max_tokens": 121,
+    "top_p": 1.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've been alright, I suppose. Nothing too out of the ordinary, just the usual routine. How's everything with you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm doing well, thank you for asking! It's great to hear that things have been routine for you. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "I've had some days where I've felt a bit down, maybe six to ten days in total. It's not constant, but it does come and go."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand, and it's good that you're aware of these feelings. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep has been pretty regular, thankfully. I haven't noticed any disturbances or changes in my sleeping patterns."
+    },
+    {
+      "role": "assistant",
+      "content": "That's good to hear about your sleep. Have you experienced any trouble concentrating or making decisions lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've had a couple of days where concentrating was a bit difficult, but nothing too severe. I manage to get through it."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good that you're managing through those days. How often have you felt tired or without energy recently?"
+    },
+    {
+      "role": "user",
+      "content": "I've experienced a day or two where I felt a bit tired, but it wasn't anything too concerning. It didn't really interfere with my daily activities."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that tiredness hasn't been too disruptive for you. Have you felt unusually restless or sluggish lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've only had a couple of days where I felt a bit sluggish, but it wasn't anything major. It didn't really affect my routine."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to hear that sluggishness hasn't affected your routine too much. Have you been troubled by feelings of worthlessness or guilt recently?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't had any feelings of worthlessness or guilt lately. That's not something that's been on my mind."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear those feelings haven't been on your mind. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't lost interest in the things I enjoy. I've been keeping up with my usual activities just fine."
+    },
+    {
+      "role": "assistant",
+      "content": "That's great to hear that you're still enjoying your usual activities. Have you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "No, there haven't been any changes in my appetite or weight. Everything seems to be pretty stable in that regard."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that your appetite and weight have been stable. Have you experienced any thoughts about death or harming yourself recently?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I've had thoughts about death on and off for about six to ten days. It's been a bit concerning, but I haven't had any intentions to harm myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It's important to address these feelings, and I'm here to support you. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

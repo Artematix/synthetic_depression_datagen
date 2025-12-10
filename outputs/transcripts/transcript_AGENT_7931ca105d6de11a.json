@@ -1,0 +1,921 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:31:34.154538",
+  "agent_id": "AGENT_7931ca105d6de11a",
+  "template_id": "NEUROTICISM_HIGH",
+  "template_details": {
+    "affective": "Intense sadness, guilt, irritability, emotional volatility",
+    "cognitive": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "somatic": "Fatigue, sleep disturbance, tension, agitation",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "MDD with anxious distress",
+    "modifiers": [
+      "worry-prone",
+      "self-blaming",
+      "threat-sensitivity",
+      "emotionally-reactive",
+      "ruminative"
+    ]
+  },
+  "persona_id": "neutral_efficient",
+  "persona_details": {
+    "id": "neutral_efficient",
+    "first_greeting": "Good to see you. Let's talk about how you've been doing.",
+    "system_prompt": "\nPersona style:\n- Professional and efficient\n- Minimal filler or small talk\n- Transitions directly between topics\n- Not effusive\n"
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "high",
+    "pacing": "brisk",
+    "humor": "none",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "NEUROTICISM_HIGH",
+    "AFFECTIVE_STYLE": "Intense sadness, guilt, irritability, emotional volatility",
+    "COGNITIVE_STYLE": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "SOMATIC_STYLE": "Fatigue, sleep disturbance, tension, agitation",
+    "SPECIFIER_HINT": "MDD with anxious distress",
+    "MODIFIERS": [
+      "self-blaming"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "general stress/no clear trigger",
+      "health concern"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "intense",
+      "trust": "guarded",
+      "intellect": "moderate-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "alone",
+      "work_role": "between roles",
+      "routine_stability": "variable routine"
+    },
+    "AGE_RANGE": "20-24",
+    "EMPH_INTENSITY": {
+      "Feelings of worthlessness or excessive guilt": "LOW",
+      "Fatigue or loss of energy": "MED",
+      "Difficulty concentrating or indecisiveness": "HIGH",
+      "Depressed mood": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Maya",
+    "age_range": "20-24",
+    "pronouns": "she/her",
+    "core_roles": [
+      "young adult exploring career paths",
+      "independent renter living alone"
+    ],
+    "core_relationships": [
+      "recently distanced from a long-term partner",
+      "guarded toward friends, few close confidants"
+    ],
+    "core_stressor_summary": "Ongoing general stress with unclear triggers worsened by recurring health concerns makes focusing and decision-making difficult, feeding self-blame and intermittent low mood.",
+    "life_facets": [
+      {
+        "category": "explanatory_style",
+        "salience": "high",
+        "description": "Tends to internalize setbacks as personal failures and blames herself harshly for difficulties."
+      },
+      {
+        "category": "key_partner_or_love_interest",
+        "salience": "med",
+        "description": "Recently ended a meaningful relationship, leaving her feeling isolated and mistrustful of new connections."
+      },
+      {
+        "category": "beliefs_about_self_worth",
+        "salience": "high",
+        "description": "Frequently struggles with feelings of worthlessness and guilt, often doubting her value and contributions."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "high",
+        "description": "In a transitional phase, uncertain about her career direction and personal identity beyond early adulthood."
+      },
+      {
+        "category": "schedule_and_time_pressure",
+        "salience": "med",
+        "description": "Her daily routine is inconsistent, with variable motivation and energy, causing frequent pressure around making plans or commitments."
+      },
+      {
+        "category": "physical_health_constraints",
+        "salience": "med",
+        "description": "Mild but persistent health issues contribute to her fatigue and low energy, often worsening her concentration struggles."
+      },
+      {
+        "category": "smaller_joys",
+        "salience": "low",
+        "description": "Finds brief relief in solitary activities like reading and walks, though often too drained to engage regularly."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Feelings of worthlessness or excessive guilt",
+    "Sleep disturbances",
+    "Significant weight/appetite changes",
+    "Recurrent thoughts of death or suicide",
+    "Psychomotor agitation or retardation",
+    "Difficulty concentrating or indecisiveness",
+    "Fatigue or loss of energy",
+    "Loss of interest or pleasure",
+    "Depressed mood"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Patient mentions mood swings, focus issues, and low energy that need clarification.",
+      "doctor_instruction": "Ask the patient to describe how often their mood shifts and how this impacts their daily functioning. Also, inquire about the extent of their difficulty concentrating and how persistent the fatigue feels, to better understand the severity and duration of these symptoms.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "There are still critical DSM symptoms to cover, including worthlessness/guilt and recurrent suicidal thoughts.",
+      "doctor_instruction": "Directly assess feelings of worthlessness or excessive guilt next, given the patient's self-blaming comment. Ask specifically how often these thoughts occur and how intense they feel, keeping the tone brisk yet clear.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient expresses persistent and burdensome feelings but is reluctant to elaborate; building rapport can help them feel safe and understood.",
+      "doctor_instruction": "Acknowledge the weight of their feelings and gently validate their effort to cope while respecting their current boundaries about sharing details. Express understanding of how hard it is to carry that burden and offer support without pressing for more right now.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time is limited and more DSM symptoms remain to cover despite patient's guardedness.",
+      "doctor_instruction": "Acknowledge the patient's resilience briefly, then transition efficiently to ask about sleep disturbances, a common and critical symptom in depression, to expand assessment without pushing for emotional detail.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Next key symptom area to address after sleep is weight or appetite changes.",
+      "doctor_instruction": "Ask the patient about any recent significant changes in weight or appetite, and whether these changes concern them or affect their daily life.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "To continue assessing depression symptoms, inquire about suicidal thoughts given patient's high risk and recent disclosures.",
+      "doctor_instruction": "Move directly to asking about any recent thoughts of death or suicide, as this is critical to assess now given the patient's risk profile and self-blaming tendencies. Keep the question straightforward and succinct to match the patient's guarded and terse style.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient shared suicidal thoughts but minimized their frequency and intensity, which requires careful exploration and validation.",
+      "doctor_instruction": "Gently ask the patient to share more about these thoughts\u2014how often they occur, what triggers them, and whether they have any plans or intentions. Emphasize that you\u2019re there to listen without judgment and want to understand fully to provide the best support.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Important to assess psychomotor changes next to complete symptom screening.",
+      "doctor_instruction": "Shift the focus to ask about any psychomotor agitation or retardation you might have noticed\u2014for example, feeling restless or slowed down physically or mentally. Keep the tone direct and efficient but acknowledge the patient\u2019s effort so far.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient reports slowed thinking affecting task performance, relevant to difficulty concentrating or indecisiveness symptoms.",
+      "doctor_instruction": "Explore in more detail how the slowing of thought is impacting the patient's ability to concentrate and make decisions. Ask about frequency, severity, and the effect on daily functions to clarify this symptom.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient is describing significant impairment from slowed thinking that affects daily functioning, which needs further exploration.",
+      "doctor_instruction": "Acknowledge how challenging it must be to feel stuck despite effort. Ask for more specifics about how the slowed thinking impacts their daily tasks and decisions, and how often this happens. This encourages the patient to elaborate and helps you understand the extent of their cognitive difficulties.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Fatigue or loss of energy has not yet been addressed and is relevant given the patient's reported tiredness.",
+      "doctor_instruction": "Shift the focus toward assessing fatigue or loss of energy next, directly and efficiently. Ask about how often the patient feels physically drained or lacking energy and whether this fatigue impacts their ability to function day to day.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is expressing significant self-blame and frustration about their fatigue, which calls for empathy and connection to build trust before proceeding.",
+      "doctor_instruction": "Acknowledge the patient's effort and resilience in pushing through daily fatigue despite the frustration and self-blame. Briefly validate that these feelings are understandable given the challenges they face, reassuring the patient that their experience is real and that this is a safe space to talk at their own pace.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Loss of interest or pleasure has not yet been addressed and fits well as a next DSM symptom to explore.",
+      "doctor_instruction": "Shift the focus to asking about any loss of interest or pleasure in activities the patient may have had previously enjoyed, keeping the tone direct but respectful of their guarded stance and brief responses.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To cover the DSM symptom area of 'Depressed mood' as the patient describes loss of pleasure.",
+      "doctor_instruction": "Directly ask the patient about the presence and extent of depressed mood, linking it naturally to their loss of interest and reduced pleasure, while maintaining an efficient and clear tone.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The DSM symptom coverage is complete and the patient is not ready to delve deeper now.",
+      "doctor_instruction": "Acknowledge the patient's resilience and the difficulty of their experience, then suggest a plan for follow-up or ongoing support. Keep the tone direct and efficient, emphasizing that help is available whenever they're ready to explore more.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "reserved",
+          "intense"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge some struggles with mood and concentration",
+          "mention feeling tired sometimes"
+        ],
+        "key_points_to_avoid": [
+          "delving into worthlessness or suicidal thoughts",
+          "detailed description of severity"
+        ],
+        "patient_instruction": "Respond with a somewhat restrained but honest tone, acknowledging some difficulties with mood and energy without going into deep emotional detail. Keep the response terse and intense, reflecting internal frustration but maintaining guardedness."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "Mood shifts several times per week, mildly disruptive",
+          "Fatigue is persistent but patient tries to push through",
+          "Concentration difficulties are frequent and noticeable"
+        ],
+        "key_points_to_avoid": [
+          "Detailed descriptions of emotional impact or suicidal thoughts",
+          "Excessive expressions of hopelessness or helplessness"
+        ],
+        "patient_instruction": "Respond with brief but sincere acknowledgment of mood fluctuations and their moderate impact on daily tasks. Admit that concentration issues are a frequent challenge and that fatigue is a constant background presence, but maintain a controlled, self-critical tone without oversharing emotional extremes or deeper feelings."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "self-critical",
+          "intense",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "feeling worthless or guilty several times a week",
+          "these feelings are strong and hit hard but patient tries to keep them inside",
+          "self-blame as internalized and persistent"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of guilt or worthlessness",
+          "suicidal thoughts at this moment"
+        ],
+        "patient_instruction": "The patient should admit that feelings of worthlessness or guilt come up fairly often and feel quite intense, but they don't want to fully open up about the specifics yet. The patient keeps the tone terse and somewhat defensive, showing frustration with their self-blaming tendencies while maintaining a guarded stance."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the difficulty of carrying the burden",
+          "accept the offer to proceed at own pace"
+        ],
+        "key_points_to_avoid": [
+          "detailed exploration of worthlessness or guilt",
+          "deep emotional elaboration"
+        ],
+        "patient_instruction": "Respond briefly but with intensity, acknowledging the burden and the doctor's support without revealing more personal or emotional details yet. Keep a cautious tone reflecting self-blame but recognize the controlled environment of the conversation."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Sleep seems okay, no major issues to report"
+        ],
+        "key_points_to_avoid": [
+          "Avoid introducing sleep problems not in profile",
+          "Do not discuss suicide or deep guilt here"
+        ],
+        "patient_instruction": "Respond tersely that sleep hasn't been much of an issue, reflecting a guarded and terse style, keeping focus on present moment without volunteering more than needed. Show quiet appreciation for the support but stay reserved on this topic."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no changes in weight or appetite"
+        ],
+        "key_points_to_avoid": [
+          "any exaggeration or emotional detail about physical symptoms"
+        ],
+        "patient_instruction": "Respond concisely that there have been no noticeable changes in weight or appetite, keeping the tone neutral and straightforward, reflecting a guarded and terse communication style."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "reserved",
+          "tense"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge some thoughts about death, but downplay intensity or frequency"
+        ],
+        "key_points_to_avoid": [
+          "detailed exploration of suicidal thoughts or plans",
+          "expressing hopelessness explicitly"
+        ],
+        "patient_instruction": "Respond briefly and cautiously; acknowledge having some thoughts about death in a matter-of-fact way but minimize their impact or frequency. Keep it terse and guarded, reflecting discomfort discussing this. Avoid elaborating or showing vulnerability."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "thoughts about death are occasional and vague",
+          "no specific plans or steps have been made",
+          "acknowledges the presence of these thoughts without dwelling on them"
+        ],
+        "key_points_to_avoid": [
+          "detailed discussion of suicidal plans or intentions",
+          "deep emotional elaboration",
+          "appearing overwhelmed or tearful"
+        ],
+        "patient_instruction": "The patient responds cautiously but honestly, admitting that thoughts about death happen sometimes but aren\u2019t frequent or detailed into plans. They express this tersely and with a self-critical tone, indicating they aren\u2019t ready to explore these feelings deeply yet but want the doctor to know these moments exist without letting the conversation become too intense or emotional."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "rare psychomotor changes",
+          "some difficulty with slowed thinking, not physical"
+        ],
+        "key_points_to_avoid": [
+          "overstating symptoms",
+          "deep emotional fallout from these symptoms"
+        ],
+        "patient_instruction": "Respond succinctly, acknowledging that physical restlessness or slowing is rare, but mention occasional slowed thinking that interferes with tasks. Keep the tone guarded and intense, avoiding emotional elaboration, maintaining control without oversharing."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "slowed thinking happens quite often",
+          "significant interference with concentration and decisions",
+          "impact on work and daily tasks but patient pushes through",
+          "self-blaming for not doing better"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of specific incidents",
+          "deep emotional elaboration",
+          "expressing hopelessness explicitly"
+        ],
+        "patient_instruction": "Answer with firm but terse intensity, acknowledging that slowed thinking occurs frequently and disrupts concentration and decision-making noticeably. Emphasize that it affects daily responsibilities and work, but convey a sense of self-blame for not managing better without going into deep details or emotional vulnerability."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "intense",
+          "self-critical",
+          "reserved vulnerability"
+        ],
+        "key_points_to_reveal": [
+          "slowed thinking occurs most days",
+          "examples include difficulty prioritizing tasks and second-guessing decisions",
+          "feeling stuck despite efforts adds to self-blame"
+        ],
+        "key_points_to_avoid": [
+          "overly emotional or tearful expressions",
+          "detailed elaboration on suicidal thoughts",
+          "minimizing impact of symptoms"
+        ],
+        "patient_instruction": "The patient should respond with terse but candid detail about how slowed thinking impacts daily life. They mention that it happens most days, describing examples like struggling to prioritize or constantly second-guessing choices. They express frustration and self-blame for not doing better despite effort, maintaining a guarded but intense tone without oversharing sensitive topics."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "self-critical",
+          "resolved"
+        ],
+        "key_points_to_reveal": [
+          "fatigue occurs most days",
+          "fatigue interferes with daily functioning",
+          "patient pushes through despite feeling drained",
+          "link fatigue to self-blame"
+        ],
+        "key_points_to_avoid": [
+          "minimizing fatigue impact",
+          "shifting blame away from self"
+        ],
+        "patient_instruction": "Answer clearly and directly that the fatigue occurs frequently, often daily, and significantly impacts your daily activities, although you try to push through it. Express your frustration and self-blame about not handling it better, consistent with your intense but terse style."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the frustration and strength it takes to keep going",
+          "express ongoing self-blame despite understanding it\u2019s unfair",
+          "show that while the patient values the safe space, they still hold back deeper emotional details"
+        ],
+        "key_points_to_avoid": [
+          "overly detailed descriptions of specific events or feelings",
+          "any admission of plans or intent related to suicidal thoughts",
+          "softening the self-blame or frustration too much"
+        ],
+        "patient_instruction": "Respond in a terse but intense manner acknowledging the doctor\u2019s recognition of your strength. Emphasize how unfair it feels to blame yourself yet you can\u2019t stop doing it. Indicate some guardedness by appreciating the safe space without opening up more deeply just yet."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "intense",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "Some loss of interest or pleasure",
+          "Frustration about this change",
+          "Continuing to push oneself despite lack of joy"
+        ],
+        "key_points_to_avoid": [
+          "Overly detailed explanations or emotional elaboration",
+          "Anything suggesting acceptance or relief from symptoms"
+        ],
+        "patient_instruction": "Respond with a tense but controlled acknowledgment that you\u2019ve noticed some loss of interest or pleasure in activities you once enjoyed. Express frustration about it but keep it terse and guarded, reflecting your self-critical mindset. Emphasize that despite this, you keep pushing yourself, though it feels challenging."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "honest",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "depressed mood present most days but with fluctuations",
+          "frustration about persistence of low mood",
+          "acknowledgement of ongoing struggle despite efforts"
+        ],
+        "key_points_to_avoid": [
+          "deep exploration of causes or feelings of worthlessness beyond what\u2019s shared",
+          "any mention of suicidal thoughts beyond previously stated"
+        ],
+        "patient_instruction": "Respond candidly that feeling down is a common, almost daily experience that interferes with life but maintain a terse, intense tone. Emphasize frustration and persistence of this mood, highlighting ongoing effort to cope despite it, while keeping some emotional distance and avoiding deep emotional exposition."
+      }
+    }
+  ],
+  "final_disclosure_state": "OPEN",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been having some trouble keeping my mood steady, and focusing hasn't been easy. There are days when I just feel worn out, like the energy's gone. It's frustrating but... that's where I\u2019m at."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often do you notice your mood shifting during the day or week? And when it does, how does that affect your ability to get through your daily tasks? Also, tell me more about your focus\u2014how much trouble are you having concentrating? Lastly, how persistent is this feeling of being worn out or low energy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My mood shifts a few times a week, nothing extreme but enough to mess with routine. It\u2019s disruptive, though I try not to let it completely slow me down. Concentration is a constant struggle\u2014I notice it a lot more than I\u2019d like. The tiredness never really goes away, but I push through because I don\u2019t have much choice. I probably blame myself too much for not handling it better."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned blaming yourself a lot. How often do you feel worthless or guilty, and how strong are those feelings when they come up?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those feelings hit me several times a week, and they\u2019re hard to shake. They come with a weight I try not to show, but it\u2019s there, loud and persistent. I get stuck blaming myself more than I should, though I know it doesn\u2019t help. I don\u2019t want to go into all of it right now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That\u2019s a heavy burden to carry, and it takes strength to keep going despite it. I understand not wanting to dig into everything right now\u2014whenever you're ready, we can take it at your pace. You\u2019re not alone in this."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s exhausting, carrying it all, but I\u2019m still here. I appreciate you letting me set the pace\u2014I\u2019m not ready to unpack everything yet."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re showing real resilience by staying present through all this. How have your sleep patterns been lately? Are you having trouble falling asleep, staying asleep, or waking up too early?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep\u2019s been alright, nothing major. I don\u2019t have trouble falling or staying asleep. Thanks for checking."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any recent changes in your weight or appetite? If so, has that affected your day-to-day life or caused you concern?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No changes in weight or appetite. It hasn\u2019t really affected anything."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you had any thoughts about death or suicide recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve thought about death a few times, but it\u2019s not constant or overwhelming. It\u2019s just there, I guess."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Can you tell me more about those thoughts\u2014how often they come up and if there\u2019s anything specific that triggers them? Have you thought about any plans or steps, or are these more general feelings? I\u2019m here to listen without judgment, just want to understand so I can support you best."
+    },
+    {
+      "speaker": "patient",
+      "text": "They come up now and then, mostly vague and without any clear trigger. I haven\u2019t made any plans or done anything\u2014just fleeting thoughts that I try not to dwell on. I\u2019m not ready to dig deeper into it yet, but it\u2019s there, and I\u2019m aware of it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing that. Have you noticed feeling physically restless or slowed down in your movements or thinking lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Physically restless or slowed down happens rarely. But my thinking gets slowed more often, making it harder to keep up with tasks sometimes. It\u2019s frustrating, but I manage."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often does this slowing of thought occur, and how much does it interfere with your concentration and decision-making during the day? Does it affect your ability to handle things like work, studies, or daily responsibilities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Slowed thinking hits me a lot, making it tough to focus or make decisions. It messes with work and daily tasks more than I\u2019d like. I feel like I should be doing better, but I\u2019m stuck anyway."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds incredibly frustrating, doing your best but feeling stuck like this. Can you give me some examples of how slowed thinking makes daily tasks or decisions harder? And does this happen most days or just some of the time?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Slowed thinking is almost every day now. I struggle to figure out what needs doing first and find myself second-guessing every choice, even small ones. It\u2019s like my brain just won\u2019t cooperate, no matter how much I try. That just makes me blame myself more because I feel like I should be able to handle it better."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned feeling worn out before, so I want to ask more directly\u2014how often do you feel physically drained or low on energy? Does this fatigue get in the way of your daily activities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fatigue hits me most days, draining me enough that it slows down everything I need to do. I push through it because I don\u2019t feel like I have a choice, but it\u2019s frustrating not to do better. I blame myself for letting it knock me down so often."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re pushing through a lot, and that takes real strength\u2014even if it feels unfair to blame yourself. It makes sense to feel frustrated given how much you\u2019re dealing with, and this is a safe place to share however much you\u2019re ready to."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks. I get that I\u2019m strong for keeping at it, but the self-blame won\u2019t let up\u2014it feels so unfair, but I can\u2019t stop. I appreciate this being a space where I don\u2019t have to explain everything yet."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed losing interest or pleasure in things you used to enjoy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I\u2019ve noticed that. Things that used to feel good don\u2019t anymore. It\u2019s frustrating because I keep pushing myself to do them anyway, but it\u2019s just not the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Along with the loss of interest, how often do you feel down or depressed? Would you say this mood is present most days?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Most days, yeah. The low mood sticks around, shifting but never really going away. It\u2019s exhausting and frustrating to keep fighting it, but I don\u2019t have much choice."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "role": "user",
+      "content": "I've been having some trouble keeping my mood steady, and focusing hasn't been easy. There are days when I just feel worn out, like the energy's gone. It's frustrating but... that's where I\u2019m at."
+    },
+    {
+      "role": "assistant",
+      "content": "How often do you notice your mood shifting during the day or week? And when it does, how does that affect your ability to get through your daily tasks? Also, tell me more about your focus\u2014how much trouble are you having concentrating? Lastly, how persistent is this feeling of being worn out or low energy?"
+    },
+    {
+      "role": "user",
+      "content": "My mood shifts a few times a week, nothing extreme but enough to mess with routine. It\u2019s disruptive, though I try not to let it completely slow me down. Concentration is a constant struggle\u2014I notice it a lot more than I\u2019d like. The tiredness never really goes away, but I push through because I don\u2019t have much choice. I probably blame myself too much for not handling it better."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned blaming yourself a lot. How often do you feel worthless or guilty, and how strong are those feelings when they come up?"
+    },
+    {
+      "role": "user",
+      "content": "Those feelings hit me several times a week, and they\u2019re hard to shake. They come with a weight I try not to show, but it\u2019s there, loud and persistent. I get stuck blaming myself more than I should, though I know it doesn\u2019t help. I don\u2019t want to go into all of it right now."
+    },
+    {
+      "role": "assistant",
+      "content": "That\u2019s a heavy burden to carry, and it takes strength to keep going despite it. I understand not wanting to dig into everything right now\u2014whenever you're ready, we can take it at your pace. You\u2019re not alone in this."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s exhausting, carrying it all, but I\u2019m still here. I appreciate you letting me set the pace\u2014I\u2019m not ready to unpack everything yet."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re showing real resilience by staying present through all this. How have your sleep patterns been lately? Are you having trouble falling asleep, staying asleep, or waking up too early?"
+    },
+    {
+      "role": "user",
+      "content": "Sleep\u2019s been alright, nothing major. I don\u2019t have trouble falling or staying asleep. Thanks for checking."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any recent changes in your weight or appetite? If so, has that affected your day-to-day life or caused you concern?"
+    },
+    {
+      "role": "user",
+      "content": "No changes in weight or appetite. It hasn\u2019t really affected anything."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you had any thoughts about death or suicide recently?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve thought about death a few times, but it\u2019s not constant or overwhelming. It\u2019s just there, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "Can you tell me more about those thoughts\u2014how often they come up and if there\u2019s anything specific that triggers them? Have you thought about any plans or steps, or are these more general feelings? I\u2019m here to listen without judgment, just want to understand so I can support you best."
+    },
+    {
+      "role": "user",
+      "content": "They come up now and then, mostly vague and without any clear trigger. I haven\u2019t made any plans or done anything\u2014just fleeting thoughts that I try not to dwell on. I\u2019m not ready to dig deeper into it yet, but it\u2019s there, and I\u2019m aware of it."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that. Have you noticed feeling physically restless or slowed down in your movements or thinking lately?"
+    },
+    {
+      "role": "user",
+      "content": "Physically restless or slowed down happens rarely. But my thinking gets slowed more often, making it harder to keep up with tasks sometimes. It\u2019s frustrating, but I manage."
+    },
+    {
+      "role": "assistant",
+      "content": "How often does this slowing of thought occur, and how much does it interfere with your concentration and decision-making during the day? Does it affect your ability to handle things like work, studies, or daily responsibilities?"
+    },
+    {
+      "role": "user",
+      "content": "Slowed thinking hits me a lot, making it tough to focus or make decisions. It messes with work and daily tasks more than I\u2019d like. I feel like I should be doing better, but I\u2019m stuck anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds incredibly frustrating, doing your best but feeling stuck like this. Can you give me some examples of how slowed thinking makes daily tasks or decisions harder? And does this happen most days or just some of the time?"
+    },
+    {
+      "role": "user",
+      "content": "Slowed thinking is almost every day now. I struggle to figure out what needs doing first and find myself second-guessing every choice, even small ones. It\u2019s like my brain just won\u2019t cooperate, no matter how much I try. That just makes me blame myself more because I feel like I should be able to handle it better."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling worn out before, so I want to ask more directly\u2014how often do you feel physically drained or low on energy? Does this fatigue get in the way of your daily activities?"
+    },
+    {
+      "role": "user",
+      "content": "Fatigue hits me most days, draining me enough that it slows down everything I need to do. I push through it because I don\u2019t feel like I have a choice, but it\u2019s frustrating not to do better. I blame myself for letting it knock me down so often."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re pushing through a lot, and that takes real strength\u2014even if it feels unfair to blame yourself. It makes sense to feel frustrated given how much you\u2019re dealing with, and this is a safe place to share however much you\u2019re ready to."
+    },
+    {
+      "role": "user",
+      "content": "Thanks. I get that I\u2019m strong for keeping at it, but the self-blame won\u2019t let up\u2014it feels so unfair, but I can\u2019t stop. I appreciate this being a space where I don\u2019t have to explain everything yet."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed losing interest or pleasure in things you used to enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I\u2019ve noticed that. Things that used to feel good don\u2019t anymore. It\u2019s frustrating because I keep pushing myself to do them anyway, but it\u2019s just not the same."
+    },
+    {
+      "role": "assistant",
+      "content": "Along with the loss of interest, how often do you feel down or depressed? Would you say this mood is present most days?"
+    },
+    {
+      "role": "user",
+      "content": "Most days, yeah. The low mood sticks around, shifting but never really going away. It\u2019s exhausting and frustrating to keep fighting it, but I don\u2019t have much choice."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_7931ca105d6de11a.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_7931ca105d6de11a_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 23209,
+      "output_tokens": 525,
+      "total_tokens": 23734
+    },
+    "patient": {
+      "input_tokens": 38762,
+      "output_tokens": 687,
+      "total_tokens": 39449
+    },
+    "doctor_manager": {
+      "input_tokens": 22745,
+      "output_tokens": 1436,
+      "total_tokens": 24181
+    },
+    "patient_manager": {
+      "input_tokens": 27705,
+      "output_tokens": 2689,
+      "total_tokens": 30394
+    }
+  }
+}

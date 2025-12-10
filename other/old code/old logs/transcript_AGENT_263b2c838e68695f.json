@@ -1,0 +1,851 @@
+{
+  "run_timestamp_utc": "2025-11-26T07:14:28.837138",
+  "agent_id": "AGENT_263b2c838e68695f",
+  "template_id": "AGREEABLENESS_LOW",
+  "template_details": {
+    "affective": "Irritability, anger, frustration, externalized blame",
+    "cognitive": "Defensive/hostile thoughts, rejection sensitivity",
+    "somatic": "Restlessness, agitation, appetite disturbance, insomnia",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Psychomotor agitation or retardation",
+      "Sleep disturbances"
+    ],
+    "specifier": "Mixed features",
+    "modifiers": [
+      "irritable",
+      "blame-externalizing",
+      "rejection-sensitive",
+      "defensively-hostile",
+      "interpersonally-strained"
+    ]
+  },
+  "persona_id": "neutral_efficient",
+  "persona_details": {
+    "id": "neutral_efficient",
+    "first_greeting": "Good to see you. Let's talk about how you've been doing.",
+    "system_prompt": "\nPersona style:\n- Professional, efficient primary-care physician.\n- Neutral, calm tone focused on gathering clear information.\n- Keeps questions concise and organized, with minimal small talk.\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "high",
+    "pacing": "slow"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "AGREEABLENESS_LOW",
+    "AFFECTIVE_STYLE": "Irritability, anger, frustration, externalized blame",
+    "COGNITIVE_STYLE": "Defensive/hostile thoughts, rejection sensitivity",
+    "SOMATIC_STYLE": "Restlessness, agitation, appetite disturbance, insomnia",
+    "SPECIFIER_HINT": "Mixed features",
+    "MODIFIERS": [
+      "rejection-sensitive"
+    ],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "flat",
+      "trust": "neutral",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "routine_stability": "variable routine",
+      "support_level": "high support"
+    },
+    "EMPH_INTENSITY": {
+      "Psychomotor agitation or retardation": "LOW",
+      "Depressed mood": "MED",
+      "Sleep disturbances": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Ryan",
+    "age_range": "late 20s",
+    "pronouns": "he/him",
+    "core_roles": [
+      "freelance graphic designer",
+      "roommate"
+    ],
+    "core_relationships": [
+      "close with older sister",
+      "occasional tension with roommate"
+    ],
+    "core_stressor_summary": "Inconsistent work schedule leads to disrupted sleep and some mood dips, though he maintains solid ties with his sister and a supportive online community.",
+    "life_facets": [
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "Erratic client demands prevent a consistent daily routine, making restful sleep difficult most nights."
+      },
+      {
+        "category": "cultural_background_orientation",
+        "salience": "med",
+        "description": "Grew up in a suburban white family; not especially tied to community traditions but values straightforwardness."
+      },
+      {
+        "category": "conflictual_relationship",
+        "salience": "med",
+        "description": "Sometimes clashes with his roommate over noise and boundaries, which can leave him feeling singled out."
+      },
+      {
+        "category": "self_presentation_style",
+        "salience": "high",
+        "description": "Keeps communication laconic and avoids emotional displays, especially around unfamiliar people."
+      },
+      {
+        "category": "coping_style",
+        "salience": "med",
+        "description": "Prefers solo distractions like gaming or walking late at night; rarely discusses emotions unless pressed."
+      },
+      {
+        "category": "source_of_motivation",
+        "salience": "med",
+        "description": "Motivated by keeping up with creative trends and positive feedback from clients, though he sometimes doubts his own value after negative interactions."
+      },
+      {
+        "category": "prior_relationship_disappointment_or_breakdown",
+        "salience": "med",
+        "description": "A friendship in college ended over unresolved misunderstandings, making him wary about new connections."
+      },
+      {
+        "category": "sleep_pattern_tendency",
+        "salience": "high",
+        "description": "Frequently stays up late working or gaming, leading to trouble falling and staying asleep."
+      },
+      {
+        "category": "closest_friend_or_confidant",
+        "salience": "med",
+        "description": "Relies on his older sister for advice and emotional backup when needed."
+      },
+      {
+        "category": "small_joys",
+        "salience": "low",
+        "description": "Enjoys discovering new podcasts and niche graphic art blogs in his downtime."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "NONE",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Loss of interest or pleasure",
+    "Sleep disturbances",
+    "Significant weight/appetite changes",
+    "Depressed mood",
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness",
+    "Psychomotor agitation or retardation",
+    "Fatigue or loss of energy",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient is giving minimal information, so it would be helpful to gently encourage elaboration on their current state.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned feeling down or restless but still functioning, so it's important to explore the nature and impact of these feelings further.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "Several DSM symptom areas remain and the patient has described frequency of low mood, making it a good time to explore another symptom area.",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "The patient denied loss of interest, so it's appropriate to assess another DSM symptom area to further clarify the depression profile.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 5,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned sleep difficulties, so it's important to clarify how often this happens and how much it affects them.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "The patient has described sleep difficulties but denies daytime fatigue; it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "The patient has addressed sleep and appetite; it's appropriate to screen another DSM symptom area.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "The patient has described mood and sleep, so it is appropriate to open another DSM symptom area.",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 9,
+      "next_action": "DSM",
+      "reason": "Several core DSM symptom areas have been covered; it's appropriate to explore another, such as difficulty concentrating or indecisiveness.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "It's appropriate to continue systematically screening DSM symptom areas since the patient has denied problems with concentration and decision-making.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 11,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned sometimes feeling restless or slowed down, so clarifying the frequency, duration, and impact will help understand the symptom better.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "next_action": "DSM",
+      "reason": "The patient has provided sufficient detail about psychomotor changes; it's appropriate to move on to another DSM symptom area.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 13,
+      "next_action": "DSM",
+      "reason": "Having covered most core DSM criteria, it is appropriate to now assess for recurrent thoughts of death or suicide.",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 14,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All DSM symptom areas have been covered, and the patient's responses indicate mild symptoms without significant impairment or acute risk.",
+      "doctor_instruction": "Acknowledge what the patient has shared and summarize the main points about their symptoms and functioning. Briefly outline possible next steps or supports, and ask if there is anything else the patient would like to discuss before wrapping up the visit.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "general sense of not feeling great",
+          "avoid specifics",
+          "avoid positive or negative extremes"
+        ],
+        "key_points_to_avoid": [
+          "details about depressed mood",
+          "sleep problems",
+          "psychomotor changes",
+          "any strong emotions",
+          "discussing rejection sensitivity"
+        ],
+        "response_instruction": "Give a short, flat reply that doesn't share much detail, just a vague sense that things are okay or not great without specifics. Keep it neutral and guarded."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "feeling down happens sometimes",
+          "may feel slowed down or restless",
+          "handling responsibilities is mostly okay"
+        ],
+        "key_points_to_avoid": [
+          "loss of interest",
+          "worthlessness",
+          "fatigue",
+          "concentration problems",
+          "suicidal thoughts",
+          "major impact on responsibilities"
+        ],
+        "response_instruction": "Give a brief, matter-of-fact answer that acknowledges feeling down some days but indicates you usually manage your responsibilities. Avoid extra detail or emotion."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "off or restless days happen a couple times a week",
+          "does not seem constant",
+          "still manages responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "severe impairment",
+          "detailed emotional impact",
+          "loss of interest",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Give a brief, straightforward answer estimating the frequency as a couple times a week, keeping your tone flat and not adding extra detail or emotion."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "not really losing interest",
+          "still doing usual activities"
+        ],
+        "key_points_to_avoid": [
+          "endorsing loss of interest or pleasure",
+          "suggesting strong emotional impact"
+        ],
+        "response_instruction": "Give a brief and factual answer that you haven't really lost interest in things you usually do, keeping the tone flat and not volunteering extra detail."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "some trouble with sleep",
+          "difficulty falling or staying asleep",
+          "not every night"
+        ],
+        "key_points_to_avoid": [
+          "severe insomnia",
+          "detailed sleep patterns",
+          "broad emotional impact"
+        ],
+        "response_instruction": "Give a brief, flat response that acknowledges some sleep trouble without elaborating on severity or emotional effects. Mention it's not every night but avoid going into detail."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "sleep trouble several nights a week",
+          "not every night",
+          "fatigue not a big problem"
+        ],
+        "key_points_to_avoid": [
+          "significant daytime tiredness",
+          "energy problems",
+          "any worsening of fatigue"
+        ],
+        "response_instruction": "Briefly state that sleep is an issue several nights a week but that it doesn't really make you tired or affect your energy during the day. Keep the tone flat and avoid elaborating."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no significant changes in appetite",
+          "no noticeable weight change"
+        ],
+        "key_points_to_avoid": [
+          "any detail about eating habits",
+          "connecting appetite to mood",
+          "overexplaining"
+        ],
+        "response_instruction": "Give a brief, straightforward answer denying any major changes in appetite or weight. Keep the tone flat and avoid extra detail or elaboration."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some days feeling down",
+          "not constant",
+          "not most days"
+        ],
+        "key_points_to_avoid": [
+          "hopelessness",
+          "feeling down most days",
+          "excessive emotional detail"
+        ],
+        "response_instruction": "Acknowledge feeling down on some days but make it clear it's not most days. Keep the answer brief, neutral, and avoid discussing hopelessness or strong emotions."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "no strong feelings of worthlessness",
+          "self-esteem mostly unchanged"
+        ],
+        "key_points_to_avoid": [
+          "excessive guilt",
+          "detailed discussion of self-worth issues",
+          "clear endorsement of worthlessness"
+        ],
+        "response_instruction": "Give a brief, flat response denying significant feelings of worthlessness or guilt, and indicate that your self-esteem hasn't really changed. Keep it short and avoid elaborating."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "no trouble focusing",
+          "no issues with decision making"
+        ],
+        "key_points_to_avoid": [
+          "any suggestion of concentration problems",
+          "overexplaining work or daily life details"
+        ],
+        "response_instruction": "Give a straightforward, brief answer denying trouble with focus or decisions. Keep the tone flat and don't elaborate or add personal examples."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "sometimes feel restless or slowed down",
+          "not constant",
+          "doesn't stop daily functioning"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples",
+          "strong or frequent endorsement",
+          "emotional language"
+        ],
+        "response_instruction": "Briefly acknowledge that you sometimes feel either restless or a bit slowed down, but it's not all the time and doesn't really affect what you do. Keep it flat and to the point, without going into detail."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "restless or slowed down lasts a short while",
+          "not tied to specific times or situations"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional impact",
+          "specific life events",
+          "exaggerating frequency or severity"
+        ],
+        "response_instruction": "Give a brief, straightforward answer about how long the restlessness or slowed-down feeling usually lasts, saying it's not for very long and doesn't seem tied to a particular time or situation. Keep the tone flat and avoid extra detail."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no unusual tiredness",
+          "energy level about the same"
+        ],
+        "key_points_to_avoid": [
+          "endorsement of fatigue",
+          "excessive detail about daily functioning"
+        ],
+        "response_instruction": "Give a brief, straightforward answer denying unusual tiredness or loss of energy. Keep the tone flat and don't elaborate beyond what's asked."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no thoughts about death",
+          "no thoughts of self-harm"
+        ],
+        "key_points_to_avoid": [
+          "do not elaborate on emotional state",
+          "do not introduce unrelated symptoms or details"
+        ],
+        "response_instruction": "Give a brief, direct answer denying any thoughts of death or self-harm, maintaining a flat and matter-of-fact tone, without extra explanation or emotional detail."
+      }
+    }
+  ],
+  "final_disclosure_state": "PARTIAL",
+  "openai_call_parameters": {
+    "model": "gpt-4.1",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve been alright. Nothing too out of the ordinary, just kind of getting by."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing that, Ryan. When you say you're just getting by, how often do you feel this way, and does it affect your ability to handle your usual responsibilities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Some days I feel kind of off\u2014down or restless\u2014but I still get things done. It doesn\u2019t stop me from handling my work or anything like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for clarifying. How often would you say these \u201coff\u201d or restless days happen\u2014would you describe it as a couple of times a week, more frequently, or just every now and then?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, it\u2019s probably a couple times a week. It doesn\u2019t feel constant."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for letting me know. Over the past couple of weeks, have you noticed losing interest or enjoyment in activities you normally like, such as your design work or spending time with people you care about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, not really. I\u2019m still doing my usual stuff."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. I\u2019d like to ask about your sleep\u2014have you been having trouble either falling asleep, staying asleep, or waking up too early lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I\u2019ve had some trouble sleeping\u2014falling asleep or waking up during the night. Not every night, though."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. How many nights a week are you having these sleep difficulties, and does it leave you feeling tired or impact your energy during the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens several nights a week, but it doesn\u2019t really make me tired during the day. My energy's about the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate your honesty. Have you noticed any significant changes in your appetite or weight recently, like eating a lot more or less than usual or any noticeable weight gain or loss?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, nothing like that. My appetite and weight have been pretty much the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for letting me know. Over the last couple of weeks, have you been feeling down, sad, or hopeless more days than not?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Some days I feel down, but it\u2019s not most days."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. Have you experienced any feelings of worthlessness or excessive guilt about things recently, or has your self-esteem changed at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t felt that way. My self-esteem\u2019s about the same as usual."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Understood, thank you. Have you noticed any trouble focusing or making decisions lately, either at work or in your day-to-day life?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any problems with focus or decisions."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. Over the last few weeks, have you noticed that you\u2019ve been moving, speaking, or feeling unusually slowed down, or on the other hand, more restless or unable to sit still than normal?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, sometimes I feel a bit restless or slowed down, but it\u2019s not constant and doesn\u2019t get in the way."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for that detail. When you feel either restless or slowed down, how long does it usually last, and does it tend to happen during certain situations or times of day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It usually lasts a short while. It\u2019s not really tied to any specific time or situation."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you\u2014that\u2019s helpful to know. Have you noticed feeling unusually tired or lacking energy lately, even after a normal amount of rest?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, not really. My energy hasn\u2019t changed."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing openly. Have you had any thoughts lately about death, or thoughts of hurting yourself in any way?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been alright. Nothing too out of the ordinary, just kind of getting by."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that, Ryan. When you say you're just getting by, how often do you feel this way, and does it affect your ability to handle your usual responsibilities?"
+    },
+    {
+      "role": "user",
+      "content": "Some days I feel kind of off\u2014down or restless\u2014but I still get things done. It doesn\u2019t stop me from handling my work or anything like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for clarifying. How often would you say these \u201coff\u201d or restless days happen\u2014would you describe it as a couple of times a week, more frequently, or just every now and then?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, it\u2019s probably a couple times a week. It doesn\u2019t feel constant."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. Over the past couple of weeks, have you noticed losing interest or enjoyment in activities you normally like, such as your design work or spending time with people you care about?"
+    },
+    {
+      "role": "user",
+      "content": "No, not really. I\u2019m still doing my usual stuff."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. I\u2019d like to ask about your sleep\u2014have you been having trouble either falling asleep, staying asleep, or waking up too early lately?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I\u2019ve had some trouble sleeping\u2014falling asleep or waking up during the night. Not every night, though."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. How many nights a week are you having these sleep difficulties, and does it leave you feeling tired or impact your energy during the day?"
+    },
+    {
+      "role": "user",
+      "content": "It happens several nights a week, but it doesn\u2019t really make me tired during the day. My energy's about the same."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate your honesty. Have you noticed any significant changes in your appetite or weight recently, like eating a lot more or less than usual or any noticeable weight gain or loss?"
+    },
+    {
+      "role": "user",
+      "content": "No, nothing like that. My appetite and weight have been pretty much the same."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for letting me know. Over the last couple of weeks, have you been feeling down, sad, or hopeless more days than not?"
+    },
+    {
+      "role": "user",
+      "content": "Some days I feel down, but it\u2019s not most days."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. Have you experienced any feelings of worthlessness or excessive guilt about things recently, or has your self-esteem changed at all?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t felt that way. My self-esteem\u2019s about the same as usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood, thank you. Have you noticed any trouble focusing or making decisions lately, either at work or in your day-to-day life?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any problems with focus or decisions."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. Over the last few weeks, have you noticed that you\u2019ve been moving, speaking, or feeling unusually slowed down, or on the other hand, more restless or unable to sit still than normal?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, sometimes I feel a bit restless or slowed down, but it\u2019s not constant and doesn\u2019t get in the way."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for that detail. When you feel either restless or slowed down, how long does it usually last, and does it tend to happen during certain situations or times of day?"
+    },
+    {
+      "role": "user",
+      "content": "It usually lasts a short while. It\u2019s not really tied to any specific time or situation."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you\u2014that\u2019s helpful to know. Have you noticed feeling unusually tired or lacking energy lately, even after a normal amount of rest?"
+    },
+    {
+      "role": "user",
+      "content": "No, not really. My energy hasn\u2019t changed."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing openly. Have you had any thoughts lately about death, or thoughts of hurting yourself in any way?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_263b2c838e68695f.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_263b2c838e68695f_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 12988,
+      "output_tokens": 446,
+      "total_tokens": 13434
+    },
+    "patient": {
+      "input_tokens": 28268,
+      "output_tokens": 294,
+      "total_tokens": 28562
+    },
+    "doctor_manager": {
+      "input_tokens": 17122,
+      "output_tokens": 1393,
+      "total_tokens": 18515
+    },
+    "patient_manager": {
+      "input_tokens": 21600,
+      "output_tokens": 1857,
+      "total_tokens": 23457
+    }
+  }
+}

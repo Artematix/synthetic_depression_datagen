@@ -1,0 +1,671 @@
+{
+  "run_timestamp_utc": "2025-11-25T11:57:35.622031",
+  "agent_id": "AGENT_fe95362a0ad5f7bb",
+  "template_id": "CONSCIENTIOUSNESS_LOW",
+  "template_details": {
+    "affective": "Apathy, disengagement, blunted emotion",
+    "cognitive": "Disorganization, inefficiency, forgetfulness",
+    "somatic": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "emphasized_symptoms": [
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "With functional impairment",
+    "modifiers": [
+      "disorganized",
+      "unmotivated",
+      "self-care-neglecting",
+      "task-avoidant",
+      "forgetful"
+    ]
+  },
+  "persona_id": "neutral_efficient",
+  "persona_details": {
+    "id": "neutral_efficient",
+    "first_greeting": "Good to see you. Let's talk about how you've been doing.",
+    "system_prompt": "\nPersona style:\n- Professional, efficient primary-care physician.\n- Neutral, professional tone focused on gathering information.\n- Concise and to the point.\n",
+    "reflections": [
+      "I see.",
+      "Understood.",
+      "Okay.",
+      "Got it.",
+      "Thank you."
+    ]
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "high",
+    "pacing": "med"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_LOW",
+    "AFFECTIVE_STYLE": "Apathy, disengagement, blunted emotion",
+    "COGNITIVE_STYLE": "Disorganization, inefficiency, forgetfulness",
+    "SOMATIC_STYLE": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "SPECIFIER_HINT": "With functional impairment",
+    "MODIFIERS": [
+      "task-avoidant"
+    ],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "balanced",
+      "trust": "guarded",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with partner",
+      "work_role": "student",
+      "routine_stability": "stable routine"
+    },
+    "EMPH_INTENSITY": {
+      "Psychomotor agitation or retardation": "MED",
+      "Difficulty concentrating or indecisiveness": "MED",
+      "Fatigue or loss of energy": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Depressed mood"
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Depressed mood",
+    "Sleep disturbances",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Difficulty concentrating or indecisiveness",
+    "Feelings of worthlessness or excessive guilt",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned feeling apathetic and forgetful, which needs further exploration.",
+      "doctor_instruction": "I appreciate you sharing that. Can you tell me more about when you started feeling this way and how it's affecting your daily life?",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "DSM",
+      "reason": "The patient has shared specific difficulties with concentration, which aligns with DSM criteria.",
+      "doctor_instruction": "Let's explore how your energy levels have been lately, to see if fatigue might be contributing to these challenges.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "next_action": "RAPPORT",
+      "reason": "The patient shared a personal challenge that could benefit from understanding their routine and support system.",
+      "doctor_instruction": "It sounds like mornings can be tough. How does your routine or support from your partner help you manage these challenges?",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "It's time to explore another DSM symptom area to gain a broader understanding of the patient's condition.",
+      "doctor_instruction": "Let's shift focus and talk about your mood overall. How have you been feeling emotionally day-to-day?",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "It's appropriate to explore another DSM symptom area to gather more information.",
+      "doctor_instruction": "Let's talk about your sleep patterns. Have you noticed any changes in how well you're sleeping?",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "It's time to explore another DSM symptom to continue the assessment.",
+      "doctor_instruction": "Let's discuss your interest in activities. Have you noticed any changes in how much you enjoy things you used to like?",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "Continuing with the assessment by exploring another DSM symptom area.",
+      "doctor_instruction": "Let's talk about any changes in your appetite or weight. Have you noticed anything different recently?",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "Continue exploring DSM symptoms to gather comprehensive information.",
+      "doctor_instruction": "Let's talk about your concentration. Have you found it difficult to focus or make decisions lately?",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 9,
+      "next_action": "RAPPORT",
+      "reason": "The patient expressed frustration, indicating a need for support and understanding.",
+      "doctor_instruction": "It sounds really tough to deal with that. How do you usually manage when these feelings come up?",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "It's important to explore another DSM symptom to continue the assessment.",
+      "doctor_instruction": "Let's discuss how you've been feeling about yourself lately. Have you experienced any feelings of worthlessness or excessive guilt?",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 11,
+      "next_action": "DSM",
+      "reason": "It's important to continue assessing by exploring another DSM symptom.",
+      "doctor_instruction": "Let's talk about your physical movement. Have you noticed any changes in your activity level, like feeling restless or slowed down?",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 12,
+      "next_action": "DSM",
+      "reason": "It's important to assess any potential risk by exploring thoughts of death or suicide.",
+      "doctor_instruction": "Have you experienced any thoughts about death or suicide, even if they seem fleeting or not serious?",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "difficulty concentrating",
+          "impact on classes"
+        ],
+        "key_points_to_avoid": [
+          "feelings of worthlessness",
+          "sleep disturbances"
+        ],
+        "response_instruction": "Acknowledge the concentration issues and their impact on studies, but don't delve into emotional aspects or other symptoms."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "guarded",
+          "neutral"
+        ],
+        "key_points_to_reveal": [
+          "occasional low energy",
+          "difficulty starting the day"
+        ],
+        "key_points_to_avoid": [
+          "major disruptions",
+          "emotional impact"
+        ],
+        "response_instruction": "Acknowledge occasional low energy, focusing on difficulty starting the day without elaborating on emotional or broader impacts."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "appreciative",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "partner's support",
+          "routine helps"
+        ],
+        "key_points_to_avoid": [
+          "emotional struggles",
+          "other symptoms"
+        ],
+        "response_instruction": "Acknowledge the positive impact of the partner's support and routine, without delving into deeper emotional struggles or other symptoms."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "feeling neutral",
+          "occasional down moments"
+        ],
+        "key_points_to_avoid": [
+          "overwhelming emotions",
+          "deep emotional impact"
+        ],
+        "response_instruction": "Acknowledge the mostly neutral mood with occasional down moments, without delving into deeper emotional impacts."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "sleep feels regular"
+        ],
+        "key_points_to_avoid": [
+          "any sleep issues",
+          "emotional impacts"
+        ],
+        "response_instruction": "Confirm that sleep patterns remain regular and avoid discussing any emotional impacts or other symptoms."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "enjoyment in activities remains unchanged"
+        ],
+        "key_points_to_avoid": [
+          "any loss of interest",
+          "emotional impacts"
+        ],
+        "response_instruction": "Confirm that enjoyment in activities remains unchanged and avoid discussing any emotional impacts or other symptoms."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "appetite and weight unchanged"
+        ],
+        "key_points_to_avoid": [
+          "any changes",
+          "emotional impacts"
+        ],
+        "response_instruction": "Confirm that there have been no changes in appetite or weight, avoiding any discussion of emotional impacts or other symptoms."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "frustrated",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "difficulty with focus",
+          "feeling overwhelmed by decisions"
+        ],
+        "key_points_to_avoid": [
+          "emotional impacts",
+          "other symptoms"
+        ],
+        "response_instruction": "Express frustration about the difficulty in focusing and making decisions, without delving into emotional impacts or other symptoms."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "appreciative",
+          "frustrated"
+        ],
+        "key_points_to_reveal": [
+          "partner's support",
+          "using reminders",
+          "breaking tasks into steps"
+        ],
+        "key_points_to_avoid": [
+          "emotional impacts",
+          "other symptoms"
+        ],
+        "response_instruction": "Acknowledge the helpful strategies like breaking tasks and using reminders, while expressing appreciation for partner's support."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "neutral",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no feelings of worthlessness or guilt"
+        ],
+        "key_points_to_avoid": [
+          "emotional impacts",
+          "other symptoms"
+        ],
+        "response_instruction": "Confirm that there are no feelings of worthlessness or guilt, focusing on managing day-to-day focus."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "frustrated",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "feeling slowed down",
+          "tasks require more effort"
+        ],
+        "key_points_to_avoid": [
+          "emotional impacts",
+          "restlessness"
+        ],
+        "response_instruction": "Express frustration about feeling slowed down and tasks requiring more effort, without discussing emotional impacts or restlessness."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "reassuring",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no thoughts of death or suicide"
+        ],
+        "key_points_to_avoid": [
+          "emotional impacts",
+          "other symptoms"
+        ],
+        "response_instruction": "Reassure that there are no thoughts of death or suicide, focusing on maintaining a matter-of-fact tone."
+      }
+    }
+  ],
+  "final_disclosure_state": "OPEN",
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been okay, just kind of off lately. A bit apathetic and forgetful."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I've noticed it started a couple of months ago. It's been hard to get motivated for my classes, and I keep forgetting assignments or deadlines."
+    },
+    {
+      "speaker": "patient",
+      "text": "It's mostly been about staying focused in class. I try to keep up, but motivation's lacking, and missing assignments has become troublesome. That's the main issue lately."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I suppose I do feel low on energy sometimes, but it hasn't been overly disruptive. It's just that getting going some mornings is tough."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I really need to push myself in the mornings. That's the main challenge with energy."
+    },
+    {
+      "speaker": "doctor",
+      "text": "My partner's supportive, which helps. They encourage me to stick to a morning routine, which makes a difference when I'm feeling sluggish."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sticking to a routine really helps me push through. Having their support keeps me accountable, which is great when I need a nudge to start the day right."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Day-to-day, I feel pretty neutral. There are moments when I feel a bit down, but nothing too overwhelming. It's just kind of muted."
+    },
+    {
+      "speaker": "patient",
+      "text": "Most days are neutral, with some down moments. They don't get overwhelming."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I haven't really noticed any major changes. My sleep feels pretty regular overall."
+    },
+    {
+      "speaker": "patient",
+      "text": "My sleep is pretty stable. No real changes there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Not really. I still enjoy my usual activities. There's no real change in interest."
+    },
+    {
+      "speaker": "patient",
+      "text": "I still enjoy my usual activities as much as I used to. Nothing's really changed there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "No, my appetite and weight have stayed pretty much the same. No noticeable changes."
+    },
+    {
+      "speaker": "patient",
+      "text": "My appetite and weight haven\u2019t changed. Everything\u2019s steady."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Yes, focusing and making decisions have been challenging. I feel overwhelmed when faced with choices, and it's hard to concentrate."
+    },
+    {
+      "speaker": "patient",
+      "text": "It's frustrating because even simple decisions feel overwhelming. Focusing has been nearly impossible, which really affects my day-to-day activities."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I try to break tasks into smaller steps and rely on reminders. Having my partner's support helps too, but it's still challenging."
+    },
+    {
+      "speaker": "patient",
+      "text": "Breaking tasks into smaller steps and setting reminders really help me stay on track. I'm grateful for my partner's support through it all, though the challenge is always there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Not particularly. I haven't felt worthless or guilty. It's more about managing focus day-to-day."
+    },
+    {
+      "speaker": "patient",
+      "text": "I don't feel worthless or guilty. Right now, it's more about managing daily focus."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I sometimes feel slowed down, like tasks take more effort than usual. I wouldn't say restless, though."
+    },
+    {
+      "speaker": "patient",
+      "text": "It can be frustrating. Even simple things feel like they take double the effort. It's not about restlessness\u2014more about lacking momentum."
+    },
+    {
+      "speaker": "doctor",
+      "text": "No, I haven't had any thoughts about death or suicide."
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven't experienced any thoughts about death or suicide."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "role": "user",
+      "content": "I've been okay, just kind of off lately. A bit apathetic and forgetful."
+    },
+    {
+      "role": "assistant",
+      "content": "I've noticed it started a couple of months ago. It's been hard to get motivated for my classes, and I keep forgetting assignments or deadlines."
+    },
+    {
+      "role": "user",
+      "content": "It's mostly been about staying focused in class. I try to keep up, but motivation's lacking, and missing assignments has become troublesome. That's the main issue lately."
+    },
+    {
+      "role": "assistant",
+      "content": "I suppose I do feel low on energy sometimes, but it hasn't been overly disruptive. It's just that getting going some mornings is tough."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I really need to push myself in the mornings. That's the main challenge with energy."
+    },
+    {
+      "role": "assistant",
+      "content": "My partner's supportive, which helps. They encourage me to stick to a morning routine, which makes a difference when I'm feeling sluggish."
+    },
+    {
+      "role": "user",
+      "content": "Sticking to a routine really helps me push through. Having their support keeps me accountable, which is great when I need a nudge to start the day right."
+    },
+    {
+      "role": "assistant",
+      "content": "Day-to-day, I feel pretty neutral. There are moments when I feel a bit down, but nothing too overwhelming. It's just kind of muted."
+    },
+    {
+      "role": "user",
+      "content": "Most days are neutral, with some down moments. They don't get overwhelming."
+    },
+    {
+      "role": "assistant",
+      "content": "I haven't really noticed any major changes. My sleep feels pretty regular overall."
+    },
+    {
+      "role": "user",
+      "content": "My sleep is pretty stable. No real changes there."
+    },
+    {
+      "role": "assistant",
+      "content": "Not really. I still enjoy my usual activities. There's no real change in interest."
+    },
+    {
+      "role": "user",
+      "content": "I still enjoy my usual activities as much as I used to. Nothing's really changed there."
+    },
+    {
+      "role": "assistant",
+      "content": "No, my appetite and weight have stayed pretty much the same. No noticeable changes."
+    },
+    {
+      "role": "user",
+      "content": "My appetite and weight haven\u2019t changed. Everything\u2019s steady."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, focusing and making decisions have been challenging. I feel overwhelmed when faced with choices, and it's hard to concentrate."
+    },
+    {
+      "role": "user",
+      "content": "It's frustrating because even simple decisions feel overwhelming. Focusing has been nearly impossible, which really affects my day-to-day activities."
+    },
+    {
+      "role": "assistant",
+      "content": "I try to break tasks into smaller steps and rely on reminders. Having my partner's support helps too, but it's still challenging."
+    },
+    {
+      "role": "user",
+      "content": "Breaking tasks into smaller steps and setting reminders really help me stay on track. I'm grateful for my partner's support through it all, though the challenge is always there."
+    },
+    {
+      "role": "assistant",
+      "content": "Not particularly. I haven't felt worthless or guilty. It's more about managing focus day-to-day."
+    },
+    {
+      "role": "user",
+      "content": "I don't feel worthless or guilty. Right now, it's more about managing daily focus."
+    },
+    {
+      "role": "assistant",
+      "content": "I sometimes feel slowed down, like tasks take more effort than usual. I wouldn't say restless, though."
+    },
+    {
+      "role": "user",
+      "content": "It can be frustrating. Even simple things feel like they take double the effort. It's not about restlessness\u2014more about lacking momentum."
+    },
+    {
+      "role": "assistant",
+      "content": "No, I haven't had any thoughts about death or suicide."
+    },
+    {
+      "role": "user",
+      "content": "I haven't experienced any thoughts about death or suicide."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_fe95362a0ad5f7bb.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_fe95362a0ad5f7bb_raw.json"
+}

@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:06:38.951063",
+  "agent_id": "AGENT_029987fa84c38029",
+  "demographics": {
+    "AGE": "18-25",
+    "RACE": "Hispanic",
+    "GENDER": "Other",
+    "SOCIOECONOMIC_STATUS": "Low",
+    "COUNTRY_OF_ORIGIN": "Australia",
+    "ENGLISH_PROFICIENCY": "Horrible English",
+    "EDUCATION_LEVEL": "Master's"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Reserved",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "OFTEN",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Sleep disturbances",
+    "Fatigue or loss of energy"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Nice to see you, too. Been okay, just not interested in much recently."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. Sometimes a change in mood can affect daily life. Have you noticed any significant changes in your appetite or weight?"
+    },
+    {
+      "role": "user",
+      "content": "A bit\u2014ate less some days. Weight's not too different, though."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good that your weight hasn't changed much. Have you felt unusually restless or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "Only a couple of times. Not major."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good it's not been frequent. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "Sleep's been normal. No issues there."
+    },
+    {
+      "role": "assistant",
+      "content": "Glad to hear your sleep's been normal. How often have you felt tired or without energy?"
+    },
+    {
+      "role": "user",
+      "content": "Some days, maybe three to five. Gets a bit tiring, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

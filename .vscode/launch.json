@@ -1,0 +1,250 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run with GPT-4o",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": ["--model", "gpt-4o"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Run with GPT-4.1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": ["--model", "gpt-4.1"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Run with GPT-4.1-mini",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": ["--model", "gpt-4.1-mini"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Run with GPT-5-mini",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": ["--model", "gpt-5-mini"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Test Profile Generation",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": ["--test-profile"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Test Patient Manager",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": ["--test-patient-manager"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Run test_patient_manager.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_patient_manager.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Run test_imports.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_imports.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Run with Custom Args",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Very Old Patient (70-80)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-age", "70-80"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Very Young Patient (16-19)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-age", "16-19"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Angry/Hostile Patient",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-expressiveness", "intense",
+                "--forced-modifiers", "hostile,irritable",
+                "--forced-template", "NEUROTICISM_HIGH"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Dismissive Doctor",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-persona", "dismissive_rushed"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Patient Who Hates Doctors",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-trust", "guarded",
+                "--forced-modifiers", "hostile,avoidant"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Terse Elderly Caregiver",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-age", "60-69",
+                "--forced-verbosity", "terse",
+                "--forced-expressiveness", "flat",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Low Intellect Patient",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-template", "CONSCIENTIOUSNESS_LOW",
+                "--forced-modifiers", "cognitively_slow,self_deprecating",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Very Detailed/Talkative Patient",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-verbosity", "detailed",
+                "--forced-expressiveness", "intense",
+                "--forced-trust", "open",
+                "--forced-density", "HIGH"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Minimal Symptoms (ULTRA_LOW)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-density", "ULTRA_LOW"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Severe Depression (HIGH density)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-density", "HIGH",
+                "--forced-template", "NEUROTICISM_HIGH"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Warm Doctor + Guarded Patient",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-persona", "warm_validating",
+                "--forced-trust", "guarded"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "TEST: Perfectionist Middle-Aged",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/synthetic_depression_datagen_v5.py",
+            "args": [
+                "--forced-template", "CONSCIENTIOUSNESS_HIGH",
+                "--forced-age", "40-49",
+                "--forced-modifiers", "perfectionist,self_critical",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

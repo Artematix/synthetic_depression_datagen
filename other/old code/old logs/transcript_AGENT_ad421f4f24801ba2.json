@@ -1,0 +1,582 @@
+{
+  "run_timestamp_utc": "2025-11-25T10:42:39.452445",
+  "agent_id": "AGENT_ad421f4f24801ba2",
+  "template_id": "AGREEABLENESS_HIGH",
+  "template_details": {
+    "affective": "Empathic sadness, guilt about others, over-concern",
+    "cognitive": "Moral/relational rumination about failing people",
+    "somatic": "Fatigue from overextending, sleep disturbance from worry",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Anxious distress",
+    "modifiers": [
+      "people-pleasing",
+      "over-responsible-for-others",
+      "self-sacrificing",
+      "conflict-avoidant",
+      "guilt-prone"
+    ]
+  },
+  "persona_id": "gentle_brisk",
+  "persona_details": {
+    "id": "gentle_brisk",
+    "first_greeting": "Hi there. I'd like to check in with you about a few things today.",
+    "system_prompt": "\nPersona style:\n- Gentle but brisk primary-care physician.\n- Kind but direct tone, keeps the conversation moving.\n- Friendly efficiency.\n",
+    "reflections": [
+      "I understand.",
+      "That's helpful to know.",
+      "Alright.",
+      "I appreciate that.",
+      "Thanks for telling me."
+    ]
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "med",
+    "pacing": "slow"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "AGREEABLENESS_HIGH",
+    "AFFECTIVE_STYLE": "Empathic sadness, guilt about others, over-concern",
+    "COGNITIVE_STYLE": "Moral/relational rumination about failing people",
+    "SOMATIC_STYLE": "Fatigue from overextending, sleep disturbance from worry",
+    "SPECIFIER_HINT": "Anxious distress",
+    "MODIFIERS": [
+      "self-sacrificing",
+      "people-pleasing"
+    ],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "moderate",
+      "expressiveness": "balanced",
+      "trust": "neutral",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "work_role": "caregiving role",
+      "support_level": "low support"
+    },
+    "EMPH_INTENSITY": {
+      "Feelings of worthlessness or excessive guilt": "LOW",
+      "Depressed mood": "MED",
+      "Sleep disturbances": "MED",
+      "Fatigue or loss of energy": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Significant weight/appetite changes"
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Sleep disturbances",
+    "Feelings of worthlessness or excessive guilt",
+    "Depressed mood",
+    "Significant weight/appetite changes",
+    "Difficulty concentrating or indecisiveness",
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "RAPPORT",
+      "reason": "The patient has expressed willingness to engage, and it's early in the interview.",
+      "doctor_instruction": "Acknowledge their openness and ask about how they're managing their caregiving role, to build trust and gather context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "DSM",
+      "reason": "The patient mentioned feeling tired, which aligns with the DSM symptom of fatigue or loss of energy.",
+      "doctor_instruction": "Explore the fatigue or loss of energy symptom by asking how often they feel this way and how it affects their daily activities.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "The patient has provided sufficient information about fatigue, so it's appropriate to explore another DSM symptom.",
+      "doctor_instruction": "Ask about sleep disturbances to understand how their sleep patterns might be affecting their energy levels.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "The patient has provided information about sleep disturbances, so it's appropriate to explore another DSM symptom.",
+      "doctor_instruction": "Ask about feelings of worthlessness or excessive guilt to understand their emotional state.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "The patient minimized feelings of worthlessness, so it's appropriate to explore another symptom.",
+      "doctor_instruction": "Ask about depressed mood to understand the frequency and impact on their daily life.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "The patient has shared about their depressed mood, so it's appropriate to explore another symptom.",
+      "doctor_instruction": "Ask about any changes in weight or appetite to understand if there are any significant changes.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "The patient has addressed weight and appetite changes, so it's appropriate to explore another symptom.",
+      "doctor_instruction": "Ask about any difficulty concentrating or indecisiveness to understand how these might affect their daily functioning.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "The patient minimized concentration issues, so it's important to address the risk factor of suicidal thoughts.",
+      "doctor_instruction": "Ask about any recurrent thoughts of death or suicide to assess their current risk level.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 9,
+      "next_action": "DSM",
+      "reason": "The patient minimized suicidal thoughts, so it's appropriate to explore another symptom.",
+      "doctor_instruction": "Ask about any loss of interest or pleasure in activities they usually enjoy.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "The patient has addressed interest in activities, so it's appropriate to explore the last symptom.",
+      "doctor_instruction": "Ask about any experiences of feeling physically agitated or slowed down.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "cooperative",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "managing caregiving",
+          "feeling tired"
+        ],
+        "key_points_to_avoid": [
+          "feelings of worthlessness",
+          "thoughts of death"
+        ],
+        "response_instruction": "Mention how caregiving keeps you busy and that it can be tiring, but avoid discussing any negative emotions or thoughts."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "cooperative",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "feeling tired often",
+          "impact on activities"
+        ],
+        "key_points_to_avoid": [
+          "worthlessness",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Acknowledge feeling tired frequently and mention it affects your ability to get things done, but avoid discussing deeper emotional issues."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "cooperative",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "trouble with sleep",
+          "difficulty staying asleep"
+        ],
+        "key_points_to_avoid": [
+          "worthlessness",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Mention having some trouble with sleep, particularly staying asleep, but avoid discussing any emotional impact."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "evasive",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "not really feeling worthless"
+        ],
+        "key_points_to_avoid": [
+          "excessive guilt",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Briefly downplay feelings of worthlessness or guilt, and avoid discussing deeper emotional issues."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "cooperative",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "feeling down often",
+          "impact on daily life"
+        ],
+        "key_points_to_avoid": [
+          "suicidal thoughts",
+          "worthlessness"
+        ],
+        "response_instruction": "Acknowledge feeling down often and mention how it affects daily activities, but avoid discussing deeper emotional issues."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "cooperative",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some changes in appetite",
+          "noticing weight changes"
+        ],
+        "key_points_to_avoid": [
+          "suicidal thoughts",
+          "worthlessness"
+        ],
+        "response_instruction": "Acknowledge some changes in appetite and mention noticing weight changes, but avoid deeper emotional context."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "evasive",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "not much difficulty concentrating"
+        ],
+        "key_points_to_avoid": [
+          "indecisiveness",
+          "suicidal thoughts"
+        ],
+        "response_instruction": "Briefly downplay any issues with concentration or decision-making, and avoid discussing emotional impact."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "evasive",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "not really having those thoughts"
+        ],
+        "key_points_to_avoid": [
+          "details about thoughts",
+          "emotional impact"
+        ],
+        "response_instruction": "Briefly deny having recurring thoughts of death or suicide, and avoid discussing any emotional details."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "evasive",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "still enjoy activities"
+        ],
+        "key_points_to_avoid": [
+          "lack of interest",
+          "emotional impact"
+        ],
+        "response_instruction": "Briefly mention still enjoying activities, and avoid discussing any lack of interest."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "evasive",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "not feeling restless or slowed down"
+        ],
+        "key_points_to_avoid": [
+          "emotional impact",
+          "physical symptoms"
+        ],
+        "response_instruction": "Briefly deny feeling restless or slowed down, and avoid discussing any physical symptoms."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "speaker": "patient",
+      "text": "Of course, I'm here to help. Please feel free to ask me anything."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s great that you\u2019re open to this. How are you managing things with your caregiving role lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I stay pretty busy with my caregiving responsibilities. It fills up a lot of my time, and I do find it quite tiring, especially lately."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often have you been feeling this tired, and how does it impact your daily activities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I feel tired quite often, and it can be challenging to get through all my tasks. It seems like everything takes a bit more effort these days."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How have your sleep patterns been recently? Are there any issues with falling asleep or staying asleep that you've noticed?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have been having some trouble with sleep, mainly staying asleep through the night. It's been a bit disruptive."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been experiencing any feelings of worthlessness or excessive guilt lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really, I haven't been feeling those things much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often have you been feeling down or depressed, and how is it affecting your daily life?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve been feeling down quite often, and it does make it harder to keep up with my daily tasks. It's like I have an extra weight to carry around."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any changes in your weight or appetite lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've noticed some changes in my appetite, and there\u2019s been a bit of a shift in my weight, but nothing too drastic."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been experiencing any difficulty with concentrating or making decisions recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really, I haven't had much trouble concentrating or making decisions."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been experiencing any recurring thoughts about death or suicide lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really, I haven't been having any of those thoughts."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed a decrease in interest or pleasure in activities you enjoy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I still enjoy the activities I usually do."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you experienced feeling physically restless or slowed down recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't really felt restless or slowed down."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "role": "user",
+      "content": "Of course, I'm here to help. Please feel free to ask me anything."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s great that you\u2019re open to this. How are you managing things with your caregiving role lately?"
+    },
+    {
+      "role": "user",
+      "content": "I stay pretty busy with my caregiving responsibilities. It fills up a lot of my time, and I do find it quite tiring, especially lately."
+    },
+    {
+      "role": "assistant",
+      "content": "How often have you been feeling this tired, and how does it impact your daily activities?"
+    },
+    {
+      "role": "user",
+      "content": "I feel tired quite often, and it can be challenging to get through all my tasks. It seems like everything takes a bit more effort these days."
+    },
+    {
+      "role": "assistant",
+      "content": "How have your sleep patterns been recently? Are there any issues with falling asleep or staying asleep that you've noticed?"
+    },
+    {
+      "role": "user",
+      "content": "I have been having some trouble with sleep, mainly staying asleep through the night. It's been a bit disruptive."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you been experiencing any feelings of worthlessness or excessive guilt lately?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, I haven't been feeling those things much."
+    },
+    {
+      "role": "assistant",
+      "content": "How often have you been feeling down or depressed, and how is it affecting your daily life?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been feeling down quite often, and it does make it harder to keep up with my daily tasks. It's like I have an extra weight to carry around."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any changes in your weight or appetite lately?"
+    },
+    {
+      "role": "user",
+      "content": "I've noticed some changes in my appetite, and there\u2019s been a bit of a shift in my weight, but nothing too drastic."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you been experiencing any difficulty with concentrating or making decisions recently?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, I haven't had much trouble concentrating or making decisions."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you been experiencing any recurring thoughts about death or suicide lately?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, I haven't been having any of those thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed a decrease in interest or pleasure in activities you enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "I still enjoy the activities I usually do."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you experienced feeling physically restless or slowed down recently?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't really felt restless or slowed down."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_ad421f4f24801ba2.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_ad421f4f24801ba2_raw.json"
+}

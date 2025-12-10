@@ -1,0 +1,1009 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:51:15.659406",
+  "agent_id": "AGENT_cbed04942da0b7f2",
+  "template_id": "EXTRAVERSION_LOW",
+  "template_details": {
+    "affective": "Emotional flatness, social withdrawal, anhedonia",
+    "cognitive": "Hopelessness, pessimism, low reactivity to positives",
+    "somatic": "Psychomotor slowing, hypersomnia, low energy",
+    "emphasized_symptoms": [
+      "Loss of interest or pleasure",
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy"
+    ],
+    "specifier": "Persistent depressive disorder-like",
+    "modifiers": [
+      "socially-withdrawn",
+      "pleasure-unresponsive",
+      "passive",
+      "low-initiative",
+      "isolating"
+    ]
+  },
+  "persona_id": "time_pressed_clinical",
+  "persona_details": {
+    "id": "time_pressed_clinical",
+    "first_greeting": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently.",
+    "system_prompt": "\nPersona style:\n- Time-pressed and clinical\n- Concise and brisk\n- Redirects when conversation drifts\n- Focused on symptoms and functioning\n"
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "med",
+    "pacing": "med",
+    "humor": "dry",
+    "animation": "reserved"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "EXTRAVERSION_LOW",
+    "AFFECTIVE_STYLE": "Emotional flatness, social withdrawal, anhedonia",
+    "COGNITIVE_STYLE": "Hopelessness, pessimism, low reactivity to positives",
+    "SOMATIC_STYLE": "Psychomotor slowing, hypersomnia, low energy",
+    "SPECIFIER_HINT": "Persistent depressive disorder-like",
+    "MODIFIERS": [],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [
+      "general stress/no clear trigger"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "moderate",
+      "expressiveness": "balanced",
+      "trust": "open",
+      "intellect": "moderate-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "caregiving role",
+      "support_level": "low support"
+    },
+    "AGE_RANGE": "40-49",
+    "EMPH_INTENSITY": {
+      "Loss of interest or pleasure": "MED",
+      "Fatigue or loss of energy": "MED",
+      "Psychomotor agitation or retardation": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Depressed mood"
+    ]
+  },
+  "life_background": {
+    "name": "Mark",
+    "age_range": "40-49",
+    "pronouns": "he/him",
+    "core_roles": [
+      "full-time caregiver for elderly parent",
+      "father and husband"
+    ],
+    "core_relationships": [
+      "married to his wife who provides minimal emotional support",
+      "distant relationship with teenage children"
+    ],
+    "core_stressor_summary": "Mark is managing ongoing caregiving demands with little external support, leading to frequent fatigue and psychomotor slowing. The general depression symptoms feel tied to a pervasive sense of being overwhelmed without a clear external crisis.",
+    "life_facets": [
+      {
+        "category": "key_partner_or_love_interest",
+        "salience": "high",
+        "description": "Mark\u2019s wife shares the household but they rarely connect emotionally, leaving him feeling isolated within their marriage."
+      },
+      {
+        "category": "existing_diagnoses_or_labels",
+        "salience": "med",
+        "description": "He has not received a formal mental health diagnosis but has been told by his doctor that his exhaustion and low mood likely represent depression."
+      },
+      {
+        "category": "loss_or_change",
+        "salience": "high",
+        "description": "His father\u2019s health decline shifted Mark\u2019s daily focus entirely to caregiving, drastically changing his life and social connections."
+      },
+      {
+        "category": "past_help_seeking",
+        "salience": "med",
+        "description": "Mark tried counseling once last year but found it difficult to attend regularly given his caregiving schedule and hesitates to restart."
+      },
+      {
+        "category": "work_or_study_pressure",
+        "salience": "high",
+        "description": "The constant physical and emotional demands of caregiving leave him exhausted and little time or energy for self-care or other roles."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "Mark is grappling with redefining his identity from an independent professional to a full-time family caregiver in midlife."
+      },
+      {
+        "category": "schedule_and_time_pressure",
+        "salience": "med",
+        "description": "His day is tightly scheduled around his father\u2019s needs, leaving few breaks or opportunities for rest."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "med",
+        "description": "There is emotional distance between Mark and his children, partly due to long hours spent caregiving and little shared time."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "OFTEN",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Significant weight/appetite changes",
+    "Depressed mood",
+    "Recurrent thoughts of death or suicide",
+    "Difficulty concentrating or indecisiveness",
+    "Fatigue or loss of energy",
+    "Feelings of worthlessness or excessive guilt",
+    "Sleep disturbances",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the extent and impact of fatigue, psychomotor changes, and loss of interest to understand the severity better.",
+      "doctor_instruction": "Explore more about the tiredness: how often it happens, how severe it feels, and how it affects daily life. Also gently ask about the feelings of moving slower or restlessness, and what specific activities have lost their usual appeal. This helps the patient feel heard and provides clearer clinical information.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Covering significant weight/appetite changes next fits the natural flow.",
+      "doctor_instruction": "Shift the focus gently to ask about any recent changes in your appetite or weight, as these are important indicators to understand your overall condition.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Appetite is stable, so next essential DSM symptom to assess is mood.",
+      "doctor_instruction": "Since your appetite and weight have been stable, let's talk about your mood. Can you tell me how your mood has been lately? Have you been feeling down, sad, or empty much of the time?",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 4,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarifying the nature and impact of mood fluctuations will help assess severity and guide next steps.",
+      "doctor_instruction": "Gently explore your experience of feeling low: how long these low moods tend to last, how often they occur, and how much they affect your daily life or energy. This will help get a clearer picture without pushing too hard.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the impact of mood fluctuations and assess coping with caregiver duties.",
+      "doctor_instruction": "Ask the patient gently how these mood lows and feelings affect their motivation and energy throughout the day, especially regarding caregiving responsibilities. Explore if there are particular times or triggers that worsen these feelings and what helps them cope during those periods.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover recurrent suicidal thoughts given the high-risk profile, and this is a natural transition after discussing low mood and motivation.",
+      "doctor_instruction": "Given what you've shared about your low mood and fatigue, I want to ask about any thoughts you might have had regarding death or suicide. This is important to understand your current emotional state and provide the right support.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared sensitive information about suicidal thoughts, creating an opportunity to build trust and provide emotional support.",
+      "doctor_instruction": "Acknowledge the courage it took to share these thoughts and express understanding of how challenging things must be for them. Emphasize that focusing on getting through each day is an important step and offer reassurance that you want to support them in managing these feelings.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Next, we need to cover the remaining DSM symptoms to complete the assessment.",
+      "doctor_instruction": "Acknowledge the patient's resilience and then gently shift to ask about their concentration and decision-making to further assess depression symptoms.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Concentration and decision-making seem intact, so it is appropriate to explore other DSM symptoms now.",
+      "doctor_instruction": "Since your concentration and decision-making are working well, let's talk about whether you've been feeling particularly tired or low on energy lately and how that might be affecting you.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient describes frequent low energy impacting daily tasks, so clarifying how this affects their functioning will illuminate severity and support needs.",
+      "doctor_instruction": "Gently explore how this low energy affects their caregiving and personal activities in more detail. Ask for examples of tasks that have become harder or take longer, and check if this exhaustion leads to needing more rest or affects their mood.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is sharing more about the impact of fatigue on daily life, offering an opportunity to acknowledge their effort and build connection.",
+      "doctor_instruction": "Acknowledge the patient\u2019s perseverance and the real challenges they face, expressing understanding and appreciation for how they keep going despite fatigue. Offer a supportive comment to validate their experience and invite any further thoughts or feelings about managing these demands.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess feelings of worthlessness or excessive guilt to complete symptom coverage.",
+      "doctor_instruction": "Gently ask about any feelings of worthlessness or excessive guilt the patient might be experiencing, acknowledging how difficult their current situation is and framing this as important to understand how to best support them.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Having clarified mood and self-worth, it's appropriate to assess sleep disturbances next.",
+      "doctor_instruction": "Ask the patient about their sleep patterns, including any difficulties falling asleep, staying asleep, or feeling rested. Approach this with warmth and a direct, measured tone to help the patient feel comfortable sharing details about their sleep.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 14,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Sleep seems stable, so assess other core symptoms like interest or pleasure.",
+      "doctor_instruction": "Since your sleep seems to be okay, let's explore other areas that might be affecting how you're feeling. I'd like to ask about your interest or pleasure in activities \u2014 can you tell me more about any changes there?",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 15,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Explore more about loss of interest and its impact to better understand the patient's experience.",
+      "doctor_instruction": "Gently ask the patient to share more about how these changes in interest have affected their daily life or mood. Encourage them to describe what makes these activities less engaging now, helping them feel heard and supported.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient described psychomotor slowing and restlessness earlier, so exploring this DSM symptom is clinically relevant now.",
+      "doctor_instruction": "Gently inquire about any changes in your movement or activity level, such as feeling unusually slowed down or restless, to better understand whether psychomotor agitation or retardation is present and how it impacts your daily function and mood.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 17,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared a comprehensive view of their symptoms with no remaining topics to explore, so it's time to wrap up the visit with support and clear next steps.",
+      "doctor_instruction": "Acknowledge the effort the patient is making to manage day-to-day despite their symptoms, express continued availability for support, briefly outline any immediate next steps or resources, and invite any final questions before closing the session with warmth and encouragement.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "candid"
+        ],
+        "key_points_to_reveal": [
+          "feeling fatigued often",
+          "noticeable psychomotor slowing or agitation",
+          "a reduced interest in activities"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of suicidal thoughts unless asked directly"
+        ],
+        "patient_instruction": "Respond in a straightforward but reserved manner, acknowledging feeling unusually tired and moving slower or more restless than usual, and mention that things just don\u2019t seem as enjoyable lately, without diving too deeply into more sensitive thoughts unless prompted."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "fatigue happens most days with noticeable intensity",
+          "psychomotor changes include moving slower, sometimes feeling restless and unable to settle",
+          "loss of interest in hobbies and social activities that were previously enjoyed"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional or suicidal thoughts details",
+          "any exaggeration of symptoms beyond profile"
+        ],
+        "patient_instruction": "Respond with a straightforward but somewhat reserved explanation. Describe that fatigue is frequent and quite noticeable, sometimes accompanied by moving slowly or feeling restless, which can be frustrating. Briefly note that activities like hobbies or socializing no longer bring the same enjoyment, keeping the tone calm and factual without elaborating on mood or suicidal thoughts."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "No notable changes in appetite or weight"
+        ],
+        "key_points_to_avoid": [
+          "Expanding on other unrelated symptoms"
+        ],
+        "patient_instruction": "Respond briefly and directly that no significant changes in appetite or weight have been noticed, maintaining a straightforward and slightly reserved tone consistent with the patient's low extraversion and current openness."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "straightforward"
+        ],
+        "key_points_to_reveal": [
+          "mood often feels low but not overwhelmingly so",
+          "occasional episodes of feeling down or empty"
+        ],
+        "key_points_to_avoid": [
+          "excessive detail on mood fluctuations or intensity",
+          "expressions of hopelessness or severe emotional distress beyond current profile"
+        ],
+        "patient_instruction": "Respond with a moderate level of openness and clarity, describing your mood as frequently low but without deep despair. Indicate that you do experience periods of sadness or emptiness, but keep the tone calm and measured, consistent with your more reserved and moderately expressive personality."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Low mood lasts for several hours, not all day",
+          "Down or empty feelings occur a few times per week",
+          "Mood challenges make daily tasks and caregiving tougher but still manageable"
+        ],
+        "key_points_to_avoid": [
+          "Overstating impact or severity",
+          "Expressing hopelessness or overwhelming despair"
+        ],
+        "patient_instruction": "Respond thoughtfully with moderate detail, explaining that low mood tends to last for several hours rather than the entire day, and that feelings of emptiness or sadness come up intermittently throughout the week. Emphasize that these mood issues do make daily activities and caregiving duties somewhat more difficult but you are still managing to get through them without feeling completely overwhelmed."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "low moods lower motivation and energy, especially caregiving feels more tiring",
+          "sometimes evenings can be harder",
+          "coping involves simple routines or short breaks to manage tasks",
+          "acknowledge effort despite challenges"
+        ],
+        "key_points_to_avoid": [
+          "overly emotional expressions",
+          "detailed negative thoughts or feelings of hopelessness",
+          "references to suicidal thoughts"
+        ],
+        "patient_instruction": "This patient responds thoughtfully but keeps a reserved tone, explaining how the lows affect their energy and motivation with caregiving, especially later in the day. They mention using small routines or short breaks to cope, highlighting their continued effort despite difficulties, but avoid oversharing emotional depth or distress."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "candid",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "some thoughts about death have occurred",
+          "not frequent or intense",
+          "no active plans",
+          "importance of managing to keep going"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of suicidal ideation",
+          "expressing hopelessness or desperation"
+        ],
+        "patient_instruction": "Respond with a calm and straightforward acknowledgment that you have had some thoughts about death now and then but they are not overwhelming or constant. Emphasize that you don\u2019t have plans and you try to focus on managing day to day. Keep your tone steady and measured without sounding overly emotional or evasive."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "appreciative",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the doctor's support",
+          "express cautious hope about managing feelings",
+          "emphasize effort to cope despite challenges"
+        ],
+        "key_points_to_avoid": [
+          "intensifying talk of suicidal thoughts",
+          "expressing overly emotional reactions"
+        ],
+        "patient_instruction": "Respond with reserved appreciation for the doctor's kindness and acknowledge that while managing these feelings is difficult, you are trying to take it one day at a time. Keep the tone measured and straightforward, showing a little guarded hope without over-sharing emotional depth."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "Concentration and decision-making are mostly normal",
+          "No significant difficulty focusing or deciding"
+        ],
+        "key_points_to_avoid": [
+          "Avoid giving impression of cognitive impairment",
+          "Do not overstate resilience or struggle"
+        ],
+        "patient_instruction": "Respond calmly and thoughtfully, indicating that concentration and decision-making have not been significantly affected. Keep the explanation balanced and moderate in detail, reflecting your moderate intellect and low extraversion by not elaborating excessively."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "honest",
+          "steady",
+          "calm"
+        ],
+        "key_points_to_reveal": [
+          "frequent low energy",
+          "notable impact on daily activities",
+          "specific examples of how fatigue slows tasks"
+        ],
+        "key_points_to_avoid": [
+          "exaggeration of symptoms",
+          "mention of mood or thoughts beyond energy impact"
+        ],
+        "patient_instruction": "Respond clearly that low energy is a common and recurring issue that significantly affects day-to-day activities, slowing down tasks and making things more tiring, but maintain a calm and straightforward tone without overdramatizing."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "specific caregiving tasks taking longer due to fatigue",
+          "need for extra rest",
+          "tiredness slightly lowers mood when struggling to complete tasks"
+        ],
+        "key_points_to_avoid": [
+          "over dramatizing impact",
+          "detailed feelings of hopelessness or despair"
+        ],
+        "patient_instruction": "Respond thoughtfully with moderate detail about how fatigue slows down tasks like preparing meals or helping with daily needs, mention needing more rest to cope, and lightly acknowledge that the tiredness sometimes affects your mood but avoid sounding overwhelmed or hopeless."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "thoughtful",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "Struggling with balancing caregiving demands and personal fatigue",
+          "Effort to maintain routines as a coping mechanism",
+          "Some frustration about slowed pace but acceptance of current limits"
+        ],
+        "key_points_to_avoid": [
+          "Intense emotional outbursts",
+          "Detailed descriptions of suicidal thoughts",
+          "Excessive negative self-talk or hopelessness"
+        ],
+        "patient_instruction": "Respond calmly and thoughtfully, acknowledging the difficulty of managing caregiving with fatigue. Emphasize that you do what you can, sticking to routines helps, but sometimes it\u2019s frustrating how slow you feel. Keep your tone steady, showing you\u2019re handling things as best as possible without oversharing emotional extremes."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "downplay feelings of worthlessness or guilt",
+          "acknowledge focus on managing tasks"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional exploration of guilt",
+          "overstating negative self-judgment"
+        ],
+        "patient_instruction": "Respond calmly and practically, stating that while the situation is challenging, you generally don't blame yourself or feel worthless. Emphasize your focus remains on managing your responsibilities despite the fatigue and frustration, without delving deeply into feelings of guilt."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "sleep is generally okay",
+          "no significant trouble falling or staying asleep"
+        ],
+        "key_points_to_avoid": [
+          "mentioning any sleep disturbances or fatigue beyond what\u2019s already shared"
+        ],
+        "patient_instruction": "Respond clearly but without oversharing, stating that sleep is generally okay with no major difficulties falling or staying asleep. Keep the tone matter-of-fact and straightforward, reflecting a low-extraversion patient who is cautious about opening up more. Avoid bringing up additional symptom details or negative impacts on sleep."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "continued loss of interest in previously enjoyable activities",
+          "examples of activities affected"
+        ],
+        "key_points_to_avoid": [
+          "overly emotional descriptions",
+          "detailed impact beyond general loss of interest"
+        ],
+        "patient_instruction": "Respond with a moderately clear but somewhat reserved explanation that you still find less pleasure in activities you used to like, giving a couple of examples but not going into much emotional detail. Keep your tone calm and thoughtful to reflect your low extraversion and balanced expressiveness."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "loss of interest affects mood slightly",
+          "activities feel less engaging or meaningful",
+          "still maintaining some routine despite low pleasure"
+        ],
+        "key_points_to_avoid": [
+          "strong emotional language",
+          "detailed descriptions of negative feelings",
+          "any expression of despair or hopelessness"
+        ],
+        "patient_instruction": "Respond with moderate clarity, acknowledging that the reduced interest in activities does influence your mood a bit, making things feel less engaging or meaningful like they used to. Keep the tone steady and reserved, emphasizing that while these feelings are noticeable, you are still managing to maintain routines and get through your days without going into deep emotional detail."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge some slowing down and restlessness",
+          "describe impact being noticeable but manageable",
+          "connect movement changes to fatigue and daily routines"
+        ],
+        "key_points_to_avoid": [
+          "avoid expressing strong frustration or hopelessness",
+          "do not reveal suicidal thoughts in detail",
+          "avoid overstating impairment"
+        ],
+        "patient_instruction": "Respond calmly and with moderate detail, explaining that you do notice some slowing down and restlessness which makes tasks take a bit longer or feel more tiring. Keep the tone straightforward and convey that while these feelings affect your day, you are still able to manage overall without getting overwhelmed."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently."
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi. Lately, I\u2019ve been feeling pretty tired most days. Things just take more effort, and sometimes I move slower or feel a bit restless like I can\u2019t settle. Activities that I usually enjoy don\u2019t really hold my interest anymore."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned feeling tired most days\u2014how often would you say this tiredness hits, and how intense is it when it does? When you say you move slower or feel restless, can you describe what that looks or feels like for you? Also, which activities that used to interest you just don\u2019t anymore?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The tiredness is pretty much there most days, and it\u2019s fairly intense\u2014I notice it affecting me a lot. Moving slower means I take more time to do simple tasks, and sometimes I feel restless, like I can\u2019t sit still or focus properly. Things like reading, watching movies, or even catching up with friends just don\u2019t hold my interest anymore."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any changes in your appetite recently? Maybe eating more or less than usual, or any shifts in your weight without trying?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, my appetite and weight have stayed pretty much the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How has your mood been overall? Have you found yourself feeling down, sad, or empty for much of the time lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My mood is usually low most of the time, but it\u2019s not overwhelming. I do have occasional moments where I feel down or empty, but they come and go."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you say your mood is usually low, how long do those low periods generally last? And how often do those down or empty feelings pop up during the week? Does this mood make it harder to get through your days or keep up with your caregiving duties?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The low mood usually lasts for a few hours at a time, not all day. Those down or empty feelings happen a few times a week. It does make things like daily tasks and caregiving a bit harder, but I\u2019m still managing to get through them without feeling completely overwhelmed."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How do these low moods and feelings affect your motivation and energy, especially when it comes to caring for your parent? Are there certain times of day or situations that seem to make the lows worse? What do you usually do to get through those tougher moments?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The low moods definitely cut into my motivation and energy, so caregiving feels more tiring than it used to. Evenings tend to be harder sometimes. To get through those times, I try to stick to simple routines and take short breaks when I can. It\u2019s not easy, but I keep pushing myself to manage."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing that. Given how you\u2019ve been feeling, have you had any thoughts about death or suicide recently? It\u2019s important we understand this to support you properly."
+    },
+    {
+      "speaker": "patient",
+      "text": "I have had some thoughts about death now and then, but they\u2019re not frequent or intense. I don\u2019t have any plans\u2014I\u2019m mainly focused on just getting through each day as best I can."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for being honest about that\u2014it takes real courage to share. It sounds like things are tough, but focusing on getting through each day shows a lot of strength. I want you to know I\u2019m here to help you find ways to manage these feelings and make things a bit easier."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate you saying that. It\u2019s not easy, but I\u2019m trying to take it one day at a time and do what I can to cope. Knowing there\u2019s support helps."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re showing a lot of resilience managing this day by day. How has your ability to concentrate or make decisions been lately? Are you finding it harder than usual to focus or decide on things?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My concentration and decision-making have been pretty much normal. I haven\u2019t noticed any significant changes or difficulties with focusing or making choices."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned feeling tired earlier, but just to check, have you noticed feeling particularly low on energy these days? How much is this affecting your daily activities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I feel low on energy quite often. It definitely slows me down and makes everyday tasks more tiring, like even simple things take longer than they should."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Can you give me some examples of caregiving or personal tasks that have become harder or take longer because of the low energy? Does this tiredness mean you need more rest, or does it also impact your mood when you\u2019re trying to get things done?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Tasks like preparing meals or helping with daily needs take me longer now because of the fatigue. I do need to rest more than before. Sometimes, getting through those tasks when I\u2019m tired does lower my mood a bit, but I keep going."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s clear you\u2019re carrying a heavy load, and the way you push through despite the fatigue shows real strength. Managing all that, especially with the extra effort it takes, is no small task. If there\u2019s anything more you want to share about how you\u2019re handling these demands or what\u2019s been weighing on you, I\u2019m here to listen."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s definitely been hard balancing the caregiving with how tired I feel. I try to keep to routines to help manage, but sometimes it\u2019s frustrating how slow things go. Still, I\u2019m doing what I can and taking it step by step."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Given everything you\u2019re managing, it\u2019s understandable if you feel frustrated. Have you been experiencing any feelings of worthlessness or guilt\u2014maybe blaming yourself for things, even when it\u2019s not your fault? This helps me understand how best to support you."
+    },
+    {
+      "speaker": "patient",
+      "text": "I don\u2019t really feel worthless or blame myself. It\u2019s tough, but I mostly focus on getting through each task and doing what\u2019s needed."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. How about your sleep\u2014are you having trouble falling asleep, staying asleep, or waking up feeling unrefreshed?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My sleep is generally okay. I don\u2019t have much trouble falling or staying asleep."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Since your sleep seems okay, let's talk about activities you usually enjoy. Have you noticed any changes in your interest or pleasure in things you used to like doing?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I still don\u2019t find much interest in things I used to enjoy, like reading or spending time with friends. It just doesn\u2019t feel the same as before."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How have these changes in your interest affected your day-to-day life or your mood? Can you tell me what it is about these activities that feels different or less engaging than before?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The loss of interest does affect my mood a little\u2014it makes things feel less engaging or meaningful than they used to. Even so, I\u2019m still managing to keep up with my routines and get through each day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned earlier feeling slower and a bit restless at times. Have you noticed any changes in your overall movement or activity level\u2014like feeling unusually slowed down or more fidgety? How does that affect how you get through your day and how you feel?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I notice that I\u2019m moving slower and sometimes a bit restless. It makes tasks take longer and feel more tiring, but I\u2019m still able to manage my daily routine without getting overwhelmed."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently."
+    },
+    {
+      "role": "user",
+      "content": "Hi. Lately, I\u2019ve been feeling pretty tired most days. Things just take more effort, and sometimes I move slower or feel a bit restless like I can\u2019t settle. Activities that I usually enjoy don\u2019t really hold my interest anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling tired most days\u2014how often would you say this tiredness hits, and how intense is it when it does? When you say you move slower or feel restless, can you describe what that looks or feels like for you? Also, which activities that used to interest you just don\u2019t anymore?"
+    },
+    {
+      "role": "user",
+      "content": "The tiredness is pretty much there most days, and it\u2019s fairly intense\u2014I notice it affecting me a lot. Moving slower means I take more time to do simple tasks, and sometimes I feel restless, like I can\u2019t sit still or focus properly. Things like reading, watching movies, or even catching up with friends just don\u2019t hold my interest anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any changes in your appetite recently? Maybe eating more or less than usual, or any shifts in your weight without trying?"
+    },
+    {
+      "role": "user",
+      "content": "No, my appetite and weight have stayed pretty much the same."
+    },
+    {
+      "role": "assistant",
+      "content": "How has your mood been overall? Have you found yourself feeling down, sad, or empty for much of the time lately?"
+    },
+    {
+      "role": "user",
+      "content": "My mood is usually low most of the time, but it\u2019s not overwhelming. I do have occasional moments where I feel down or empty, but they come and go."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say your mood is usually low, how long do those low periods generally last? And how often do those down or empty feelings pop up during the week? Does this mood make it harder to get through your days or keep up with your caregiving duties?"
+    },
+    {
+      "role": "user",
+      "content": "The low mood usually lasts for a few hours at a time, not all day. Those down or empty feelings happen a few times a week. It does make things like daily tasks and caregiving a bit harder, but I\u2019m still managing to get through them without feeling completely overwhelmed."
+    },
+    {
+      "role": "assistant",
+      "content": "How do these low moods and feelings affect your motivation and energy, especially when it comes to caring for your parent? Are there certain times of day or situations that seem to make the lows worse? What do you usually do to get through those tougher moments?"
+    },
+    {
+      "role": "user",
+      "content": "The low moods definitely cut into my motivation and energy, so caregiving feels more tiring than it used to. Evenings tend to be harder sometimes. To get through those times, I try to stick to simple routines and take short breaks when I can. It\u2019s not easy, but I keep pushing myself to manage."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that. Given how you\u2019ve been feeling, have you had any thoughts about death or suicide recently? It\u2019s important we understand this to support you properly."
+    },
+    {
+      "role": "user",
+      "content": "I have had some thoughts about death now and then, but they\u2019re not frequent or intense. I don\u2019t have any plans\u2014I\u2019m mainly focused on just getting through each day as best I can."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for being honest about that\u2014it takes real courage to share. It sounds like things are tough, but focusing on getting through each day shows a lot of strength. I want you to know I\u2019m here to help you find ways to manage these feelings and make things a bit easier."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate you saying that. It\u2019s not easy, but I\u2019m trying to take it one day at a time and do what I can to cope. Knowing there\u2019s support helps."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re showing a lot of resilience managing this day by day. How has your ability to concentrate or make decisions been lately? Are you finding it harder than usual to focus or decide on things?"
+    },
+    {
+      "role": "user",
+      "content": "My concentration and decision-making have been pretty much normal. I haven\u2019t noticed any significant changes or difficulties with focusing or making choices."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling tired earlier, but just to check, have you noticed feeling particularly low on energy these days? How much is this affecting your daily activities?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I feel low on energy quite often. It definitely slows me down and makes everyday tasks more tiring, like even simple things take longer than they should."
+    },
+    {
+      "role": "assistant",
+      "content": "Can you give me some examples of caregiving or personal tasks that have become harder or take longer because of the low energy? Does this tiredness mean you need more rest, or does it also impact your mood when you\u2019re trying to get things done?"
+    },
+    {
+      "role": "user",
+      "content": "Tasks like preparing meals or helping with daily needs take me longer now because of the fatigue. I do need to rest more than before. Sometimes, getting through those tasks when I\u2019m tired does lower my mood a bit, but I keep going."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s clear you\u2019re carrying a heavy load, and the way you push through despite the fatigue shows real strength. Managing all that, especially with the extra effort it takes, is no small task. If there\u2019s anything more you want to share about how you\u2019re handling these demands or what\u2019s been weighing on you, I\u2019m here to listen."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s definitely been hard balancing the caregiving with how tired I feel. I try to keep to routines to help manage, but sometimes it\u2019s frustrating how slow things go. Still, I\u2019m doing what I can and taking it step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "Given everything you\u2019re managing, it\u2019s understandable if you feel frustrated. Have you been experiencing any feelings of worthlessness or guilt\u2014maybe blaming yourself for things, even when it\u2019s not your fault? This helps me understand how best to support you."
+    },
+    {
+      "role": "user",
+      "content": "I don\u2019t really feel worthless or blame myself. It\u2019s tough, but I mostly focus on getting through each task and doing what\u2019s needed."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. How about your sleep\u2014are you having trouble falling asleep, staying asleep, or waking up feeling unrefreshed?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep is generally okay. I don\u2019t have much trouble falling or staying asleep."
+    },
+    {
+      "role": "assistant",
+      "content": "Since your sleep seems okay, let's talk about activities you usually enjoy. Have you noticed any changes in your interest or pleasure in things you used to like doing?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I still don\u2019t find much interest in things I used to enjoy, like reading or spending time with friends. It just doesn\u2019t feel the same as before."
+    },
+    {
+      "role": "assistant",
+      "content": "How have these changes in your interest affected your day-to-day life or your mood? Can you tell me what it is about these activities that feels different or less engaging than before?"
+    },
+    {
+      "role": "user",
+      "content": "The loss of interest does affect my mood a little\u2014it makes things feel less engaging or meaningful than they used to. Even so, I\u2019m still managing to keep up with my routines and get through each day."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned earlier feeling slower and a bit restless at times. Have you noticed any changes in your overall movement or activity level\u2014like feeling unusually slowed down or more fidgety? How does that affect how you get through your day and how you feel?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I notice that I\u2019m moving slower and sometimes a bit restless. It makes tasks take longer and feel more tiring, but I\u2019m still able to manage my daily routine without getting overwhelmed."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_cbed04942da0b7f2.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_cbed04942da0b7f2_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 29373,
+      "output_tokens": 716,
+      "total_tokens": 30089
+    },
+    "patient": {
+      "input_tokens": 49022,
+      "output_tokens": 701,
+      "total_tokens": 49723
+    },
+    "doctor_manager": {
+      "input_tokens": 28123,
+      "output_tokens": 1633,
+      "total_tokens": 29756
+    },
+    "patient_manager": {
+      "input_tokens": 33297,
+      "output_tokens": 2973,
+      "total_tokens": 36270
+    }
+  }
+}

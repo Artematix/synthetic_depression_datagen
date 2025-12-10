@@ -1,0 +1,977 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:56:10.188901",
+  "agent_id": "AGENT_0665c4766ca868c5",
+  "template_id": "NEUROTICISM_HIGH",
+  "template_details": {
+    "affective": "Intense sadness, guilt, irritability, emotional volatility",
+    "cognitive": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "somatic": "Fatigue, sleep disturbance, tension, agitation",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "MDD with anxious distress",
+    "modifiers": [
+      "worry-prone",
+      "self-blaming",
+      "threat-sensitivity",
+      "emotionally-reactive",
+      "ruminative"
+    ]
+  },
+  "persona_id": "gentle_brisk",
+  "persona_details": {
+    "id": "gentle_brisk",
+    "first_greeting": "Hi there. I'd like to check in with you about a few things today.",
+    "system_prompt": "\nPersona style:\n- Gentle but brisk\n- Kind phrasing with efficient pacing\n- Moves conversation along\n"
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "med",
+    "pacing": "brisk",
+    "humor": "none",
+    "animation": "reserved"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "NEUROTICISM_HIGH",
+    "AFFECTIVE_STYLE": "Intense sadness, guilt, irritability, emotional volatility",
+    "COGNITIVE_STYLE": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "SOMATIC_STYLE": "Fatigue, sleep disturbance, tension, agitation",
+    "SPECIFIER_HINT": "MDD with anxious distress",
+    "MODIFIERS": [
+      "threat-sensitivity"
+    ],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "LOW",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "intense",
+      "trust": "open",
+      "intellect": "moderate-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "between roles"
+    },
+    "AGE_RANGE": "16-19",
+    "EMPH_INTENSITY": {
+      "Depressed mood": "MED",
+      "Feelings of worthlessness or excessive guilt": "MED",
+      "Fatigue or loss of energy": "MED",
+      "Difficulty concentrating or indecisiveness": "HIGH"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Maya",
+    "age_range": "16-19",
+    "pronouns": "she/her",
+    "core_roles": [
+      "high school student",
+      "young daughter"
+    ],
+    "core_relationships": [
+      "close but sometimes strained relationship with her mother",
+      "supportive younger brother"
+    ],
+    "core_stressor_summary": "Maya feels overwhelmed by academic pressures and harsh self-criticism, often struggling to live up to expectations at school and at home.",
+    "life_facets": [
+      {
+        "category": "long_term_goal_or_dream",
+        "salience": "high",
+        "description": "Maya dreams of becoming an illustrator, hoping her art can one day help others express difficult emotions."
+      },
+      {
+        "category": "source_of_motivation",
+        "salience": "high",
+        "description": "Her motivation largely springs from wanting to prove her worthiness to her family and herself, despite frequent feelings of failure."
+      },
+      {
+        "category": "work_or_study_pressure",
+        "salience": "high",
+        "description": "School demands feel relentless; Maya frequently worries about grades and upcoming exams, finding it hard to focus due to her inner doubts."
+      },
+      {
+        "category": "hobbies_and_interests",
+        "salience": "med",
+        "description": "She spends quiet hours drawing and sketching, which provide some relief from her restless thoughts."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "high",
+        "description": "Maya experiences a push-pull dynamic with her mother who expects high achievement, while her younger brother offers steady emotional support."
+      },
+      {
+        "category": "secondary_stressors",
+        "salience": "med",
+        "description": "She occasionally feels isolated from peers and struggles with self-doubt, amplifying her worries about fitting in."
+      },
+      {
+        "category": "coping_style",
+        "salience": "med",
+        "description": "Maya tends to internalize emotions, sometimes journaling or drawing but often ruminates on mistakes and perceived shortcomings."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "Navigating adolescence, Maya is unsure of her place in social groups and questions her own value beyond academic results."
+      },
+      {
+        "category": "beliefs_about_self_worth",
+        "salience": "high",
+        "description": "She feels frequently undeserving of praise or happiness, which worsens her depressive feelings despite her tender openness about struggles."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Feelings of worthlessness or excessive guilt",
+    "Sleep disturbances",
+    "Fatigue or loss of energy",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Depressed mood",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Difficulty concentrating or indecisiveness"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described depressive symptoms with notable impact; clarifying frequency and severity can deepen understanding.",
+      "doctor_instruction": "Acknowledge the patient's feelings of heaviness and trouble focusing, then ask for more details about how often these feelings and fatigue occur and how they affect daily functioning.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Patient describes feelings of worthlessness and excessive guilt which aligns with a remaining DSM symptom key.",
+      "doctor_instruction": "Acknowledge how difficult and draining this cycle sounds and then ask more specifically about any feelings of worthlessness or excessive guilt the patient might be experiencing, to better understand their emotional state.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient shared deep feelings of worthlessness and exhaustion needing empathetic connection.",
+      "doctor_instruction": "Acknowledge how hard and exhausting this cycle must be for the patient, reflecting their experience with a straightforward and understanding tone. Let them know you hear the weight of their feelings, which can help build trust and encourage them to share more.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time to explore another key depression symptom area given remaining DSM keys and patient's detailed report.",
+      "doctor_instruction": "Shift the conversation to ask gently about their sleep patterns and any difficulties with falling asleep, staying asleep, or feeling rested. Keep the tone direct but warm, acknowledging their exhaustion while smoothly introducing this new area to cover.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Fatigue was mentioned extensively and still needs to be formally addressed as a DSM symptom.",
+      "doctor_instruction": "Acknowledge the persistent fatigue despite adequate sleep, then ask more specifically about how this fatigue affects daily functioning and whether it worsens as the day progresses or remains constant. This helps clarify the severity and pattern of the fatigue symptom.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Explore the symptom of loss of interest or pleasure given the patient's fatigue and motivational struggles.",
+      "doctor_instruction": "Gently transition to asking about loss of interest or pleasure by inquiring if the patient has noticed changes in their enjoyment or motivation for activities they usually like or used to find satisfying.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify more about the energy and motivation impact on activities the patient enjoys.",
+      "doctor_instruction": "Explore how the fatigue and mental heaviness specifically affect their ability to engage in drawing or other activities they find meaningful. Ask about how often they manage to do these activities and what factors make it easier or harder to start or continue them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover other key DSM symptoms in this limited time.",
+      "doctor_instruction": "Shift gently to ask about changes in appetite or weight, explaining this is a routine part of understanding the full picture of depression symptoms.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "We've covered fatigue and mental heaviness well and now should explore another DSM symptom domain to assess depression comprehensively.",
+      "doctor_instruction": "Shift the focus to ask about the patient's mood by inquiring directly about feelings of sadness or depressed mood, to understand how these symptoms manifest day-to-day.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient describes intense, pervasive sadness and its effects, warranting deeper exploration of these feelings.",
+      "doctor_instruction": "Acknowledge the weight of the sadness and ask gently about how long these feelings have been present and how they affect daily functioning. Give the patient space to elaborate on the emotional impact and any particularly difficult moments.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To continue clinical assessment by addressing remaining DSM symptom areas.",
+      "doctor_instruction": "Transition directly to asking about any recent changes in your physical movements or restlessness, such as feeling unusually slowed down or agitated, to explore psychomotor symptoms.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To better understand the frequency and impact of physical slowing and restlessness on the patient's daily functioning.",
+      "doctor_instruction": "Acknowledge the added burden that physical slowing and occasional restlessness create, then ask the patient to describe how often these feelings occur and how much they interfere with daily activities or self-care. Explore any patterns that might help clarify their experience.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Important to assess for thoughts of death or suicide given the patient's ongoing exhaustion and distress.",
+      "doctor_instruction": "Transition gently to ask about any recurrent thoughts of death or suicide by acknowledging the difficulty of what the patient has shared and explaining the importance of discussing safety to get a complete understanding of their experience.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess difficulty concentrating or indecisiveness, which fits well with the patient's described mental heaviness.",
+      "doctor_instruction": "Given your detailed description of mental heaviness and fatigue, I'd like to ask more specifically about your experience with concentrating or making decisions lately. Has it been harder than usual to focus or decide even small things?",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient has shared a lot of detailed, personal experience that deserves acknowledgment before closing.",
+      "doctor_instruction": "Reflect briefly on the persistence and complexity of the patient's experience, acknowledging their effort and resilience despite the heavy challenges. Offer empathetic recognition of how hard it is to carry this ongoing weight, reinforcing that their openness helps in understanding and supporting them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared extensively and feels heard; it\u2019s time to close the visit with supportive guidance.",
+      "doctor_instruction": "Acknowledge the patient's courage in sharing so openly and validate their feelings one more time. Briefly summarize the key points to reinforce understanding and express your commitment to ongoing support. Gently outline next steps, emphasizing monitoring and cooperation, then close with a warm but direct invitation for the patient to reach out if things worsen or they need help.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "cautious",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge feeling down often",
+          "mention some difficulty concentrating",
+          "note some fatigue"
+        ],
+        "key_points_to_avoid": [
+          "suicidal thoughts",
+          "loss of interest",
+          "weight or sleep issues"
+        ],
+        "patient_instruction": "Respond with a moderately detailed but measured acknowledgment of the challenges you're facing, mentioning feeling down frequently and having some trouble focusing and energy, while maintaining a cautious tone that reflects your sensitivity to threat and your tendency toward intense feelings."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "candid",
+          "vulnerable",
+          "weary"
+        ],
+        "key_points_to_reveal": [
+          "feeling fatigued and heavy feeling occurring on most days",
+          "difficulty concentrating significant enough to disrupt daily activities",
+          "impact on motivation and feelings of worthlessness surrounding these symptoms"
+        ],
+        "key_points_to_avoid": [
+          "minimizing symptoms or pretending they are less frequent",
+          "mentioning other unaffected symptoms like sleep or appetite"
+        ],
+        "patient_instruction": "Respond candidly and provide detailed examples of how the fatigue and poor concentration happen almost daily and disrupt even routine tasks. Express frustration and weariness at the persistent heaviness and how it contributes to feelings of worthlessness without downplaying the impact on daily life."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "reflective",
+          "honest"
+        ],
+        "key_points_to_reveal": [
+          "frequent intense feelings of worthlessness",
+          "guilt that feels disproportionate to actual events",
+          "how these feelings exacerbate fatigue and concentration problems",
+          "the vicious cycle between low energy and self-criticism"
+        ],
+        "key_points_to_avoid": [
+          "minimizing or downplaying the intensity of guilt or worthlessness",
+          "mentioning suicidal thoughts (none reported)",
+          "branching into other symptoms like changes in sleep or appetite"
+        ],
+        "patient_instruction": "Express clearly how these feelings of worthlessness and guilt happen often and feel more overwhelming than they should, connecting them to your struggles with fatigue and focus. Describe how this adds to the drain and frustration you experience daily, maintaining an honest and intense but thoughtful tone."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "withdrawn",
+        "tone_tags": [
+          "intense",
+          "vulnerable",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge deep emotional exhaustion",
+          "express feeling trapped in this relentless cycle",
+          "share how this heaviness impacts motivation and hope",
+          "convey internal struggle with self-criticism and fatigue"
+        ],
+        "key_points_to_avoid": [
+          "minimizing symptoms",
+          "introducing unrelated topics",
+          "downplaying severity"
+        ],
+        "patient_instruction": "Speak with intense honesty about how crushing and unrelenting these feelings are, emphasizing the sense of being trapped and how the exhaustion saps any motivation or hope. Let your vulnerability show through as you reflect on how this cycle dominates your daily life and leaves you feeling even more worn down emotionally."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "sleep feels generally okay but waking up tired persists",
+          "emphasize that tiredness extends beyond sleep quality"
+        ],
+        "key_points_to_avoid": [
+          "claiming major sleep disturbances"
+        ],
+        "patient_instruction": "Explain that sleep itself isn\u2019t often disrupted in obvious ways, but despite that, you still wake up feeling drained. Highlight how this ongoing tiredness adds to the emotional and mental exhaustion you\u2019ve described, maintaining a tone that conveys frustration without anger."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "weary",
+          "honest"
+        ],
+        "key_points_to_reveal": [
+          "fatigue severely limits daily activities",
+          "fatigue worsens as the day goes on",
+          "feeling progressively more drained and less capable as hours pass",
+          "mental and physical exhaustion combine to reduce functional capacity"
+        ],
+        "key_points_to_avoid": [
+          "minimizing fatigue or its impact",
+          "diverting to unrelated symptoms like sleep quality which has been covered"
+        ],
+        "patient_instruction": "Express in several detailed sentences how the fatigue heavily impacts your ability to do everyday things, emphasizing that it\u2019s a constant, growing weight throughout the day. Describe how by afternoon or evening, you feel significantly worn down mentally and physically, making even usual tasks feel overwhelming and sometimes impossible. Convey the deep sense of being drained that compounds as the day progresses."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "resigned"
+        ],
+        "key_points_to_reveal": [
+          "No loss of interest or pleasure in activities",
+          "Focus on ongoing fatigue and mental heaviness"
+        ],
+        "key_points_to_avoid": [
+          "Expressing suicidal thoughts or hopelessness"
+        ],
+        "patient_instruction": "Explain that despite the overwhelming fatigue and mental heaviness, you haven't really lost interest or pleasure in the things you used to enjoy. Emphasize that your mind and body feel worn down, but your feelings about activities remain largely unchanged, as this matches your experience and symptom profile."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "frustrated",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Drawing happens occasionally but less than before",
+          "Fatigue and mental heaviness often block starting or sustaining activities",
+          "Sometimes small breaks or quiet moments make it a bit easier"
+        ],
+        "key_points_to_avoid": [
+          "Overly hopeful or optimistic views about improving condition soon",
+          "Detailed descriptions of self-criticism repeating here"
+        ],
+        "patient_instruction": "Respond with a thoughtful, somewhat restrained explanation that while drawing still feels valuable, the chances to do it have decreased because the fatigue and mental heaviness make it difficult to start or maintain focus. Mention a few small things that sometimes help encourage activity but keep the tone realistic and guarded due to threat sensitivity."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "slightly guarded"
+        ],
+        "key_points_to_reveal": [
+          "No significant changes in appetite or weight",
+          "Continued mental fog and fatigue despite stable eating habits"
+        ],
+        "key_points_to_avoid": [
+          "Avoid implying appetite changes or weight fluctuations that aren't present"
+        ],
+        "patient_instruction": "Explain clearly that you haven't noticed any changes in your appetite or weight, emphasizing that the fatigue and mental heaviness persist independently of your eating habits. Keep your tone thoughtful but maintain some guardedness about deeper concerns, focusing on the constant fog and exhaustion you continue to experience."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "honest",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "frequent feelings of sadness or being down beyond just heaviness",
+          "intense emotional experience tied to mood",
+          "impact on daily function and mindset"
+        ],
+        "key_points_to_avoid": [
+          "minimizing or underreporting the intensity or frequency of sad mood",
+          "suggesting mood is only mild or occasional"
+        ],
+        "patient_instruction": "The patient should respond openly and candidly, acknowledging that beyond just the heaviness, they do often feel genuinely sad or down most days. They describe this sadness as intense and affecting their mindset deeply, reinforcing the exhausting emotional load they carry, with some reflection on how this sadness worsens the overall struggle."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "reflective",
+          "vulnerable"
+        ],
+        "key_points_to_reveal": [
+          "Sadness and heaviness have persisted for a long time, possibly months or more",
+          "Impact on daily life includes feeling stuck, difficulty motivating oneself",
+          "Emotion and fatigue compound, making days feel continuous struggles",
+          "Thoughts on efforts to manage but feeling overwhelmed and trapped"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the severity of sadness",
+          "Changing topic to other symptoms like sleep or appetite which have been covered",
+          "Expressing hopelessness or suicidal ideation since none are reported"
+        ],
+        "patient_instruction": "Respond with an honest, detailed reflection about how this persistent sadness and heaviness have been ongoing for a significant amount of time and how that weighs heavily on your daily life. Describe the mental and emotional strain it causes, emphasizing the constant struggle to get through the day despite trying. Let your intense expressiveness show in detailing the exhausting cycle without sounding resigned or hopeless."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "weary",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "feeling physically slowed down sometimes, with moments of restlessness",
+          "the physical sensations add to the mental and emotional fatigue",
+          "not typically agitated but occasionally tense due to the overwhelming feelings"
+        ],
+        "key_points_to_avoid": [
+          "minimizing physical symptoms",
+          "claiming no changes at all"
+        ],
+        "patient_instruction": "Respond with thoughtful reflection on how your body sometimes feels slowed down or tense, describing how these sensations complement your mental and emotional exhaustion. While not overly agitated, acknowledge occasional physical restlessness that adds to your overall weariness."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "weary",
+          "detailed",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "physical slowing and restlessness happen sometimes but not constantly",
+          "these feelings contribute to overall exhaustion",
+          "impact on daily routines is moderate but noticeable, adding to the struggle",
+          "desire to maintain routines despite these challenges"
+        ],
+        "key_points_to_avoid": [
+          "minimizing how much these symptoms affect daily life",
+          "expressing hopelessness or despair in this response"
+        ],
+        "patient_instruction": "Describe how the physical slowing and restlessness occur intermittently and add to the ongoing fatigue, explaining that while they don\u2019t completely stop you from doing daily tasks, they do make everything more difficult and draining. Maintain a tone that conveys effort and weariness but also shows you are trying to keep up with your routines despite these challenges."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "serious"
+        ],
+        "key_points_to_reveal": [
+          "No current thoughts of death or suicide",
+          "Acknowledgment of the heaviness but no suicidal ideation"
+        ],
+        "key_points_to_avoid": [
+          "Any mention of suicidal thoughts or detailed distress"
+        ],
+        "patient_instruction": "Respond seriously but without revealing any suicidal thoughts, emphasizing that despite the heavy feelings, you have not had thoughts of death or suicide. Keep your tone measured and cautious, reflecting your high threat sensitivity and guardedness."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "weary"
+        ],
+        "key_points_to_reveal": [
+          "difficulty concentrating and indecisiveness are present some of the time",
+          "these issues complicate daily tasks but are not overwhelming every moment",
+          "the heaviness and fatigue contribute to these cognitive struggles"
+        ],
+        "key_points_to_avoid": [
+          "overstating the frequency or severity beyond the 'some' level",
+          "linking concentration problems to worsening depressive symptoms excessively",
+          "discussing suicidal thoughts or deeper hopelessness here"
+        ],
+        "patient_instruction": "Respond with thoughtful, somewhat detailed reflections on how concentration and decision-making are challenging on some days, emphasizing the draining effect of fatigue and heaviness. Keep tone serious but measured, showing awareness without deep despair, and avoid overstating difficulties to maintain consistent minimizing tendency."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the difficulty in opening up",
+          "express some cautious hope about support",
+          "mention ongoing struggle with heaviness and fatigue"
+        ],
+        "key_points_to_avoid": [
+          "overly optimistic outlook",
+          "detailed expression of hopelessness",
+          "suicidal thoughts or actions"
+        ],
+        "patient_instruction": "Respond with a thoughtful but slightly guarded tone, acknowledging that it\u2019s hard to talk about these issues but that the doctor\u2019s understanding feels somewhat reassuring. Emphasize the persistence of the heaviness and fatigue while subtly signaling cautious willingness to explore support without sounding overwhelmed or hopeless."
+      }
+    }
+  ],
+  "final_disclosure_state": "PARTIAL",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi. Um, I guess lately I\u2019ve been feeling pretty down most days. It\u2019s not like every single moment, but enough that it\u2019s hard to just ignore. Sometimes I find it really tough to focus on schoolwork or even simple things, like my mind just kind of wanders, and it makes everything feel heavier. I also get pretty tired, even when I\u2019m getting enough rest. It\u2019s frustrating because I want to keep up, but my energy just isn\u2019t there sometimes. I guess all of this just makes things feel more overwhelming than they probably should."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like that heaviness and trouble focusing are really wearing you down. How often are these feelings and the tiredness happening, and how much do they get in the way of your daily life?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Honestly, it feels like the heaviness and fatigue are there almost every day. Some days it\u2019s worse, like I wake up already feeling drained, and just getting through the morning feels like a huge effort. Concentrating on anything, even the easiest assignments, becomes a migraine of to-do lists and random thoughts I can\u2019t shut off, so I end up taking twice as long or just giving up because it feels pointless. It\u2019s exhausting\u2014not just physically but mentally\u2014and that just makes me feel even more worthless, like I\u2019m failing at every little thing even when I\u2019m trying so hard. The constant tiredness drags down my motivation too, so it\u2019s this cycle that keeps repeating and I honestly don\u2019t see an end to it sometimes."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That cycle sounds incredibly tough and draining\u2014feeling worn out physically and mentally on top of everything else. Do you find yourself often feeling worthless or guilty in ways that feel more than what the situation would normally call for?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, definitely. I find myself overwhelmed by feelings of worthlessness pretty much most days. Even when something small goes wrong or I don\u2019t meet some expectation, the guilt I feel feels way out of proportion\u2014like I\u2019m constantly beating myself up over things I shouldn\u2019t even be that upset about. It just piles on top of the fatigue and trouble concentrating, making everything feel ten times harder. When I feel that low, it\u2019s like my energy drains even faster and my mind just won\u2019t settle, which only makes the self-criticism worse. It becomes this vicious cycle where the more exhausted and scattered I feel, the more worthless and guilty I become, and then that drags me down even further. It\u2019s exhausting to live like that every day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds incredibly exhausting\u2014to carry that kind of weight every day and feel stuck in a cycle that just keeps wearing you down. I hear how heavy it all feels for you."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, it\u2019s really overwhelming. Some days, it feels like I\u2019m just sinking deeper into this endless exhaustion that doesn\u2019t let up, no matter what I do. It\u2019s like I\u2019m caught in this relentless cycle where the heaviness just smothers any motivation or hope I might have. I want to push through, but the weight of all these thoughts and feelings drags me back every time. The self-criticism feels like this constant noise in my head, making it impossible to find even a moment of peace. It\u2019s like I\u2019m trapped inside my own mind, and that exhaustion isn\u2019t just physical\u2014it\u2019s this deep emotional drain that just wears me down more and more each day. I don\u2019t know how to break out of it, and that\u2019s the hardest part."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That kind of deep, constant exhaustion takes a real toll. Can you tell me about your sleep\u2014are you having trouble falling asleep, staying asleep, or waking up still feeling tired?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I don\u2019t usually have trouble falling asleep or staying asleep during the night. But even when I get a full night\u2019s rest, I still wake up feeling tired\u2014like the rest didn\u2019t really refresh me at all. It\u2019s frustrating because it\u2019s not just about sleep quality; the tiredness feels deeper and more persistent than that, like it\u2019s part of the heaviness I carry during the day. So even though my sleep seems okay, the fatigue sticks around and makes everything else harder."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like the fatigue runs deeper than just sleep issues and is a constant weight you carry. How does this fatigue affect your daily activities, and do you notice if it gets worse as the day goes on or stays about the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The fatigue really takes a huge toll on everything I try to do throughout the day. In the morning, I might manage okay, but as the hours pass, I feel myself getting more and more drained\u2014mentally and physically. By the afternoon, even simple things like paying attention in class or completing homework feel overwhelming and exhausting. It\u2019s like there\u2019s this weight pressing down on me that just never lets up, and it gets heavier the longer I\u2019m awake and active. By evening, I\u2019m often just too worn down to do much more than sit quietly, because my energy is almost completely gone. It\u2019s frustrating because I want to keep up and be productive, but my body and mind just won\u2019t cooperate, and that makes everything feel even harder."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That kind of draining energy building up over the day must feel really heavy. Have you noticed if the things you used to enjoy or look forward to doing feel less interesting or satisfying lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I haven\u2019t really lost interest in the things I used to enjoy. Drawing, for example, still feels important to me, and when I\u2019m able to do it, it provides some relief. But even with that, the fatigue and mental heaviness make it harder to get started or stay focused for long. So my feelings toward those activities haven\u2019t changed much, but my energy and motivation to do them are definitely worn down by everything else going on. It\u2019s like the desire is still there, but my body and mind just can\u2019t always keep up."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s good that drawing still holds some meaning for you, even with everything else going on. How often do you actually get the chance to draw or do other activities you care about, and what tends to make it easier or harder for you to start or keep going when you try?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I guess I draw less often than I used to, mostly because the fatigue and mental heaviness sometimes make it really hard to get started or to keep going once I do. It\u2019s like there\u2019s a block in my mind that holds me back from focusing or feeling inspired. Sometimes taking small breaks or just sitting in a quiet space helps me gather enough energy or calm my thoughts enough to try drawing, but that doesn\u2019t happen very often. Most of the time, it feels like I\u2019m stuck in this fog that makes even the things I care about feel out of reach."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That fog you\u2019re describing sounds really hard to break through. To get a fuller picture, I want to ask about your appetite and weight\u2014have you noticed any changes in how much you\u2019re eating or in your weight recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t really noticed much change in my appetite or weight. I eat about the same as I always have, but the fatigue and mental fog just keep lingering no matter what. So it doesn\u2019t seem like it\u2019s connected to anything with eating\u2014those feelings just stick around on their own. It\u2019s frustrating because even though my habits are pretty steady, the heaviness in my mind and body doesn\u2019t go away."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. Now, how would you describe your overall mood most days\u2014do you find yourself feeling sad or down beyond the heaviness we\u2019ve talked about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I do feel sad or down on most days, and it\u2019s more intense than just feeling heavy or tired. It\u2019s this deep sadness that weighs on me and colors how I see everything\u2014like it makes even small challenges feel enormous and sometimes feels almost overwhelming. That sadness affects my mindset a lot, making it harder to stay hopeful or focused, and it adds to the exhaustion I already feel. It\u2019s like carrying this emotional weight on top of the mental and physical fatigue, and honestly, it wears me out just as much, if not more."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That kind of deep, persistent sadness sounds really heavy to carry alongside everything else. How long have you been feeling this way, and how does it affect your daily life or the way you get through your days?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve been carrying this sadness and heaviness for several months now, maybe even longer. It\u2019s not just something that comes and goes\u2014it feels like it\u2019s always there, like a weight I can\u2019t shake off. Every day feels like this continuous struggle where even simple tasks require so much effort just to start or keep going. It makes me feel stuck, like I\u2019m trying to push through quicksand but sinking deeper instead. The sadness and fatigue build on each other, making it harder to find the energy or motivation to do things I want to do, even when I know they might help. I\u2019ve tried to manage it in different ways, but often it just feels overwhelming, like I\u2019m trapped in this cycle with no clear way out. It\u2019s exhausting in a way that\u2019s hard to put into words because it\u2019s not just physical tiredness\u2014it\u2019s this all-consuming emotional and mental drain that carries through every moment."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That ongoing weight you describe is really tough to live with. Have you noticed any changes in how your body feels\u2014like feeling unusually slowed down, restless, or agitated compared to before?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, there are definitely times when my body feels slowed down, like moving or even just sitting feels heavier than it used to. It\u2019s not constant, but those moments leave me feeling physically drained, which just adds to the mental and emotional exhaustion I\u2019m already dealing with. I\u2019m not usually restless or agitated all the time, but sometimes the overwhelming feelings make me tense up or feel a kind of restlessness inside, like my body is uncomfortable even when I\u2019m trying to stay calm. It\u2019s another layer to the weariness that can make everything feel even harder."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That physical slowing and occasional restlessness sound like extra weight on top of everything else you\u2019re handling. How often do you notice these feelings, and how much do they get in the way of your daily routines or taking care of yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I notice the physical slowing and restlessness on and off\u2014not every day, but enough that it\u2019s definitely part of what wears me down. When it happens, it makes even usual tasks feel more difficult and draining than they should be. It doesn\u2019t completely stop me from doing what I need to do, but it adds a layer of struggle that makes keeping up with my routines harder. Still, I try to stick with my daily habits as much as I can, even though some days that takes a lot more effort than others. It\u2019s frustrating, but I don\u2019t want to lose the sense of normalcy those routines give me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re carrying a heavy load, and it\u2019s clear you\u2019re doing your best to hold onto normalcy despite all this strain. It\u2019s important we talk about your safety too\u2014have you had any thoughts about death or suicide recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t had any thoughts about death or suicide. Even though these feelings are really heavy and difficult to carry, I haven\u2019t reached a point where I think about those things. I\u2019m trying to manage the weight of it all without letting it get to that level."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m glad to hear that. Given what you\u2019ve shared about the heaviness and fatigue, has it become harder for you to concentrate or make decisions, even on smaller things?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, on some days, concentrating and making decisions can be surprisingly difficult. It\u2019s not constant, but when the heaviness and fatigue are stronger, my mind feels foggy and it\u2019s like even simple choices or focusing on schoolwork take a lot more effort. It makes things slower and sometimes more frustrating, but it\u2019s not overwhelming all the time. Still, those moments do add to the overall challenge I\u2019m facing day to day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve been managing a lot\u2014a persistent heaviness that ebbs and flows but never quite lets up. It\u2019s clear you\u2019re pushing through even when your mind and body feel foggiest, and that takes strength. Thanks for being open about all this\u2014it really helps us understand how to support you."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s not easy to talk about all of this, but I do appreciate that you\u2019re listening and trying to understand. The heaviness and fatigue are still very much there, and some days they feel just as hard as before. But knowing there\u2019s someone who gets what I\u2019m going through\u2014it helps, even if just a little. I\u2019m willing to see where this support can lead, even if it feels overwhelming at times."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "role": "user",
+      "content": "Hi. Um, I guess lately I\u2019ve been feeling pretty down most days. It\u2019s not like every single moment, but enough that it\u2019s hard to just ignore. Sometimes I find it really tough to focus on schoolwork or even simple things, like my mind just kind of wanders, and it makes everything feel heavier. I also get pretty tired, even when I\u2019m getting enough rest. It\u2019s frustrating because I want to keep up, but my energy just isn\u2019t there sometimes. I guess all of this just makes things feel more overwhelming than they probably should."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like that heaviness and trouble focusing are really wearing you down. How often are these feelings and the tiredness happening, and how much do they get in the way of your daily life?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it feels like the heaviness and fatigue are there almost every day. Some days it\u2019s worse, like I wake up already feeling drained, and just getting through the morning feels like a huge effort. Concentrating on anything, even the easiest assignments, becomes a migraine of to-do lists and random thoughts I can\u2019t shut off, so I end up taking twice as long or just giving up because it feels pointless. It\u2019s exhausting\u2014not just physically but mentally\u2014and that just makes me feel even more worthless, like I\u2019m failing at every little thing even when I\u2019m trying so hard. The constant tiredness drags down my motivation too, so it\u2019s this cycle that keeps repeating and I honestly don\u2019t see an end to it sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "That cycle sounds incredibly tough and draining\u2014feeling worn out physically and mentally on top of everything else. Do you find yourself often feeling worthless or guilty in ways that feel more than what the situation would normally call for?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, definitely. I find myself overwhelmed by feelings of worthlessness pretty much most days. Even when something small goes wrong or I don\u2019t meet some expectation, the guilt I feel feels way out of proportion\u2014like I\u2019m constantly beating myself up over things I shouldn\u2019t even be that upset about. It just piles on top of the fatigue and trouble concentrating, making everything feel ten times harder. When I feel that low, it\u2019s like my energy drains even faster and my mind just won\u2019t settle, which only makes the self-criticism worse. It becomes this vicious cycle where the more exhausted and scattered I feel, the more worthless and guilty I become, and then that drags me down even further. It\u2019s exhausting to live like that every day."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds incredibly exhausting\u2014to carry that kind of weight every day and feel stuck in a cycle that just keeps wearing you down. I hear how heavy it all feels for you."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, it\u2019s really overwhelming. Some days, it feels like I\u2019m just sinking deeper into this endless exhaustion that doesn\u2019t let up, no matter what I do. It\u2019s like I\u2019m caught in this relentless cycle where the heaviness just smothers any motivation or hope I might have. I want to push through, but the weight of all these thoughts and feelings drags me back every time. The self-criticism feels like this constant noise in my head, making it impossible to find even a moment of peace. It\u2019s like I\u2019m trapped inside my own mind, and that exhaustion isn\u2019t just physical\u2014it\u2019s this deep emotional drain that just wears me down more and more each day. I don\u2019t know how to break out of it, and that\u2019s the hardest part."
+    },
+    {
+      "role": "assistant",
+      "content": "That kind of deep, constant exhaustion takes a real toll. Can you tell me about your sleep\u2014are you having trouble falling asleep, staying asleep, or waking up still feeling tired?"
+    },
+    {
+      "role": "user",
+      "content": "Actually, I don\u2019t usually have trouble falling asleep or staying asleep during the night. But even when I get a full night\u2019s rest, I still wake up feeling tired\u2014like the rest didn\u2019t really refresh me at all. It\u2019s frustrating because it\u2019s not just about sleep quality; the tiredness feels deeper and more persistent than that, like it\u2019s part of the heaviness I carry during the day. So even though my sleep seems okay, the fatigue sticks around and makes everything else harder."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fatigue runs deeper than just sleep issues and is a constant weight you carry. How does this fatigue affect your daily activities, and do you notice if it gets worse as the day goes on or stays about the same?"
+    },
+    {
+      "role": "user",
+      "content": "The fatigue really takes a huge toll on everything I try to do throughout the day. In the morning, I might manage okay, but as the hours pass, I feel myself getting more and more drained\u2014mentally and physically. By the afternoon, even simple things like paying attention in class or completing homework feel overwhelming and exhausting. It\u2019s like there\u2019s this weight pressing down on me that just never lets up, and it gets heavier the longer I\u2019m awake and active. By evening, I\u2019m often just too worn down to do much more than sit quietly, because my energy is almost completely gone. It\u2019s frustrating because I want to keep up and be productive, but my body and mind just won\u2019t cooperate, and that makes everything feel even harder."
+    },
+    {
+      "role": "assistant",
+      "content": "That kind of draining energy building up over the day must feel really heavy. Have you noticed if the things you used to enjoy or look forward to doing feel less interesting or satisfying lately?"
+    },
+    {
+      "role": "user",
+      "content": "Actually, I haven\u2019t really lost interest in the things I used to enjoy. Drawing, for example, still feels important to me, and when I\u2019m able to do it, it provides some relief. But even with that, the fatigue and mental heaviness make it harder to get started or stay focused for long. So my feelings toward those activities haven\u2019t changed much, but my energy and motivation to do them are definitely worn down by everything else going on. It\u2019s like the desire is still there, but my body and mind just can\u2019t always keep up."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s good that drawing still holds some meaning for you, even with everything else going on. How often do you actually get the chance to draw or do other activities you care about, and what tends to make it easier or harder for you to start or keep going when you try?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I draw less often than I used to, mostly because the fatigue and mental heaviness sometimes make it really hard to get started or to keep going once I do. It\u2019s like there\u2019s a block in my mind that holds me back from focusing or feeling inspired. Sometimes taking small breaks or just sitting in a quiet space helps me gather enough energy or calm my thoughts enough to try drawing, but that doesn\u2019t happen very often. Most of the time, it feels like I\u2019m stuck in this fog that makes even the things I care about feel out of reach."
+    },
+    {
+      "role": "assistant",
+      "content": "That fog you\u2019re describing sounds really hard to break through. To get a fuller picture, I want to ask about your appetite and weight\u2014have you noticed any changes in how much you\u2019re eating or in your weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "I haven\u2019t really noticed much change in my appetite or weight. I eat about the same as I always have, but the fatigue and mental fog just keep lingering no matter what. So it doesn\u2019t seem like it\u2019s connected to anything with eating\u2014those feelings just stick around on their own. It\u2019s frustrating because even though my habits are pretty steady, the heaviness in my mind and body doesn\u2019t go away."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. Now, how would you describe your overall mood most days\u2014do you find yourself feeling sad or down beyond the heaviness we\u2019ve talked about?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do feel sad or down on most days, and it\u2019s more intense than just feeling heavy or tired. It\u2019s this deep sadness that weighs on me and colors how I see everything\u2014like it makes even small challenges feel enormous and sometimes feels almost overwhelming. That sadness affects my mindset a lot, making it harder to stay hopeful or focused, and it adds to the exhaustion I already feel. It\u2019s like carrying this emotional weight on top of the mental and physical fatigue, and honestly, it wears me out just as much, if not more."
+    },
+    {
+      "role": "assistant",
+      "content": "That kind of deep, persistent sadness sounds really heavy to carry alongside everything else. How long have you been feeling this way, and how does it affect your daily life or the way you get through your days?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been carrying this sadness and heaviness for several months now, maybe even longer. It\u2019s not just something that comes and goes\u2014it feels like it\u2019s always there, like a weight I can\u2019t shake off. Every day feels like this continuous struggle where even simple tasks require so much effort just to start or keep going. It makes me feel stuck, like I\u2019m trying to push through quicksand but sinking deeper instead. The sadness and fatigue build on each other, making it harder to find the energy or motivation to do things I want to do, even when I know they might help. I\u2019ve tried to manage it in different ways, but often it just feels overwhelming, like I\u2019m trapped in this cycle with no clear way out. It\u2019s exhausting in a way that\u2019s hard to put into words because it\u2019s not just physical tiredness\u2014it\u2019s this all-consuming emotional and mental drain that carries through every moment."
+    },
+    {
+      "role": "assistant",
+      "content": "That ongoing weight you describe is really tough to live with. Have you noticed any changes in how your body feels\u2014like feeling unusually slowed down, restless, or agitated compared to before?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, there are definitely times when my body feels slowed down, like moving or even just sitting feels heavier than it used to. It\u2019s not constant, but those moments leave me feeling physically drained, which just adds to the mental and emotional exhaustion I\u2019m already dealing with. I\u2019m not usually restless or agitated all the time, but sometimes the overwhelming feelings make me tense up or feel a kind of restlessness inside, like my body is uncomfortable even when I\u2019m trying to stay calm. It\u2019s another layer to the weariness that can make everything feel even harder."
+    },
+    {
+      "role": "assistant",
+      "content": "That physical slowing and occasional restlessness sound like extra weight on top of everything else you\u2019re handling. How often do you notice these feelings, and how much do they get in the way of your daily routines or taking care of yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I notice the physical slowing and restlessness on and off\u2014not every day, but enough that it\u2019s definitely part of what wears me down. When it happens, it makes even usual tasks feel more difficult and draining than they should be. It doesn\u2019t completely stop me from doing what I need to do, but it adds a layer of struggle that makes keeping up with my routines harder. Still, I try to stick with my daily habits as much as I can, even though some days that takes a lot more effort than others. It\u2019s frustrating, but I don\u2019t want to lose the sense of normalcy those routines give me."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re carrying a heavy load, and it\u2019s clear you\u2019re doing your best to hold onto normalcy despite all this strain. It\u2019s important we talk about your safety too\u2014have you had any thoughts about death or suicide recently?"
+    },
+    {
+      "role": "user",
+      "content": "I haven\u2019t had any thoughts about death or suicide. Even though these feelings are really heavy and difficult to carry, I haven\u2019t reached a point where I think about those things. I\u2019m trying to manage the weight of it all without letting it get to that level."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m glad to hear that. Given what you\u2019ve shared about the heaviness and fatigue, has it become harder for you to concentrate or make decisions, even on smaller things?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, on some days, concentrating and making decisions can be surprisingly difficult. It\u2019s not constant, but when the heaviness and fatigue are stronger, my mind feels foggy and it\u2019s like even simple choices or focusing on schoolwork take a lot more effort. It makes things slower and sometimes more frustrating, but it\u2019s not overwhelming all the time. Still, those moments do add to the overall challenge I\u2019m facing day to day."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019ve been managing a lot\u2014a persistent heaviness that ebbs and flows but never quite lets up. It\u2019s clear you\u2019re pushing through even when your mind and body feel foggiest, and that takes strength. Thanks for being open about all this\u2014it really helps us understand how to support you."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s not easy to talk about all of this, but I do appreciate that you\u2019re listening and trying to understand. The heaviness and fatigue are still very much there, and some days they feel just as hard as before. But knowing there\u2019s someone who gets what I\u2019m going through\u2014it helps, even if just a little. I\u2019m willing to see where this support can lead, even if it feels overwhelming at times."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_0665c4766ca868c5.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_0665c4766ca868c5_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 35809,
+      "output_tokens": 662,
+      "total_tokens": 36471
+    },
+    "patient": {
+      "input_tokens": 55660,
+      "output_tokens": 1927,
+      "total_tokens": 57587
+    },
+    "doctor_manager": {
+      "input_tokens": 37496,
+      "output_tokens": 1488,
+      "total_tokens": 38984
+    },
+    "patient_manager": {
+      "input_tokens": 40784,
+      "output_tokens": 3086,
+      "total_tokens": 43870
+    }
+  }
+}

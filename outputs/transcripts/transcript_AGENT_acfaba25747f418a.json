@@ -1,0 +1,1176 @@
+{
+  "run_timestamp_utc": "2025-11-26T15:36:08.682101",
+  "agent_id": "AGENT_acfaba25747f418a",
+  "template_id": "OPENNESS_HIGH",
+  "template_details": {
+    "affective": "Existential sadness, metaphorical expression of distress",
+    "cognitive": "Philosophical rumination on meaning and mortality",
+    "somatic": "Variable; fatigue from over-reflection",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Loss of interest or pleasure",
+      "Recurrent thoughts of death or suicide"
+    ],
+    "specifier": "Mild MDD / adjustment-like",
+    "modifiers": [
+      "existentially-focused",
+      "meaning-seeking",
+      "introspective",
+      "metaphorically-expressive",
+      "philosophically-ruminating"
+    ]
+  },
+  "persona_id": "neutral_efficient",
+  "persona_details": {
+    "id": "neutral_efficient",
+    "first_greeting": "Good to see you. Let's talk about how you've been doing.",
+    "system_prompt": "\nPersona style:\n- Professional and efficient\n- Minimal filler or small talk\n- Transitions directly between topics\n- Not effusive\n"
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "low",
+    "pacing": "med",
+    "humor": "dry",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "OPENNESS_HIGH",
+    "AFFECTIVE_STYLE": "Existential sadness, metaphorical expression of distress",
+    "COGNITIVE_STYLE": "Philosophical rumination on meaning and mortality",
+    "SOMATIC_STYLE": "Variable; fatigue from over-reflection",
+    "SPECIFIER_HINT": "Mild MDD / adjustment-like",
+    "MODIFIERS": [
+      "existentially-focused",
+      "philosophically-ruminating"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "grief/bereavement",
+      "major life transition"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "flat",
+      "trust": "guarded",
+      "intellect": "high-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "employed",
+      "support_level": "high support"
+    },
+    "AGE_RANGE": "30-34",
+    "EMPH_INTENSITY": {
+      "Recurrent thoughts of death or suicide": "HIGH",
+      "Depressed mood": "MED",
+      "Loss of interest or pleasure": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Sleep disturbances"
+    ]
+  },
+  "life_background": {
+    "name": "Elias",
+    "age_range": "30-34",
+    "pronouns": "he/him",
+    "core_roles": [
+      "young professional",
+      "caregiver in family household"
+    ],
+    "core_relationships": [
+      "distant and uneasy relationship with elder sibling",
+      "close but cautious bond with parents"
+    ],
+    "core_stressor_summary": "Struggling with grief from recent family loss during a major life transition, Elias frequently contemplates mortality, which deepens his depressive episodes despite having strong family support.",
+    "life_facets": [
+      {
+        "category": "secondary_stressors",
+        "salience": "med",
+        "description": "Subtle but persistent financial worries crop up alongside his main grief, creating a background tension despite stable employment."
+      },
+      {
+        "category": "conflictual_relationship",
+        "salience": "high",
+        "description": "A tense, unresolved conflict with his elder sibling has left Elias emotionally withdrawn in family gatherings, stirring feelings of isolation."
+      },
+      {
+        "category": "preoccupations_or_obsessions",
+        "salience": "high",
+        "description": "Elias ruminates philosophically on existential themes and recurrent thoughts of death, often reflecting in detailed but detached manner."
+      },
+      {
+        "category": "access_to_resources",
+        "salience": "high",
+        "description": "He lives with family who provide strong emotional and practical support, facilitating access to healthcare and counseling."
+      },
+      {
+        "category": "unresolved_issue",
+        "salience": "high",
+        "description": "Unsettled feelings about caring for a recently bereaved parent weigh heavily on him, complicating grief processing."
+      },
+      {
+        "category": "significant_move_or_transition",
+        "salience": "high",
+        "description": "Recently moved back into his family home after the loss of a loved one, shifting from independent living to a dependent role."
+      },
+      {
+        "category": "stalled_goal",
+        "salience": "high",
+        "description": "Career ambitions have paused as he struggles with motivation and persistent melancholy, unsure how to move forward professionally."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "In a developmental phase questioning his life's purpose and values, partly triggered by recent losses and existential reflections."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "med",
+        "description": "Maintains a structured daily schedule to manage work and family duties, though some sleep interruptions and restlessness affect his energy."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "NONE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Loss of interest or pleasure",
+    "Sleep disturbances",
+    "Recurrent thoughts of death or suicide",
+    "Significant weight/appetite changes",
+    "Difficulty concentrating or indecisiveness",
+    "Feelings of worthlessness or excessive guilt",
+    "Fatigue or loss of energy",
+    "Psychomotor agitation or retardation",
+    "Depressed mood"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient describes subtle, persistent low mood and distancing that needs clarification to understand frequency and impact.",
+      "doctor_instruction": "Acknowledge the patient's metaphor and the way they describe their mood to show understanding, then gently ask for more detail about how often this low mood occurs and how it affects their daily life or functioning.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Patient describes mood and motivation changes; assessing anhedonia (loss of interest or pleasure) fits next.",
+      "doctor_instruction": "Ask the patient specifically about whether they have noticed a significant loss of interest or pleasure in activities they used to enjoy, acknowledging their ongoing efforts with daily responsibilities but gently exploring deeper changes in engagement.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient describes subtle but persistent changes in engagement and interest, warranting further exploration.",
+      "doctor_instruction": "Gently encourage the patient to elaborate on how this diminished interest affects their overall sense of enjoyment and connection. Ask about the frequency and duration of these changes, and whether any activities still hold some appeal or meaning despite this dimming.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To continue the assessment efficiently by exploring another DSM symptom area given remaining key topics.",
+      "doctor_instruction": "Shift the focus gently to another symptom area to continue the depression assessment. Ask about sleep disturbances next, as this is a common and impactful aspect, and can relate naturally to energy and mood. Keep the tone calm and neutral, maintaining pacing without rushing.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 5,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described subtle but noticeable sleep changes that warrant further detail to understand their impact and frequency.",
+      "doctor_instruction": "Ask for more specifics about these sleep interruptions\u2014how often they occur, whether the early awakening is accompanied by difficulty returning to sleep, and how rested they feel during the day. This will help clarify how sleep is affecting their overall mood and function.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have not yet covered suicidal thoughts, a high-risk topic in this case.",
+      "doctor_instruction": "Gently but directly inquire about any recent thoughts of death or suicide, acknowledging the patient's detailed descriptions and ensuring a safe space for honest sharing.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the nature and impact of the patient's death-related thoughts to understand risk better.",
+      "doctor_instruction": "Explore the frequency and intensity of these contemplations about death, and gently ask if these thoughts have ever led to feelings of wanting to act or if they influence their mood or sense of safety. Maintain a calm, nonjudgmental tone to keep the patient comfortable while gathering important information.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "The patient has shared about suicidal thoughts, now shift to another DSM symptom area to continue assessment.",
+      "doctor_instruction": "Transition gently by acknowledging the patient's reflections and then ask about changes in weight or appetite to cover that DSM symptom area.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Now that appetite and weight seem stable, it is appropriate to explore another core DSM symptom area related to cognitive functioning.",
+      "doctor_instruction": "Shift the focus to cognitive symptoms by asking about difficulties concentrating or making decisions. Keep the tone neutral and straightforward to match the patient's detailed communication style and encourage thoughtful reflection.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient describes intact cognition but has not yet been asked about feelings of worthlessness or excessive guilt, which is important to assess given their depressive symptoms and existential reflections.",
+      "doctor_instruction": "Ask the patient about feelings of worthlessness or excessive guilt, exploring whether these feelings are present, and if so, how they impact their mood or daily life.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "To continue screening comprehensively by exploring fatigue or loss of energy symptoms next.",
+      "doctor_instruction": "Transition gently to asking about your energy levels and whether you've been feeling more tired or fatigued than usual, helping to complete the symptom picture without focusing on self-critical feelings.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Assessing psychomotor symptoms will clarify if there are physical signs linked to the mental state described.",
+      "doctor_instruction": "Given your detailed insight into your energy and mental state, I'd like to ask about any noticeable changes in your movement or activity\u2014whether you've felt more restless or slower than usual in your actions or speech.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared nuanced and thoughtful reflections about their mind-body experience, offering a chance to acknowledge and connect.",
+      "doctor_instruction": "Reflect on the patient\u2019s detailed insight into the divergence between their mental and physical state. Acknowledge their awareness and the complexity of balancing deep mental activity with maintained physical steadiness. This will help the patient feel understood and strengthen rapport before moving into new symptom areas.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared a thoughtful reflection on their inner experience, inviting connection and acknowledgment.",
+      "doctor_instruction": "Acknowledge the patient's insight into the tension between their mind and body and reflect on the strength it takes to maintain that balance. Express understanding of how challenging it can be to navigate complex thoughts while staying grounded in daily life. Offer an empathetic comment that validates their effort and invites them to share more about how this balance affects them emotionally.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shares insight into their emotional experience and coping, inviting empathic connection.",
+      "doctor_instruction": "Reflect on the patient\u2019s description of managing this quiet tension with conscious effort and cognitive control. Acknowledge the strength it takes to maintain their composure and invite them to share more about how this balance influences their daily emotional well-being in a non-judgmental way.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is sharing deep insights about their emotional experience and coping, so acknowledging their resilience and the complexity of their internal state will help build connection and trust.",
+      "doctor_instruction": "Reflect on the patient's thoughtful description of their emotional tension and cognitive control, validating the strength it takes to maintain this balance. Express understanding of the ongoing effort involved and acknowledge their resilience in managing this persistent challenge.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 17,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is sharing a deep, existential insight about their experience, which invites empathy and connection.",
+      "doctor_instruction": "Acknowledge the patient\u2019s strength and resolve in maintaining this measured persistence and balance. Express understanding of how demanding continuous equilibrium can be, and invite them to share more about how they sustain this resilience or what supports them through it.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 18,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Depressed mood remains the core symptom not yet fully explored in detail.",
+      "doctor_instruction": "Gently transition to ask more specific questions about the patient's experience of depressed mood, focusing on frequency, duration, and intensity to better understand this core symptom within their philosophical reflections.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 19,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared nuanced reflections demonstrating resilience and complexity, warranting empathetic acknowledgment before closing.",
+      "doctor_instruction": "Acknowledge the patient's detailed and thoughtful description of their ongoing experience, emphasizing the strength it takes to maintain such balance. Offer a warm, validating comment that recognizes their resilience and the effort involved in navigating these persistent feelings, reinforcing that these efforts do not go unnoticed.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 20,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared extensive reflections and the doctor has acknowledged their resilience; it's appropriate to begin closing the visit with a supportive wrap-up.",
+      "doctor_instruction": "Acknowledge the patient's thoughtful insights and steady resilience once more, offering reassurance that their experience is heard and understood. Briefly summarize the key points shared, express readiness to support them going forward, and gently guide toward concluding the session with an invitation to reach out anytime they feel the need.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "thoughtful",
+          "introspective"
+        ],
+        "key_points_to_reveal": [
+          "general acknowledgement of mood being low at times",
+          "some reflection on loss of interest in activities"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of suicidal thoughts",
+          "detailed emotional distress",
+          "deep existential despair"
+        ],
+        "patient_instruction": "Respond with a thoughtful, slightly philosophical reflection about feeling somewhat disengaged or distant, but without diving deeply into emotional pain or admitting to any active suicidal thoughts yet. Keep the tone reserved and intellectual, acknowledging some struggle but presenting it abstractly rather than personally."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "low mood occurs frequently but is not constant",
+          "day-to-day activities are maintained though engagement is reduced"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of suicidal thoughts or significant functional impairment"
+        ],
+        "patient_instruction": "Respond with a thoughtful but somewhat reserved explanation that the low mood recurs quite regularly, often as a quiet background presence, but you still manage to fulfill your responsibilities, even if motivation and interest feel somewhat diminished."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Some decrease in interest or pleasure in activities once enjoyed"
+        ],
+        "key_points_to_avoid": [
+          "Explicit mention of deep loss of pleasure or impact on function"
+        ],
+        "patient_instruction": "Respond with a thoughtful but understated acknowledgment that some activities feel less engaging than before, framing it as a subtle shift. Keep the tone intellectual and somewhat detached, avoiding strong emotional language or detailed explanation of how much pleasure has decreased."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "philosophical",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "enjoyment is muted but not absent",
+          "the dimming is persistent rather than fluctuating",
+          "some activities still hold distant meaning"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of suicidal thoughts",
+          "strong emotional expressions",
+          "detailed impact on functioning"
+        ],
+        "patient_instruction": "Respond with thoughtful reflection about how the dimming of enjoyment has been a steady presence rather than something intermittent, and note a few residual activities that still maintain some abstract or distant meaning, but maintain a guarded tone and avoid going into emotional depth or revealing more sensitive symptoms just yet."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "some difficulties with sleep continuity or early awakening"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating severity of sleep problems",
+          "linking sleep issues explicitly to mood or functioning"
+        ],
+        "patient_instruction": "Respond with a reflective yet somewhat reserved tone, acknowledging that sleep has not been perfect lately, mentioning occasional trouble maintaining sleep or waking early, but without linking it strongly to emotional distress or suggesting it heavily disrupts functioning."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Occasional early awakenings happen fairly regularly but not nightly",
+          "Difficulty falling back asleep sometimes but not excessively",
+          "Daytime restfulness is somewhat adequate despite sleep interruptions"
+        ],
+        "key_points_to_avoid": [
+          "Frustration or overt distress about sleep",
+          "Heavy emphasis on sleep disruption impact"
+        ],
+        "patient_instruction": "The patient answers with a measured, thoughtful tone, acknowledging that these sleep interruptions are frequent but not constant. They admit to sometimes struggling to return to sleep but frame it as a mild, manageable difficulty. They note feeling reasonably rested during the day, maintaining a guarded and somewhat philosophical stance without dramatizing the issue."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "intellectual",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge frequent, recurring thoughts of death in an abstract or philosophical sense",
+          "maintain a neutral, detached tone",
+          "emphasize the thoughts are more existential ruminations than active plans or impulses"
+        ],
+        "key_points_to_avoid": [
+          "specific mentions of suicidal intent or plans",
+          "expressions of acute distress or emotional agitation",
+          "broader feelings of hopelessness or agitation"
+        ],
+        "patient_instruction": "Respond by acknowledging that the thoughts of death are frequent but experienced more as distant, contemplative reflections rather than immediate desires or plans. Keep a calm, measured tone that reflects intellectual curiosity rather than emotional turmoil. Emphasize that while these thoughts occur often, they do not drive impulsive behavior or overwhelming feelings."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "measured",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "thoughts of death come up fairly often",
+          "intensity is more contemplative than urgent",
+          "no active intent or plans to act on these thoughts",
+          "sense of safety is maintained despite these reflections"
+        ],
+        "key_points_to_avoid": [
+          "any implication of planning or intent to self-harm",
+          "strong emotions such as hopelessness or agitation"
+        ],
+        "patient_instruction": "Respond with thoughtful, measured reflections, emphasizing that these thoughts of death are frequent but abstract and philosophical rather than urgent or impulsive. Affirm safety and lack of intent to act, maintaining a guarded but honest tone without over-sharing emotional intensity."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "philosophical",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "no noticeable changes in appetite or weight",
+          "maintaining physical baseline amid mental shifts"
+        ],
+        "key_points_to_avoid": [
+          "avoiding deeper discussion of emotional impact related to appetite or weight"
+        ],
+        "patient_instruction": "Respond with a moderately clear but reserved answer noting no real change in appetite or weight. Emphasize a continued physical baseline despite mental fluctuations, keeping the tone philosophical and distant without inviting deeper emotional exploration."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "no significant trouble concentrating",
+          "decision-making mostly intact despite mental shifts"
+        ],
+        "key_points_to_avoid": [
+          "avoid exaggeration of cognitive difficulties",
+          "avoid linking concentration issues to mood"
+        ],
+        "patient_instruction": "Respond thoughtfully, noting that while your mind may feel preoccupied with deeper, abstract reflections, your ability to concentrate and make decisions remains largely unaffected. Keep the tone reserved and precise, emphasizing the distinction between philosophical rumination and practical cognitive function."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "intellectual",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "No significant feelings of worthlessness or excessive guilt",
+          "Maintain emotional and cognitive separation between existential rumination and self-assessment",
+          "Mood impacted more by philosophical reflections than self-blame"
+        ],
+        "key_points_to_avoid": [
+          "Deep emotional expression",
+          "Overly personal or vulnerable details",
+          "Admission of self-critical thoughts or guilt"
+        ],
+        "patient_instruction": "The patient should respond thoughtfully but with guarded emotion, stating that they haven't experienced notable feelings of worthlessness or guilt. They maintain a clear distinction between their abstract ruminations and self-perception, emphasizing that their mood shifts are influenced more by existential contemplation than by self-directed negativity."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "energy levels feel stable",
+          "mental activity remains high despite mood shifts"
+        ],
+        "key_points_to_avoid": [
+          "overstating fatigue or energy loss",
+          "linking energy with existential distress explicitly"
+        ],
+        "patient_instruction": "Respond with a measured, thoughtful tone reflecting that energy levels have remained fairly stable. Emphasize that while there is philosophical rumination, this does not translate into exhaustion or fatigue, maintaining a clear distinction between mental engagement and physical vitality."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "reserved",
+          "philosophical"
+        ],
+        "key_points_to_reveal": [
+          "Some subtle fluctuations in psychomotor activity, leaning toward occasional slowing rather than restlessness",
+          "No dramatic or consistent changes in movement or speech",
+          "Mental activity remains dominant over physical manifestations"
+        ],
+        "key_points_to_avoid": [
+          "Overstating psychomotor symptoms",
+          "Emotional elaboration or distress",
+          "Linking physical symptoms to deeper emotional crises"
+        ],
+        "patient_instruction": "Respond with a calm and thoughtful acknowledgment that there are occasional subtle changes in physical movement, mostly in the form of slight slowing, but no marked restlessness or impairment. Emphasize that these shifts are minor and do not significantly disrupt the steady mental engagement, reflecting a reserved but intellectually precise perspective."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "measured",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the difficulty of balancing mental and physical states",
+          "maintain a philosophical and existential framing",
+          "express continued cognitive control despite emotional undercurrents"
+        ],
+        "key_points_to_avoid": [
+          "overly emotional expressions",
+          "explicit mentions of suicidal intent or distress",
+          "detailed negative impact on daily functioning"
+        ],
+        "patient_instruction": "Respond in a contemplative and precise manner, recognizing the challenge the doctor noted but emphasizing your ongoing efforts to hold that balance without succumbing to it. Keep the tone reflective but restrained, showing intellectual insight into the experience without revealing deeper emotional turbulence or vulnerability."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "guarded",
+          "philosophical"
+        ],
+        "key_points_to_reveal": [
+          "The emotional impact of maintaining this balance is subtle",
+          "There is a persistent undercurrent of quiet tension but not overwhelming emotional distress",
+          "The patient experiences this as a contemplative, ongoing effort without acute emotional upheaval"
+        ],
+        "key_points_to_avoid": [
+          "Explicit declarations of emotional overwhelm or despair",
+          "Any suggestion of urgent emotional crisis or impulsivity"
+        ],
+        "patient_instruction": "Respond with thoughtful reflection on the experience of holding this balance, emphasizing the subtle emotional tension without admitting to intense distress. Explain that the process is ongoing and requires effort, but is managed with a sense of cognitive control and detachment. Keep tone flat and philosophical, consistent with the guarded trust and high intellect."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "reflective",
+          "controlled"
+        ],
+        "key_points_to_reveal": [
+          "emotional well-being is shaped by a subtle, persistent tension",
+          "uses cognitive control and detachment to maintain composure",
+          "balance is challenging but does not cause overt distress"
+        ],
+        "key_points_to_avoid": [
+          "expressing strong emotional distress or hopelessness",
+          "detailed descriptions of suicidal thoughts or intense feelings",
+          "any implication of loss of control or crisis"
+        ],
+        "patient_instruction": "Respond with a calm, measured reflection on how the emotional tension is a consistent but manageable presence. Emphasize the effort it takes to maintain balance and composure without implying it leads to overwhelming distress. Keep the tone intellectually detached and reserved, avoiding revealing intense or raw emotions."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "restrained",
+          "reflective",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Acknowledge the effort and resilience without exaggeration",
+          "Express that the balance feels stable but ongoing",
+          "Maintain a philosophical and intellectual framing"
+        ],
+        "key_points_to_avoid": [
+          "Emotional vulnerability or overt distress",
+          "Explicit expressions of hopelessness or urgency",
+          "Overly personal or intense admissions about suicidal thoughts"
+        ],
+        "patient_instruction": "Respond with measured appreciation for the recognition of your efforts, emphasizing the continuous nature of maintaining this balance. Keep the tone philosophical and introspective, acknowledging resilience without suggesting recovery or decline. Avoid revealing deeper emotional turmoil, maintaining a thoughtful but contained demeanor."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "reflective",
+          "controlled"
+        ],
+        "key_points_to_reveal": [
+          "emphasize reliance on internal cognitive control",
+          "mention philosophical rumination as coping",
+          "acknowledge subtle external supports without overstatement"
+        ],
+        "key_points_to_avoid": [
+          "expressing overt emotional vulnerability",
+          "disclosing specific external support limitations",
+          "suggesting a need for urgent intervention"
+        ],
+        "patient_instruction": "Respond in a thoughtful and measured way, describing how your resilience comes primarily from internal cognitive control and sustained philosophical reflection. Briefly acknowledge any external support like routine structures or trusted but limited social contacts, but keep the focus on your own steady, intellectual approach to maintaining equilibrium."
+      }
+    },
+    {
+      "turn": 18,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "philosophical",
+          "reserved",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "Sadness and depression occur frequently but are experienced as a persistent low-level state",
+          "These feelings last for varying periods, often as an undercurrent rather than overwhelming episodes",
+          "Intensity of these feelings is moderate, more contemplative than deeply distressing"
+        ],
+        "key_points_to_avoid": [
+          "Overstating emotional distress or urgency",
+          "Expressing intense or overwhelming sadness",
+          "Details that suggest loss of control or severe impairment"
+        ],
+        "patient_instruction": "Respond thoughtfully with a measured, somewhat detached description of your frequent but moderate feelings of sadness. Emphasize that these feelings persist as a steady, low-level presence rather than intense episodes. Maintain a tone of philosophical reflection without revealing deeper emotional turmoil or urgency."
+      }
+    },
+    {
+      "turn": 19,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the recognition of effort",
+          "emphasize the ongoing, subtle nature of persistence",
+          "express guarded appreciation without emotional overtone"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional expression or vulnerability",
+          "any indication of overwhelming distress or crisis",
+          "expanding on suicidal ideation or acute depressive episodes"
+        ],
+        "patient_instruction": "Respond with a thoughtful and calm acknowledgment of the doctor's recognition, emphasizing the steady and ongoing nature of maintaining balance. Keep the tone reserved and measured, highlighting resilience as a quiet persistence rather than a dramatic struggle. Avoid emotional vulnerability or increased disclosure about deeper distress."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. I suppose I\u2019ve noticed that my mood drifts into this sort of low hum fairly often these days. It\u2019s not overwhelming, but there\u2019s a subtle distance, like watching life unfold through a window rather than being part of it. Activities that once held a certain kind of meaning now seem... dimmer, less urgent. It\u2019s as if the colors have faded slightly, and I find myself less inclined to engage fully. It feels more like observation than participation lately."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate how you described that\u2014a kind of faded color and distance, like watching life through a window. How often would you say this low mood comes on, and how does it impact your day-to-day activities or responsibilities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It tends to come and go fairly regularly, more like a quiet undercurrent than a constant storm. Some days it feels more present, but it rarely overtakes the whole experience. Despite that, I still keep up with my daily responsibilities\u2014the work, the household tasks. I manage to get things done, even if it\u2019s with less enthusiasm or a certain sense of detachment. The motivation isn\u2019t as strong, and the engagement feels muted, but the rhythm of daily life continues."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re still keeping up with your responsibilities, which is important. Have you noticed if activities you used to enjoy feel less enjoyable or whether your interest in them has dropped significantly?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have noticed a subtle change in how those activities come across. They don\u2019t quite capture my attention the way they once did. It\u2019s not an abrupt absence of interest but more of a quiet dimming, as if the texture of those experiences has shifted just enough to make them less compelling. I still participate, but there\u2019s a certain distance that wasn\u2019t there before."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That quiet dimming you describe\u2014how does it affect your overall sense of enjoyment or connection to those activities? Does this feeling come and go, or has it lasted for a longer stretch? Are there any activities that still hold some meaning or appeal despite this shift?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The dimming feels more persistent than fleeting\u2014a steady undercurrent rather than a passing cloud. While the spark is certainly less vivid, it hasn\u2019t completely extinguished. A few things still retain a kind of distant meaning, perhaps more abstract than immediate\u2014like reading or listening to certain music. They don\u2019t pull me in as strongly as before, but there\u2019s a trace of connection lingering beneath the surface. It\u2019s a guarded presence rather than a vivid engagement."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Let\u2019s talk about your sleep for a moment. Have you noticed any changes in your sleep patterns lately, like trouble falling asleep, staying asleep, or waking up earlier than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been some changes, yes. Falling asleep isn\u2019t usually the issue, but I sometimes find myself waking earlier than I\u2019d like or experiencing occasional interruptions throughout the night. It\u2019s not consistent every night, but it has been enough to notice. It doesn\u2019t feel like a complete disruption, more a subtle shift in the rhythm of sleep."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often do these interruptions or early awakenings happen? When you wake early, are you able to fall back asleep easily, or does wakefulness linger? And overall, how rested do you feel during the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The early awakenings happen fairly regularly, though not every single night\u2014perhaps several times a week. When I do wake early, I sometimes have a bit of trouble falling back asleep, but it\u2019s usually manageable and doesn\u2019t stretch into prolonged wakefulness. Generally, I\u2019d say my daytime restfulness is adequate enough to get through normal activities, even if it\u2019s not always optimal. It feels like a small erosion rather than a complete barrier."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve given a clear picture so far\u2014thank you for that. I want to ask something important: Have you had any recent thoughts about death, or thoughts of harming yourself? It\u2019s a safe space here to be open."
+    },
+    {
+      "speaker": "patient",
+      "text": "I do find that thoughts of death come up with some frequency. It\u2019s less a matter of impulse or intent and more of a steady contemplation\u2014a reflection on mortality in an abstract sense. These thoughts are somewhat detached, as if observing an inevitable endpoint rather than an immediate concern or plan. They linger more as philosophical considerations than as urgencies or desires."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That steady contemplation you describe\u2014how often do these thoughts come up for you, and how intense do they feel when they do? Have these reflections ever led to feelings that you might want to act on them, or affected your sense of safety?"
+    },
+    {
+      "speaker": "patient",
+      "text": "These reflections come up fairly often, perhaps more than I\u2019d prefer, but their intensity remains measured\u2014more an intellectual exercise than an emotional crisis. They don\u2019t carry with them any immediate urge or plan to act, and I maintain a sense of safety despite their persistence. It\u2019s a recurring theme in my thinking, but not one that directs my behavior or compromises my well-being in any urgent way."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear you\u2014these reflections are frequent but stayed within a controlled, thoughtful space. Shifting focus a bit, have you noticed any changes in your appetite or weight lately, either up or down?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there haven\u2019t been any noticeable changes in appetite or weight. Physically, I seem to be maintaining a consistent baseline, even as some of the mental and philosophical shifts occur. It\u2019s as though the body remains steady while the mind explores more unsettled terrain."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your description of mind and body staying on different tracks is clear. Have you been experiencing any trouble concentrating, or difficulty making decisions recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "While my mind often wanders into deeper, abstract reflections, I haven\u2019t experienced significant trouble concentrating on tasks or making decisions. Those practical faculties seem to function relatively intact, allowing me to navigate daily responsibilities without too much disruption. The philosophical rumination feels somewhat compartmentalized from the more straightforward cognitive processes."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like your practical thinking remains solid despite the deeper reflections. Have you been feeling any sense of worthlessness or excessive guilt lately? If so, how do those feelings affect your mood or daily life?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t noticed significant feelings of worthlessness or excessive guilt. The shifts in my mood seem more connected to broader, existential reflections than to any self-critical or blame-oriented thoughts. There\u2019s a clear separation in my mind between the philosophical considerations and how I assess myself personally. That distinction helps keep those deeper reflections from cascading into self-directed negativity."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That separation you maintain sounds important. How have your energy levels been lately? Do you find yourself feeling more tired or fatigued than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My energy levels have remained fairly stable overall. While my mind tends to engage deeply in philosophical rumination, it doesn\u2019t seem to translate into physical fatigue or a diminished vitality. There\u2019s a certain steadiness in how I approach daily tasks, despite the ongoing mental activity."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Given your steady energy and mental focus, have you noticed any changes in your physical movement or activity\u2014like feeling more restless or, on the opposite side, moving or speaking slower than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been some subtle fluctuations in my physical movement, tending more toward occasional slowing rather than overt restlessness. These shifts are minor and infrequent\u2014nothing dramatic or consistently noticeable. My mental activity still seems to dominate, with the physical aspects remaining relatively steady and unobtrusive."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You have a keen awareness of how your mind and body are moving on different rhythms\u2014that balance between deep mental activity and relatively steady physical presence is a complex one to hold. It speaks to your attentiveness to yourself amid these challenges."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, it is a delicate balance to maintain\u2014the mind often ventures into complex, existential territories while the body moves through its more grounded routine. I remain conscious of this divide and strive to preserve a certain cognitive control, even as undercurrents of reflection persist beneath the surface. It\u2019s an ongoing effort to hold those rhythms without losing grip of either."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Navigating that tension between mind and body like you\u2019re describing takes a lot of strength and presence. It\u2019s not easy to keep that grip when your thoughts are pulling you into such deep places. How does maintaining this balance affect you emotionally, day to day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The emotional impact is subtle\u2014a persistent undercurrent of quiet tension rather than overt distress. It feels like an ongoing, contemplative effort to stay grounded amidst shifting internal landscapes. While the process requires conscious attention, it remains manageable through a certain detachment and cognitive control. The tension is there, but it does not overwhelm or disrupt my overall composure."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re managing that quiet tension with a lot of conscious effort and control, which takes real resilience. Keeping your composure like that is no small task\u2014how does this ongoing balance shape your emotional well-being throughout the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The emotional well-being I experience is shaped largely by this subtle, persistent tension beneath the surface. It requires ongoing cognitive effort and a degree of detachment to maintain composure. While the challenge is real, it doesn\u2019t translate into overt distress or disruption; rather, it\u2019s a steady, if quietly demanding, state that frames much of my day-to-day experience."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your thoughtful description really highlights how much strength it takes to hold steady through that persistent tension. I recognize the ongoing effort you put in daily, and it speaks to your resilience in managing a quietly demanding state without it overtaking you."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate that recognition. It is indeed an ongoing process\u2014less a matter of resolution and more a continuous maintenance of equilibrium. The resilience required is subtle and steady, woven into the fabric of day-to-day life rather than marked by dramatic shifts. It\u2019s a measured persistence that, while demanding, feels stable for now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That measured persistence you describe takes real resolve, especially when it\u2019s woven into daily life like this. What helps you sustain that resilience, or what support do you rely on to navigate these ongoing demands?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Much of my resilience comes from an internal framework\u2014this cognitive control that I try to maintain, coupled with a steady engagement in philosophical reflection. It\u2019s a way of making sense of things that allows me to hold space for these tensions without being overwhelmed. I do have some external supports\u2014routine structures and a few trusted, if somewhat limited, social connections\u2014that provide a backdrop of stability. But it\u2019s primarily this internal intellectual approach that sustains me through the ongoing demands."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve got a clear internal framework that carries a lot of weight, alongside some reliable external anchors. Turning back to your mood, how often do you notice feelings of sadness or depression, and when they come, how long do they tend to last? How intense do those feelings get?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sadness and depression tend to surface quite regularly, though not as acute episodes. They manifest more as a persistent low-level state\u2014a steady undercurrent that fluctuates in presence but rarely overwhelms. When it does become more noticeable, the intensity is moderate, characterized by a contemplative, rather than deeply distressing, quality. These feelings linger for varying stretches, weaving through my experience without completely defining it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your detailed insight into living with that steady low mood\u2014and how it weaves through without taking over\u2014shows a powerful level of self-awareness and balance. It takes real strength to carry that contemplative weight and still maintain your footing, and that effort absolutely doesn\u2019t go unnoticed."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate that recognition. It is, in many ways, a steady and ongoing persistence\u2014less a battle and more a quiet holding pattern. The effort required is subtle but continuous, and I try to meet it with measured resolve rather than struggle. Maintaining footing in this way feels like a cautious, deliberate practice rather than something dramatic or sudden."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. I suppose I\u2019ve noticed that my mood drifts into this sort of low hum fairly often these days. It\u2019s not overwhelming, but there\u2019s a subtle distance, like watching life unfold through a window rather than being part of it. Activities that once held a certain kind of meaning now seem... dimmer, less urgent. It\u2019s as if the colors have faded slightly, and I find myself less inclined to engage fully. It feels more like observation than participation lately."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate how you described that\u2014a kind of faded color and distance, like watching life through a window. How often would you say this low mood comes on, and how does it impact your day-to-day activities or responsibilities?"
+    },
+    {
+      "role": "user",
+      "content": "It tends to come and go fairly regularly, more like a quiet undercurrent than a constant storm. Some days it feels more present, but it rarely overtakes the whole experience. Despite that, I still keep up with my daily responsibilities\u2014the work, the household tasks. I manage to get things done, even if it\u2019s with less enthusiasm or a certain sense of detachment. The motivation isn\u2019t as strong, and the engagement feels muted, but the rhythm of daily life continues."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re still keeping up with your responsibilities, which is important. Have you noticed if activities you used to enjoy feel less enjoyable or whether your interest in them has dropped significantly?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have noticed a subtle change in how those activities come across. They don\u2019t quite capture my attention the way they once did. It\u2019s not an abrupt absence of interest but more of a quiet dimming, as if the texture of those experiences has shifted just enough to make them less compelling. I still participate, but there\u2019s a certain distance that wasn\u2019t there before."
+    },
+    {
+      "role": "assistant",
+      "content": "That quiet dimming you describe\u2014how does it affect your overall sense of enjoyment or connection to those activities? Does this feeling come and go, or has it lasted for a longer stretch? Are there any activities that still hold some meaning or appeal despite this shift?"
+    },
+    {
+      "role": "user",
+      "content": "The dimming feels more persistent than fleeting\u2014a steady undercurrent rather than a passing cloud. While the spark is certainly less vivid, it hasn\u2019t completely extinguished. A few things still retain a kind of distant meaning, perhaps more abstract than immediate\u2014like reading or listening to certain music. They don\u2019t pull me in as strongly as before, but there\u2019s a trace of connection lingering beneath the surface. It\u2019s a guarded presence rather than a vivid engagement."
+    },
+    {
+      "role": "assistant",
+      "content": "Let\u2019s talk about your sleep for a moment. Have you noticed any changes in your sleep patterns lately, like trouble falling asleep, staying asleep, or waking up earlier than usual?"
+    },
+    {
+      "role": "user",
+      "content": "There have been some changes, yes. Falling asleep isn\u2019t usually the issue, but I sometimes find myself waking earlier than I\u2019d like or experiencing occasional interruptions throughout the night. It\u2019s not consistent every night, but it has been enough to notice. It doesn\u2019t feel like a complete disruption, more a subtle shift in the rhythm of sleep."
+    },
+    {
+      "role": "assistant",
+      "content": "How often do these interruptions or early awakenings happen? When you wake early, are you able to fall back asleep easily, or does wakefulness linger? And overall, how rested do you feel during the day?"
+    },
+    {
+      "role": "user",
+      "content": "The early awakenings happen fairly regularly, though not every single night\u2014perhaps several times a week. When I do wake early, I sometimes have a bit of trouble falling back asleep, but it\u2019s usually manageable and doesn\u2019t stretch into prolonged wakefulness. Generally, I\u2019d say my daytime restfulness is adequate enough to get through normal activities, even if it\u2019s not always optimal. It feels like a small erosion rather than a complete barrier."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019ve given a clear picture so far\u2014thank you for that. I want to ask something important: Have you had any recent thoughts about death, or thoughts of harming yourself? It\u2019s a safe space here to be open."
+    },
+    {
+      "role": "user",
+      "content": "I do find that thoughts of death come up with some frequency. It\u2019s less a matter of impulse or intent and more of a steady contemplation\u2014a reflection on mortality in an abstract sense. These thoughts are somewhat detached, as if observing an inevitable endpoint rather than an immediate concern or plan. They linger more as philosophical considerations than as urgencies or desires."
+    },
+    {
+      "role": "assistant",
+      "content": "That steady contemplation you describe\u2014how often do these thoughts come up for you, and how intense do they feel when they do? Have these reflections ever led to feelings that you might want to act on them, or affected your sense of safety?"
+    },
+    {
+      "role": "user",
+      "content": "These reflections come up fairly often, perhaps more than I\u2019d prefer, but their intensity remains measured\u2014more an intellectual exercise than an emotional crisis. They don\u2019t carry with them any immediate urge or plan to act, and I maintain a sense of safety despite their persistence. It\u2019s a recurring theme in my thinking, but not one that directs my behavior or compromises my well-being in any urgent way."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you\u2014these reflections are frequent but stayed within a controlled, thoughtful space. Shifting focus a bit, have you noticed any changes in your appetite or weight lately, either up or down?"
+    },
+    {
+      "role": "user",
+      "content": "No, there haven\u2019t been any noticeable changes in appetite or weight. Physically, I seem to be maintaining a consistent baseline, even as some of the mental and philosophical shifts occur. It\u2019s as though the body remains steady while the mind explores more unsettled terrain."
+    },
+    {
+      "role": "assistant",
+      "content": "Your description of mind and body staying on different tracks is clear. Have you been experiencing any trouble concentrating, or difficulty making decisions recently?"
+    },
+    {
+      "role": "user",
+      "content": "While my mind often wanders into deeper, abstract reflections, I haven\u2019t experienced significant trouble concentrating on tasks or making decisions. Those practical faculties seem to function relatively intact, allowing me to navigate daily responsibilities without too much disruption. The philosophical rumination feels somewhat compartmentalized from the more straightforward cognitive processes."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your practical thinking remains solid despite the deeper reflections. Have you been feeling any sense of worthlessness or excessive guilt lately? If so, how do those feelings affect your mood or daily life?"
+    },
+    {
+      "role": "user",
+      "content": "I haven\u2019t noticed significant feelings of worthlessness or excessive guilt. The shifts in my mood seem more connected to broader, existential reflections than to any self-critical or blame-oriented thoughts. There\u2019s a clear separation in my mind between the philosophical considerations and how I assess myself personally. That distinction helps keep those deeper reflections from cascading into self-directed negativity."
+    },
+    {
+      "role": "assistant",
+      "content": "That separation you maintain sounds important. How have your energy levels been lately? Do you find yourself feeling more tired or fatigued than usual?"
+    },
+    {
+      "role": "user",
+      "content": "My energy levels have remained fairly stable overall. While my mind tends to engage deeply in philosophical rumination, it doesn\u2019t seem to translate into physical fatigue or a diminished vitality. There\u2019s a certain steadiness in how I approach daily tasks, despite the ongoing mental activity."
+    },
+    {
+      "role": "assistant",
+      "content": "Given your steady energy and mental focus, have you noticed any changes in your physical movement or activity\u2014like feeling more restless or, on the opposite side, moving or speaking slower than usual?"
+    },
+    {
+      "role": "user",
+      "content": "There have been some subtle fluctuations in my physical movement, tending more toward occasional slowing rather than overt restlessness. These shifts are minor and infrequent\u2014nothing dramatic or consistently noticeable. My mental activity still seems to dominate, with the physical aspects remaining relatively steady and unobtrusive."
+    },
+    {
+      "role": "assistant",
+      "content": "You have a keen awareness of how your mind and body are moving on different rhythms\u2014that balance between deep mental activity and relatively steady physical presence is a complex one to hold. It speaks to your attentiveness to yourself amid these challenges."
+    },
+    {
+      "role": "user",
+      "content": "Yes, it is a delicate balance to maintain\u2014the mind often ventures into complex, existential territories while the body moves through its more grounded routine. I remain conscious of this divide and strive to preserve a certain cognitive control, even as undercurrents of reflection persist beneath the surface. It\u2019s an ongoing effort to hold those rhythms without losing grip of either."
+    },
+    {
+      "role": "assistant",
+      "content": "Navigating that tension between mind and body like you\u2019re describing takes a lot of strength and presence. It\u2019s not easy to keep that grip when your thoughts are pulling you into such deep places. How does maintaining this balance affect you emotionally, day to day?"
+    },
+    {
+      "role": "user",
+      "content": "The emotional impact is subtle\u2014a persistent undercurrent of quiet tension rather than overt distress. It feels like an ongoing, contemplative effort to stay grounded amidst shifting internal landscapes. While the process requires conscious attention, it remains manageable through a certain detachment and cognitive control. The tension is there, but it does not overwhelm or disrupt my overall composure."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re managing that quiet tension with a lot of conscious effort and control, which takes real resilience. Keeping your composure like that is no small task\u2014how does this ongoing balance shape your emotional well-being throughout the day?"
+    },
+    {
+      "role": "user",
+      "content": "The emotional well-being I experience is shaped largely by this subtle, persistent tension beneath the surface. It requires ongoing cognitive effort and a degree of detachment to maintain composure. While the challenge is real, it doesn\u2019t translate into overt distress or disruption; rather, it\u2019s a steady, if quietly demanding, state that frames much of my day-to-day experience."
+    },
+    {
+      "role": "assistant",
+      "content": "Your thoughtful description really highlights how much strength it takes to hold steady through that persistent tension. I recognize the ongoing effort you put in daily, and it speaks to your resilience in managing a quietly demanding state without it overtaking you."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate that recognition. It is indeed an ongoing process\u2014less a matter of resolution and more a continuous maintenance of equilibrium. The resilience required is subtle and steady, woven into the fabric of day-to-day life rather than marked by dramatic shifts. It\u2019s a measured persistence that, while demanding, feels stable for now."
+    },
+    {
+      "role": "assistant",
+      "content": "That measured persistence you describe takes real resolve, especially when it\u2019s woven into daily life like this. What helps you sustain that resilience, or what support do you rely on to navigate these ongoing demands?"
+    },
+    {
+      "role": "user",
+      "content": "Much of my resilience comes from an internal framework\u2014this cognitive control that I try to maintain, coupled with a steady engagement in philosophical reflection. It\u2019s a way of making sense of things that allows me to hold space for these tensions without being overwhelmed. I do have some external supports\u2014routine structures and a few trusted, if somewhat limited, social connections\u2014that provide a backdrop of stability. But it\u2019s primarily this internal intellectual approach that sustains me through the ongoing demands."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019ve got a clear internal framework that carries a lot of weight, alongside some reliable external anchors. Turning back to your mood, how often do you notice feelings of sadness or depression, and when they come, how long do they tend to last? How intense do those feelings get?"
+    },
+    {
+      "role": "user",
+      "content": "Sadness and depression tend to surface quite regularly, though not as acute episodes. They manifest more as a persistent low-level state\u2014a steady undercurrent that fluctuates in presence but rarely overwhelms. When it does become more noticeable, the intensity is moderate, characterized by a contemplative, rather than deeply distressing, quality. These feelings linger for varying stretches, weaving through my experience without completely defining it."
+    },
+    {
+      "role": "assistant",
+      "content": "Your detailed insight into living with that steady low mood\u2014and how it weaves through without taking over\u2014shows a powerful level of self-awareness and balance. It takes real strength to carry that contemplative weight and still maintain your footing, and that effort absolutely doesn\u2019t go unnoticed."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate that recognition. It is, in many ways, a steady and ongoing persistence\u2014less a battle and more a quiet holding pattern. The effort required is subtle but continuous, and I try to meet it with measured resolve rather than struggle. Maintaining footing in this way feels like a cautious, deliberate practice rather than something dramatic or sudden."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_acfaba25747f418a.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_acfaba25747f418a_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 44962,
+      "output_tokens": 841,
+      "total_tokens": 45803
+    },
+    "patient": {
+      "input_tokens": 71920,
+      "output_tokens": 1505,
+      "total_tokens": 73425
+    },
+    "doctor_manager": {
+      "input_tokens": 42813,
+      "output_tokens": 1953,
+      "total_tokens": 44766
+    },
+    "patient_manager": {
+      "input_tokens": 48042,
+      "output_tokens": 3705,
+      "total_tokens": 51747
+    }
+  }
+}

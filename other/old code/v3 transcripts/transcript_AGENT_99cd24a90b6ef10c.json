@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:55:42.744779",
+  "agent_id": "AGENT_99cd24a90b6ef10c",
+  "demographics": {
+    "AGE": "46-55",
+    "RACE": "White",
+    "GENDER": "Other",
+    "SOCIOECONOMIC_STATUS": "Medium",
+    "COUNTRY_OF_ORIGIN": "USA",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Reserved",
+    "TRAITS_B_EMOTION": "Calm",
+    "TRAITS_C_LANGUAGE": "Slang-heavy",
+    "TRAITS_D_LANGUAGE": "Descriptive"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "OFTEN",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "OFTEN",
+    "Fatigue or loss of energy": "NONE",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Feelings of worthlessness or excessive guilt",
+    "Depressed mood"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey doc, good to see you too. I\u2019ve been mostly alright, kept calm. Had a bit of lost interest for a couple days and kinda messy appetite for about a week. Stuff to do with a breakup, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear about the breakup; it sounds tough. It's understandable to have those feelings. Have you felt unusually restless or sluggish during this time?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I\u2019ve felt kinda sluggish for six to ten days. It\u2019s like I\u2019m dragging myself around more than usual."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m sorry to hear that. It\u2019s important to keep monitoring these feelings. Have you experienced any thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Not at all, no thoughts like that have come up."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that. Thank you for sharing. Have you been troubled by any feelings of worthlessness or guilt recently?"
+    },
+    {
+      "role": "user",
+      "content": "Just a little, only had those feelings one or two days. Nothing major."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "Not at all, haven\u2019t felt down or hopeless."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

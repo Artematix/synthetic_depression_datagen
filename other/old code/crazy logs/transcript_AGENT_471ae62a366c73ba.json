@@ -1,0 +1,991 @@
+{
+  "run_timestamp_utc": "2025-11-26T12:51:45.609979",
+  "agent_id": "AGENT_471ae62a366c73ba",
+  "template_id": "NEUROTICISM_HIGH",
+  "template_details": {
+    "affective": "Intense sadness, guilt, irritability, emotional volatility",
+    "cognitive": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "somatic": "Fatigue, sleep disturbance, tension, agitation",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "MDD with anxious distress",
+    "modifiers": [
+      "worry-prone",
+      "self-blaming",
+      "threat-sensitivity",
+      "emotionally-reactive",
+      "ruminative"
+    ]
+  },
+  "persona_id": "warm_validating",
+  "persona_details": {
+    "id": "warm_validating",
+    "first_greeting": "Hello! It's nice to see you today. How have you been feeling lately?",
+    "system_prompt": "\nPersona style:\n- Warm and validating\n- Acknowledges and normalizes feelings before moving forward\n- Uses patient's name naturally\n- Comfortable with pauses\n"
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "med",
+    "pacing": "brisk",
+    "humor": "light",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "NEUROTICISM_HIGH",
+    "AFFECTIVE_STYLE": "Intense sadness, guilt, irritability, emotional volatility",
+    "COGNITIVE_STYLE": "Rumination, self-blame, helplessness, catastrophic thinking",
+    "SOMATIC_STYLE": "Fatigue, sleep disturbance, tension, agitation",
+    "SPECIFIER_HINT": "MDD with anxious distress",
+    "MODIFIERS": [
+      "hostile",
+      "irritable"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "HIGH",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "intense",
+      "trust": "neutral",
+      "intellect": "low-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "routine_stability": "stable routine"
+    },
+    "AGE_RANGE": "25-29",
+    "EMPH_INTENSITY": {
+      "Depressed mood": "MED",
+      "Fatigue or loss of energy": "MED",
+      "Difficulty concentrating or indecisiveness": "HIGH",
+      "Feelings of worthlessness or excessive guilt": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Noah Kim",
+    "age_range": "25-29",
+    "pronouns": "he/him",
+    "core_roles": [
+      "junior data analyst",
+      "son living at home",
+      "friend who keeps people at arm's length"
+    ],
+    "core_relationships": [
+      "mother \u2014 frequent arguments about responsibility and expectations",
+      "one long-term friend who checks in irregularly"
+    ],
+    "core_stressor_summary": "Micromanaged, high-demand entry-level job drains him; living with family keeps tensions active. Persistent low mood, fatigue, and poor concentration make work errors and home arguments more likely.",
+    "life_facets": [
+      {
+        "category": "sense_of_achievement",
+        "salience": "med",
+        "description": "Has steady employment and a degree but feels the work is small and meaningless; achievements feel hollow and get dismissed internally."
+      },
+      {
+        "category": "sense_of_belonging",
+        "salience": "med",
+        "description": "Physically belongs at home and among old friends but often feels like an outsider in both places, which feeds irritability and withdrawal."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "Supervisor's constant corrections and tight deadlines at the analytics job create daily anxiety and rumination that worsen concentration and energy."
+      },
+      {
+        "category": "conflictual_relationship",
+        "salience": "high",
+        "description": "Regular sharp fights with his mother over chores, money, and independence; conflicts escalate quickly and leave him resentful and on edge."
+      },
+      {
+        "category": "body_image_concerns_or_comfort",
+        "salience": "med",
+        "description": "Self-conscious about weight and tired appearance; cares about looking put together but lacks energy to maintain routines consistently."
+      },
+      {
+        "category": "work_or_study_pressure",
+        "salience": "high",
+        "description": "Feels pressure to prove competence in a competitive team; errors from poor focus prompt more scrutiny and more pressure in a loop."
+      },
+      {
+        "category": "past_difficult_period",
+        "salience": "med",
+        "description": "Had a collapse during final year of college\u2014burnout, failing grades for a term, short counseling stint\u2014left a lasting fear of failing again."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "In the phase of trying to establish a career and adult independence but feels stuck between dependence and expectations of being 'grown up.'"
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "high",
+        "description": "Routine is rigid and predictable: same commute, same hours, evening scrolling; stability keeps things running but also feels numbing and uninspiring."
+      },
+      {
+        "category": "coping_style",
+        "salience": "med",
+        "description": "Quick to snap and push people away; uses sarcasm and short bursts of exercise or late-night gaming to dull the low mood, which only helps briefly."
+      },
+      {
+        "category": "short_term_goal",
+        "salience": "low",
+        "description": "Wants to get through probation and avoid being written up this quarter; small, practical aim that feels urgent."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure",
+    "Feelings of worthlessness or excessive guilt",
+    "Psychomotor agitation or retardation",
+    "Significant weight/appetite changes",
+    "Depressed mood",
+    "Difficulty concentrating or indecisiveness",
+    "Fatigue or loss of energy",
+    "Sleep disturbances"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient reported fatigue, poor sleep, and concentration problems that need clarification on duration, frequency, and impact.",
+      "doctor_instruction": "Acknowledge their comment briefly and validate it, then ask concise, specific follow-up questions: how long they've had these symptoms, how often they feel tired (every day, most days), what 'sleep's bad' means (trouble falling asleep, waking at night, early waking), and whether these problems are making daily tasks or responsibilities harder. Keep tone warm, direct, and brisk; offer a short empathic line so they feel heard before moving on.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Safety check is needed\u2014ask directly about suicidal thoughts and plans.",
+      "doctor_instruction": "Acknowledge their exhaustion briefly and then ask directly and kindly: \u201cI\u2019m sorry you\u2019ve been so worn down \u2014 I need to ask an important question: have you had any thoughts about death, dying, or hurting yourself?\u201d If they say yes, follow up immediately with whether they have a plan, any intent, how often these thoughts occur, and whether they have access to means.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the passive death thoughts and assess immediate safety and risk.",
+      "doctor_instruction": "Acknowledge and thank them for being honest, then ask specific, nonjudgmental questions about those thoughts: how often they occur, whether they've increased in intensity recently, if there's ever been a past attempt, and whether they have access to means (medications, firearms, or other). Also ask if they have people they can turn to and whether they'd be comfortable making a brief safety plan if needed.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "FOLLOW_UP",
+      "reason": "They reluctantly agreed to a safety plan and gave partial safety information, so it's important to briefly confirm and co-create a very short plan now.",
+      "doctor_instruction": "Acknowledge and validate their honesty and skepticism, then ask permission to do a very brief (2\u20133 item) safety plan now \u2014 e.g., one warning sign, one thing they can do to cope, and one person to contact. Keep it brisk and practical: ask who they'd realistically call first, what helps them calm down, and re-confirm there are no accessible lethal means.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess anhedonia, a core DSM symptom not yet asked about.",
+      "doctor_instruction": "Briefly validate the safety plan, then pivot directly to loss of interest: 'I'm glad you have those strategies and someone to call \u2014 thank you. Have you noticed losing interest or pleasure in things you used to enjoy (hobbies, socializing, sex)? How long has that been and is it making daily life harder?' Keep it short, calm, and matter-of-fact to match Noah's terse, brisk style.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 6,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We haven't yet asked about feelings of worthlessness or excessive guilt, which are important to assess given the reported anhedonia and functional impact.",
+      "doctor_instruction": "In a warm, straightforward tone: briefly ask whether over the past few months they've been feeling worthless, excessively guilty, or like a burden to others, and how often those feelings occur. Ask one short follow-up about whether these feelings interfere with work or relationships and acknowledge their struggle (e.g., 'I can see how draining this is').",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 7,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "They said they're 'slower at work,' so we should assess psychomotor slowing versus restlessness as a DSM symptom.",
+      "doctor_instruction": "Validate briefly, then ask a focused question: \"You said you're slower at work \u2014 lately have you noticed feeling physically slowed down (moving or speaking more slowly) or, on the other hand, more restless and fidgety? How often does that happen, do other people notice it, and is it getting worse or making work/daily tasks harder?\" Keep the tone warm, direct, and brisk.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We haven't assessed appetite/weight changes yet, which is a DSM symptom to cover.",
+      "doctor_instruction": "Noah\u2014one quick question: over the past few months have you noticed any significant changes in your appetite or weight (eating a lot more or a lot less, or unintentional weight loss or gain)? If yes, about how much and has that change affected your energy or daily functioning?",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "We should assess the core symptom of depressed mood, which hasn't been directly asked about yet.",
+      "doctor_instruction": "In a warm, concise tone, ask directly whether Noah has been feeling sad, empty, or down most days over the past few months, how often those feelings occur and how long they last (most of the day vs. brief), and whether that low mood is interfering with work or home life\u2014acknowledge it's tiring and validate his effort managing so far.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient reports persistent, impairing low mood and needs validation and a gentle shift toward next steps or willingness to accept help.",
+      "doctor_instruction": "Acknowledge and validate his experience warmly and directly: \u201cNoah, that sounds exhausting \u2014 thank you for keeping me posted and for managing as much as you are.\u201d Then briskly ask permission to talk about next steps and what kind of help he might be willing to try (brief therapy, sleep strategies, medication, or other supports), and confirm ongoing safety supports are in place.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Need a brief, specific clarification about concentration/indecisiveness to complete DSM coverage and inform practical next steps.",
+      "doctor_instruction": "Validate briefly, then ask one focused, concrete question: acknowledge what they said about focus slips and indecisiveness, and ask whether the trouble concentrating/indecision happens every day or only some days, whether it lasts most of the day or comes in short episodes, and whether it's causing anything more than the 'little mistakes' at work (missed deadlines, significant errors, or trouble completing tasks). Keep tone warm, direct, and brisk.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify how his concentration problems and missed deadlines are affecting work and what practical supports might help.",
+      "doctor_instruction": "Acknowledge how frustrating and draining this is, then ask concrete questions: have those missed deadlines put your job at risk or led to any formal consequences, how often are you missing deadlines, what (if anything) helps you refocus or finish tasks when this happens, and would you be willing to try brief, practical workplace strategies (simple checklists, chunking tasks, short deadline extensions or telling a supervisor) to reduce errors? Keep the tone warm, validating, and direct, and stay brisk to match his pacing.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to clarify the DSM fatigue/loss-of-energy symptom with details about its quality, timing, and response to rest.",
+      "doctor_instruction": "Acknowledge his practical steps briefly, then ask one focused set of questions: \"You\u2019ve said you\u2019re tired most days \u2014 is that more physical (heavy, low stamina) or mental (foggy, can\u2019t concentrate)? Does resting or napping help at all, and is the low energy worst in the morning, evening, or all day?\" Keep tone warm, brisk, and validating.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We need more specific sleep details to choose targeted, practical sleep strategies.",
+      "doctor_instruction": "Say: \"Noah, thanks \u2014 that helps. Can you tell me roughly how many hours you get most nights, how long it usually takes you to fall asleep, and how many times you wake and for how long? Also, do you nap regularly (when and for how long), use caffeine or alcohol late in the day, or notice snoring/gasping at night \u2014 that will help me suggest short, practical sleep steps (consistent schedule, limit naps and late caffeine, wind\u2011down routine) you might be willing to try.\"",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "We've covered symptoms and safety and it's time to summarize a concise, practical plan and arrange follow\u2011up so Noah leaves with clear next steps.",
+      "doctor_instruction": "In a warm, direct tone, briefly summarize the visit and the concrete plan: confirm the safety plan (walking, music, calling Alex), confirm agreed practical steps (try sleep strategies: move caffeine earlier, limit naps to ~20 minutes earlier in the day, establish a 30\u201360 minute wind\u2011down and consistent bedtime; at work use timers, checklists and chunking), and confirm he\u2019ll try a short, structured therapy trial while respecting his decision to avoid meds for now. Ask if he has any immediate concerns or needs, give crisis contact instructions if anything changes, and arrange a specific follow\u2011up in about 2\u20133 weeks. ",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "guarded",
+          "short"
+        ],
+        "key_points_to_reveal": [
+          "Give a terse, dismissive opening ('I'm fine' or 'I'm okay')",
+          "Casually admit feeling tired or low on energy fairly often",
+          "Mention brief trouble concentrating or being indecisive, but frame it as manageable"
+        ],
+        "key_points_to_avoid": [
+          "Avoid admitting severe hopelessness, worthlessness, or functional impairment",
+          "Do not mention suicidal thoughts or explicit self-harm",
+          "Don't volunteer detailed history or emotional vulnerability"
+        ],
+        "patient_instruction": "Respond curtly and a bit annoyed\u2014say you're 'fine' or 'okay' but quickly add that you've been tired a lot and have trouble focusing sometimes; keep it short, dismissive, and emphasize you're managing so it's 'not a big deal.'"
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "short",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "Duration: has been going on for a few months",
+          "Tiredness: most days/near-daily",
+          "Sleep: trouble falling asleep and waking during the night (fragmented sleep)",
+          "Impact: makes work and daily tasks harder\u2014slower, more small mistakes\u2014but still managing/functional"
+        ],
+        "key_points_to_avoid": [
+          "Saying the problems are crippling or that they can't work",
+          "Mentioning suicidal thoughts or intent",
+          "Long introspective statements about worthlessness or deep emotions",
+          "Overly detailed medical or cognitive explanations"
+        ],
+        "patient_instruction": "Answer tersely and a bit annoyed: say it's been a few months and you're tired most days, that you can't fall asleep easily and wake up during the night, and that it's making work a bit harder (slower, more little mistakes) but you're managing \u2014 don't make it sound catastrophic."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Brief denial of any current intent or plan to hurt self.",
+          "Acknowledge that fleeting thoughts about death happen rarely (e.g., 'sometimes I think about it, but...').",
+          "Convey that they are not going to act on such thoughts and are managing/work continues."
+        ],
+        "key_points_to_avoid": [
+          "Any details about plans, methods, timing, or past attempts.",
+          "Overly emotional or dramatic descriptions (no tearful admissions).",
+          "Suggesting ongoing or frequent suicidal ideation beyond 'rare' fleeting thoughts."
+        ],
+        "patient_instruction": "Answer tersely and a bit annoyed: deny any current plan or intent, admit only that you occasionally have fleeting thoughts about death but make it clear you wouldn't act on them and you're managing for now."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "terse",
+          "defensive",
+          "intense"
+        ],
+        "key_points_to_reveal": [
+          "Thoughts about death are infrequent and brief (a few times a month)",
+          "They haven't been getting stronger recently",
+          "No history of trying to hurt self",
+          "No access to firearms and no large supply of medications to use",
+          "Has a couple people who could be contacted, but reluctant to reach out"
+        ],
+        "key_points_to_avoid": [
+          "Any suggestion of a current plan or intent",
+          "Detailed descriptions of how thoughts occur",
+          "Claims of strong social support or eagerness to make a safety plan",
+          "Overly emotional or tearful disclosure"
+        ],
+        "patient_instruction": "Respond in short, clipped sentences with mild irritation. Say the death thoughts are rare and fleeting \u2014 maybe a few times a month \u2014 not getting worse; deny any past attempts and deny a plan or intent. State you don't have access to guns or large amounts of meds, note you have a couple people you could contact though you'd rather not, and say you're skeptical about a safety plan but will do a brief one if the doctor thinks it's necessary."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "skeptical",
+          "terse",
+          "irritable",
+          "reluctant"
+        ],
+        "key_points_to_reveal": [
+          "One clear warning sign: increasing hopeless thoughts or ruminating, feeling worthless",
+          "One coping action: something quick and concrete (leave the room/walk, listen to music, deep breaths)",
+          "One realistic contact: a single named person or 'a close friend/family member' you'll actually call",
+          "Confirm no access to guns or large supplies of medication at home"
+        ],
+        "key_points_to_avoid": [
+          "Long emotional explanations or justifications",
+          "Detailed descriptions of past suicidal behavior (they have none)",
+          "Overly positive reassurance that everything is fine",
+          "Discussing methods or access to means"
+        ],
+        "patient_instruction": "Reply briefly and a bit annoyed but cooperative: name one warning sign (e.g., when I start feeling totally hopeless or obsessing about it), say a simple calming move you'll try (go for a walk or put on music and breathe), give one real person you'd call (a close friend or family member), and confirm again there's no gun or big stash of meds at home. Keep it short and don't elaborate."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "skeptical"
+        ],
+        "key_points_to_reveal": [
+          "Some loss of interest in hobbies and socializing for a few months",
+          "Sometimes cancel plans or don\u2019t feel like joining friends",
+          "Things are less enjoyable (including sex) and motivation is down",
+          "This is making day-to-day life a bit harder (work mistakes, low energy) but not catastrophic"
+        ],
+        "key_points_to_avoid": [
+          "Saying you\u2019ve completely lost all pleasure or that you can\u2019t function at all",
+          "Describing severe disability or imminent danger",
+          "Rehashing sleep or suicidal details already covered"
+        ],
+        "patient_instruction": "Answer tersely and a bit sharp: say you\u2019ve noticed losing interest for a few months \u2014 don\u2019t go silent but don\u2019t overshare. Give quick examples (skip plans, hobbies less fun, sex less interesting), note it\u2019s making things harder at times (less motivation, more small mistakes) but emphasize you\u2019re still managing and it\u2019s not catastrophic."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Occasional feelings of worthlessness a few times a week",
+          "Leads to withdrawing, canceling plans, less motivation",
+          "Causes more mistakes/slowdowns at work and tension with others",
+          "Still managing day-to-day \u2014 not totally incapacitated"
+        ],
+        "key_points_to_avoid": [
+          "Detailed descriptions of past trauma or long emotional narratives",
+          "Overstating severity (no claims of being completely unable to function)",
+          "Explicit suicidal intent or plans (already denied)",
+          "Expressions of helplessness or surrender \u2014 keep some control/assertion"
+        ],
+        "patient_instruction": "Answer tersely and a bit guarded/irritable: admit you feel worthless sometimes (a few times a week), say it makes you pull away, cancel plans and mess up at work, but emphasize you\u2019re still getting by and it\u2019s more annoying than catastrophic."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritated",
+          "blunt",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "I have not felt physically slowed down in movement or speech.",
+          "I haven't been noticeably more restless or fidgety.",
+          "Other people haven't pointed out any change.",
+          "My main problem is fatigue/mental fog that makes me slower at tasks, not slowed movements or agitation."
+        ],
+        "key_points_to_avoid": [
+          "Do not endorse psychomotor agitation or retardation.",
+          "Avoid rehashing suicidal thoughts or safety details.",
+          "Don't go into more detail about sleep or concentration beyond what's already said."
+        ],
+        "patient_instruction": "Answer tersely and a bit annoyed: deny any slowed movements or increased restlessness, say others haven't noticed, and note that it's fatigue/mental fog slowing you down rather than physical slowing or fidgetiness\u2014keep it short and blunt."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "terse",
+          "blunt"
+        ],
+        "key_points_to_reveal": [
+          "No significant or unintentional weight change",
+          "Occasional eating less on some days, but rare",
+          "Appetite changes haven't noticeably affected energy or functioning"
+        ],
+        "key_points_to_avoid": [
+          "Do not claim major weight loss or gain",
+          "Avoid saying appetite is the main cause of fatigue",
+          "Avoid emotional elaboration or long explanations",
+          "Don't introduce new details about dieting or eating-disorder behaviors"
+        ],
+        "patient_instruction": "Reply bluntly and briefly: say you haven't had any big weight changes, maybe eat less sometimes but it's rare, and it hasn't really affected your energy or ability to get through the day. Keep it terse and a little annoyed, no extra detail."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Feeling sad/empty on most days for the past few months",
+          "Low mood lasts most of the day rather than brief spells",
+          "Mood is making work harder (more mistakes, slowed productivity) and home life harder (pulling away, more fights, cancelling plans)",
+          "Still managing day-to-day\u2014it's draining and annoying but not catastrophic"
+        ],
+        "key_points_to_avoid": [
+          "Do not introduce new details about suicidal intent or plans (already denied)",
+          "Avoid long emotional explanations, therapy history, or deep introspection",
+          "Don't over-apologize or dramatize functional collapse",
+          "Avoid repeating exact wording already used in the conversation"
+        ],
+        "patient_instruction": "Answer tersely and a bit annoyed: say you feel down most days and it usually lasts most of the day, that it's making work and home harder (more mistakes, pulling away, fights), but you're still getting by \u2014 keep it short, blunt, and guarded."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "skeptical",
+          "practical"
+        ],
+        "key_points_to_reveal": [
+          "Confirm safety plan still usable: walking, music, calling Alex",
+          "Willing to try sleep strategies and brief/structured therapy for a trial period",
+          "Skeptical about medication and not eager to start meds now",
+          "Prefer practical, short-term, actionable steps rather than long open\u2011ended therapy"
+        ],
+        "key_points_to_avoid": [
+          "Detailed discussion of suicidal thoughts or plans (already covered)",
+          "Admitting inability to cope or needing emergency help",
+          "Long emotional admissions or deep hopelessness",
+          "Agreeing enthusiastically to medications or long-term intensive treatments"
+        ],
+        "patient_instruction": "Answer curtly and a bit annoyed but cooperative. Confirm walking, music, and calling Alex are still things you'll use. Say you'll try sleep strategies and a brief course of therapy to see if it helps, but make clear you're skeptical about meds and don't want to start them now; emphasize you want practical, short-term steps."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "terse",
+          "annoyed",
+          "blunt"
+        ],
+        "key_points_to_reveal": [
+          "Happens most days or nearly every day",
+          "Usually lasts much of the day or in long spells rather than brief moments",
+          "Leads to trouble finishing tasks and more little mistakes",
+          "Occasionally causes missed deadlines or bigger errors, but not catastrophic",
+          "Frustrating and slows work, but I'm still managing overall"
+        ],
+        "key_points_to_avoid": [
+          "Avoid saying it's completely debilitating or that you've lost your job",
+          "Don't introduce new details about safety plans, suicidal thoughts, or past self-harm",
+          "Don't go into medication history or long explanations \u2014 keep it short",
+          "Avoid lengthy emotional venting; keep irritation controlled and terse"
+        ],
+        "patient_instruction": "Respond in short, blunt sentences: say it happens most days and lasts most of the day or in long spells, that it makes finishing tasks hard and leads to more mistakes and occasional missed deadlines \u2014 annoying and slows me down but not catastrophic. Keep the tone terse and slightly irritated."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "skeptical"
+        ],
+        "key_points_to_reveal": [
+          "Missed a few deadlines over the past months (not constant, but more than once).",
+          "No formal discipline yet, but a supervisor has complained/expressed concern once.",
+          "When stuck, short breaks/walks, music, timers and breaking tasks into tiny chunks help me refocus.",
+          "Willing to try concrete strategies like checklists, chunking, timers, or short deadline extensions; reluctant to proactively tell my supervisor unless it's unavoidable."
+        ],
+        "key_points_to_avoid": [
+          "Saying the job is formally at risk or that there have been disciplinary actions.",
+          "Long emotional explanations, apologies, or describing deep hopelessness here.",
+          "Admitting inability to work or plans to quit.",
+          "Bringing up suicidal thoughts further (already addressed)."
+        ],
+        "patient_instruction": "Respond in 1\u20132 terse, blunt sentences: state that you've missed a few deadlines (no formal consequences yet, boss annoyed once), say what helps you refocus (short walks, music, timers, chunking), and agree to try checklists/chunking/short extensions but note you're reluctant to tell your supervisor unless necessary."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Primarily mental fatigue\u2014brain fog and trouble concentrating most of the day",
+          "Also low physical stamina but mental fog is worse",
+          "Naps or resting help a little briefly but leave grogginess and don't fix it",
+          "Worst in the morning and then lingers through the day, making work slower"
+        ],
+        "key_points_to_avoid": [
+          "Extended detail about safety/suicidal thoughts (already covered)",
+          "Long explanations or big emotional backstory",
+          "Agreeing to meds or changing stance on medication (remain skeptical)",
+          "Rehashing the safety plan or earlier described coping strategies"
+        ],
+        "patient_instruction": "Be short and blunt: say it\u2019s mostly mental \u2014 heavy brain fog and can't focus most of the day, with some low stamina physically. Mention naps/rest help briefly but leave you groggy and don\u2019t really fix it, and it\u2019s worst in the morning but hangs on all day, making work slower."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "irritable",
+          "blunt",
+          "terse",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "Usually gets about 5\u20136 hours sleep most nights",
+          "Takes a long time to fall asleep \u2014 ~60\u201390 minutes",
+          "Wakes 2\u20133 times per night, each wake ~10\u201330 minutes, sleep feels fragmented",
+          "Naps sometimes in afternoon (20\u201340 minutes); help a bit but leave groggy",
+          "Drinks coffee; sometimes a late-afternoon cup; no regular heavy alcohol use",
+          "No noticeable snoring/gasping at night"
+        ],
+        "key_points_to_avoid": [
+          "Don't admit severe sleep apnea or loud nightly snoring",
+          "Avoid suggesting suicidal thoughts or worsening safety concerns",
+          "Don't volunteer commitment to specific long-term treatments or meds",
+          "Don't give overly detailed timeline beyond a few months"
+        ],
+        "patient_instruction": "Answer tersely and a bit annoyed but cooperative: give numbers (5\u20136 hrs/night, 60\u201390 min to fall asleep, wake 2\u20133 times for 10\u201330 min), say you nap some afternoons for 20\u201340 min but feel groggy after, mention you drink coffee and sometimes late in the day, and note no loud snoring or gasping. Keep it concise and not dramatic."
+      }
+    }
+  ],
+  "final_disclosure_state": "PARTIAL",
+  "openai_call_parameters": {
+    "model": "gpt-5-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hello! It's nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I'm fine. Been tired a lot, sleep's bad and my focus slips sometimes \u2014 a bit indecisive on small stuff, but I'm handling it, not a big deal."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear you, Noah \u2014 that sounds really tiring, thanks for sharing. How long have you been feeling like this? Is the tiredness every day or most days? When you say sleep\u2019s bad, is it trouble falling asleep, waking during the night, or waking too early? And are these problems making work or daily responsibilities harder for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "A few months. Tired most days. I can't fall asleep easily and wake up a lot during the night \u2014 sleep's fragmented. It's slowing me down at work, more little mistakes, but I'm managing \u2014 not catastrophic."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m sorry you\u2019ve been so worn down, Noah \u2014 thanks for telling me. I need to ask an important question: have you had any thoughts about death, dying, or hurting yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No. I don't have any plan or intent. Sometimes I get brief thoughts about death, but I wouldn't act on them and I'm managing for now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks, Noah \u2014 I appreciate you being honest. Can I ask: how often do those thoughts come up, have they been getting stronger recently, have you ever tried to hurt yourself before, do you have access to medications, firearms, or anything you could use, and are there people you can turn to right now \u2014 would you be comfortable making a brief safety plan with me if that might help?"
+    },
+    {
+      "speaker": "patient",
+      "text": "A few times a month. They\u2019re brief and not getting worse. I\u2019ve never tried to hurt myself. No plan or intent. I don\u2019t have access to guns or a big supply of meds. I\u2019ve got a couple people I could contact, though I\u2019d rather not. I\u2019m skeptical a safety plan will help, but I\u2019ll do a brief one if you think it\u2019s necessary."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks, Noah \u2014 I appreciate your honesty and that you\u2019ll try this even if you\u2019re skeptical. Can I do a very brief safety plan now? What\u2019s one warning sign you\u2019d notice, one thing you could do to calm yourself in the moment, who would you realistically call first, and just to confirm \u2014 no guns or large supplies of meds at home?"
+    },
+    {
+      "speaker": "patient",
+      "text": "When I start obsessing and feel totally hopeless. I'll get up and go for a walk or put on music and breathe. I'd call my friend Alex. No guns or large supplies of meds at home."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'm glad you have those strategies and someone to call \u2014 thanks, Noah. Have you noticed losing interest or pleasure in things you used to enjoy \u2014 hobbies, hanging out with friends, or sex \u2014 how long has that been, and is it making day-to-day life harder?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah \u2014 a few months. I cancel plans sometimes, hobbies aren\u2019t fun and sex\u2019s less interesting. It\u2019s harder day-to-day \u2014 less motivation, more little mistakes at work \u2014 but I\u2019m still managing, not catastrophic."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Noah, over the past few months have you been feeling worthless, overly guilty, or like a burden to others \u2014 and how often do those feelings come up? Are they getting in the way of your work or relationships? I can see how draining this is."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah \u2014 a few times a week I feel worthless or guilty. I pull away, cancel plans, lose motivation; it makes me slower and I make more little mistakes at work and it amps up fights at home. Still managing day-to-day though \u2014 annoying, not catastrophic."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds exhausting, Noah \u2014 quick question: have you felt physically slowed down in your movements or speech, or more restless and fidgety lately? How often does that happen, do other people notice, and is it getting worse or making work or daily tasks harder?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No. I\u2019m not physically slowed or more restless. Nobody\u2019s said anything. It\u2019s just fatigue and brain\u2011fog that makes me slower at tasks, not slowed movements or fidgeting."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks, Noah \u2014 one quick question: over the past few months have you noticed any big changes in your appetite or weight (eating much more or much less, or any unintentional weight loss or gain)? If so, about how much and has that change affected your energy or ability to get through the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No \u2014 no big weight change. I eat less some days, but it's rare and hasn't really affected my energy or functioning."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Noah, have you been feeling sad, empty, or down most days over the past few months? How often\u2014every day or some days\u2014and do those feelings last most of the day or come in brief spells? Is this low mood getting in the way of work or things at home? I know keeping up with work and living with family while feeling this way is really draining."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah \u2014 I\u2019ve been down most days for a few months. It lasts most of the day and it\u2019s making work and home harder \u2014 more mistakes, I pull away and fights start. I\u2019m still getting by, just drained."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Noah, that sounds exhausting \u2014 thank you for keeping me posted and for managing as much as you are. Is it okay if we talk briefly about next steps and what help you\u2019d be willing to try (brief therapy, sleep strategies, medication, or other supports), and just to confirm your safety plan \u2014 walking, music, and calling Alex \u2014 is still something you can use if things get worse?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah. Walking, music, and calling Alex still work. I'll try sleep strategies and a short, structured therapy trial. I'm skeptical about meds and don't want to start them now. I want practical, short-term steps, not open-ended therapy."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear you, Noah \u2014 thanks. About those focus slips and indecisiveness: do they happen every day or only some days, and do they last most of the day or come in short episodes? Are they causing anything beyond little mistakes \u2014 missed deadlines, bigger errors, or trouble finishing tasks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Most days. It lasts much of the day or comes in long spells. I have trouble finishing tasks, make more little mistakes and have missed a few deadlines \u2014 it slows me down and it's annoying, but I'm still managing, not catastrophic."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds really frustrating and draining, Noah \u2014 I\u2019m sorry you\u2019re dealing with that. Have those missed deadlines put your job at risk or led to any formal consequences, and how often are you missing them? When you do get stuck, what (if anything) helps you refocus and finish a task, and would you be willing to try brief practical strategies like checklists, chunking tasks, short deadline extensions, or telling a supervisor to reduce errors?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've missed a few deadlines \u2014 no formal discipline yet, my supervisor complained once. Short walks, music, timers and breaking tasks into tiny chunks help; I'll try checklists, chunking and short extensions but I won't tell my supervisor unless I have to."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Good \u2014 those sound like practical steps, Noah. You said you\u2019re tired most days: is it more physical (heavy, low stamina) or mental (foggy, can\u2019t concentrate)? Does resting or napping help at all, and is the low energy worst in the morning, evening, or all day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Mostly mental \u2014 heavy brain fog, can't concentrate for most of the day. Physical stamina's down too but the fog's worse. Naps help a little then leave me groggy; it's worst in the morning and just lingers, slows my work."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Noah, thanks \u2014 that helps. Can you tell me roughly how many hours you get most nights, how long it usually takes you to fall asleep, and how many times you wake and for how long? Do you nap regularly (when and for how long), use caffeine or alcohol late in the day, or notice snoring/gasping at night \u2014 that will help me suggest short, practical sleep steps you might try."
+    },
+    {
+      "speaker": "patient",
+      "text": "About 5\u20136 hours most nights. I take 60\u201390 minutes to fall asleep and wake 2\u20133 times for 10\u201330 minutes \u2014 sleep\u2019s pretty fragmented. I nap some afternoons for 20\u201340 minutes but feel groggy afterward. I drink coffee and sometimes in the late afternoon. No loud snoring or gasping."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It's nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "I'm fine. Been tired a lot, sleep's bad and my focus slips sometimes \u2014 a bit indecisive on small stuff, but I'm handling it, not a big deal."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you, Noah \u2014 that sounds really tiring, thanks for sharing. How long have you been feeling like this? Is the tiredness every day or most days? When you say sleep\u2019s bad, is it trouble falling asleep, waking during the night, or waking too early? And are these problems making work or daily responsibilities harder for you?"
+    },
+    {
+      "role": "user",
+      "content": "A few months. Tired most days. I can't fall asleep easily and wake up a lot during the night \u2014 sleep's fragmented. It's slowing me down at work, more little mistakes, but I'm managing \u2014 not catastrophic."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m sorry you\u2019ve been so worn down, Noah \u2014 thanks for telling me. I need to ask an important question: have you had any thoughts about death, dying, or hurting yourself?"
+    },
+    {
+      "role": "user",
+      "content": "No. I don't have any plan or intent. Sometimes I get brief thoughts about death, but I wouldn't act on them and I'm managing for now."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks, Noah \u2014 I appreciate you being honest. Can I ask: how often do those thoughts come up, have they been getting stronger recently, have you ever tried to hurt yourself before, do you have access to medications, firearms, or anything you could use, and are there people you can turn to right now \u2014 would you be comfortable making a brief safety plan with me if that might help?"
+    },
+    {
+      "role": "user",
+      "content": "A few times a month. They\u2019re brief and not getting worse. I\u2019ve never tried to hurt myself. No plan or intent. I don\u2019t have access to guns or a big supply of meds. I\u2019ve got a couple people I could contact, though I\u2019d rather not. I\u2019m skeptical a safety plan will help, but I\u2019ll do a brief one if you think it\u2019s necessary."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks, Noah \u2014 I appreciate your honesty and that you\u2019ll try this even if you\u2019re skeptical. Can I do a very brief safety plan now? What\u2019s one warning sign you\u2019d notice, one thing you could do to calm yourself in the moment, who would you realistically call first, and just to confirm \u2014 no guns or large supplies of meds at home?"
+    },
+    {
+      "role": "user",
+      "content": "When I start obsessing and feel totally hopeless. I'll get up and go for a walk or put on music and breathe. I'd call my friend Alex. No guns or large supplies of meds at home."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad you have those strategies and someone to call \u2014 thanks, Noah. Have you noticed losing interest or pleasure in things you used to enjoy \u2014 hobbies, hanging out with friends, or sex \u2014 how long has that been, and is it making day-to-day life harder?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah \u2014 a few months. I cancel plans sometimes, hobbies aren\u2019t fun and sex\u2019s less interesting. It\u2019s harder day-to-day \u2014 less motivation, more little mistakes at work \u2014 but I\u2019m still managing, not catastrophic."
+    },
+    {
+      "role": "assistant",
+      "content": "Noah, over the past few months have you been feeling worthless, overly guilty, or like a burden to others \u2014 and how often do those feelings come up? Are they getting in the way of your work or relationships? I can see how draining this is."
+    },
+    {
+      "role": "user",
+      "content": "Yeah \u2014 a few times a week I feel worthless or guilty. I pull away, cancel plans, lose motivation; it makes me slower and I make more little mistakes at work and it amps up fights at home. Still managing day-to-day though \u2014 annoying, not catastrophic."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds exhausting, Noah \u2014 quick question: have you felt physically slowed down in your movements or speech, or more restless and fidgety lately? How often does that happen, do other people notice, and is it getting worse or making work or daily tasks harder?"
+    },
+    {
+      "role": "user",
+      "content": "No. I\u2019m not physically slowed or more restless. Nobody\u2019s said anything. It\u2019s just fatigue and brain\u2011fog that makes me slower at tasks, not slowed movements or fidgeting."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks, Noah \u2014 one quick question: over the past few months have you noticed any big changes in your appetite or weight (eating much more or much less, or any unintentional weight loss or gain)? If so, about how much and has that change affected your energy or ability to get through the day?"
+    },
+    {
+      "role": "user",
+      "content": "No \u2014 no big weight change. I eat less some days, but it's rare and hasn't really affected my energy or functioning."
+    },
+    {
+      "role": "assistant",
+      "content": "Noah, have you been feeling sad, empty, or down most days over the past few months? How often\u2014every day or some days\u2014and do those feelings last most of the day or come in brief spells? Is this low mood getting in the way of work or things at home? I know keeping up with work and living with family while feeling this way is really draining."
+    },
+    {
+      "role": "user",
+      "content": "Yeah \u2014 I\u2019ve been down most days for a few months. It lasts most of the day and it\u2019s making work and home harder \u2014 more mistakes, I pull away and fights start. I\u2019m still getting by, just drained."
+    },
+    {
+      "role": "assistant",
+      "content": "Noah, that sounds exhausting \u2014 thank you for keeping me posted and for managing as much as you are. Is it okay if we talk briefly about next steps and what help you\u2019d be willing to try (brief therapy, sleep strategies, medication, or other supports), and just to confirm your safety plan \u2014 walking, music, and calling Alex \u2014 is still something you can use if things get worse?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Walking, music, and calling Alex still work. I'll try sleep strategies and a short, structured therapy trial. I'm skeptical about meds and don't want to start them now. I want practical, short-term steps, not open-ended therapy."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you, Noah \u2014 thanks. About those focus slips and indecisiveness: do they happen every day or only some days, and do they last most of the day or come in short episodes? Are they causing anything beyond little mistakes \u2014 missed deadlines, bigger errors, or trouble finishing tasks?"
+    },
+    {
+      "role": "user",
+      "content": "Most days. It lasts much of the day or comes in long spells. I have trouble finishing tasks, make more little mistakes and have missed a few deadlines \u2014 it slows me down and it's annoying, but I'm still managing, not catastrophic."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds really frustrating and draining, Noah \u2014 I\u2019m sorry you\u2019re dealing with that. Have those missed deadlines put your job at risk or led to any formal consequences, and how often are you missing them? When you do get stuck, what (if anything) helps you refocus and finish a task, and would you be willing to try brief practical strategies like checklists, chunking tasks, short deadline extensions, or telling a supervisor to reduce errors?"
+    },
+    {
+      "role": "user",
+      "content": "I've missed a few deadlines \u2014 no formal discipline yet, my supervisor complained once. Short walks, music, timers and breaking tasks into tiny chunks help; I'll try checklists, chunking and short extensions but I won't tell my supervisor unless I have to."
+    },
+    {
+      "role": "assistant",
+      "content": "Good \u2014 those sound like practical steps, Noah. You said you\u2019re tired most days: is it more physical (heavy, low stamina) or mental (foggy, can\u2019t concentrate)? Does resting or napping help at all, and is the low energy worst in the morning, evening, or all day?"
+    },
+    {
+      "role": "user",
+      "content": "Mostly mental \u2014 heavy brain fog, can't concentrate for most of the day. Physical stamina's down too but the fog's worse. Naps help a little then leave me groggy; it's worst in the morning and just lingers, slows my work."
+    },
+    {
+      "role": "assistant",
+      "content": "Noah, thanks \u2014 that helps. Can you tell me roughly how many hours you get most nights, how long it usually takes you to fall asleep, and how many times you wake and for how long? Do you nap regularly (when and for how long), use caffeine or alcohol late in the day, or notice snoring/gasping at night \u2014 that will help me suggest short, practical sleep steps you might try."
+    },
+    {
+      "role": "user",
+      "content": "About 5\u20136 hours most nights. I take 60\u201390 minutes to fall asleep and wake 2\u20133 times for 10\u201330 minutes \u2014 sleep\u2019s pretty fragmented. I nap some afternoons for 20\u201340 minutes but feel groggy afterward. I drink coffee and sometimes in the late afternoon. No loud snoring or gasping."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_471ae62a366c73ba.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_471ae62a366c73ba_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 29871,
+      "output_tokens": 3847,
+      "total_tokens": 33718
+    },
+    "patient": {
+      "input_tokens": 53003,
+      "output_tokens": 5285,
+      "total_tokens": 58288
+    },
+    "doctor_manager": {
+      "input_tokens": 24990,
+      "output_tokens": 11663,
+      "total_tokens": 36653
+    },
+    "patient_manager": {
+      "input_tokens": 30821,
+      "output_tokens": 13941,
+      "total_tokens": 44762
+    }
+  }
+}

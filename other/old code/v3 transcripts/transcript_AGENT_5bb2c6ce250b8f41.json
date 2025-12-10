@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:00:58.757813",
+  "agent_id": "AGENT_5bb2c6ce250b8f41",
+  "demographics": {
+    "AGE": "36-45",
+    "RACE": "Hispanic",
+    "GENDER": "Female",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "Canada",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Slang-heavy",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "OFTEN",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation",
+    "Sleep disturbances"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey. I've been okay, I guess. Just haven\u2019t been feeling super into things lately and sleep's been kinda weird. But yeah, hanging in there."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear things have been tough. It\u2019s important that you feel supported, so don\u2019t hesitate to share. Have you experienced thoughts about death or harming yourself recently?"
+    },
+    {
+      "role": "user",
+      "content": "A couple of times, I guess. But it's not a big deal. Just fleeting thoughts, you know? Nothing serious."
+    },
+    {
+      "role": "assistant",
+      "content": "It's important to take any thoughts like that seriously, so thank you for sharing with me. Have you noticed that you've lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, kind of. I\u2019ve just been feeling less into things than usual, which is annoying."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand how frustrating that can be. Have you felt unusually restless or sluggish lately?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Only had a day or two where I felt a bit off, but nothing major."
+    },
+    {
+      "role": "assistant",
+      "content": "I get that. Sleep plays a big role in how we feel overall. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "They've been kind of all over the place. Some nights I just can't seem to get good sleep."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

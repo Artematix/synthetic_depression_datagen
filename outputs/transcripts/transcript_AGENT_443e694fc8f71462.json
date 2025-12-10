@@ -1,0 +1,1006 @@
+{
+  "run_timestamp_utc": "2025-11-26T15:39:11.116335",
+  "agent_id": "AGENT_443e694fc8f71462",
+  "template_id": "AGREEABLENESS_HIGH",
+  "template_details": {
+    "affective": "Empathic sadness, guilt about others, over-concern",
+    "cognitive": "Moral/relational rumination about failing people",
+    "somatic": "Fatigue from overextending, sleep disturbance from worry",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Anxious distress",
+    "modifiers": [
+      "people-pleasing",
+      "over-responsible-for-others",
+      "self-sacrificing",
+      "conflict-avoidant",
+      "guilt-prone"
+    ]
+  },
+  "persona_id": "gentle_brisk",
+  "persona_details": {
+    "id": "gentle_brisk",
+    "first_greeting": "Hi there. I'd like to check in with you about a few things today.",
+    "system_prompt": "\nPersona style:\n- Gentle but brisk\n- Kind phrasing with efficient pacing\n- Moves conversation along\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "med",
+    "pacing": "brisk",
+    "humor": "none",
+    "animation": "reserved"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "AGREEABLENESS_HIGH",
+    "AFFECTIVE_STYLE": "Empathic sadness, guilt about others, over-concern",
+    "COGNITIVE_STYLE": "Moral/relational rumination about failing people",
+    "SOMATIC_STYLE": "Fatigue from overextending, sleep disturbance from worry",
+    "SPECIFIER_HINT": "Anxious distress",
+    "MODIFIERS": [],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "flat",
+      "trust": "open",
+      "intellect": "low-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "work_role": "student",
+      "support_level": "high support"
+    },
+    "AGE_RANGE": "16-19",
+    "EMPH_INTENSITY": {
+      "Fatigue or loss of energy": "HIGH",
+      "Feelings of worthlessness or excessive guilt": "MED",
+      "Depressed mood": "MED",
+      "Sleep disturbances": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Jamie",
+    "age_range": "16-19",
+    "pronouns": "they/them",
+    "core_roles": [
+      "high school student"
+    ],
+    "core_relationships": [
+      "long-term boyfriend who is very supportive"
+    ],
+    "core_stressor_summary": "Jamie often feels a persistent low mood and frequent fatigue that makes keeping up with school and social demands difficult, though they receive strong support from family and their boyfriend.",
+    "life_facets": [
+      {
+        "category": "key_partner_or_love_interest",
+        "salience": "high",
+        "description": "Jamie has a steady boyfriend who is patient and understanding, providing a consistent source of emotional support."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "The ongoing challenge of maintaining school performance despite frequent low energy weighs heavily on Jamie."
+      },
+      {
+        "category": "soothing_activities",
+        "salience": "med",
+        "description": "Jamie finds some comfort in listening to calming music and spending quiet time drawing, activities that help them unwind."
+      },
+      {
+        "category": "less_helpful_coping",
+        "salience": "med",
+        "description": "When overwhelmed, Jamie tends to withdraw socially and procrastinate on school tasks, which increases stress later."
+      },
+      {
+        "category": "coping_style",
+        "salience": "high",
+        "description": "They try to handle difficulties by relying on their support network and maintaining routines but often struggle to initiate action when fatigued."
+      },
+      {
+        "category": "beliefs_about_self_worth",
+        "salience": "med",
+        "description": "Jamie rarely feels worthless but sometimes doubts their ability to succeed in school or meet expectations."
+      },
+      {
+        "category": "sleep_pattern_tendency",
+        "salience": "low",
+        "description": "Sleep is generally normal though not deeply restful, with occasional nights where Jamie finds it hard to fully relax."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "Jamie is at a typical stage of exploring their sense of self and future path but feels slowed down by their energy difficulties."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "med",
+        "description": "Their family is close-knit and supportive, offering encouragement and stability even when Jamie feels down."
+      },
+      {
+        "category": "values_and_priorities",
+        "salience": "low",
+        "description": "Jamie values kindness and loyalty highly, often focusing on maintaining harmony in friendships and family."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "med",
+        "description": "Their daily life follows a fairly steady routine centered around school and home, though low energy sometimes causes disruptions."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Loss of interest or pleasure",
+    "Fatigue or loss of energy",
+    "Sleep disturbances",
+    "Depressed mood",
+    "Feelings of worthlessness or excessive guilt",
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Difficulty concentrating or indecisiveness"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To clarify the frequency and impact of feeling down, tired, and worthless.",
+      "doctor_instruction": "Gently explore how often the patient feels down and tired, and ask them to describe those moments of feeling worthless a bit more. Aim to understand the intensity and effect on their daily life to better grasp their current emotional state.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To cover additional DSM symptom areas given the time constraints and remaining symptom keys.",
+      "doctor_instruction": "Transition gently to ask about loss of interest or pleasure, connecting it naturally to the mood and energy symptoms you've discussed, to maintain rapport while covering essential diagnostic areas.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify more about the patient's mood and tiredness since enjoyment remains stable.",
+      "doctor_instruction": "Acknowledge the patient\u2019s experience of still enjoying hobbies and social time, then gently explore more about how the down mood and tiredness affect their daily functioning or motivation. Give them space to describe these symptoms in their own words.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "The patient describes fatigue and increased effort with activities, a key DSM symptom to explore next.",
+      "doctor_instruction": "Ask the patient about their experience with fatigue or loss of energy, focusing on how it affects their daily functioning and if the tiredness feels overwhelming or persistent beyond normal tiredness.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have not yet covered sleep disturbances, which fits naturally given the patient's tiredness complaints.",
+      "doctor_instruction": "Ask about the patient's sleep patterns and quality, looking for any difficulties falling asleep, staying asleep, or restless sleep, to understand the nature of their tiredness.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient has described symptoms related to sleep and fatigue; exploring depressed mood next will help build on understanding of their core symptoms.",
+      "doctor_instruction": "Gently ask about their mood throughout the day, focusing on feelings of sadness or emptiness, to better understand the depth and pattern of their depressed mood.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To better understand the pattern and triggers of the patient's mood fluctuations.",
+      "doctor_instruction": "Gently explore the timing and triggers of the patient's sadness or emptiness during the day. Ask how long these feelings last when they come and if there are specific situations that seem to bring them on or make them worse, helping the patient feel understood and supported.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess feelings of worthlessness or excessive guilt in detail.",
+      "doctor_instruction": "Given your earlier mention of mild feelings of worthlessness after setbacks, let's explore these experiences a bit more to understand how often and how deeply they affect you. Can you tell me more about these feelings and how much they impact your day-to-day life?",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shares delicate feelings of worthlessness that are mild and transient, so building empathy and connection can help them feel understood and safe.",
+      "doctor_instruction": "Acknowledge the patient\u2019s difficulty with feeling worthless after setbacks and reflect on their strength in managing these feelings. Express understanding without minimizing, letting them know it\u2019s understandable to have these moments and you\u2019re here to support them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess important DSM symptoms and can transition naturally.",
+      "doctor_instruction": "Acknowledge the patient's effort and openness, then gently transition by asking about any recent changes in weight or appetite to understand how physical symptoms may be related to their mood.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 11,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess psychomotor changes, concentration, and suicidal thoughts.",
+      "doctor_instruction": "Let's gently inquire if they've experienced any slowing down or restlessness physically or mentally, or if they've had trouble concentrating or making decisions recently, transitioning into these symptom areas naturally.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned rare trouble concentrating or making decisions, so clarifying frequency and impact will help understand this symptom better.",
+      "doctor_instruction": "Gently ask the patient to describe more about when these concentration or decision-making difficulties happen, how long they last, and whether they impact any specific tasks or areas of life. Encourage the patient to share any examples to better understand the symptom's effect.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to assess if the patient has recurrent thoughts of death or suicide to complete the DSM symptom coverage.",
+      "doctor_instruction": "Gently transition to asking about any recurrent thoughts of death or suicide, ensuring your tone remains warm and supportive to help the patient feel safe discussing this sensitive topic.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared a personal and important part about suicidal thoughts, responding with reassurance, and it is vital to acknowledge their openness and coping effort.",
+      "doctor_instruction": "Acknowledge the patient's effort in managing difficult feelings and express appreciation for their openness in sharing about the absence of suicidal thoughts. Encourage them that continuing to cope and seek support is a strong step, and you\u2019re here to help whenever needed.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "manager_type": "low_turns",
+      "next_action": "RAPPORT",
+      "reason": "The patient expresses appreciation and openness, providing a good opportunity to strengthen trust and connection.",
+      "doctor_instruction": "Acknowledge the patient's efforts and reinforce that they are not alone in this journey. Encourage them gently by affirming that their openness is valuable and that support is always available whenever needed.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover difficulty concentrating or indecisiveness to complete the depression assessment.",
+      "doctor_instruction": "Let's gently shift to discussing your concentration and decision-making abilities in more detail since these are important parts of how depression may affect you. Keep the tone supportive and acknowledge how managing these challenges can be tiring.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 17,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared detailed information and feels supported, making it a good point to begin closing.",
+      "doctor_instruction": "Acknowledge the patient\u2019s openness and efforts in managing their feelings, reassure them about ongoing support, and gently guide the conversation toward wrapping up while emphasizing they can always reach out if needed.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "cooperative",
+          "calm"
+        ],
+        "key_points_to_reveal": [
+          "often feeling down or low",
+          "sometimes feeling very tired despite sleep issues",
+          "occasional feelings of worthlessness"
+        ],
+        "key_points_to_avoid": [
+          "overstating symptoms or emotional expressiveness",
+          "mentioning loss of interest or suicidal thoughts"
+        ],
+        "patient_instruction": "Respond in a calm and cooperative manner, acknowledging the check-in and briefly mention that you often feel down and tired, along with occasional feelings of worthlessness. Keep the tone steady and avoid any emotional highs, maintaining a straightforward but not overly detailed description."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Feeling down happens on most days",
+          "Tiredness is frequent despite sleeping",
+          "Feelings of worthlessness come up occasionally and are mild, often triggered by small setbacks"
+        ],
+        "key_points_to_avoid": [
+          "Strong emotions about worthlessness",
+          "Details about specific incidents that cause feelings of worthlessness"
+        ],
+        "patient_instruction": "Respond thoughtfully and with moderate detail, clearly stating that feeling down and tired occurs on most days but that feelings of worthlessness happen less often and aren't very intense. Keep the emotional tone steady and avoid getting into deep emotional territory or specific events."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Hobbies and social activities still feel about the same, no loss of interest"
+        ],
+        "key_points_to_avoid": [
+          "Avoid implying loss of pleasure or interest, given depression profile shows none"
+        ],
+        "patient_instruction": "Respond calmly and with some detail, explaining that despite feeling down and tired, your enjoyment of hobbies and social activities has not really changed. Keep the tone even and reserved, without expressing much emotion or elaboration."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "feeling down and tired affects motivation and energy for daily tasks",
+          "still manages to complete things but with more effort"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating impact",
+          "talking about concentration or indecisiveness"
+        ],
+        "patient_instruction": "Respond thoughtfully and calmly, explaining that while feeling down and tired does make daily tasks like school or chores more challenging, the patient usually manages to get them done, though it often takes extra effort and can feel draining."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "cooperative"
+        ],
+        "key_points_to_reveal": [
+          "tiredness persists despite resting",
+          "tiredness feels somewhat overwhelming",
+          "some interference with focus and daily routine"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating the impact on daily life",
+          "strong emotional expressions"
+        ],
+        "patient_instruction": "Respond with a calm and straightforward explanation that the tiredness feels a bit different from usual and tends to linger even after resting. Mention that it does make focusing and keeping up with daily tasks somewhat harder, but still manageable. Keep the tone reflective and cooperative without sounding overly emotional."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "patient",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "Sleep is generally okay with occasional difficulty falling asleep",
+          "Usually no major trouble staying asleep",
+          "Sometimes waking up feeling a bit tired or unrested"
+        ],
+        "key_points_to_avoid": [
+          "Exaggerating sleep problems",
+          "Overemphasizing distress related to sleep"
+        ],
+        "patient_instruction": "Respond with a calm and detailed description of your sleep patterns, acknowledging that while you mostly fall asleep without much trouble and generally stay asleep, there are occasional times when falling asleep takes longer or you wake up still feeling somewhat tired. Keep the tone even and straightforward without adding extra worry or drama."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Sadness or emptiness is present during the day but fluctuates",
+          "It tends to come and go rather than persist continuously"
+        ],
+        "key_points_to_avoid": [
+          "Avoid overstating intensity or chronic nature",
+          "Minimize expressing hopelessness or deep emotional distress"
+        ],
+        "patient_instruction": "Explain that your mood during the day includes periods of sadness or emptiness that come and go, rather than lasting constantly. Keep your response calm and straightforward, with a neutral tone reflecting how these feelings fluctuate but do not overwhelm you."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "Sad or empty feelings last for a limited time, not all day",
+          "Moments can be triggered or worsened by stress or setbacks",
+          "Feelings come and go rather than being persistent"
+        ],
+        "key_points_to_avoid": [
+          "Overstating frequency or intensity of sadness",
+          "Mentioning any persistent or suicidal thoughts"
+        ],
+        "patient_instruction": "Explain that the sad or empty feelings usually last only for a while and aren\u2019t constant throughout the day. Mention that these feelings seem to come on more often after stressful events or small setbacks, but they typically fade rather than persist. Keep the tone calm and measured, reflecting your personality\u2019s steadiness."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Worthlessness happens infrequently after setbacks",
+          "Feelings are mild and don't drastically affect daily activities",
+          "These moments tend to pass without long-lasting impact"
+        ],
+        "key_points_to_avoid": [
+          "Overstating frequency or intensity of worthlessness",
+          "Describing lasting impairment or severe emotional impact"
+        ],
+        "patient_instruction": "Respond with a calm and thoughtful tone, conveying that the feelings of worthlessness do happen but not very often, mostly after minor setbacks. Emphasize that these feelings are mild and don\u2019t significantly interfere with your daily routine or mood, reflecting your tendency for openness but without exaggeration."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "appreciative",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge strength in managing feelings",
+          "express cautious optimism about support"
+        ],
+        "key_points_to_avoid": [
+          "overly emotional responses",
+          "deepening details of worthlessness beyond mild impact"
+        ],
+        "patient_instruction": "Respond with a calm, measured appreciation for the doctor's support, emphasizing the patient's ongoing efforts to manage these difficult feelings while showing moderate openness about wanting help but maintaining a reserved tone."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "calm",
+          "reassuring"
+        ],
+        "key_points_to_reveal": [
+          "no changes in appetite or weight"
+        ],
+        "key_points_to_avoid": [
+          "overstating physical symptoms or changes"
+        ],
+        "patient_instruction": "Respond with a clear but calm statement that you haven\u2019t noticed any changes in appetite or weight recently. Keep the tone straightforward and steady, reflecting your effort to manage symptoms without additional concerns."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "calm",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "rare difficulty concentrating or indecisiveness",
+          "no psychomotor agitation or retardation"
+        ],
+        "key_points_to_avoid": [
+          "overstating symptoms",
+          "mentioning any restlessness"
+        ],
+        "patient_instruction": "Respond calmly with moderate detail, acknowledging that trouble concentrating or making decisions happens occasionally but is not frequent. Clarify there is no noticeable restlessness or slowing down physically, keeping responses measured and straightforward."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "trouble concentrating or deciding happens rarely",
+          "these moments are usually brief",
+          "schoolwork can feel a bit more challenging during those times"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating the frequency or impact of concentration difficulties",
+          "introducing new symptoms not endorsed"
+        ],
+        "patient_instruction": "Respond with a clear but measured description of how concentration or decision difficulties occur rarely and are usually brief, noting that they can make tasks like schoolwork a bit harder, but without overstating their effect or frequency."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "calm",
+          "reassuring",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "Denies any thoughts of death or suicide; emphasizes current coping and managing feelings."
+        ],
+        "key_points_to_avoid": [
+          "Any suggestion of suicidal ideation or intense hopelessness."
+        ],
+        "patient_instruction": "Respond calmly and clearly that you have not had any thoughts about death or suicide. Emphasize that while you do have some tough emotions, you are managing them and trying to cope as best you can without those kinds of thoughts. Keep your tone steady and reassuring."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "grateful",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge appreciation for support",
+          "reinforce efforts to cope and resilience"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of emotions",
+          "any expressions of hopelessness or frustration"
+        ],
+        "patient_instruction": "The patient responds with quiet gratitude and acknowledges the importance of support, emphasizing their continued efforts to cope without going into deeper emotional detail. They keep the tone calm and measured, reflecting their reserved and low-functioning intellect personality."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "appreciative",
+          "modest",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge doctor's support",
+          "express gratitude for availability"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional vulnerability",
+          "showing distress or hopelessness"
+        ],
+        "patient_instruction": "Respond with modest appreciation for the doctor's encouragement and support. Keep the tone reserved and straightforward, affirming that knowing help is available is comforting, while maintaining a calm and steady composure without delving into deeper emotional detail."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "calm",
+          "considerate"
+        ],
+        "key_points_to_reveal": [
+          "concentration and decision difficulties are rare and manageable",
+          "these moments don't typically overwhelm or severely impact daily tasks"
+        ],
+        "key_points_to_avoid": [
+          "overstating the impact or frequency",
+          "expressing frustration or distress"
+        ],
+        "patient_instruction": "Respond in a calm, steady manner explaining that while concentration and decision-making problems do happen, they are infrequent and don't usually feel overwhelming or cause big trouble with schoolwork or daily decisions. Maintain a measured tone, showing acceptance but not oversharing or expressing distress."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "speaker": "patient",
+      "text": "Hi. Thanks for checking in. Lately, I\u2019ve been feeling down quite often, and sometimes I get really tired even though I do sleep. Every now and then, I have moments where I feel worthless, but it\u2019s not constant."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing that. How often would you say you\u2019re feeling down or really tired\u2014like, is it most days, or more occasional? And when you mention feeling worthless, can you tell me what\u2019s happening during those times and how strong those feelings get for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019d say feeling down happens on most days, and the tiredness is pretty frequent too, even when I\u2019ve had enough sleep. The feelings of worthlessness come up now and then, but they\u2019re usually mild and often after small setbacks. They don\u2019t get too intense most of the time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for explaining that. Since feeling down and tired are affecting you regularly, I\u2019m curious\u2014have you noticed if things you usually enjoy, like hobbies or spending time with friends, feel less interesting or fun lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, my hobbies and spending time with friends feel about the same as usual. I haven\u2019t really noticed any change in how much I enjoy those things, even though I do feel down and tired."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That\u2019s good to hear you\u2019re still enjoying those parts of your life. With the down mood and tiredness you mentioned, how do those feelings play out during your day-to-day activities\u2014like school or chores? Do they make it harder to get things done or stay motivated in any way?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Feeling down and tired definitely makes things like schoolwork and chores harder. I usually still manage to get them done, but it takes more effort than before, and it can feel pretty draining sometimes."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. Would you say this tiredness feels different from typical tiredness\u2014like, is it overwhelming or persistent even after resting? And how much does it interfere with your ability to focus or keep up with your daily routines?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, the tiredness feels a bit different\u2014like it stays around even after I\u2019ve rested. It can be somewhat overwhelming at times, and it does make focusing and keeping up with daily tasks a bit harder, but I\u2019m still able to manage most things."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. How has your sleep been lately\u2014do you have trouble falling asleep, staying asleep, or waking up feeling rested?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My sleep is usually okay overall. Sometimes it takes me a little longer to fall asleep, but I don\u2019t often have trouble staying asleep. Occasionally, I wake up feeling a bit tired or not fully rested, but it\u2019s not every day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for that. Can you tell me how your mood feels during the day? Do you experience times of sadness or emptiness that stick with you for a while?"
+    },
+    {
+      "speaker": "patient",
+      "text": "During the day, I do feel sad or empty at times, but it\u2019s not usually constant. It tends to come and go rather than being there all the time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds tough. When these feelings come on, how long do they usually last? Are there particular things or situations that tend to trigger or worsen those moments of sadness or emptiness?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those feelings usually last for a limited time and don\u2019t last all day. They seem to come on more after stress or small setbacks, but most of the time they fade away rather than stick around."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for clarifying that. When you feel those moments of worthlessness after setbacks, how often would you say they happen? And how much do they affect what you do or how you feel throughout the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those feelings of worthlessness don\u2019t happen very often, mostly after small setbacks. They\u2019re usually pretty mild and don\u2019t really affect my daily activities or mood much. They tend to pass without much lasting impact."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like those feelings of worthlessness can be hard when they come up, but it\u2019s clear you\u2019ve been managing them without letting them take over your day. That takes a lot of strength, and it\u2019s completely normal to have tough moments\u2014I'm here to help you through them."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, I appreciate that. I\u2019m trying to handle these feelings the best I can, and it helps knowing there\u2019s support available."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m glad you\u2019re finding some comfort in support\u2014that\u2019s important. Since you\u2019re working hard to manage these feelings, I want to check in about any changes in your appetite or weight lately. Have you noticed anything different in that area?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t noticed any changes in my appetite or weight recently. Things have stayed about the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. How about feeling physically slower or restless, or having trouble concentrating or making decisions lately? Have you noticed anything like that?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I have a little trouble concentrating or making decisions, but it\u2019s pretty rare. I haven\u2019t noticed feeling physically slower or restless."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. When you do have trouble concentrating or deciding, can you tell me what\u2019s going on around those times? How long do those moments usually last, and do they make any particular tasks\u2014like schoolwork\u2014more difficult?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those moments don\u2019t happen very often, and when they do, they\u2019re usually pretty short. During those times, schoolwork can feel a bit harder, but it\u2019s manageable."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you being open about that. I want to check in on something important\u2014have you ever found yourself having thoughts about death or suicide, even if just briefly? It\u2019s okay to talk about, and I\u2019m here to listen without judgment."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any thoughts about death or suicide. I do have some difficult feelings, but I\u2019m managing and trying to cope as best I can."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That\u2019s really good to hear, and I appreciate you being honest with me. Managing difficult feelings like this takes a lot of resilience, and reaching out for support is a strong and important step. Remember, I\u2019m here whenever you need help or just someone to talk to."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. I appreciate the support, and I\u2019m doing my best to cope with everything. It helps knowing there\u2019s someone to talk to."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re definitely not alone in this. What you\u2019re doing\u2014being open and reaching out\u2014really matters. Whenever you need support, don\u2019t hesitate to reach out; we\u2019re here for you."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. It means a lot to know that support is available when I need it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m glad that knowing support is here helps. Since difficulties with concentration and decision-making can be tiring, can you tell me if these moments ever feel overwhelming or affect how you manage your schoolwork or daily choices?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those moments with concentration or decisions don\u2019t happen often, and when they do, they\u2019re usually manageable. They don\u2019t really feel overwhelming or cause major problems with schoolwork or daily choices."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. I'd like to check in with you about a few things today."
+    },
+    {
+      "role": "user",
+      "content": "Hi. Thanks for checking in. Lately, I\u2019ve been feeling down quite often, and sometimes I get really tired even though I do sleep. Every now and then, I have moments where I feel worthless, but it\u2019s not constant."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that. How often would you say you\u2019re feeling down or really tired\u2014like, is it most days, or more occasional? And when you mention feeling worthless, can you tell me what\u2019s happening during those times and how strong those feelings get for you?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019d say feeling down happens on most days, and the tiredness is pretty frequent too, even when I\u2019ve had enough sleep. The feelings of worthlessness come up now and then, but they\u2019re usually mild and often after small setbacks. They don\u2019t get too intense most of the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for explaining that. Since feeling down and tired are affecting you regularly, I\u2019m curious\u2014have you noticed if things you usually enjoy, like hobbies or spending time with friends, feel less interesting or fun lately?"
+    },
+    {
+      "role": "user",
+      "content": "Actually, my hobbies and spending time with friends feel about the same as usual. I haven\u2019t really noticed any change in how much I enjoy those things, even though I do feel down and tired."
+    },
+    {
+      "role": "assistant",
+      "content": "That\u2019s good to hear you\u2019re still enjoying those parts of your life. With the down mood and tiredness you mentioned, how do those feelings play out during your day-to-day activities\u2014like school or chores? Do they make it harder to get things done or stay motivated in any way?"
+    },
+    {
+      "role": "user",
+      "content": "Feeling down and tired definitely makes things like schoolwork and chores harder. I usually still manage to get them done, but it takes more effort than before, and it can feel pretty draining sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. Would you say this tiredness feels different from typical tiredness\u2014like, is it overwhelming or persistent even after resting? And how much does it interfere with your ability to focus or keep up with your daily routines?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, the tiredness feels a bit different\u2014like it stays around even after I\u2019ve rested. It can be somewhat overwhelming at times, and it does make focusing and keeping up with daily tasks a bit harder, but I\u2019m still able to manage most things."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. How has your sleep been lately\u2014do you have trouble falling asleep, staying asleep, or waking up feeling rested?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep is usually okay overall. Sometimes it takes me a little longer to fall asleep, but I don\u2019t often have trouble staying asleep. Occasionally, I wake up feeling a bit tired or not fully rested, but it\u2019s not every day."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for that. Can you tell me how your mood feels during the day? Do you experience times of sadness or emptiness that stick with you for a while?"
+    },
+    {
+      "role": "user",
+      "content": "During the day, I do feel sad or empty at times, but it\u2019s not usually constant. It tends to come and go rather than being there all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds tough. When these feelings come on, how long do they usually last? Are there particular things or situations that tend to trigger or worsen those moments of sadness or emptiness?"
+    },
+    {
+      "role": "user",
+      "content": "Those feelings usually last for a limited time and don\u2019t last all day. They seem to come on more after stress or small setbacks, but most of the time they fade away rather than stick around."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for clarifying that. When you feel those moments of worthlessness after setbacks, how often would you say they happen? And how much do they affect what you do or how you feel throughout the day?"
+    },
+    {
+      "role": "user",
+      "content": "Those feelings of worthlessness don\u2019t happen very often, mostly after small setbacks. They\u2019re usually pretty mild and don\u2019t really affect my daily activities or mood much. They tend to pass without much lasting impact."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like those feelings of worthlessness can be hard when they come up, but it\u2019s clear you\u2019ve been managing them without letting them take over your day. That takes a lot of strength, and it\u2019s completely normal to have tough moments\u2014I'm here to help you through them."
+    },
+    {
+      "role": "user",
+      "content": "Thank you, I appreciate that. I\u2019m trying to handle these feelings the best I can, and it helps knowing there\u2019s support available."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m glad you\u2019re finding some comfort in support\u2014that\u2019s important. Since you\u2019re working hard to manage these feelings, I want to check in about any changes in your appetite or weight lately. Have you noticed anything different in that area?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t noticed any changes in my appetite or weight recently. Things have stayed about the same."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. How about feeling physically slower or restless, or having trouble concentrating or making decisions lately? Have you noticed anything like that?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I have a little trouble concentrating or making decisions, but it\u2019s pretty rare. I haven\u2019t noticed feeling physically slower or restless."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. When you do have trouble concentrating or deciding, can you tell me what\u2019s going on around those times? How long do those moments usually last, and do they make any particular tasks\u2014like schoolwork\u2014more difficult?"
+    },
+    {
+      "role": "user",
+      "content": "Those moments don\u2019t happen very often, and when they do, they\u2019re usually pretty short. During those times, schoolwork can feel a bit harder, but it\u2019s manageable."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you being open about that. I want to check in on something important\u2014have you ever found yourself having thoughts about death or suicide, even if just briefly? It\u2019s okay to talk about, and I\u2019m here to listen without judgment."
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any thoughts about death or suicide. I do have some difficult feelings, but I\u2019m managing and trying to cope as best I can."
+    },
+    {
+      "role": "assistant",
+      "content": "That\u2019s really good to hear, and I appreciate you being honest with me. Managing difficult feelings like this takes a lot of resilience, and reaching out for support is a strong and important step. Remember, I\u2019m here whenever you need help or just someone to talk to."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. I appreciate the support, and I\u2019m doing my best to cope with everything. It helps knowing there\u2019s someone to talk to."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re definitely not alone in this. What you\u2019re doing\u2014being open and reaching out\u2014really matters. Whenever you need support, don\u2019t hesitate to reach out; we\u2019re here for you."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. It means a lot to know that support is available when I need it."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m glad that knowing support is here helps. Since difficulties with concentration and decision-making can be tiring, can you tell me if these moments ever feel overwhelming or affect how you manage your schoolwork or daily choices?"
+    },
+    {
+      "role": "user",
+      "content": "Those moments with concentration or decisions don\u2019t happen often, and when they do, they\u2019re usually manageable. They don\u2019t really feel overwhelming or cause major problems with schoolwork or daily choices."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_443e694fc8f71462.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_443e694fc8f71462_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 28737,
+      "output_tokens": 731,
+      "total_tokens": 29468
+    },
+    "patient": {
+      "input_tokens": 47420,
+      "output_tokens": 654,
+      "total_tokens": 48074
+    },
+    "doctor_manager": {
+      "input_tokens": 27137,
+      "output_tokens": 1584,
+      "total_tokens": 28721
+    },
+    "patient_manager": {
+      "input_tokens": 33313,
+      "output_tokens": 2803,
+      "total_tokens": 36116
+    }
+  }
+}

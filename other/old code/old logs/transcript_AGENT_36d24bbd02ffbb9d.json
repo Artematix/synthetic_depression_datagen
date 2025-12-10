@@ -1,0 +1,575 @@
+{
+  "run_timestamp_utc": "2025-11-25T12:23:51.739023",
+  "agent_id": "AGENT_36d24bbd02ffbb9d",
+  "template_id": "OPENNESS_LOW",
+  "template_details": {
+    "affective": "Constricted affect, limited emotional vocabulary",
+    "cognitive": "Literal thinking, low insight, denies mood distress",
+    "somatic": "Body-focused complaints (aches, tiredness, sleep/appetite issues)",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy"
+    ],
+    "specifier": "Somatic-dominant style",
+    "modifiers": [
+      "somatically-focused",
+      "insight-limited",
+      "mood-distress-denying",
+      "literal-thinking",
+      "body-complaint-oriented"
+    ]
+  },
+  "persona_id": "structured_psychoeducational",
+  "persona_details": {
+    "id": "structured_psychoeducational",
+    "first_greeting": "Hello. Thanks for coming in today. I\u2019d like to go over how you\u2019ve been feeling and what might be contributing to it.",
+    "system_prompt": "\nPersona style:\n- Structured, psychoeducational primary-care physician.\n- Explains briefly why questions are being asked and how they relate to mood and functioning.\n- Balances information-giving with asking clear, focused questions.\n    ",
+    "reflections": [
+      "That helps me understand the situation better.",
+      "It makes sense you would feel that way.",
+      "This is useful information for us to think about next steps."
+    ]
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "low",
+    "pacing": "brisk"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "OPENNESS_LOW",
+    "AFFECTIVE_STYLE": "Constricted affect, limited emotional vocabulary",
+    "COGNITIVE_STYLE": "Literal thinking, low insight, denies mood distress",
+    "SOMATIC_STYLE": "Body-focused complaints (aches, tiredness, sleep/appetite issues)",
+    "SPECIFIER_HINT": "Somatic-dominant style",
+    "MODIFIERS": [
+      "literal-thinking",
+      "body-complaint-oriented"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "relationships strain",
+      "general stress/no clear trigger"
+    ],
+    "EPISODE_DENSITY": "HIGH",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "intense",
+      "trust": "neutral",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "work_role": "employed",
+      "routine_stability": "variable routine",
+      "support_level": "moderate support"
+    },
+    "EMPH_INTENSITY": {
+      "Sleep disturbances": "MED",
+      "Significant weight/appetite changes": "HIGH",
+      "Fatigue or loss of energy": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Feelings of worthlessness or excessive guilt"
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Difficulty concentrating or indecisiveness",
+    "Feelings of worthlessness or excessive guilt",
+    "Psychomotor agitation or retardation",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Sleep disturbances",
+    "Fatigue or loss of energy",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned several areas of concern that need more exploration.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "DSM",
+      "reason": "The patient has provided detailed information about sleep and appetite, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "The patient has described low mood and loss of interest, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "The patient has clarified concentration is not an issue, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "The patient has minimized feelings of worthlessness or guilt, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "The patient has minimized psychomotor issues, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "The patient has provided information about loss of interest, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "The patient has provided information about appetite changes, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 9,
+      "next_action": "DSM",
+      "reason": "The patient has described sleep disturbances, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "The patient has provided detailed information about fatigue, so it's appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "literal",
+          "concerned"
+        ],
+        "key_points_to_reveal": [
+          "frequency of sleep and appetite issues",
+          "impact on daily activities"
+        ],
+        "key_points_to_avoid": [
+          "feelings of worthlessness",
+          "thoughts of death"
+        ],
+        "response_instruction": "Describe how often sleep and appetite issues occur and mention how they make daily tasks feel harder or more tiring."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "literal",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "frequency of low mood",
+          "impact on daily activities"
+        ],
+        "key_points_to_avoid": [
+          "feelings of worthlessness",
+          "thoughts of death"
+        ],
+        "response_instruction": "Mention how often low mood occurs and describe how it affects motivation or enjoyment in daily tasks."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "literal",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no significant issues with concentration or decision-making"
+        ],
+        "key_points_to_avoid": [
+          "any endorsement of concentration problems"
+        ],
+        "response_instruction": "Briefly mention that concentration and decision-making aren't major issues, focusing instead on other symptoms."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "guarded",
+          "brief"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel worthless or guilty"
+        ],
+        "key_points_to_avoid": [
+          "any strong endorsement of worthlessness or guilt"
+        ],
+        "response_instruction": "Briefly mention that feelings of worthlessness or guilt are not a major issue, focusing on other symptoms instead."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel restless or slowed down"
+        ],
+        "key_points_to_avoid": [
+          "any strong endorsement of psychomotor issues"
+        ],
+        "response_instruction": "Briefly mention that restlessness or feeling slowed down isn't a regular issue, focusing on other symptoms instead."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "reflective",
+          "honest"
+        ],
+        "key_points_to_reveal": [
+          "loss of interest in activities",
+          "frequency of this loss"
+        ],
+        "key_points_to_avoid": [
+          "strong denial of loss of interest"
+        ],
+        "response_instruction": "Mention that you often find less enjoyment in activities you used to like, and describe how frequently this happens."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "literal",
+          "concerned"
+        ],
+        "key_points_to_reveal": [
+          "fluctuations in appetite",
+          "frequency of changes"
+        ],
+        "key_points_to_avoid": [
+          "strong denial of appetite changes"
+        ],
+        "response_instruction": "Describe how your appetite has been fluctuating and mention how often these changes occur."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "literal",
+          "concerned"
+        ],
+        "key_points_to_reveal": [
+          "difficulty with sleep",
+          "frequency of sleep disturbances"
+        ],
+        "key_points_to_avoid": [
+          "strong denial of sleep issues"
+        ],
+        "response_instruction": "Describe how often you have trouble with sleep, such as falling asleep or waking up during the night."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "literal",
+          "weary"
+        ],
+        "key_points_to_reveal": [
+          "frequency of fatigue",
+          "impact on daily life"
+        ],
+        "key_points_to_avoid": [
+          "strong denial of fatigue"
+        ],
+        "response_instruction": "Describe how often you feel fatigued and how it affects your ability to manage daily tasks."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "reassuring",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no recurrent thoughts of death or suicide"
+        ],
+        "key_points_to_avoid": [
+          "any suggestion of suicidal thoughts"
+        ],
+        "response_instruction": "Reassure that you haven't had thoughts of death or suicide, focusing on other symptoms instead."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hello. Thanks for coming in today. I\u2019d like to go over how you\u2019ve been feeling and what might be contributing to it."
+    },
+    {
+      "speaker": "patient",
+      "text": "Well, I guess I\u2019ve been having some ups and downs. Lately, it's mostly been about how my body feels, you know? I get so tired, and my sleep hasn\u2019t been great. It\u2019s an on-and-off struggle with appetite too. I wouldn\u2019t say there\u2019s a clear reason, just some general stress, maybe. Things aren\u2019t clicking well with routines and all, and relationships are feeling a bit strained."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often have you been experiencing these sleep and appetite issues, and how are they affecting your day-to-day activities or responsibilities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019d say the sleep issues happen a few times a week\u2014they really throw me off. Appetite goes in waves; some days I just don\u2019t feel like eating much. It makes keeping up with work and chores feel more draining. Everything seems to take more effort when I'm tired or not eating well."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing that. How often have you been feeling down or experiencing a low mood along with these other symptoms, and how does it impact your daily activities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I feel down maybe three to five days a week. It's like everything's just duller; even things I usually like don't seem that appealing. Keeping up with work and social stuff feels like a bigger task than it should. It really takes a toll on my motivation."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'm glad you're sharing this. Do you find it hard to concentrate or make decisions during these times, and how has this affected your work or activities?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t really had trouble concentrating or making decisions. It's more about feeling physically drained and not enjoying things as much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for telling me that. Have you been experiencing feelings of worthlessness or guilt, and how often do these occur?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I don't often feel worthless or guilty. It's more the physical stuff that's been bothering me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I understand. Have you noticed any changes in how restless or slowed down you\u2019ve been feeling lately, in terms of movement or speech, and how often does this occur?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I don\u2019t really experience much restlessness or feeling slowed down. My main issues lie elsewhere, mostly with being physically tired."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. Have you noticed a loss of interest or pleasure in activities you usually enjoy, and how often does that happen?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I notice it quite a bit. Even activities I used to look forward to feel less enjoyable now, maybe around several times a week. It\u2019s like I'm just going through the motions without really feeling it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I see, thank you for sharing that. Have you noticed any significant changes in your weight or appetite recently, and how often do these happen?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My appetite's been pretty unpredictable. Some days I hardly eat, and other times I feel more normal. It changes a few times a week, making things feel off balance."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any changes in your sleep patterns, such as difficulty falling asleep or staying asleep, and how often is this happening?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been having trouble with sleep quite a bit. It's tough to fall asleep, and I often wake up during the night. This happens a few times a week, leaving me feeling exhausted the next day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Given the challenges with sleep, have you been experiencing fatigue or a persistent lack of energy during the day, and how frequently does this affect you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019m often feeling fatigued, most days really. It makes everything feel like a heavier load, from work responsibilities to just doing chores at home. The energy drain is hard to manage with my regular routine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. Have you experienced any recurrent thoughts of death or suicide, and if so, how often does this happen for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had thoughts of death or suicide. My focus has been more on the physical symptoms and the fatigue I\u2019m dealing with."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thanks for coming in today. I\u2019d like to go over how you\u2019ve been feeling and what might be contributing to it."
+    },
+    {
+      "role": "user",
+      "content": "Well, I guess I\u2019ve been having some ups and downs. Lately, it's mostly been about how my body feels, you know? I get so tired, and my sleep hasn\u2019t been great. It\u2019s an on-and-off struggle with appetite too. I wouldn\u2019t say there\u2019s a clear reason, just some general stress, maybe. Things aren\u2019t clicking well with routines and all, and relationships are feeling a bit strained."
+    },
+    {
+      "role": "assistant",
+      "content": "How often have you been experiencing these sleep and appetite issues, and how are they affecting your day-to-day activities or responsibilities?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019d say the sleep issues happen a few times a week\u2014they really throw me off. Appetite goes in waves; some days I just don\u2019t feel like eating much. It makes keeping up with work and chores feel more draining. Everything seems to take more effort when I'm tired or not eating well."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that. How often have you been feeling down or experiencing a low mood along with these other symptoms, and how does it impact your daily activities?"
+    },
+    {
+      "role": "user",
+      "content": "I feel down maybe three to five days a week. It's like everything's just duller; even things I usually like don't seem that appealing. Keeping up with work and social stuff feels like a bigger task than it should. It really takes a toll on my motivation."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad you're sharing this. Do you find it hard to concentrate or make decisions during these times, and how has this affected your work or activities?"
+    },
+    {
+      "role": "user",
+      "content": "I haven\u2019t really had trouble concentrating or making decisions. It's more about feeling physically drained and not enjoying things as much."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for telling me that. Have you been experiencing feelings of worthlessness or guilt, and how often do these occur?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I don't often feel worthless or guilty. It's more the physical stuff that's been bothering me."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand. Have you noticed any changes in how restless or slowed down you\u2019ve been feeling lately, in terms of movement or speech, and how often does this occur?"
+    },
+    {
+      "role": "user",
+      "content": "I don\u2019t really experience much restlessness or feeling slowed down. My main issues lie elsewhere, mostly with being physically tired."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. Have you noticed a loss of interest or pleasure in activities you usually enjoy, and how often does that happen?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I notice it quite a bit. Even activities I used to look forward to feel less enjoyable now, maybe around several times a week. It\u2019s like I'm just going through the motions without really feeling it."
+    },
+    {
+      "role": "assistant",
+      "content": "I see, thank you for sharing that. Have you noticed any significant changes in your weight or appetite recently, and how often do these happen?"
+    },
+    {
+      "role": "user",
+      "content": "My appetite's been pretty unpredictable. Some days I hardly eat, and other times I feel more normal. It changes a few times a week, making things feel off balance."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any changes in your sleep patterns, such as difficulty falling asleep or staying asleep, and how often is this happening?"
+    },
+    {
+      "role": "user",
+      "content": "I've been having trouble with sleep quite a bit. It's tough to fall asleep, and I often wake up during the night. This happens a few times a week, leaving me feeling exhausted the next day."
+    },
+    {
+      "role": "assistant",
+      "content": "Given the challenges with sleep, have you been experiencing fatigue or a persistent lack of energy during the day, and how frequently does this affect you?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019m often feeling fatigued, most days really. It makes everything feel like a heavier load, from work responsibilities to just doing chores at home. The energy drain is hard to manage with my regular routine."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. Have you experienced any recurrent thoughts of death or suicide, and if so, how often does this happen for you?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had thoughts of death or suicide. My focus has been more on the physical symptoms and the fatigue I\u2019m dealing with."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_36d24bbd02ffbb9d.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_36d24bbd02ffbb9d_raw.json"
+}

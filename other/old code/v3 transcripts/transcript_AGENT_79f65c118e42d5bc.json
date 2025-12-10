@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:06:54.835553",
+  "agent_id": "AGENT_79f65c118e42d5bc",
+  "demographics": {
+    "AGE": "46-55",
+    "RACE": "Black",
+    "GENDER": "Non-binary",
+    "SOCIOECONOMIC_STATUS": "Medium",
+    "COUNTRY_OF_ORIGIN": "USA",
+    "ENGLISH_PROFICIENCY": "Other",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Reserved",
+    "TRAITS_B_EMOTION": "Outgoing",
+    "TRAITS_C_LANGUAGE": "Slang-heavy",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "OFTEN",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness",
+    "Loss of interest or pleasure",
+    "Depressed mood"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Yo, what's up? Been a bit up and down. Some days feeling meh and kinda over it, but I'm hanging in there."
+    },
+    {
+      "role": "assistant",
+      "content": "Yo, I'm sorry to hear that it's been a bit of a rollercoaster. It's great you're here today. Have you been troubled by feelings of worthlessness or guilt?"
+    },
+    {
+      "role": "user",
+      "content": "Not too much, just once in a while. Trying to not dwell on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad you're trying to manage it. Have you had trouble concentrating or making decisions lately?"
+    },
+    {
+      "role": "user",
+      "content": "Nah, that's been pretty okay for me. No issues there."
+    },
+    {
+      "role": "assistant",
+      "content": "That's good to hear. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, a bit. Been some days where I'm just not into stuff like I used to be."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry you've been feeling that way. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "Just a couple of days here and there, not all the time. Trying to stay hopeful though."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

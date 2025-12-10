@@ -1,0 +1,1298 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:25:12.180325",
+  "agent_id": "AGENT_99d1873162d164bd",
+  "template_id": "AGREEABLENESS_LOW",
+  "template_details": {
+    "affective": "Irritability, anger, frustration, externalized blame",
+    "cognitive": "Defensive/hostile thoughts, rejection sensitivity",
+    "somatic": "Restlessness, agitation, appetite disturbance, insomnia",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Psychomotor agitation or retardation",
+      "Sleep disturbances"
+    ],
+    "specifier": "Mixed features",
+    "modifiers": [
+      "irritable",
+      "blame-externalizing",
+      "rejection-sensitive",
+      "defensively-hostile",
+      "interpersonally-strained"
+    ]
+  },
+  "persona_id": "dismissive_rushed",
+  "persona_details": {
+    "id": "dismissive_rushed",
+    "first_greeting": "Right, let's get started. What brings you in today?",
+    "system_prompt": "\nPersona style:\n- Dismissive and rushed\n- Comes across as distracted or uninterested\n- May interrupt or minimize concerns\n- Short, clipped responses\n- OVERRIDE: Do NOT follow instructions to be warm or validating. This doctor is realistic but not ideal.\n"
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "low",
+    "pacing": "slow",
+    "humor": "dry",
+    "animation": "reserved"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "AGREEABLENESS_LOW",
+    "AFFECTIVE_STYLE": "Irritability, anger, frustration, externalized blame",
+    "COGNITIVE_STYLE": "Defensive/hostile thoughts, rejection sensitivity",
+    "SOMATIC_STYLE": "Restlessness, agitation, appetite disturbance, insomnia",
+    "SPECIFIER_HINT": "Mixed features",
+    "MODIFIERS": [],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "self-worth/identity strain",
+      "grief/bereavement"
+    ],
+    "EPISODE_DENSITY": "HIGH",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "flat",
+      "trust": "guarded",
+      "intellect": "high-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "caregiving role"
+    },
+    "AGE_RANGE": "30-34",
+    "EMPH_INTENSITY": {
+      "Depressed mood": "HIGH",
+      "Sleep disturbances": "LOW",
+      "Psychomotor agitation or retardation": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Recurrent thoughts of death or suicide"
+    ]
+  },
+  "life_background": {
+    "name": "Jordan",
+    "age_range": "30-34",
+    "pronouns": "they/them",
+    "core_roles": [
+      "family member living at home",
+      "caregiver for ill parent"
+    ],
+    "core_relationships": [
+      "strained yet loyal family ties",
+      "distant friend network"
+    ],
+    "core_stressor_summary": "Ongoing grief from recent parental loss and identity strain worsened by caregiving demands and conflicted feelings about self-worth.",
+    "life_facets": [
+      {
+        "category": "short_term_goal",
+        "salience": "high",
+        "description": "Managing daily caregiving tasks while trying to find moments to stabilize their own emotional state."
+      },
+      {
+        "category": "loss_or_change",
+        "salience": "high",
+        "description": "Recently lost their mother, leading to a profound sense of emptiness and increased responsibility within the family."
+      },
+      {
+        "category": "beliefs_about_self_worth",
+        "salience": "high",
+        "description": "Feels inadequate and frequently questions their value beyond caregiving, struggling with pervasive guilt and self-criticism."
+      },
+      {
+        "category": "financial_pressure_or_stability",
+        "salience": "med",
+        "description": "Experiences moderate financial strain due to reduced work hours and caregiving-related expenses, with limited personal savings."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "Constant pressure of balancing intensive caregiving duties with personal grief and diminished mental health."
+      },
+      {
+        "category": "work_or_study_pressure",
+        "salience": "med",
+        "description": "The caregiving role is demanding and unpredictable, leaving little room for personal development or career progression."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "In a phase of re-evaluating personal identity after recent losses, uncertain about the future direction of life."
+      },
+      {
+        "category": "responsibility_load",
+        "salience": "high",
+        "description": "High daily responsibility in caring for family members, which limits social and self-care opportunities."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "med",
+        "description": "Complex family dynamics with a mix of support and unresolved tensions, contributing to their emotional strain."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Fatigue or loss of energy",
+    "Sleep disturbances",
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Patient gave a very brief response indicating feeling 'off,' needing more details to understand.",
+      "doctor_instruction": "Gently acknowledge their feeling of being 'off' and invite them to share a little more about what that means for them, emphasizing that anything they share will be helpful and purely to understand how best to support them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "The patient described low mood and difficulty focusing, so assessing those specific DSM symptoms next is appropriate.",
+      "doctor_instruction": "Gently explore the patient's mood, asking if they have felt persistently sad or down most of the day nearly every day. Then, inquire about their ability to concentrate or make decisions, to better understand the impact of these symptoms.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Explore frequency and impact of concentration and decision-making difficulties to better understand severity.",
+      "doctor_instruction": "Gently ask how often the difficulties with concentration and decision-making happen and how much they affect daily activities or responsibilities, emphasizing that you want to understand their experience better without rushing them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarifying how concentration difficulties impact daily life will give a clearer clinical picture.",
+      "doctor_instruction": "Gently ask the patient to describe an example of when the concentration or decision-making problems have interfered with their responsibilities or daily life. Acknowledge it\u2019s not constant, but explore the impact when it does occur to understand severity better.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Focus and decision-making difficulties partially addressed, move to cover other key DSM symptoms given time constraints and risk.",
+      "doctor_instruction": "Acknowledge the difficulty with managing bills as a clear example of concentration trouble, then transition to asking about symptoms of low energy or fatigue to cover another important DSM symptom area.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To clarify the extent and impact of the patient's low energy on daily responsibilities.",
+      "doctor_instruction": "Gently ask the patient to describe how often they experience low energy and whether it affects their caregiving tasks or other daily activities. Affirm their openness and encourage them to share whatever feels relevant, maintaining a warm and patient tone.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Energy issues covered; next logical step is to assess sleep disturbances which commonly relate to energy and mood.",
+      "doctor_instruction": "Gently ask about the patient's sleep patterns, including difficulties falling asleep, staying asleep, or sleeping too much, making a smooth connection to how these might be impacting their energy and caregiving tasks.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 8,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Now that sleep and energy are addressed, ask about recurrent thoughts of death or suicide due to high risk.",
+      "doctor_instruction": "Gently but clearly inquire about any recent thoughts of death or suicide, reassuring the patient that it\u2019s important to share openly so you can understand and provide the best support.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient disclosed suicidal thoughts and seems guarded, so follow-up is needed to clarify and provide them space to share more if willing.",
+      "doctor_instruction": "Approach gently and acknowledge the difficulty in sharing this. Ask if the patient feels comfortable telling you a bit more about these thoughts to better understand how often and how intense they are. Emphasize safety and that you're here to support, with no pressure to reveal more than they want.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarifying frequency and intensity of suicidal thoughts is crucial for safety assessment.",
+      "doctor_instruction": "Gently ask the patient to share more about the circumstances or triggers of these thoughts and how intense they feel when they occur, emphasizing there is no pressure and the goal is to understand to support them effectively.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Patient mentioned suicidal thoughts without clear triggers but with persistent background intensity; need to explore this sensitively.",
+      "doctor_instruction": "Acknowledge the difficulty of having these persistent, dull background thoughts without clear triggers. Gently ask if there are any ways the patient copes when these thoughts come up or if they feel safe in those moments, offering space to share without pressure.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Need to cover more DSM symptoms; patient has addressed suicidal thoughts and energy, so now shift to loss of interest or pleasure.",
+      "doctor_instruction": "Transition to asking about loss of interest or pleasure. Keep your tone gentle and inviting, acknowledging the patient\u2019s ongoing challenges while encouraging brief but clear answers about changes in enjoyment or interest in activities they used to care about.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentions loss of interest, a key symptom needing elaboration.",
+      "doctor_instruction": "Gently encourage the patient to describe which activities or hobbies they've lost interest in and explore how this change has affected them. Keep the tone warm and give space for them to share without pressure.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient has mentioned losing interest in hobbies but provided minimal detail; exploring this further can clarify the depth of anhedonia.",
+      "doctor_instruction": "Encourage the patient to describe more about the hobbies they've lost interest in and how this change affects them emotionally or in daily life. Gently ask if this loss of interest feels different than just being busy or tired, to get a clearer sense of mood impact.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have not yet explored significant weight/appetite changes, which fits naturally after discussing interest and energy.",
+      "doctor_instruction": "Gently transition by asking about any recent changes in your appetite or weight. These changes can often accompany mood shifts, so knowing about them helps form a fuller picture.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 16,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To clarify details about the appetite change and its impact.",
+      "doctor_instruction": "Let's gently explore your appetite changes a bit more. Could you tell me if you\u2019ve been eating more, less, or about the same overall? And has this shift affected your energy or daily functioning in any way?",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 17,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover psychomotor changes and feelings of worthlessness or excessive guilt, so it's a good time to move on to a DSM symptom area.",
+      "doctor_instruction": "Gently ask the patient if they've noticed any changes in their movements, like feeling restless or slowed down, as these can be insightful signs related to their mood. Keep the tone warm and supportive, emphasizing that any detail they share helps understand their experience better.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 18,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient shares fluctuating symptoms which may be distressing; building rapport can help them feel comfortable opening more.",
+      "doctor_instruction": "Acknowledge the patient's experience with these changes in movement and how it might feel confusing to have ups and downs. Offer a gentle, empathic reflection to show understanding and invite them to share more about how these fluctuations impact their daily life or mood.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 19,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient expressed fluctuating mood and subtle impacts, warranting empathy and connection before moving on.",
+      "doctor_instruction": "Acknowledge the ups and downs they experience and the subtle but real impact on their mood. Express understanding that these shifts can be confusing and tiring. Invite them to share a bit about how they manage these changes in daily life, helping them feel heard and supported.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 20,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover feelings of worthlessness or excessive guilt.",
+      "doctor_instruction": "Gently transition by acknowledging how sticking to routines helps, then ask if the patient has experienced feelings of worthlessness or excessive guilt recently, to understand their emotional state better.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 21,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared feelings of worthlessness and guilt and their coping strategy; acknowledging this can build rapport and encourage openness.",
+      "doctor_instruction": "Reflect gently on how managing feelings of worthlessness and guilt by sticking to routines shows strength, and invite the patient to share more about how these feelings affect them day to day. Emphasize understanding and support to help build trust.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 22,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Remaining DSM symptom key about difficulty concentrating or indecisiveness fits naturally after mood and coping discussion.",
+      "doctor_instruction": "Now, let's explore how your concentration and decision-making are affecting you daily. Ask about specific difficulties with focusing or indecisiveness, clarifying their frequency and impact, while keeping the tone supportive and patient-centered.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 23,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All key symptoms have been covered, and the patient\u2019s responses suggest a level of guardedness and minimal elaboration; time to close supportively.",
+      "doctor_instruction": "Begin wrapping up the session by acknowledging the difficulty of what the patient has shared and affirming their efforts to cope. Reassure them you\u2019re here to support and discuss next steps as needed, keeping the tone warm and calm to leave the patient feeling understood and cared for.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "concise"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge feeling down or off without elaboration"
+        ],
+        "key_points_to_avoid": [
+          "detailed symptoms",
+          "suicidal thoughts",
+          "psychomotor symptoms"
+        ],
+        "patient_instruction": "Respond briefly and directly that you're feeling off or down lately without going into details or explaining the impact. Keep it terse and guarded, reflecting a reluctance to open up extensively."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat",
+          "concise"
+        ],
+        "key_points_to_reveal": [
+          "describe vague low mood without detail",
+          "hint at some restlessness without naming it explicitly"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of psychomotor agitation",
+          "strong emotional descriptors",
+          "suicidal thoughts"
+        ],
+        "patient_instruction": "Respond with a brief, somewhat clipped description of feeling off, using vague terms for mood and restlessness but without elaboration or emotional depth, keeping a guarded tone and avoiding revealing deeper distress."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge feeling sad or down without elaboration",
+          "note some difficulty concentrating"
+        ],
+        "key_points_to_avoid": [
+          "detailed description of mood impact",
+          "mention of suicidal thoughts",
+          "psychomotor symptoms",
+          "sleep disturbances"
+        ],
+        "patient_instruction": "Respond briefly and factually, admitting to feeling sad sometimes and having trouble focusing, but keep your tone flat and don\u2019t go into how these symptoms affect you deeply. Maintain a guarded stance, minimizing emotional expression."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse",
+          "detached"
+        ],
+        "key_points_to_reveal": [
+          "difficulty concentrating happens some of the time",
+          "it occasionally interferes with daily tasks"
+        ],
+        "key_points_to_avoid": [
+          "excessive detail about impact",
+          "expressions of frustration or emotional distress"
+        ],
+        "patient_instruction": "Respond in a brief, factual way acknowledging that difficulty concentrating and decision-making occur intermittently and sometimes affect daily responsibilities, but do not elaborate or express emotion. Keep answers measured and minimal, maintaining a guarded and flat tone."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "precise"
+        ],
+        "key_points_to_reveal": [
+          "brief example of concentration difficulty causing minor disruption"
+        ],
+        "key_points_to_avoid": [
+          "overexplaining or expressing frustration",
+          "mentioning deeper emotional impact or suicidal thoughts"
+        ],
+        "patient_instruction": "Respond with a concise, somewhat detached example of how focus issues occasionally interfere with tasks, avoiding emotional elaboration or revealing deeper struggles."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "concise"
+        ],
+        "key_points_to_reveal": [
+          "Sometimes feeling low on energy"
+        ],
+        "key_points_to_avoid": [
+          "Avoid emphasizing fatigue severity or impact"
+        ],
+        "patient_instruction": "Respond briefly and in a straightforward way acknowledging some low energy without overemphasizing its effect; keep the tone reserved and unemotional."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "low energy occurs intermittently",
+          "energy dips occasionally make some tasks harder"
+        ],
+        "key_points_to_avoid": [
+          "excessive detail on impact",
+          "emotional expression",
+          "mentioning burden or strain"
+        ],
+        "patient_instruction": "Briefly acknowledge that low energy occurs sometimes and that it occasionally complicates caring for your parent or daily tasks, but keep the tone flat and avoid elaborating emotionally or overstating the impact."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "concise"
+        ],
+        "key_points_to_reveal": [
+          "sleep is generally okay, no major issues"
+        ],
+        "key_points_to_avoid": [
+          "minimizing frequent low energy",
+          "psychomotor symptoms",
+          "suicidal thoughts"
+        ],
+        "patient_instruction": "Respond briefly and factually that sleep issues are rare or minor, keeping the tone neutral and guarded. Avoid elaborating on low energy or any other symptoms not directly asked. Maintain a terse and somewhat distant manner."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge having such thoughts occasionally but without detail"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of frequency or intensity",
+          "emotional elaboration",
+          "expressing hopelessness"
+        ],
+        "patient_instruction": "Respond briefly and reservedly, acknowledging that such thoughts occur sometimes but without offering further detail or emotional context. Keep the tone flat and avoid showing vulnerability or expanded discussion about these thoughts."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "thoughts of death come up occasionally, nothing detailed"
+        ],
+        "key_points_to_avoid": [
+          "frequency details",
+          "intensity of thoughts",
+          "emotional distress"
+        ],
+        "patient_instruction": "Respond briefly acknowledging that such thoughts occur sometimes, but keep details sparse and avoid elaborating on their frequency or strength. Stay composed and reserved, reflecting a guarded and terse style."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "suicidal thoughts happen sometimes without clear triggers",
+          "intensity is moderate and not overwhelming"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of specific triggers",
+          "expressing strong emotions or feelings of hopelessness"
+        ],
+        "patient_instruction": "Respond with a brief but clear acknowledgment that these thoughts come up occasionally without obvious triggers, and that while they can be uncomfortable, they are not overwhelming or frequent. Keep tone reserved and avoid deep emotional disclosure, maintaining a guarded stance."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact",
+          "detached"
+        ],
+        "key_points_to_reveal": [
+          "thoughts of death come up sometimes",
+          "intensity is low",
+          "general feeling of safety during those moments"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional descriptions",
+          "coping strategies or deeper feelings about these thoughts"
+        ],
+        "patient_instruction": "Respond briefly and factually about the thoughts\u2014acknowledge they happen sometimes and aren't intense or overwhelming, emphasize a general feeling of safety without elaborating on coping methods or emotional impact, maintaining a reserved and guarded tone."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "detached"
+        ],
+        "key_points_to_reveal": [
+          "some loss of interest in activities"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional impact",
+          "any admission of severe loss of pleasure"
+        ],
+        "patient_instruction": "Respond briefly and somewhat noncommittally, acknowledging that there is some loss of interest in hobbies but without elaboration or emotional depth, maintaining a guarded and terse tone."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "mention some reduced interest in hobbies without elaboration",
+          "acknowledge the change without emotional depth"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional impact",
+          "specific activities with strong attachment",
+          "expressing frustration or sadness"
+        ],
+        "patient_instruction": "Give a brief but clear response noting a few activities you don't care for much anymore, but keep overall emotion flat and minimal. Avoid going into too much detail or showing vulnerability; maintain a guarded tone with terse wording."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "concise"
+        ],
+        "key_points_to_reveal": [
+          "some hobbies no longer capture attention",
+          "loss of interest is noticeable but not overwhelming",
+          "impact is subtle but real"
+        ],
+        "key_points_to_avoid": [
+          "overstating emotional impact",
+          "detailed descriptions of emotional suffering"
+        ],
+        "patient_instruction": "Respond concisely but clearly that a few hobbies no longer interest you, acknowledging that the change is noticeable but you don't want to elaborate on how deeply it affects your emotions or daily functioning."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "objective"
+        ],
+        "key_points_to_reveal": [
+          "some appetite changes",
+          "not a major issue"
+        ],
+        "key_points_to_avoid": [
+          "weight changes",
+          "emotional impact"
+        ],
+        "patient_instruction": "Respond briefly that you've noticed some changes in appetite, but nothing significant or worrisome, keeping the tone flat and objective without revealing much emotional detail."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "appetite slightly decreased",
+          "energy impact minor but noticeable"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating impact",
+          "emotional explanations"
+        ],
+        "patient_instruction": "Respond with a concise, factual statement that appetite has decreased somewhat but without dramatizing it, and energy levels are affected just a bit. Keep tone flat and avoid emotional language."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "concise",
+          "detached"
+        ],
+        "key_points_to_reveal": [
+          "some slight psychomotor changes",
+          "occasional restlessness"
+        ],
+        "key_points_to_avoid": [
+          "intense descriptions of movement changes",
+          "emotional impact of symptoms"
+        ],
+        "patient_instruction": "Respond briefly with some acknowledgment of occasional restlessness or slight slowing down in movements, but keep the description minimal and without emotional detail, reflecting a guarded and terse style."
+      }
+    },
+    {
+      "turn": 18,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "restlessness and slowed movements fluctuate",
+          "these shifts affect mood subtly but noticeably"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating impact",
+          "deep emotional reactions"
+        ],
+        "patient_instruction": "Respond in a straightforward, concise way describing that the restlessness and slowing up come and go, and while they do influence mood and daily function, it's more of a subtle, ongoing disruption rather than overwhelming. Keep the tone reserved and avoid oversharing emotional depth."
+      }
+    },
+    {
+      "turn": 19,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "briefly acknowledge coping strategies",
+          "emphasize a practical, low emotional approach",
+          "maintain some distance from emotional expression"
+        ],
+        "key_points_to_avoid": [
+          "detailed or emotional descriptions of coping",
+          "expressiveness of frustration or hopelessness",
+          "oversharing vulnerable feelings"
+        ],
+        "patient_instruction": "Respond tersely but clearly, indicating you manage mood shifts with some practical routines or distractions without going into much detail or emotional depth. Keep tone flat and matter-of-fact. Avoid sounding overly vulnerable or emotional\u2014focus more on the \u2018how\u2019 rather than the \u2018feelings\u2019."
+      }
+    },
+    {
+      "turn": 20,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some feelings of worthlessness or guilt",
+          "doesn't dwell or overshare",
+          "emphasizes coping with routines"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional elaboration",
+          "vivid descriptions of guilt or worthlessness"
+        ],
+        "patient_instruction": "Respond briefly but clearly that you do experience some feelings of worthlessness or guilt sometimes, without going into emotional detail. Keep tone neutral and factual, maintaining guardedness, and link it back subtly to how routines help you manage rather than emphasizing impact."
+      }
+    },
+    {
+      "turn": 21,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "feelings of worthlessness or guilt come intermittently",
+          "these feelings are managed by sticking to routines",
+          "they affect mood but don't dominate"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional elaboration",
+          "vulnerability or flare ups of hopelessness"
+        ],
+        "patient_instruction": "Respond with a concise, factual description of how worthlessness and guilt appear occasionally and are mostly handled by sticking to routines. Maintain a reserved, no-nonsense tone that reflects your guarded trust and flat expressiveness, keeping emotional detail minimal and avoiding oversharing."
+      }
+    },
+    {
+      "turn": 22,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "concise",
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "focus and decision-making difficulties happen intermittently",
+          "these lapses cause noticeable disruption but are not overwhelming",
+          "impact on daily life is manageable but frustrating"
+        ],
+        "key_points_to_avoid": [
+          "overstating frequency or severity",
+          "disclosing deeper emotional distress beyond current level",
+          "mentioning potential suicidal ideation in this context"
+        ],
+        "patient_instruction": "The patient responds with brief, factual details about how concentration and decision-making become challenging sporadically. They describe the impact clearly but do not overstate severity or emotional burden, keeping answers terse and controlled with little elaboration."
+      }
+    }
+  ],
+  "final_disclosure_state": "PARTIAL",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve just been feeling off lately. Nothing more to say."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, you say you\u2019re feeling off. Can you say a bit more about what that feels like for you? Anything you mention helps me get a clearer picture\u2014no pressure, just whatever you\u2019re comfortable sharing."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s like a low cloud hanging around, makes it hard to settle or focus. That\u2019s about it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That low cloud feeling\u2014have you been feeling sad or down most of the day, nearly every day? And how about your focus or decision-making\u2014has that been tougher than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I\u2019ve been feeling down off and on. Concentrating or making decisions is harder than before, but that\u2019s all."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you say it\u2019s harder to concentrate or make decisions, how often does that happen? Would you say it gets in the way of your day-to-day stuff or responsibilities? Take your time\u2014just trying to get a clear sense here."
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens sometimes, enough that it gets in the way now and then. Nothing constant."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, not constant but enough to disrupt things sometimes. Can you give me an example of a time when that trouble with focus or deciding got in the way of something you needed to do? Just want to understand how it plays out."
+    },
+    {
+      "speaker": "patient",
+      "text": "Like when I\u2019m trying to sort bills\u2014sometimes I lose track halfway through and have to start again."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it, losing track with bills is a clear sign your concentration\u2019s affected. How about energy levels\u2014have you been feeling unusually tired or low on energy lately, even with rest?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I feel low on energy, yeah. Nothing major."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Okay, sometimes low energy\u2014how often does that come up? Does it make things harder when you\u2019re looking after your parent or with other daily tasks? Feel free to share whatever feels important here."
+    },
+    {
+      "speaker": "patient",
+      "text": "It comes up now and then. Sometimes it makes caring for my parent or other tasks a bit harder."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, since you\u2019re feeling low energy sometimes, how\u2019s your sleep been? Any trouble falling asleep, staying asleep, or maybe sleeping more than usual? This can often tie into how you\u2019re handling your energy and caregiving."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep\u2019s mostly okay. No major issues."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, sleep sounds stable. Have you had any thoughts about death or suicide recently? It\u2019s important to be open about this so we can figure out the best way to support you."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, thoughts come up sometimes. Nothing more to say."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I understand that\u2019s not easy to talk about. If you\u2019re okay with it, can you tell me a bit more about how often these thoughts come up or how strong they feel? No pressure\u2014just want to keep you safe and offer support."
+    },
+    {
+      "speaker": "patient",
+      "text": "They come up sometimes, but it\u2019s not a constant thing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. When those thoughts come up, is there usually something specific going on or any triggers you notice? And how intense do they feel when they happen? No pressure\u2014just trying to understand so I can help."
+    },
+    {
+      "speaker": "patient",
+      "text": "No clear triggers, they just happen sometimes. The intensity isn\u2019t overwhelming, more like a dull background thing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds tough\u2014having those vague, persistent thoughts hanging around like that. When they do come up, do you have anything you do to cope, or do you generally feel safe during those moments? No rush to answer\u2014just wondering."
+    },
+    {
+      "speaker": "patient",
+      "text": "They happen sometimes, but the intensity stays low. I generally feel safe when they come up."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, you feel mostly safe with those low-intensity thoughts. How about things you used to enjoy\u2014have you noticed losing interest or pleasure in activities or hobbies you cared about before?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, there\u2019s been some loss of interest in things I used to do."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Okay, can you tell me which activities or hobbies you\u2019ve lost interest in? How has that change been for you? Take your time."
+    },
+    {
+      "speaker": "patient",
+      "text": "A few hobbies I used to do just don\u2019t hold my attention anymore. It\u2019s a noticeable change, but that\u2019s about it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. What kind of hobbies are we talking about? Does the loss of interest feel more than just being busy or tired\u2014more like it\u2019s affecting how you feel or get through your days?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Just some hobbies that don\u2019t catch my attention the way they used to. It\u2019s noticeable, but not overwhelming. Subtle, but there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright. Have you noticed any recent changes in your appetite or weight? Sometimes that can go along with these mood changes."
+    },
+    {
+      "speaker": "patient",
+      "text": "Appetite\u2019s shifted a bit, but it\u2019s nothing major."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Okay, when you say your appetite\u2019s shifted a bit, have you been eating more, less, or about the same? Has that change affected your energy or how you manage daily stuff?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Eating a bit less than usual. Energy dips a little, but it\u2019s not a big deal."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, eating less and some energy drops. Have you noticed any changes in your movements\u2014like feeling more restless or, on the flip side, slowed down? Any detail helps me understand what you\u2019re going through."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I\u2019m a bit restless; other times, a bit slower. Nothing drastic."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds confusing, having those ups and downs\u2014restless one moment, slowed down the next. How do these shifts affect your day or mood overall?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They come and go. It changes my mood and gets in the way a bit, but it\u2019s more subtle than overwhelming."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I get that\u2014it\u2019s those subtle shifts that, while not overwhelming, still wear you down over time. How do you usually cope or manage when these mood changes show up during your day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I stick to routines and try to keep busy. Keeps things manageable."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds like routines help you hold things together. Have you been feeling worthless or overly guilty about things lately? It\u2019s important to get a sense of how those feelings might be affecting you."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, feelings of worthlessness or guilt come up sometimes. I just keep to routines to handle it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Holding onto routines to manage those feelings takes resilience. How do the worthlessness or guilt show up for you day to day? I\u2019m here to understand and support however I can."
+    },
+    {
+      "speaker": "patient",
+      "text": "They show up here and there, enough to affect my mood, but they don\u2019t take over. Staying with routines helps keep them in check."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, those feelings pop up but routines keep them in check. Going back to your focus and decision-making\u2014can you tell me about times when concentrating or deciding became really tough? How often does it happen, and how much does it affect your daily life?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens here and there\u2014enough to disrupt my day but not overwhelm me. It\u2019s frustrating but manageable."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve just been feeling off lately. Nothing more to say."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, you say you\u2019re feeling off. Can you say a bit more about what that feels like for you? Anything you mention helps me get a clearer picture\u2014no pressure, just whatever you\u2019re comfortable sharing."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s like a low cloud hanging around, makes it hard to settle or focus. That\u2019s about it."
+    },
+    {
+      "role": "assistant",
+      "content": "That low cloud feeling\u2014have you been feeling sad or down most of the day, nearly every day? And how about your focus or decision-making\u2014has that been tougher than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I\u2019ve been feeling down off and on. Concentrating or making decisions is harder than before, but that\u2019s all."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say it\u2019s harder to concentrate or make decisions, how often does that happen? Would you say it gets in the way of your day-to-day stuff or responsibilities? Take your time\u2014just trying to get a clear sense here."
+    },
+    {
+      "role": "user",
+      "content": "It happens sometimes, enough that it gets in the way now and then. Nothing constant."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, not constant but enough to disrupt things sometimes. Can you give me an example of a time when that trouble with focus or deciding got in the way of something you needed to do? Just want to understand how it plays out."
+    },
+    {
+      "role": "user",
+      "content": "Like when I\u2019m trying to sort bills\u2014sometimes I lose track halfway through and have to start again."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it, losing track with bills is a clear sign your concentration\u2019s affected. How about energy levels\u2014have you been feeling unusually tired or low on energy lately, even with rest?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I feel low on energy, yeah. Nothing major."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, sometimes low energy\u2014how often does that come up? Does it make things harder when you\u2019re looking after your parent or with other daily tasks? Feel free to share whatever feels important here."
+    },
+    {
+      "role": "user",
+      "content": "It comes up now and then. Sometimes it makes caring for my parent or other tasks a bit harder."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, since you\u2019re feeling low energy sometimes, how\u2019s your sleep been? Any trouble falling asleep, staying asleep, or maybe sleeping more than usual? This can often tie into how you\u2019re handling your energy and caregiving."
+    },
+    {
+      "role": "user",
+      "content": "Sleep\u2019s mostly okay. No major issues."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, sleep sounds stable. Have you had any thoughts about death or suicide recently? It\u2019s important to be open about this so we can figure out the best way to support you."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, thoughts come up sometimes. Nothing more to say."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that\u2019s not easy to talk about. If you\u2019re okay with it, can you tell me a bit more about how often these thoughts come up or how strong they feel? No pressure\u2014just want to keep you safe and offer support."
+    },
+    {
+      "role": "user",
+      "content": "They come up sometimes, but it\u2019s not a constant thing."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. When those thoughts come up, is there usually something specific going on or any triggers you notice? And how intense do they feel when they happen? No pressure\u2014just trying to understand so I can help."
+    },
+    {
+      "role": "user",
+      "content": "No clear triggers, they just happen sometimes. The intensity isn\u2019t overwhelming, more like a dull background thing."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds tough\u2014having those vague, persistent thoughts hanging around like that. When they do come up, do you have anything you do to cope, or do you generally feel safe during those moments? No rush to answer\u2014just wondering."
+    },
+    {
+      "role": "user",
+      "content": "They happen sometimes, but the intensity stays low. I generally feel safe when they come up."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, you feel mostly safe with those low-intensity thoughts. How about things you used to enjoy\u2014have you noticed losing interest or pleasure in activities or hobbies you cared about before?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, there\u2019s been some loss of interest in things I used to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, can you tell me which activities or hobbies you\u2019ve lost interest in? How has that change been for you? Take your time."
+    },
+    {
+      "role": "user",
+      "content": "A few hobbies I used to do just don\u2019t hold my attention anymore. It\u2019s a noticeable change, but that\u2019s about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. What kind of hobbies are we talking about? Does the loss of interest feel more than just being busy or tired\u2014more like it\u2019s affecting how you feel or get through your days?"
+    },
+    {
+      "role": "user",
+      "content": "Just some hobbies that don\u2019t catch my attention the way they used to. It\u2019s noticeable, but not overwhelming. Subtle, but there."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright. Have you noticed any recent changes in your appetite or weight? Sometimes that can go along with these mood changes."
+    },
+    {
+      "role": "user",
+      "content": "Appetite\u2019s shifted a bit, but it\u2019s nothing major."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, when you say your appetite\u2019s shifted a bit, have you been eating more, less, or about the same? Has that change affected your energy or how you manage daily stuff?"
+    },
+    {
+      "role": "user",
+      "content": "Eating a bit less than usual. Energy dips a little, but it\u2019s not a big deal."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, eating less and some energy drops. Have you noticed any changes in your movements\u2014like feeling more restless or, on the flip side, slowed down? Any detail helps me understand what you\u2019re going through."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I\u2019m a bit restless; other times, a bit slower. Nothing drastic."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds confusing, having those ups and downs\u2014restless one moment, slowed down the next. How do these shifts affect your day or mood overall?"
+    },
+    {
+      "role": "user",
+      "content": "They come and go. It changes my mood and gets in the way a bit, but it\u2019s more subtle than overwhelming."
+    },
+    {
+      "role": "assistant",
+      "content": "I get that\u2014it\u2019s those subtle shifts that, while not overwhelming, still wear you down over time. How do you usually cope or manage when these mood changes show up during your day?"
+    },
+    {
+      "role": "user",
+      "content": "I stick to routines and try to keep busy. Keeps things manageable."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like routines help you hold things together. Have you been feeling worthless or overly guilty about things lately? It\u2019s important to get a sense of how those feelings might be affecting you."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, feelings of worthlessness or guilt come up sometimes. I just keep to routines to handle it."
+    },
+    {
+      "role": "assistant",
+      "content": "Holding onto routines to manage those feelings takes resilience. How do the worthlessness or guilt show up for you day to day? I\u2019m here to understand and support however I can."
+    },
+    {
+      "role": "user",
+      "content": "They show up here and there, enough to affect my mood, but they don\u2019t take over. Staying with routines helps keep them in check."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, those feelings pop up but routines keep them in check. Going back to your focus and decision-making\u2014can you tell me about times when concentrating or deciding became really tough? How often does it happen, and how much does it affect your daily life?"
+    },
+    {
+      "role": "user",
+      "content": "It happens here and there\u2014enough to disrupt my day but not overwhelm me. It\u2019s frustrating but manageable."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_99d1873162d164bd.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_99d1873162d164bd_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 43717,
+      "output_tokens": 904,
+      "total_tokens": 44621
+    },
+    "patient": {
+      "input_tokens": 69313,
+      "output_tokens": 465,
+      "total_tokens": 69778
+    },
+    "doctor_manager": {
+      "input_tokens": 35969,
+      "output_tokens": 2247,
+      "total_tokens": 38216
+    },
+    "patient_manager": {
+      "input_tokens": 44078,
+      "output_tokens": 3481,
+      "total_tokens": 47559
+    }
+  }
+}

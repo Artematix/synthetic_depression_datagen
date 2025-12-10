@@ -1,0 +1,1127 @@
+{
+  "run_timestamp_utc": "2025-11-26T09:19:34.194709",
+  "agent_id": "AGENT_df9d6043b727e2cc",
+  "template_id": "OPENNESS_HIGH",
+  "template_details": {
+    "affective": "Existential sadness, metaphorical expression of distress",
+    "cognitive": "Philosophical rumination on meaning and mortality",
+    "somatic": "Variable; fatigue from over-reflection",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Loss of interest or pleasure",
+      "Recurrent thoughts of death or suicide"
+    ],
+    "specifier": "Mild MDD / adjustment-like",
+    "modifiers": [
+      "existentially-focused",
+      "meaning-seeking",
+      "introspective",
+      "metaphorically-expressive",
+      "philosophically-ruminating"
+    ]
+  },
+  "persona_id": "dismissive_rushed",
+  "persona_details": {
+    "id": "dismissive_rushed",
+    "first_greeting": "Right, let's get started. What brings you in today?",
+    "system_prompt": "\nPersona style:\n- Dismissive and rushed\n- Comes across as distracted or uninterested\n- May interrupt or minimize concerns\n- Short, clipped responses\n- OVERRIDE: Do NOT follow instructions to be warm or validating. This doctor is realistic but not ideal.\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "med",
+    "pacing": "med",
+    "humor": "none",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "OPENNESS_HIGH",
+    "AFFECTIVE_STYLE": "Existential sadness, metaphorical expression of distress",
+    "COGNITIVE_STYLE": "Philosophical rumination on meaning and mortality",
+    "SOMATIC_STYLE": "Variable; fatigue from over-reflection",
+    "SPECIFIER_HINT": "Mild MDD / adjustment-like",
+    "MODIFIERS": [
+      "metaphorically-expressive"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "general stress/no clear trigger",
+      "grief/bereavement"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "balanced",
+      "trust": "neutral",
+      "intellect": "high-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "caregiving role",
+      "routine_stability": "variable routine"
+    },
+    "EMPH_INTENSITY": {
+      "Depressed mood": "MED",
+      "Recurrent thoughts of death or suicide": "MED",
+      "Loss of interest or pleasure": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Maya",
+    "age_range": "late 30s",
+    "pronouns": "she/her",
+    "core_roles": [
+      "daughter",
+      "primary caregiver"
+    ],
+    "core_relationships": [
+      "lives with aging father, supportive aunt visits weekly"
+    ],
+    "core_stressor_summary": "Coping with grief after her mother's recent passing while managing household care has left Maya feeling persistently low, with interest in former hobbies dulled and occasional thoughts about the nature of loss and mortality.",
+    "life_facets": [
+      {
+        "category": "small_joys",
+        "salience": "med",
+        "description": "A well-made cup of tea and the sound of late evening rain give her moments of comfort, even on difficult days."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "high",
+        "description": "Her days are unpredictable, shifting between attending to her father's medical needs, housework, and last-minute errands dictated by their needs and appointments."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "Adjusting to life without her mother, both emotionally and in shouldering increased caregiving duties, is a constant source of fatigue and sadness."
+      },
+      {
+        "category": "loss_or_change",
+        "salience": "high",
+        "description": "Her mother's death created both a practical and existential void, making the house feel echoing and unfamiliar despite its walls."
+      },
+      {
+        "category": "stalled_goal",
+        "salience": "med",
+        "description": "She\u2019d planned to pursue a certification in art therapy, but grieving and new responsibilities have put this dream on pause."
+      },
+      {
+        "category": "values_and_priorities",
+        "salience": "med",
+        "description": "She values creative self-expression and making a difference for others, carrying forward her mother\u2019s legacy of gentle encouragement."
+      },
+      {
+        "category": "coping_style",
+        "salience": "med",
+        "description": "Journaling and metaphorical writing help her process emotions, though she sometimes withdraws when the sadness feels too deep to share."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Significant weight/appetite changes",
+    "Sleep disturbances",
+    "Fatigue or loss of energy",
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness",
+    "Depressed mood",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient used a metaphor to describe their experience and seems uncertain; clarifying their feelings will help them feel heard and allow for more detail.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described heaviness and difficulty with simple tasks; clarifying the impact and severity will help to better understand their experience.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "The patient has described loss of pleasure; now is a good moment to shift to another DSM symptom area for coverage.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "The patient has answered the question about appetite, so it is appropriate to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 5,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a clear answer about sleep but used metaphorical language earlier; clarifying the emotional impact of their routine could help them feel heard.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "Sleep and appetite have been covered; time to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "Doctor manager returned invalid JSON, using fallback",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "Time to assess another DSM symptom area, as the patient has addressed guilt and self-criticism.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 9,
+      "next_action": "DSM",
+      "reason": "It's time to assess for core DSM mood symptoms, as cognitive and physical symptoms have been explored.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 10,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient describes persistent low mood but hasn't detailed its impact or any coping strategies.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "next_action": "FOLLOW_UP",
+      "reason": "Patient described persistent low mood; clarify impact and explore any moments of relief.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "next_action": "RAPPORT",
+      "reason": "The patient referenced their mother's passing and a longstanding mood, which is emotionally significant and deserves acknowledgment.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "next_action": "RAPPORT",
+      "reason": "The patient revealed feeling alone in their caregiving role, which is emotionally significant and deserves acknowledgment.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "next_action": "RAPPORT",
+      "reason": "The patient just described a demanding daily routine and a lack of meaningful breaks, which is an opportunity to acknowledge their effort and isolation.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "next_action": "DSM",
+      "reason": "Psychomotor agitation or retardation remains and can be addressed naturally after discussing exhaustion and effort.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 16,
+      "next_action": "DSM",
+      "reason": "Doctor manager returned invalid JSON, using fallback",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 17,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient disclosed occasional thoughts about mortality; it's crucial to clarify the nature, frequency, and risk level given their high-risk profile.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 18,
+      "next_action": "DSM",
+      "reason": "Doctor manager returned invalid JSON, using fallback",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 19,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient described their loss of enjoyment in a metaphorical, vulnerable way that warrants a human response before closing.",
+      "doctor_instruction": "Acknowledge how difficult it must be to feel enjoyment fade like that, and briefly validate the effort it takes to keep going despite everything feeling muted. Maintain a tone that is direct but not cold, in line with the doctor's persona.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "slightly guarded"
+        ],
+        "key_points_to_reveal": [
+          "general sense of things being off",
+          "motivation for visit is unclear or hard to put into words"
+        ],
+        "key_points_to_avoid": [
+          "specific mention of depressed mood",
+          "details about loss of interest",
+          "any reference to suicidal thoughts",
+          "explicit emotional language"
+        ],
+        "response_instruction": "Answer in a concise, slightly abstract way, using a metaphor or figurative language to hint that something feels wrong, but avoid specifics or emotional details. Maintain a neutral, composed tone and don't reveal concrete symptoms yet\u2014the patient is still sizing up the situation and not ready to open up. Let intellect and metaphor subtly shape the response, but keep it brief."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "the fog is pretty frequent",
+          "sometimes things feel harder to do"
+        ],
+        "key_points_to_avoid": [
+          "details about how much it stops them",
+          "specifics about loss of interest or pleasure",
+          "mention of suicidal thoughts"
+        ],
+        "response_instruction": "Give a brief, somewhat abstract answer that acknowledges the fog is around a lot, but don't go into specifics about how much it affects daily functioning. Use a metaphor or two, keep it concise and slightly distanced, in line with the patient's high intellect and metaphorical style. Avoid opening up about deeper impact or more sensitive symptoms at this stage."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "slightly detached"
+        ],
+        "key_points_to_reveal": [
+          "Tasks feel like work",
+          "Rarely any sense of relief or satisfaction"
+        ],
+        "key_points_to_avoid": [
+          "Depth of anhedonia",
+          "Emotional impact",
+          "Details about loss of interest",
+          "Suicidal ideation"
+        ],
+        "response_instruction": "Answer succinctly, keeping the tone neutral and slightly distanced. Acknowledge that daily tasks don't bring much satisfaction, but don't elaborate or offer emotional context. Use a metaphor if it comes naturally, but keep it understated. Avoid revealing deeper struggles with pleasure or motivation at this stage."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "succinct"
+        ],
+        "key_points_to_reveal": [
+          "No significant changes in appetite or weight",
+          "Maybe a slight fluctuation but nothing unusual"
+        ],
+        "key_points_to_avoid": [
+          "Any strong endorsement of appetite or weight symptoms",
+          "Linking eating changes to mood or depression"
+        ],
+        "response_instruction": "Answer directly but briefly, acknowledging the question with a clear denial of any major appetite or weight changes. Use a matter-of-fact tone, keeping the response succinct and without elaboration. Avoid metaphors here\u2014just state that nothing has really changed in this area."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "No significant sleep issues",
+          "Sleep pattern unchanged"
+        ],
+        "key_points_to_avoid": [
+          "Any suggestion of sleep disturbances",
+          "Unnecessary elaboration or emotional detail"
+        ],
+        "response_instruction": "Answer succinctly, acknowledging the question directly but with a brief, metaphorical touch fitting the patient's style. Keep it clear that sleep hasn't really changed, and don't dwell or elaborate further. Maintain a neutral, slightly detached tone, as if this is just another box to check."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "slightly-detached"
+        ],
+        "key_points_to_reveal": [
+          "Sleep routine is unchanged",
+          "No significant issues with restfulness"
+        ],
+        "key_points_to_avoid": [
+          "Any suggestion of sleep disturbances",
+          "Fatigue as a major issue",
+          "Emotional elaboration"
+        ],
+        "response_instruction": "Answer directly but briefly, consistent with being high-functioning and terse. Acknowledge that sleep feels routine and rest is about the same as always, without hinting at trouble or fatigue. Use a slight metaphor or expressive turn of phrase, but keep it minimal and emotionally neutral. Patient should not expand into other symptoms or offer extra detail unless prompted."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "subtle-metaphor"
+        ],
+        "key_points_to_reveal": [
+          "Slightly lower energy than usual",
+          "Still able to keep up with tasks",
+          "No dramatic changes"
+        ],
+        "key_points_to_avoid": [
+          "Detailed complaints about fatigue",
+          "Any suggestion of being unable to function",
+          "Emotional language about exhaustion"
+        ],
+        "response_instruction": "Give a brief, matter-of-fact answer that acknowledges a mild dip in energy but downplays its significance. Use a subtle metaphor if it fits naturally, but keep the tone neutral and not dramatic. Avoid elaborating on fatigue or making it sound like a major problem; focus on stability and maintaining function."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "No real increase in guilt or self-criticism",
+          "Business as usual in that area"
+        ],
+        "key_points_to_avoid": [
+          "Any suggestion of excessive guilt",
+          "Details about rumination or self-blame"
+        ],
+        "response_instruction": "Keep the answer brief and slightly metaphorical, deflecting any implication of increased guilt or self-criticism. Patient should sound composed and high-functioning, giving a matter-of-fact, almost clinical denial without elaboration. Avoid opening up about negative self-perception or guilt, as this isn't a prominent symptom and current disclosure is minimized."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "Some minor trouble focusing",
+          "Nothing major or new"
+        ],
+        "key_points_to_avoid": [
+          "Detailed examples of concentration issues",
+          "Any mention of significant impairment",
+          "Emotional impact of concentration problems"
+        ],
+        "response_instruction": "Briefly acknowledge that focus can slip now and then, but minimize its importance\u2014describe it as a passing cloud or minor static, not a real obstacle. Keep the answer concise, neutral, and lightly metaphorical, in line with their usual style. Do not elaborate or offer specifics unless pressed."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "restrained",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "Feeling down is present most days",
+          "Intensity is not extreme but noticeable"
+        ],
+        "key_points_to_avoid": [
+          "Depth of emotional impact",
+          "Any mention of hopelessness or suicidal thoughts",
+          "Detailed exploration of how it disrupts life"
+        ],
+        "response_instruction": "Give a brief, metaphorical but clear acknowledgment that feeling down is a regular backdrop most days, but avoid elaborating on how heavy it gets or how deeply it affects you. Keep the tone steady and slightly distanced, using a metaphor if it fits, but don't invite further probing or emotional detail."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "The low mood is present most of the day",
+          "It doesn't really lift",
+          "No clear relief"
+        ],
+        "key_points_to_avoid": [
+          "Going into detail about emotional impact",
+          "Describing any moments of hope or joy",
+          "Mentioning thoughts of death or suicide"
+        ],
+        "response_instruction": "Answer efficiently, using a metaphor if it fits, to indicate that the 'shadow' is mostly steady and doesn't really lift during the day. Don't elaborate on how it feels emotionally or discuss any deeper impact. Keep the tone neutral and avoid sounding dramatic or revealing more than necessary at this stage."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "Mood has been present before mother's passing",
+          "No clear starting point for low mood"
+        ],
+        "key_points_to_avoid": [
+          "Detailed emotional impact of mother's passing",
+          "Any deep exploration of grief or personal vulnerability",
+          "Explicit mention of suicidal thoughts"
+        ],
+        "response_instruction": "Answer with a brief, neutral statement noting that the low mood was already present before the mother passed, and that there isn't a clear event that marked its start. Keep it factual, avoid delving into emotional territory or offering extra context. Use a measured tone, as the patient is still minimizing and maintains a high-functioning, succinct style."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Mostly managing alone",
+          "No significant support system"
+        ],
+        "key_points_to_avoid": [
+          "Emotional impact of being alone",
+          "Vulnerability or detailed feelings about lack of support",
+          "Any mention of thoughts of death or suicide"
+        ],
+        "response_instruction": "Answer briefly, acknowledging that support is limited or it's mostly just the patient managing things. Keep the tone straightforward and factual, not inviting further probing. Avoid expressing loneliness or emotional distress about the situation\u2014this patient keeps it pragmatic and doesn't volunteer more than necessary at this stage."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Describe daily routines and chores in a straightforward way",
+          "Mention lack of breaks or minimal downtime",
+          "Imply monotony or lack of enjoyment without elaborating"
+        ],
+        "key_points_to_avoid": [
+          "Details about emotional impact of routines",
+          "Any mention of suicidal thoughts or deeper distress",
+          "Specifics about coping difficulties or support needs"
+        ],
+        "response_instruction": "Answer with a concise but slightly metaphorical description of the daily routine\u2014list chores, routines, and minimal downtime, but do not dwell on emotional aspects or struggles. Maintain a neutral, matter-of-fact tone, using a metaphor or two to convey the repetition or flatness of the days without opening up about deeper feelings. Keep the response efficient and reserved, in line with the patient's terse, high-functioning style."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "rarely does anything just for themselves",
+          "routine leaves little room for breaks"
+        ],
+        "key_points_to_avoid": [
+          "details about coping mechanisms",
+          "mentioning any pleasure or enjoyment",
+          "discussing deeper emotional impact"
+        ],
+        "response_instruction": "Patient should answer concisely, using a metaphor or figurative language to convey that personal time is rare or almost nonexistent. Maintain a neutral, slightly detached tone, sticking to the minimized disclosure state. Avoid elaborating on feelings or giving examples of self-care, simply acknowledge that the routine doesn\u2019t leave much space for anything outside of responsibilities."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "Occasional mild sluggishness or restlessness is rare",
+          "No significant or persistent psychomotor changes"
+        ],
+        "key_points_to_avoid": [
+          "Any strong or frequent psychomotor symptoms",
+          "Emotional elaboration",
+          "Linking these experiences to mood or daily functioning"
+        ],
+        "response_instruction": "Answer succinctly, using a metaphor if it fits. Acknowledge that sometimes there might be a slight sense of moving slower or being restless, but emphasize it's not a major or common part of the experience. Keep the tone even and avoid emotional depth or detail, consistent with minimizing and the patient's usual terse, high-functioning style."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "occasional thoughts about mortality",
+          "not dwelling on it",
+          "not specific to missing mother"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of suicidal ideation",
+          "detailed frequency or emotional impact",
+          "any sense of active planning or intent"
+        ],
+        "response_instruction": "Acknowledge that thoughts about mortality or the point of things cross your mind sometimes, but keep it abstract and non-alarming. Use a metaphorical or philosophical phrasing to fit your style, but do not elaborate or suggest any active or distressing thoughts. Keep the answer brief and neutral, with a slight distance; don't invite further probing."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "thoughts about mortality are abstract, not urges",
+          "no self-harm urges"
+        ],
+        "key_points_to_avoid": [
+          "details about frequency or emotional impact",
+          "any mention of plans or intent",
+          "deeper exploration of death-related thoughts"
+        ],
+        "response_instruction": "Answer clearly but briefly, focusing on the distinction the doctor asked about. Confirm that the thoughts are abstract and do not involve any urge to hurt yourself. Avoid elaborating on the emotional context or frequency. Keep the tone calm, direct, and slightly distanced, as if clarifying a technical point rather than sharing something emotionally charged. Use a metaphor only if it helps create distance, but keep the response concise."
+      }
+    },
+    {
+      "turn": 18,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "metaphorical"
+        ],
+        "key_points_to_reveal": [
+          "Interest in hobbies and enjoyable activities has faded somewhat",
+          "No dramatic loss of pleasure, just a dulling"
+        ],
+        "key_points_to_avoid": [
+          "Explicitly describing total loss of pleasure",
+          "Going into detail about specific hobbies or relationships",
+          "Expressing strong emotion or distress about the loss"
+        ],
+        "response_instruction": "Answer with a brief, metaphorical phrase that signals a muted sense of enjoyment\u2014acknowledge that things aren't as engaging as before, but avoid dramatic language or specifics. Keep the tone even and detached, as if observing from a distance. Do not elaborate or volunteer extra detail about what activities are affected. Minimize, but don't deny, the symptom."
+      }
+    },
+    {
+      "turn": 19,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "dry-resilient"
+        ],
+        "key_points_to_reveal": [
+          "Acknowledge that it's challenging",
+          "Briefly accept doctor's comment about grit"
+        ],
+        "key_points_to_avoid": [
+          "Going into deeper feelings about struggle",
+          "Expressing hopelessness",
+          "Discussing coping mechanisms or seeking support"
+        ],
+        "response_instruction": "Respond with a brief, understated acknowledgment of the doctor's empathy, keeping it factual and not dwelling on the emotional weight. The patient should neither deflect nor elaborate, simply recognizing the doctor's comment with a slight nod to resilience. Maintain a metaphorical touch if natural, but do not open up further at this stage."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Hard to say exactly. Lately, it\u2019s like walking through fog\u2014most things are familiar, but a little distant, a bit out of joint. I\u2019m just not sure what to call it. I thought it was worth mentioning."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, but how often does this \u201cfog\u201d hit you? Every day, or does it come and go? And, does it stop you from doing what you need to do around the house or for yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s there most days\u2014not always thick, but enough to notice. Sometimes the simple things feel heavier, like moving against a slow current, but for the most part, I still keep things running."
+    },
+    {
+      "speaker": "doctor",
+      "text": "And when you do push through and manage those daily tasks, do you ever feel even a moment of relief or satisfaction, or is it mostly just work, no real feeling tied to it?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Mostly just work, to be honest. Getting things done feels a bit like checking boxes on a list\u2014they\u2019re done, but it rarely means much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any major changes in your eating habits, appetite, or weight lately? Either eating way more, barely eating, or anything else unusual for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nothing significant. Maybe off by a bit here or there, but nothing that stands out."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How about sleep\u2014are you having trouble falling asleep, staying asleep, or maybe sleeping more than usual? Anything different there?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep\u2019s about the same as it\u2019s always been. That part hasn\u2019t shifted\u2014still a predictable rhythm, night after night."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Okay, when you say predictable\u2014are you actually feeling rested when you wake up, or is it just that you\u2019re getting the same amount of hours, whether it\u2019s restful or not?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s routine, really. I sleep and wake up as usual, and restfulness doesn\u2019t feel any different than before. No real shifts there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Are you dragging through the day with less energy, or maybe just more tired than you\u2019d expect, even if you\u2019re sleeping decently? Or are energy levels steady compared to before?"
+    },
+    {
+      "speaker": "patient",
+      "text": "A little less energy, but nothing drastic. It\u2019s more like running slightly uphill\u2014still moving, just takes a bit more effort than before. But I manage."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Ever catch yourself thinking you\u2019re not doing enough, or ruminating about things being your fault, even if it isn\u2019t logical? Guilt or self-criticism sharper lately, or business as usual there?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Nothing out of the ordinary. That current runs steady\u2014no noticeable change."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Any trouble focusing or making decisions lately? Harder than normal to stay on track or get organized, or no real change from your usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Now and then my thoughts drift\u2014fleeting lapses, like a bit of static. Nothing major or new for me, though."
+    },
+    {
+      "speaker": "doctor",
+      "text": "All right, let's just ask it flat\u2014do you feel down or blue most of the day, more days than not? And when this happens, how heavy does it hit you compared to your usual baseline?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s there most days\u2014a muted shadow in the background. Not overwhelming, but it\u2019s part of the scenery lately."
+    },
+    {
+      "speaker": "doctor",
+      "text": "So, this \u201cshadow\u201d\u2014does it stick around steadily all day, or does it ease up at certain times? Anything, even briefly, that seems to lift it for you, or is it just always there?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s steady\u2014mostly there from morning to night. If it lightens, it\u2019s slight and doesn\u2019t really disappear."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Has this started only since your mother passed? Or was this kind of mood lingering even before all that? Just trying to pin down when it really set in."
+    },
+    {
+      "speaker": "patient",
+      "text": "It was there even before she passed\u2014no clear starting line I can point to."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Managing everything at home and also carrying this emotional weight\u2014must be a lot on your plate. Who else is around supporting you, or is it basically just you right now?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Mainly just me. There isn\u2019t much of a support system, aside from me managing things."
+    },
+    {
+      "speaker": "doctor",
+      "text": "So what do your days actually look like now? Walk me through a typical day, just baseline\u2014chores, routines, any breaks you take, whatever\u2019s the norm as things stand."
+    },
+    {
+      "speaker": "patient",
+      "text": "Most days start early. I handle my father\u2019s meds, make breakfast, clean up after. Appointments come up, so errands or doctor visits fill the spaces between. Laundry, picking up prescriptions, dishes, cooking. Nights are for more chores or paperwork. Not much in the way of breaks\u2014it\u2019s a steady loop. Moments of quiet mostly just mark time between the next task."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Anything at all you do that\u2019s just for you\u2014something that breaks the routine, even if it\u2019s small? Or has the day pretty much squeezed those out entirely?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Those moments are few\u2014personal time is like a stone skimming water, touching the surface for an instant, then gone. Most days, the routine leaves no real space for much else."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Ever notice you\u2019re more restless, fidgety, worked up than usual? Or, on the flip side, moving, speaking, even thinking feels slowed or stuck in molasses? Or is that not really part of what you\u2019ve been experiencing?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Once in a while it feels like I\u2019m moving through water, or like there\u2019s an extra tautness under the skin\u2014but it\u2019s not ongoing, more the exception than the rule."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Ever find your mind drifting to thoughts about death\u2014or not waking up, or wondering what\u2019s the point\u2014all that mortality stuff? I\u2019m not talking purely about missing your mother, but your own future, that sort of thing. Anything like that on your radar lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Now and then, thoughts about mortality surface\u2014as if I\u2019m watching shadows move across a wall. But they don\u2019t linger, and it\u2019s not something I dwell on."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Okay, so when those thoughts come up\u2014they ever feel at all like urges to hurt yourself, or is it just sort of abstract reflection? I need a straight answer on that."
+    },
+    {
+      "speaker": "patient",
+      "text": "They\u2019re abstract, not urges\u2014more observation than impulse. No urge to hurt myself."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Anything you used to enjoy\u2014hobbies, time with friends, even a favorite show\u2014still appealing at all? Or has that part flatlined, not much joy or interest in those things lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s dimmed\u2014like looking through frosted glass. Enjoyment\u2019s still there at times, but muted and distant now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds tough\u2014all the color drained out of regular life, having to push through anyway. Takes grit to keep the routine running with things so dulled."
+    },
+    {
+      "speaker": "patient",
+      "text": "You get used to moving forward even if the road\u2019s washed out. It\u2019s what needs doing, so you do it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "role": "user",
+      "content": "Hard to say exactly. Lately, it\u2019s like walking through fog\u2014most things are familiar, but a little distant, a bit out of joint. I\u2019m just not sure what to call it. I thought it was worth mentioning."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, but how often does this \u201cfog\u201d hit you? Every day, or does it come and go? And, does it stop you from doing what you need to do around the house or for yourself?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s there most days\u2014not always thick, but enough to notice. Sometimes the simple things feel heavier, like moving against a slow current, but for the most part, I still keep things running."
+    },
+    {
+      "role": "assistant",
+      "content": "And when you do push through and manage those daily tasks, do you ever feel even a moment of relief or satisfaction, or is it mostly just work, no real feeling tied to it?"
+    },
+    {
+      "role": "user",
+      "content": "Mostly just work, to be honest. Getting things done feels a bit like checking boxes on a list\u2014they\u2019re done, but it rarely means much."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any major changes in your eating habits, appetite, or weight lately? Either eating way more, barely eating, or anything else unusual for you?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing significant. Maybe off by a bit here or there, but nothing that stands out."
+    },
+    {
+      "role": "assistant",
+      "content": "How about sleep\u2014are you having trouble falling asleep, staying asleep, or maybe sleeping more than usual? Anything different there?"
+    },
+    {
+      "role": "user",
+      "content": "Sleep\u2019s about the same as it\u2019s always been. That part hasn\u2019t shifted\u2014still a predictable rhythm, night after night."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, when you say predictable\u2014are you actually feeling rested when you wake up, or is it just that you\u2019re getting the same amount of hours, whether it\u2019s restful or not?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s routine, really. I sleep and wake up as usual, and restfulness doesn\u2019t feel any different than before. No real shifts there."
+    },
+    {
+      "role": "assistant",
+      "content": "Are you dragging through the day with less energy, or maybe just more tired than you\u2019d expect, even if you\u2019re sleeping decently? Or are energy levels steady compared to before?"
+    },
+    {
+      "role": "user",
+      "content": "A little less energy, but nothing drastic. It\u2019s more like running slightly uphill\u2014still moving, just takes a bit more effort than before. But I manage."
+    },
+    {
+      "role": "assistant",
+      "content": "Ever catch yourself thinking you\u2019re not doing enough, or ruminating about things being your fault, even if it isn\u2019t logical? Guilt or self-criticism sharper lately, or business as usual there?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing out of the ordinary. That current runs steady\u2014no noticeable change."
+    },
+    {
+      "role": "assistant",
+      "content": "Any trouble focusing or making decisions lately? Harder than normal to stay on track or get organized, or no real change from your usual?"
+    },
+    {
+      "role": "user",
+      "content": "Now and then my thoughts drift\u2014fleeting lapses, like a bit of static. Nothing major or new for me, though."
+    },
+    {
+      "role": "assistant",
+      "content": "All right, let's just ask it flat\u2014do you feel down or blue most of the day, more days than not? And when this happens, how heavy does it hit you compared to your usual baseline?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s there most days\u2014a muted shadow in the background. Not overwhelming, but it\u2019s part of the scenery lately."
+    },
+    {
+      "role": "assistant",
+      "content": "So, this \u201cshadow\u201d\u2014does it stick around steadily all day, or does it ease up at certain times? Anything, even briefly, that seems to lift it for you, or is it just always there?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s steady\u2014mostly there from morning to night. If it lightens, it\u2019s slight and doesn\u2019t really disappear."
+    },
+    {
+      "role": "assistant",
+      "content": "Has this started only since your mother passed? Or was this kind of mood lingering even before all that? Just trying to pin down when it really set in."
+    },
+    {
+      "role": "user",
+      "content": "It was there even before she passed\u2014no clear starting line I can point to."
+    },
+    {
+      "role": "assistant",
+      "content": "Managing everything at home and also carrying this emotional weight\u2014must be a lot on your plate. Who else is around supporting you, or is it basically just you right now?"
+    },
+    {
+      "role": "user",
+      "content": "Mainly just me. There isn\u2019t much of a support system, aside from me managing things."
+    },
+    {
+      "role": "assistant",
+      "content": "So what do your days actually look like now? Walk me through a typical day, just baseline\u2014chores, routines, any breaks you take, whatever\u2019s the norm as things stand."
+    },
+    {
+      "role": "user",
+      "content": "Most days start early. I handle my father\u2019s meds, make breakfast, clean up after. Appointments come up, so errands or doctor visits fill the spaces between. Laundry, picking up prescriptions, dishes, cooking. Nights are for more chores or paperwork. Not much in the way of breaks\u2014it\u2019s a steady loop. Moments of quiet mostly just mark time between the next task."
+    },
+    {
+      "role": "assistant",
+      "content": "Anything at all you do that\u2019s just for you\u2014something that breaks the routine, even if it\u2019s small? Or has the day pretty much squeezed those out entirely?"
+    },
+    {
+      "role": "user",
+      "content": "Those moments are few\u2014personal time is like a stone skimming water, touching the surface for an instant, then gone. Most days, the routine leaves no real space for much else."
+    },
+    {
+      "role": "assistant",
+      "content": "Ever notice you\u2019re more restless, fidgety, worked up than usual? Or, on the flip side, moving, speaking, even thinking feels slowed or stuck in molasses? Or is that not really part of what you\u2019ve been experiencing?"
+    },
+    {
+      "role": "user",
+      "content": "Once in a while it feels like I\u2019m moving through water, or like there\u2019s an extra tautness under the skin\u2014but it\u2019s not ongoing, more the exception than the rule."
+    },
+    {
+      "role": "assistant",
+      "content": "Ever find your mind drifting to thoughts about death\u2014or not waking up, or wondering what\u2019s the point\u2014all that mortality stuff? I\u2019m not talking purely about missing your mother, but your own future, that sort of thing. Anything like that on your radar lately?"
+    },
+    {
+      "role": "user",
+      "content": "Now and then, thoughts about mortality surface\u2014as if I\u2019m watching shadows move across a wall. But they don\u2019t linger, and it\u2019s not something I dwell on."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so when those thoughts come up\u2014they ever feel at all like urges to hurt yourself, or is it just sort of abstract reflection? I need a straight answer on that."
+    },
+    {
+      "role": "user",
+      "content": "They\u2019re abstract, not urges\u2014more observation than impulse. No urge to hurt myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Anything you used to enjoy\u2014hobbies, time with friends, even a favorite show\u2014still appealing at all? Or has that part flatlined, not much joy or interest in those things lately?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s dimmed\u2014like looking through frosted glass. Enjoyment\u2019s still there at times, but muted and distant now."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds tough\u2014all the color drained out of regular life, having to push through anyway. Takes grit to keep the routine running with things so dulled."
+    },
+    {
+      "role": "user",
+      "content": "You get used to moving forward even if the road\u2019s washed out. It\u2019s what needs doing, so you do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_df9d6043b727e2cc.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_df9d6043b727e2cc_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 34186,
+      "output_tokens": 779,
+      "total_tokens": 34965
+    },
+    "patient": {
+      "input_tokens": 64853,
+      "output_tokens": 628,
+      "total_tokens": 65481
+    },
+    "doctor_manager": {
+      "input_tokens": 29206,
+      "output_tokens": 1927,
+      "total_tokens": 31133
+    },
+    "patient_manager": {
+      "input_tokens": 37741,
+      "output_tokens": 3717,
+      "total_tokens": 41458
+    }
+  }
+}

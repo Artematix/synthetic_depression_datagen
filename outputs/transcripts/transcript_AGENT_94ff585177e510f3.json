@@ -1,0 +1,1010 @@
+{
+  "run_timestamp_utc": "2025-11-26T15:42:14.681993",
+  "agent_id": "AGENT_94ff585177e510f3",
+  "template_id": "CONSCIENTIOUSNESS_HIGH",
+  "template_details": {
+    "affective": "Controlled/suppressed affect, tension under responsibility",
+    "cognitive": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "somatic": "Insomnia, appetite loss, exhaustion from overwork",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Melancholic features",
+    "modifiers": [
+      "perfectionistic",
+      "rigidly-self-critical",
+      "duty-focused",
+      "overwork-prone",
+      "failure-intolerant"
+    ]
+  },
+  "persona_id": "neutral_efficient",
+  "persona_details": {
+    "id": "neutral_efficient",
+    "first_greeting": "Good to see you. Let's talk about how you've been doing.",
+    "system_prompt": "\nPersona style:\n- Professional and efficient\n- Minimal filler or small talk\n- Transitions directly between topics\n- Not effusive\n"
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "low",
+    "pacing": "med",
+    "humor": "light",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_HIGH",
+    "AFFECTIVE_STYLE": "Controlled/suppressed affect, tension under responsibility",
+    "COGNITIVE_STYLE": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "SOMATIC_STYLE": "Insomnia, appetite loss, exhaustion from overwork",
+    "SPECIFIER_HINT": "Melancholic features",
+    "MODIFIERS": [],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [
+      "self-worth/identity strain",
+      "relationships strain"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "balanced",
+      "trust": "neutral",
+      "intellect": "low-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with family",
+      "work_role": "student",
+      "support_level": "moderate support"
+    },
+    "AGE_RANGE": "20-24",
+    "EMPH_INTENSITY": {
+      "Fatigue or loss of energy": "HIGH",
+      "Significant weight/appetite changes": "MED",
+      "Feelings of worthlessness or excessive guilt": "MED",
+      "Sleep disturbances": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Alex",
+    "age_range": "20-24",
+    "pronouns": "they/them",
+    "core_roles": [
+      "university student",
+      "family member living at home"
+    ],
+    "core_relationships": [
+      "close but emotionally complicated relationship with their sibling",
+      "moderate support from family but limited peer network"
+    ],
+    "core_stressor_summary": "Alex struggles with fluctuating self-worth linked to recent relationship breakdown and ongoing family tensions, which amplify their fatigue and occasional suicidal thoughts.",
+    "life_facets": [
+      {
+        "category": "less_helpful_coping",
+        "salience": "high",
+        "description": "Alex often withdraws and ruminates alone, avoiding social interactions which sometimes deepens feelings of isolation."
+      },
+      {
+        "category": "closest_friend_or_confidant",
+        "salience": "med",
+        "description": "They have one trusted friend from their early university years who checks in regularly but lives far away."
+      },
+      {
+        "category": "areas_of_competence_or_pride",
+        "salience": "med",
+        "description": "Alex takes pride in maintaining good academic performance despite emotional difficulties."
+      },
+      {
+        "category": "prior_relationship_disappointment_or_breakdown",
+        "salience": "high",
+        "description": "A recent breakup with a significant other left them questioning their self-worth and contributed to feelings of loneliness."
+      },
+      {
+        "category": "self_view",
+        "salience": "high",
+        "description": "They see themselves as capable yet fragile, often doubting their value outside of achievements."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "Navigating family tensions and fallout from the recent breakup while managing academic expectations feels overwhelming."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "Alex is in the process of establishing their adult identity, feeling unsure about their future direction."
+      },
+      {
+        "category": "schedule_and_time_pressure",
+        "salience": "med",
+        "description": "Balancing demanding coursework with family responsibilities leaves little time for rest or socializing."
+      },
+      {
+        "category": "self_view",
+        "salience": "med",
+        "description": "They often criticize themselves internally but recognize their persistence as a personal strength."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Depressed mood",
+    "Recurrent thoughts of death or suicide",
+    "Feelings of worthlessness or excessive guilt",
+    "Loss of interest or pleasure",
+    "Difficulty concentrating or indecisiveness",
+    "Sleep disturbances",
+    "Psychomotor agitation or retardation",
+    "Significant weight/appetite changes"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the sleep and appetite changes and their impact, as the patient mentions them but downplays their significance.",
+      "doctor_instruction": "Explore more about how the changes in sleep and appetite have been affecting the patient day to day. Gently ask for specifics on what 'a little off' means and if these changes have become more noticeable or bothersome over time.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Energy changes are noted; checking fatigue or loss of energy next fits smoothly.",
+      "doctor_instruction": "Gently explore the extent of fatigue or loss of energy you've been experiencing, asking how it impacts daily activities and motivation.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Explore how symptoms affect daily functioning and coping.",
+      "doctor_instruction": "Gently ask the patient to describe which specific tasks feel harder and how this extra effort influences their motivation or mood. This will help understand the functional impact of their fatigue and energy changes.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To address remaining key symptoms, starting naturally with mood.",
+      "doctor_instruction": "Gently transition to ask about your mood by exploring any feelings of sadness or emptiness you've experienced recently. Acknowledge that you\u2019ve mentioned mood feels steady, and invite you to share more about that to better understand your overall emotional state.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 5,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient acknowledges brief low mood episodes; more detail will clarify their emotional experience.",
+      "doctor_instruction": "Gently explore those moments when the patient feels down or empty by asking how often they happen, how intense they feel, and how they cope during those times. This will help understand the variability and impact of their mood.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have not yet covered recurrent thoughts of death or suicide, which is critical given patient risk.",
+      "doctor_instruction": "Gently transition to asking about any thoughts related to death or suicide, acknowledging the sensitivity but emphasizing the importance of understanding these experiences for your care.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the details and safety regarding the patient\u2019s suicidal thoughts to understand risk better.",
+      "doctor_instruction": "Gently ask about how often these thoughts occur and if there are any specific triggers or situations that bring them on. Also, explore whether the patient has any plans or intentions related to these thoughts, while reassuring them that this is a safe space to share honestly.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have not yet covered feelings of worthlessness or excessive guilt, an important DSM symptom area relevant to depression.",
+      "doctor_instruction": "Gently explore whether the patient has experienced feelings of worthlessness or excessive guilt recently, and if so, ask for specific examples or situations where these feelings arise. Assure the patient that such feelings are common in depression and you want to understand their experience fully.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To explore the feelings of worthlessness or guilt more deeply, understanding their frequency and impact.",
+      "doctor_instruction": "Gently ask the patient to describe a recent situation when they felt down on themselves or burdened by guilt, and how often these feelings occur. Help them reflect on the connection between their tiredness and these feelings, while ensuring they feel safe and heard.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We need to cover more DSM symptom areas given limited time and current topics.",
+      "doctor_instruction": "Now that we've talked about guilt and low energy, let's shift focus to other important symptoms. Ask the patient about any loss of interest or pleasure in activities they normally enjoy to understand if that symptom is present.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "After exploring mood and interest, assessing concentration and decision-making next aligns with the patient's reported symptoms and risk status.",
+      "doctor_instruction": "Ask about difficulty concentrating or making decisions. Gently explore whether the patient has noticed any trouble focusing on tasks, making choices, or experiencing mental fog.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "To explore sleep disturbances further given earlier mention of inconsistent and restless sleep.",
+      "doctor_instruction": "Let's gently explore your sleep disturbances in more detail\u2014ask how often the restless or inconsistent sleep happens and how it impacts daily functioning. Keep the tone warm and understanding to support openness.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Sleep issues are prominent; assessing psychomotor agitation or retardation could clarify symptom impact.",
+      "doctor_instruction": "Explore whether the patient has noticed any physical restlessness or slowed movements associated with their tiredness and disrupted sleep, to better understand how their symptoms manifest.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 14,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Patient describes physical slowing, a key depression symptom to explore next.",
+      "doctor_instruction": "Gently explore whether the patient experiences any psychomotor changes, such as feeling slowed down or restless, focusing on frequency and impact on daily functioning.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient has shared several nuanced struggles but also resilience, so acknowledging their effort and normalizing these experiences will help build trust and comfort.",
+      "doctor_instruction": "Express understanding and appreciation for how the patient has been managing these challenges. Offer reassurance that fluctuations in energy, mood, and appetite are common and that their approach to handling symptoms through routine and persistence is a strength. This helps the patient feel seen and supported before moving toward closure.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient has shared challenges and resilience, so acknowledging this will help them feel understood and supported before closing.",
+      "doctor_instruction": "Express appreciation for the patient\u2019s honesty and effort managing their symptoms despite the fatigue and mood fluctuations. Acknowledge their resilience in balancing school and family, and validate that feeling tired is understandable given all they are handling.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 17,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared their experience thoroughly and the conversation has reached a natural point for closure.",
+      "doctor_instruction": "Express appreciation for the patient\u2019s openness and efforts, reassure them of ongoing support, and gently guide the conversation towards planning next steps or follow-up while ensuring they feel heard and cared for.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "Mention some tiredness and slight changes in sleep or appetite without dramatizing",
+          "Acknowledge general difficulty but avoid deep emotional language"
+        ],
+        "key_points_to_avoid": [
+          "Avoid mentioning strong feelings of worthlessness or suicidal thoughts",
+          "Do not elaborate on concentration issues or psychomotor changes"
+        ],
+        "patient_instruction": "Respond calmly and briefly about feeling a bit more tired than usual and some minor changes in sleep or appetite, but emphasize handling things day-to-day without making it sound severe."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "sleep is somewhat inconsistent, sometimes fewer hours, sometimes restless",
+          "appetite has decreased a bit, leading to some weight loss",
+          "energy levels are clearly lower, but still able to function during the day"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact of sleep/appetite changes",
+          "any feelings of worthlessness or excessive guilt",
+          "mentioning suicidal thoughts or severe mood symptoms"
+        ],
+        "patient_instruction": "Respond with a straightforward but cautious description of your sleep being irregular\u2014sometimes less and restless. Mention that your appetite is down a bit, causing some weight loss, but keep the tone factual. Emphasize lowered energy but avoid diving into emotional distress or more sensitive symptoms yet."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Energy loss is noticeable but manageable",
+          "Some tasks take more effort or time",
+          "No complete inability to function"
+        ],
+        "key_points_to_avoid": [
+          "Detailed descriptions of emotional impact",
+          "Intense feelings of worthlessness or guilt",
+          "Suicidal thoughts"
+        ],
+        "patient_instruction": "Respond with a straightforward, practical explanation that the low energy makes some activities slower or more draining but doesn't prevent completion. Keep the tone calm and factual, avoiding emotional depth or oversharing. Highlight some difficulty but also the ability to cope reasonably."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Everyday chores and work tasks require more effort",
+          "Motivation dips sometimes but not drastically",
+          "Mood generally stable despite fatigue"
+        ],
+        "key_points_to_avoid": [
+          "Detailed emotional distress or hopelessness",
+          "Overstating mood fluctuations or energy loss"
+        ],
+        "patient_instruction": "Provide a straightforward but not overly emotional account. Mention that usual chores and work tasks feel more taxing lately, and while motivation can be somewhat lower at times, your overall mood remains relatively steady. Keep the tone steady and restrained, reflecting your conscientious and practical nature."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "steady"
+        ],
+        "key_points_to_reveal": [
+          "some instances of feeling down or empty",
+          "overall mood usually steady",
+          "maybe brief examples without deep detail"
+        ],
+        "key_points_to_avoid": [
+          "intense descriptions of sadness",
+          "recurrent thoughts of death or suicide",
+          "excessive emotional expression"
+        ],
+        "patient_instruction": "Respond calmly and without dramatics, acknowledging that while your mood is mostly steady, you do have some occasional moments of sadness or emptiness. Keep it factual and measured, sharing a brief example or noting the feeling without going into deep emotional detail."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "Down or empty feelings happen occasionally",
+          "These moments are noticeable but not overwhelming",
+          "Uses practical distractions or routines to cope"
+        ],
+        "key_points_to_avoid": [
+          "Strong emotions or details about suicidal thoughts",
+          "Deeper feelings of worthlessness",
+          "Any suggestion that mood is frequently or severely disturbed"
+        ],
+        "patient_instruction": "Respond with measured, straightforward details about how the down periods occur sometimes but don\u2019t dominate your day or feel overpowering. Emphasize practical ways you handle these moments without delving into heavy emotional detail. Keep the tone steady and avoid sounding overly emotional or dramatic."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge having some brief thoughts of death",
+          "emphasize they are infrequent and not acted upon"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of these thoughts",
+          "expressing hopelessness or strong emotional distress"
+        ],
+        "patient_instruction": "The patient should respond cautiously but honestly, admitting that they have had occasional brief thoughts about death but stresses that these thoughts are not frequent or overwhelming, keeping the tone measured and straightforward without elaborating too much."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "brief, infrequent thoughts about death",
+          "no plans or intentions related to those thoughts",
+          "possible triggers related to feeling worn out or low energy"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of suicidal ideation",
+          "strong emotional reactions or overt distress"
+        ],
+        "patient_instruction": "Respond in a measured and reserved way, acknowledging that thoughts about death come up occasionally but remain infrequent and without plans or intentions. Mention briefly that these thoughts might sometimes be linked to feeling worn out or low on energy, but avoid going into detailed explanations or showing strong emotions."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "Occasional feelings of worthlessness or guilt",
+          "Not overwhelming but present",
+          "Link these feelings occasionally to low energy or fatigue"
+        ],
+        "key_points_to_avoid": [
+          "Deep details or examples of guilt",
+          "Strong emotional language or despair",
+          "Any indication of self-harm or suicidal plans"
+        ],
+        "patient_instruction": "Respond with a moderately clear acknowledgement that you do experience feelings of worthlessness or guilt from time to time but they aren\u2019t overwhelming. Keep the tone reserved and somewhat factual without expanding into emotional depth or specific incidents. Link the feelings to moments of low energy rather than persistent mood issues."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "Mention a recent example of feeling down or guilty related to tiredness",
+          "Note that these feelings come up occasionally but not all the time",
+          "Explain that the feelings tend to happen when energy is low"
+        ],
+        "key_points_to_avoid": [
+          "Overly dramatic descriptions or deep emotional turmoil",
+          "Detailed discussion of persistent guilt or worthlessness",
+          "Suicidal thoughts or plans"
+        ],
+        "patient_instruction": "Briefly describe a recent instance when feeling tired triggered some feelings of guilt or being down. Keep the explanation matter-of-fact and focused on how these feelings fit within the daily routine without overemphasizing or dramatizing them."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "No loss of interest or pleasure noticed"
+        ],
+        "key_points_to_avoid": [
+          "Excessive detail or emotional elaboration"
+        ],
+        "patient_instruction": "Respond concisely that you haven't noticed any changes in interest or pleasure with your usual activities, keeping the tone factual and reserved without elaborating much."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "rare difficulty concentrating or making decisions"
+        ],
+        "key_points_to_avoid": [
+          "exaggerating cognitive issues",
+          "linking concentration problems to mood"
+        ],
+        "patient_instruction": "Respond briefly but clearly that concentration or decision-making problems are rare and not a major issue. Keep the tone straightforward and pragmatic, reflecting a cautious acknowledgment without elaboration or emotional undertones."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "matter-of-fact",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Sleep is restless and inconsistent several nights a week",
+          "Tiredness the next day is noticeable but usually manageable"
+        ],
+        "key_points_to_avoid": [
+          "Overemphasizing impact on daily life",
+          "Expressing frustration or hopelessness about sleep"
+        ],
+        "patient_instruction": "Respond with a straightforward but not overly detailed account of how often sleep is disrupted, noting it happens a few nights each week. Mention the resulting tiredness the next day but emphasize you still manage your daily activities without it being a major problem."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Some physical slowing down on tired days",
+          "Generally manageable despite fatigue"
+        ],
+        "key_points_to_avoid": [
+          "Strong emotional reactions",
+          "Detailed descriptions of psychomotor changes"
+        ],
+        "patient_instruction": "Respond with a calm, measured tone indicating that on tired days, movements can feel a bit slower but not severely so. Emphasize that physical tiredness is noticeable but manageable, avoiding emotional emphasis or detailed explanations."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "appetite has generally been lower but sometimes varies",
+          "weight loss is noticeable but patient does not view it as severe"
+        ],
+        "key_points_to_avoid": [
+          "expressing strong worry or distress about weight/appetite",
+          "linking weight change to mood or energy strongly"
+        ],
+        "patient_instruction": "Respond with a straightforward but not overly detailed explanation of the appetite changes, noting it can fluctuate a bit. Mention weight loss but describe it as noticeable without dramatizing it. Maintain a practical, matter-of-fact tone reflecting your conscientious nature without inviting deeper emotional discussion."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "practical",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge ongoing effort",
+          "emphasize managing despite tiredness"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional disclosure",
+          "expressing vulnerability about worthlessness or suicidal thoughts"
+        ],
+        "patient_instruction": "Respond briefly and practically, acknowledging the challenges without overemphasizing them. Maintain a tone of quiet endurance and self-control, expressing that while things are tiring, you\u2019re continuing to manage and stay on top of your responsibilities."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "appreciative"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the doctor\u2019s support",
+          "convey continued effort despite fatigue"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional struggles",
+          "intense feelings of worthlessness or hopelessness"
+        ],
+        "patient_instruction": "Respond with a brief, straightforward acknowledgment of the doctor's comments, expressing appreciation for the support and reaffirming that you\u2019re doing your best despite feeling tired. Maintain a reserved tone and avoid sharing deeper emotional details at this time."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks. I've been managing okay\u2014just a bit more tired than usual lately. Sleep and appetite have been a little off, but nothing too disruptive. Taking things one day at a time mostly."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you say sleep and appetite have been \"a little off,\" can you tell me a bit more about that? Like, are you sleeping less or more than usual, and how has that been affecting your energy or mood during the day? Same for eating\u2014has your appetite changed much?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep has been a bit inconsistent\u2014sometimes I get fewer hours, other times it\u2019s restless. Appetite\u2019s dropped a little, which has caused some weight loss. Energy is definitely lower than before, but I can still get through the day without too much trouble."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That low energy\u2014how much is it getting in the way of your day-to-day stuff? Are there things that feel harder to finish or start because of it?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It definitely makes some tasks take more effort or longer than usual. Still, I\u2019m able to complete what I need to do, even if it\u2019s more tiring than before."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Which tasks feel like they take more effort right now? And when things are tougher, does that shift how motivated or in what mood you find yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Daily chores and school work have been more tiring lately. Motivation dips now and then, but not drastically. Overall, my mood has stayed pretty steady despite feeling more worn out."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned your mood's been steady, which is good to hear. Have you noticed any times lately when you\u2019ve felt more sadness or emptiness than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, there have been some moments where I felt down or empty, but they don\u2019t last long. Mostly, my mood stays steady through the day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When those down or empty moments come up, how often do they happen? And when they do, how strong or overwhelming do they feel? What do you usually do to manage them?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They happen now and then, but not too often. When they do, they\u2019re noticeable but not overwhelming. I usually focus on sticking to my daily routine or keep busy with tasks to get through them."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate you sharing that. It\u2019s important to check\u2014have you had any thoughts about death or suicide, even just briefly? It\u2019s okay to be honest here; understanding this helps me support you better."
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been brief thoughts about death from time to time, but they\u2019re not frequent and I don\u2019t act on them."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being open. Can you tell me how often these thoughts come up, and if there\u2019s anything that tends to bring them on? Also, have you ever had any plans or intentions related to those thoughts? This is a safe space to talk about anything you\u2019re feeling."
+    },
+    {
+      "speaker": "patient",
+      "text": "They come up now and then, but not very often. Usually when I\u2019m feeling particularly worn out or low on energy. I haven\u2019t had any plans or intentions connected to those thoughts."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s pretty common for feelings of worthlessness or guilt to come up when someone\u2019s struggling. Have you noticed anything like that for yourself lately? Maybe times when you felt especially down on yourself or burdened by guilt?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I\u2019ve had some feelings like that occasionally. They\u2019re not overwhelming but tend to come up more when I\u2019m feeling tired or worn down."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Can you think of a recent time when you felt that way\u2014down on yourself or guilty? How often do these feelings come up, especially when you're feeling tired? It's helpful to understand how these moments fit into your day-to-day."
+    },
+    {
+      "speaker": "patient",
+      "text": "A few days ago, I felt a bit guilty for not finishing some chores because I was really tired. It happens occasionally, mostly when my energy is low, but not all the time."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any loss of interest or pleasure in activities you usually enjoy? Things that used to feel rewarding or fun\u2014do they feel different these days?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. Things I usually enjoy still feel the same."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How about concentration or decision-making\u2014have you noticed any trouble focusing on tasks or making choices lately? Anything feel foggier or harder to think through than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Only rarely. Concentration and decisions have mostly been fine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned your sleep has been a bit restless and inconsistent\u2014how often does that happen? And when your sleep is off, how does that affect your day-to-day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens a few nights each week. The next day feels more tiring than usual, but I\u2019m still able to handle things."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you\u2019re feeling that tired after a restless night, have you noticed if your body feels restless or, on the flip side, like your movements slow down? How do these days usually feel physically?"
+    },
+    {
+      "speaker": "patient",
+      "text": "On tired days, I do notice my movements are a bit slower than usual. It\u2019s manageable though and doesn\u2019t really stop me from getting through the day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned your appetite dropped a bit and you lost some weight\u2014has that change been steady, or does your appetite bounce around? And has the weight change felt significant to you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My appetite has generally been lower, but it does vary sometimes. The weight loss is noticeable, but I wouldn\u2019t say it\u2019s severe."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like you\u2019ve been handling a fair bit\u2014juggling school, family, and these ups and downs can wear on anyone. It\u2019s good that you\u2019re finding ways to keep going, even when things feel tiring or off. These shifts in mood, energy, and appetite are common, and the fact that you\u2019re aware and managing day to day speaks to your resilience."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thanks. It\u2019s tiring at times, but I\u2019m still managing to keep up with what I need to do."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I really appreciate your honesty and the effort you\u2019re putting in, especially with everything on your plate\u2014school, family, and how you\u2019re feeling inside. Feeling tired makes total sense given all that, and it\u2019s okay to acknowledge that. Your resilience in keeping up is important, and we can continue working together to support that."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate that. I\u2019m doing my best to keep up, even if it\u2019s tiring sometimes."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "role": "user",
+      "content": "Thanks. I've been managing okay\u2014just a bit more tired than usual lately. Sleep and appetite have been a little off, but nothing too disruptive. Taking things one day at a time mostly."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say sleep and appetite have been \"a little off,\" can you tell me a bit more about that? Like, are you sleeping less or more than usual, and how has that been affecting your energy or mood during the day? Same for eating\u2014has your appetite changed much?"
+    },
+    {
+      "role": "user",
+      "content": "Sleep has been a bit inconsistent\u2014sometimes I get fewer hours, other times it\u2019s restless. Appetite\u2019s dropped a little, which has caused some weight loss. Energy is definitely lower than before, but I can still get through the day without too much trouble."
+    },
+    {
+      "role": "assistant",
+      "content": "That low energy\u2014how much is it getting in the way of your day-to-day stuff? Are there things that feel harder to finish or start because of it?"
+    },
+    {
+      "role": "user",
+      "content": "It definitely makes some tasks take more effort or longer than usual. Still, I\u2019m able to complete what I need to do, even if it\u2019s more tiring than before."
+    },
+    {
+      "role": "assistant",
+      "content": "Which tasks feel like they take more effort right now? And when things are tougher, does that shift how motivated or in what mood you find yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Daily chores and school work have been more tiring lately. Motivation dips now and then, but not drastically. Overall, my mood has stayed pretty steady despite feeling more worn out."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned your mood's been steady, which is good to hear. Have you noticed any times lately when you\u2019ve felt more sadness or emptiness than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, there have been some moments where I felt down or empty, but they don\u2019t last long. Mostly, my mood stays steady through the day."
+    },
+    {
+      "role": "assistant",
+      "content": "When those down or empty moments come up, how often do they happen? And when they do, how strong or overwhelming do they feel? What do you usually do to manage them?"
+    },
+    {
+      "role": "user",
+      "content": "They happen now and then, but not too often. When they do, they\u2019re noticeable but not overwhelming. I usually focus on sticking to my daily routine or keep busy with tasks to get through them."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that. It\u2019s important to check\u2014have you had any thoughts about death or suicide, even just briefly? It\u2019s okay to be honest here; understanding this helps me support you better."
+    },
+    {
+      "role": "user",
+      "content": "There have been brief thoughts about death from time to time, but they\u2019re not frequent and I don\u2019t act on them."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being open. Can you tell me how often these thoughts come up, and if there\u2019s anything that tends to bring them on? Also, have you ever had any plans or intentions related to those thoughts? This is a safe space to talk about anything you\u2019re feeling."
+    },
+    {
+      "role": "user",
+      "content": "They come up now and then, but not very often. Usually when I\u2019m feeling particularly worn out or low on energy. I haven\u2019t had any plans or intentions connected to those thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s pretty common for feelings of worthlessness or guilt to come up when someone\u2019s struggling. Have you noticed anything like that for yourself lately? Maybe times when you felt especially down on yourself or burdened by guilt?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I\u2019ve had some feelings like that occasionally. They\u2019re not overwhelming but tend to come up more when I\u2019m feeling tired or worn down."
+    },
+    {
+      "role": "assistant",
+      "content": "Can you think of a recent time when you felt that way\u2014down on yourself or guilty? How often do these feelings come up, especially when you're feeling tired? It's helpful to understand how these moments fit into your day-to-day."
+    },
+    {
+      "role": "user",
+      "content": "A few days ago, I felt a bit guilty for not finishing some chores because I was really tired. It happens occasionally, mostly when my energy is low, but not all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any loss of interest or pleasure in activities you usually enjoy? Things that used to feel rewarding or fun\u2014do they feel different these days?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Things I usually enjoy still feel the same."
+    },
+    {
+      "role": "assistant",
+      "content": "How about concentration or decision-making\u2014have you noticed any trouble focusing on tasks or making choices lately? Anything feel foggier or harder to think through than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Only rarely. Concentration and decisions have mostly been fine."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned your sleep has been a bit restless and inconsistent\u2014how often does that happen? And when your sleep is off, how does that affect your day-to-day?"
+    },
+    {
+      "role": "user",
+      "content": "It happens a few nights each week. The next day feels more tiring than usual, but I\u2019m still able to handle things."
+    },
+    {
+      "role": "assistant",
+      "content": "When you\u2019re feeling that tired after a restless night, have you noticed if your body feels restless or, on the flip side, like your movements slow down? How do these days usually feel physically?"
+    },
+    {
+      "role": "user",
+      "content": "On tired days, I do notice my movements are a bit slower than usual. It\u2019s manageable though and doesn\u2019t really stop me from getting through the day."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned your appetite dropped a bit and you lost some weight\u2014has that change been steady, or does your appetite bounce around? And has the weight change felt significant to you?"
+    },
+    {
+      "role": "user",
+      "content": "My appetite has generally been lower, but it does vary sometimes. The weight loss is noticeable, but I wouldn\u2019t say it\u2019s severe."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you\u2019ve been handling a fair bit\u2014juggling school, family, and these ups and downs can wear on anyone. It\u2019s good that you\u2019re finding ways to keep going, even when things feel tiring or off. These shifts in mood, energy, and appetite are common, and the fact that you\u2019re aware and managing day to day speaks to your resilience."
+    },
+    {
+      "role": "user",
+      "content": "Thanks. It\u2019s tiring at times, but I\u2019m still managing to keep up with what I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "I really appreciate your honesty and the effort you\u2019re putting in, especially with everything on your plate\u2014school, family, and how you\u2019re feeling inside. Feeling tired makes total sense given all that, and it\u2019s okay to acknowledge that. Your resilience in keeping up is important, and we can continue working together to support that."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate that. I\u2019m doing my best to keep up, even if it\u2019s tiring sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_94ff585177e510f3.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_94ff585177e510f3_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 27193,
+      "output_tokens": 711,
+      "total_tokens": 27904
+    },
+    "patient": {
+      "input_tokens": 46914,
+      "output_tokens": 534,
+      "total_tokens": 47448
+    },
+    "doctor_manager": {
+      "input_tokens": 25370,
+      "output_tokens": 1551,
+      "total_tokens": 26921
+    },
+    "patient_manager": {
+      "input_tokens": 31679,
+      "output_tokens": 2899,
+      "total_tokens": 34578
+    }
+  }
+}

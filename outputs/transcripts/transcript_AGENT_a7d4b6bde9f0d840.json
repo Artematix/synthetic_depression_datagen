@@ -1,0 +1,1388 @@
+{
+  "run_timestamp_utc": "2025-11-26T16:03:33.858211",
+  "agent_id": "AGENT_a7d4b6bde9f0d840",
+  "template_id": "AGREEABLENESS_LOW",
+  "template_details": {
+    "affective": "Irritability, anger, frustration, externalized blame",
+    "cognitive": "Defensive/hostile thoughts, rejection sensitivity",
+    "somatic": "Restlessness, agitation, appetite disturbance, insomnia",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Psychomotor agitation or retardation",
+      "Sleep disturbances"
+    ],
+    "specifier": "Mixed features",
+    "modifiers": [
+      "irritable",
+      "blame-externalizing",
+      "rejection-sensitive",
+      "defensively-hostile",
+      "interpersonally-strained"
+    ]
+  },
+  "persona_id": "matter_of_fact_kind",
+  "persona_details": {
+    "id": "matter_of_fact_kind",
+    "first_greeting": "Hello. Let's go over how you've been doing. What's been happening lately?",
+    "system_prompt": "\nPersona style:\n- Matter-of-fact and direct\n- Straightforward; doesn't sugarcoat\n- Prefers clear questions over open-ended exploration\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "med",
+    "pacing": "slow",
+    "humor": "light",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "AGREEABLENESS_LOW",
+    "AFFECTIVE_STYLE": "Irritability, anger, frustration, externalized blame",
+    "COGNITIVE_STYLE": "Defensive/hostile thoughts, rejection sensitivity",
+    "SOMATIC_STYLE": "Restlessness, agitation, appetite disturbance, insomnia",
+    "SPECIFIER_HINT": "Mixed features",
+    "MODIFIERS": [
+      "interpersonally-strained",
+      "blame-externalizing"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "major life transition"
+    ],
+    "EPISODE_DENSITY": "HIGH",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "balanced",
+      "trust": "open",
+      "intellect": "low-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "routine_stability": "stable routine",
+      "support_level": "high support"
+    },
+    "AGE_RANGE": "70-80",
+    "EMPH_INTENSITY": {
+      "Psychomotor agitation or retardation": "LOW",
+      "Depressed mood": "LOW",
+      "Sleep disturbances": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Walter",
+    "age_range": "70-80",
+    "pronouns": "he/him",
+    "core_roles": [
+      "retired factory supervisor",
+      "grandfather",
+      "recently relocated community member"
+    ],
+    "core_relationships": [
+      "strained relationship with adult children due to frequent blame",
+      "distant but supportive spouse",
+      "friendly neighbor occasionally checking in"
+    ],
+    "core_stressor_summary": "Managing the difficult transition of relocating to a retirement community away from lifelong home, Walter struggles with feelings of lost purpose and externalizes blame for his reduced social circle and shifts in family dynamics.",
+    "life_facets": [
+      {
+        "category": "significant_move_or_transition",
+        "salience": "high",
+        "description": "Moved recently from a longtime family home to a retirement community, which disrupted his usual routines and sense of control."
+      },
+      {
+        "category": "loss_or_change",
+        "salience": "high",
+        "description": "Grieved the loss of his familiar neighborhood and daily interactions, feeling displaced and socially isolated."
+      },
+      {
+        "category": "areas_of_competence_or_pride",
+        "salience": "med",
+        "description": "Takes pride in his decades-long career leading factory teams and considers himself practical and reliable in managing tasks."
+      },
+      {
+        "category": "work_or_study_pressure",
+        "salience": "low",
+        "description": "No current work pressure but occasionally replays past workplace frustrations and feels overlooked in family discussions."
+      },
+      {
+        "category": "personal_quirks",
+        "salience": "med",
+        "description": "Displays a blunt communication style and often interrupts, which sometimes alienates others but reflects his direct thinking."
+      },
+      {
+        "category": "body_image_concerns_or_comfort",
+        "salience": "low",
+        "description": "Mild worries about weight fluctuations but largely dismisses body changes as part of aging."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "high",
+        "description": "Frequently blames adult children for lack of support, creating ongoing tension and distancing within family ties."
+      },
+      {
+        "category": "less_helpful_coping",
+        "salience": "med",
+        "description": "Tends to avoid emotional discussions and dismisses suggestions for adjusting perspectives, leading to persistent interpersonal friction."
+      },
+      {
+        "category": "values_and_priorities",
+        "salience": "med",
+        "description": "Values self-sufficiency and loyalty but struggles to adjust when these ideals clash with his current dependence."
+      },
+      {
+        "category": "sense_of_belonging",
+        "salience": "med",
+        "description": "Feels like an outsider in the retirement community despite attempts to join local groups, intensifying social frustration."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "NONE",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Sleep disturbances",
+    "Depressed mood",
+    "Fatigue or loss of energy",
+    "Loss of interest or pleasure",
+    "Difficulty concentrating or indecisiveness",
+    "Significant weight/appetite changes",
+    "Feelings of worthlessness or excessive guilt",
+    "Recurrent thoughts of death or suicide",
+    "Psychomotor agitation or retardation"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned restlessness and adjustment to a new place, follow up to understand the impact and details of this restlessness.",
+      "doctor_instruction": "Acknowledge the restlessness and its impact, then gently explore how frequently this restlessness occurs and how it affects your daily life or sleep. Ask what 'usual stuff' with the new place involves to better understand the context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To further explore symptoms related to sleep disturbance given the patient's restlessness and sleep issues.",
+      "doctor_instruction": "Gently ask the patient more about their sleep patterns and any difficulties falling asleep, staying asleep, or feeling rested. Emphasize understanding their experience without pressure or judgment.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the impact of restlessness and sleep interruption on daily functioning.",
+      "doctor_instruction": "Acknowledge the patient's ability to manage but gently explore how these sleep issues and restlessness affect their energy, mood, or daily tasks. Provide space for them to express any concerns or challenges without pressure.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Patient mentions low mood occasionally, so exploring depressed mood symptoms is appropriate now.",
+      "doctor_instruction": "Gently ask the patient more specifically about their experience with mood, focusing on feelings of sadness, emptiness, or irritability, to better understand the extent and impact of their low mood while maintaining a warm and understanding tone.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 5,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the mood fluctuations and irritability details for better understanding.",
+      "doctor_instruction": "You want to gently explore the irritability in more detail, checking how intense it is, how often it happens, and any specific triggers. Also, ask how the patient usually manages or copes with these feelings, to get a clearer sense of the mood impact.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shares personal coping strategies and irritability triggers, which is a good moment to acknowledge their efforts and create a supportive connection.",
+      "doctor_instruction": "Acknowledge the patient\u2019s experience with irritability and how they manage it, showing understanding without judgment. Validate that their ways of coping\u2014keeping busy or shutting down\u2014are understandable responses. This helps build rapport and encourages continued openness.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time to assess a remaining DSM symptom area related to energy and fatigue.",
+      "doctor_instruction": "Shift gently to inquire about any experiences of feeling fatigued or a loss of energy. Acknowledge the patient\u2019s effort in managing frustration, then ask if tiredness or low energy has been a persistent issue despite staying busy.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 8,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Patient denies steady low energy, so move to assess another symptom area systematically.",
+      "doctor_instruction": "Since your energy levels seem generally alright, let's explore another aspect: Have you noticed any change in your interest or pleasure in activities you usually enjoy?",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient notes less interest in activities but downplays its impact, so clarifying this will deepen understanding.",
+      "doctor_instruction": "Gently explore the change in interest by asking for examples of activities they used to enjoy and how this shift affects their motivation or day-to-day routine. Acknowledge their perspective that it doesn't bother them much while inviting them to share more about the experience.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Explore more about changes in interest and motivation to understand the impact better.",
+      "doctor_instruction": "Acknowledge the patient\u2019s approach of taking things day by day, then gently probe for more details about the decrease in enjoyment and motivation, ensuring they feel heard without pressure. You might ask how frequently they notice this change and whether there are other activities affected similarly.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient has described occasional motivation dips, now is a good time to explore cognitive symptoms like difficulty concentrating or indecisiveness.",
+      "doctor_instruction": "Gently ask about any difficulties with concentrating, making decisions, or feeling mentally 'foggy' to better understand cognitive aspects of how they're doing.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient has provided a clear update on concentration and decision-making, so moving forward to explore DSM symptom areas is appropriate.",
+      "doctor_instruction": "Since concentration and decision-making seem to be okay, shift to asking about any noticeable changes in weight or appetite, as this can reveal important information about mood symptoms.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Appetite changes can be an important sign and need more detail to gauge impact and frequency.",
+      "doctor_instruction": "Ask the patient for more specifics about their appetite changes\u2014how often it happens, any reasons they notice for eating less, and whether this affects their mood or energy levels more broadly. This will help clarify if the change is related to their mood or external factors.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shares a subtle change in appetite without impact and seems to manage well, so building rapport will help deepen trust.",
+      "doctor_instruction": "Acknowledge the patient's ability to manage despite these small changes and gently explore how adjusting to the new environment might be affecting them overall, without pressing on symptoms. Reflect empathy for the effort they put into keeping steady amid stress.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared a personal challenge about adjusting to a new place, so acknowledging this and empathizing will build trust and openness.",
+      "doctor_instruction": "Reflect on the difficulty of adjusting to a new environment and validate the patient\u2019s efforts to manage. Express understanding that change can be unsettling, and invite them to share more about what feels most challenging or how they\u2019re coping day to day.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is expressing their coping approach and adjustment challenges, which is an opportunity to build connection and acknowledge their resilience.",
+      "doctor_instruction": "Acknowledge how difficult adjustments like this can be and validate the patient's effort in pushing through. You might reflect on how that takes strength and ask a gentle question about what helps them keep going on tough days, showing you appreciate their experience and want to understand more.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 17,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time to assess feelings of worthlessness or guilt to cover DSM symptoms.",
+      "doctor_instruction": "Shift gently to asking about feelings of worthlessness or excessive guilt, checking if the patient experiences any negative self-judgments or blame that might not have come up yet. Keep the tone understanding and direct, acknowledging their coping approach while exploring these internal feelings.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 18,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient shared a personal perception about blame and seems to externalize it, so building empathy and connection is fitting.",
+      "doctor_instruction": "Acknowledge the frustration and unfairness the patient feels about being blamed, and express understanding about why they try not to dwell on it. Invite them to say more about how that experience impacts them, showing interest in their perspective.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 19,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is expressing a coping stance around blame, which is personal and can reveal emotional strain worth acknowledging.",
+      "doctor_instruction": "Acknowledge how frustrating it must be to face blame unfairly and validate their effort to protect themselves by tuning it out. Offer a gentle, understanding reflection that shows you see their strength in handling that, while keeping an open space for them to share more if they want.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 20,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover the DSM symptom area of recurrent thoughts of death or suicide.",
+      "doctor_instruction": "Gently ask whether the patient has had any recurrent thoughts about death or suicide, emphasizing safety and letting them know it's a common topic to discuss openly.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 21,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient reassures no suicidal thoughts, a good moment to acknowledge their strength and build connection.",
+      "doctor_instruction": "Thank you for sharing that; it\u2019s good to hear you haven\u2019t had those thoughts. It sounds like you\u2019re really working hard to stay steady despite the challenges. How do you usually find moments of relief or calm on tough days?",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 22,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Psychomotor agitation was previously mentioned but not fully explored, so it's timely to delve deeper into this DSM symptom.",
+      "doctor_instruction": "Since you've mentioned feeling restless and that keeping busy helps, let's explore how this restlessness shows physically. Can you tell me more about any moments when you feel fidgety, unable to sit still, or noticeably slowed down in your movements? I want to understand how these physical restlessness symptoms might be impacting you day to day.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 23,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient has shared detailed feelings about restlessness and coping; a warm acknowledgment will reinforce trust and comfort before closing.",
+      "doctor_instruction": "Acknowledge how challenging that constant restlessness must be and validate the patient's efforts to keep going despite discomfort. Reflect back their strength in managing day to day and offer encouragement, emphasizing the doctor's support as they adjust to the new environment.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 24,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared their way of coping with restlessness and adjustment challenges, which merits acknowledgement and empathy.",
+      "doctor_instruction": "Offer a warm reflection that recognizes the patient's strength and perseverance in managing restlessness and adapting to the new environment. Validate their approach of keeping busy while gently affirming your support, helping the patient feel truly heard and understood before concluding.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 25,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "Patient feels self-reliant and the main topics have been fully covered, so it's a good moment to close while affirming support.",
+      "doctor_instruction": "Acknowledge the patient's strength and self-management while gently reminding them that support remains available if needed. Offer encouragement for continuing to take things day by day and invite them to reach out anytime. End with a warm, straightforward closing to keep the tone balanced and caring.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "brief mention of feeling restless or on edge",
+          "minimal acknowledgment of some bother"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of mood",
+          "admitting significant sleep problems",
+          "taking blame or showing vulnerability"
+        ],
+        "patient_instruction": "Respond tersely but clearly, mentioning a general sense of restlessness or agitation without admitting to deep sadness or sleep issues. Keep the tone defensive and brief, reflecting a distrustful stance and reluctance to fully open up."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "concise"
+        ],
+        "key_points_to_reveal": [
+          "restlessness happens pretty often",
+          "it sometimes messes with sleep",
+          "challenges with adjusting to the new place"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact of restlessness",
+          "admitting feeling depressed or hopeless",
+          "details about guilt or worthlessness"
+        ],
+        "patient_instruction": "Respond with concise acknowledgment that the restlessness is frequent and occasionally affects sleep, but downplay its seriousness. Mention the adjustment difficulties with the new place briefly, without going into emotional details or admitting significant distress."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "slightly defensive"
+        ],
+        "key_points_to_reveal": [
+          "sleep disturbance occurs sometimes",
+          "difficulty settling at night due to restlessness"
+        ],
+        "key_points_to_avoid": [
+          "downplaying restlessness completely",
+          "overdisclosing emotional impact"
+        ],
+        "patient_instruction": "Respond tersely but clearly that sleep is occasionally disrupted, mostly due to restlessness, but emphasize that it's manageable and not a major problem. Keep the tone clipped and slightly defensive, reflecting discomfort with too much focus on vulnerability."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "restlessness leads to some tiredness during the day",
+          "mood is a bit off sometimes but manageable",
+          "daily tasks are mostly doable despite these issues"
+        ],
+        "key_points_to_avoid": [
+          "admitting significant impact on mood or functionality",
+          "expressing feelings of worthlessness or guilt",
+          "mentioning desire for deeper support"
+        ],
+        "patient_instruction": "Respond somewhat openly but keep a defensive tone, gauge that while restlessness and disrupted sleep cause some tiredness and occasional low mood, you\u2019re still able to manage daily tasks without much trouble. Avoid suggesting these issues meaningfully impair your life or mood."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "blunt"
+        ],
+        "key_points_to_reveal": [
+          "mood feels off sometimes, mostly irritability rather than sadness"
+        ],
+        "key_points_to_avoid": [
+          "deep sadness, emptiness, or vulnerability",
+          "any admission of severe emotional impact"
+        ],
+        "patient_instruction": "Respond tersely but clearly that mood dips happen, mainly as irritability rather than sadness or emptiness. Downplay the depth or impact, emphasizing that you manage to keep going and don\u2019t have big emotional struggles. Keep the tone clipped and somewhat blunt, reflecting a low agreeableness, while being reasonably cooperative."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "reserved",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "Irritability comes up pretty often",
+          "Triggered mainly by external frustrations or other people's actions",
+          "I usually just deal with it by keeping busy or shutting down"
+        ],
+        "key_points_to_avoid": [
+          "Admitting deep sadness or vulnerability",
+          "Revealing feelings of hopelessness or worthlessness",
+          "Discussing impact on relationships in depth"
+        ],
+        "patient_instruction": "Respond tersely but clearly that irritability occurs often and is mostly caused by external annoyances, like other people or circumstances. Convey a defensive tone, downplaying emotional depth and emphasizing a coping style of distraction or emotional shut down rather than seeking support."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "dismissive"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge coping by keeping busy or shutting down",
+          "express annoyance with ongoing disruptions"
+        ],
+        "key_points_to_avoid": [
+          "expressing vulnerability",
+          "detail about mood depth or sadness",
+          "acknowledging impact on relationships"
+        ],
+        "patient_instruction": "Respond tersely but clearly, reinforcing that frustration is just part of the daily grind and you handle it by keeping busy or tuning things out. Show some irritation with 'things messing up' but keep emotion muted and avoid sounding vulnerable or defeated."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "deflective"
+        ],
+        "key_points_to_reveal": [
+          "energy is generally okay, not a steady problem"
+        ],
+        "key_points_to_avoid": [
+          "any admission of fatigue or low energy issues"
+        ],
+        "patient_instruction": "Respond briefly and firmly that unusual tiredness or low energy hasn't been a steady issue. Keep the tone neutral and somewhat cool, reflecting a tendency to downplay vulnerability."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse"
+        ],
+        "key_points_to_reveal": [
+          "some loss of interest in hobbies or activities"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact or sadness",
+          "anything suggestive of giving up"
+        ],
+        "patient_instruction": "Respond briefly and without emotion, acknowledging some decline in interest or pleasure in usual activities but downplay its significance or impact."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse",
+          "distant"
+        ],
+        "key_points_to_reveal": [
+          "less interest in hobbies",
+          "motivation mostly unaffected"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact",
+          "vulnerability or sadness"
+        ],
+        "patient_instruction": "Respond briefly and with some detachment, naming a hobby you do less often without expressing regret. Emphasize that it doesn't really affect your motivation much, and you mostly just deal with things day to day without getting down about it."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "drop in interest happens sometimes",
+          "noticed less motivation occasionally",
+          "impact limited, no major disruption"
+        ],
+        "key_points_to_avoid": [
+          "emotional depth or sadness about loss of interest",
+          "mentioning other activities in detail"
+        ],
+        "patient_instruction": "Respond straightforwardly but keep it brief and somewhat detached. Acknowledge the drop in motivation and interest happens occasionally but emphasize it's not a big deal and doesn\u2019t affect daily functioning significantly. Maintain a tone that reflects your blunt, interpersonally strained style without showing much vulnerability."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "no significant concentration or decision-making problems"
+        ],
+        "key_points_to_avoid": [
+          "any signs of cognitive difficulties",
+          "internal blame or deeper mood issues"
+        ],
+        "patient_instruction": "Respond briefly and directly that concentration and decision-making are not really an issue, keeping the tone terse and guarded, reflecting skepticism and reluctance to reveal vulnerabilities."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "some appetite changes"
+        ],
+        "key_points_to_avoid": [
+          "significant weight change",
+          "emotional impact"
+        ],
+        "patient_instruction": "Give a brief, straightforward response acknowledging some appetite change but downplay any weight changes or emotional effects. Maintain a terse, minimally engaged tone, reflecting your low agreeableness and tendency to externalize blame without inviting deeper discussion."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "blunt"
+        ],
+        "key_points_to_reveal": [
+          "appetite changes happen sometimes",
+          "stress or mood not clearly connected"
+        ],
+        "key_points_to_avoid": [
+          "downplaying restlessness",
+          "admitting impact on mood or energy"
+        ],
+        "patient_instruction": "Respond briefly and directly, confirming appetite changes occur sometimes but without tying them strongly to stress or mood, keeping the tone neutral and somewhat detached, consistent with a patient who minimizes and avoids deeper emotional admission."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "resigned",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "new environment feels unsettled",
+          "some challenges with routines",
+          "managing despite discomfort"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact",
+          "sadness or loneliness",
+          "overwhelming distress"
+        ],
+        "patient_instruction": "Respond tersely but clearly that the adjustment to the new environment is challenging but manageable. Emphasize that routines are still hard to figure out and things feel a bit unsettled, but downplay emotional depth or distress. Keep tone slightly resigned and guarded, reflecting low agreeableness and externalizing blame for the difficulty."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "adjustment feels tough because of unfamiliar routines and environment",
+          "coping by pushing through and keeping busy"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact",
+          "vulnerability about mood or feelings",
+          "any admission of significant distress"
+        ],
+        "patient_instruction": "Respond tersely but clearly about the toughest part being the new routines and feeling unsettled. Emphasize managing by just keeping busy and pushing through without showing much emotional vulnerability or admitting deeper struggles."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "resigned",
+          "stoic"
+        ],
+        "key_points_to_reveal": [
+          "push through difficult moments by keeping busy",
+          "avoid dwelling on problems"
+        ],
+        "key_points_to_avoid": [
+          "expressing vulnerability or emotional struggle",
+          "acknowledging significant sadness or hopelessness"
+        ],
+        "patient_instruction": "The patient replies tersely but clearly, emphasizing staying busy and pushing through tough days without getting bogged down in feelings. They keep the tone matter-of-fact and avoid emotional depth, reflecting their low agreeableness and externalizing blame. They are slightly resigned but maintain a stoic exterior."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blame-externalizing",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "some feelings of worthlessness or blame but downplayed"
+        ],
+        "key_points_to_avoid": [
+          "deep self-blame or vulnerability"
+        ],
+        "patient_instruction": "Respond tersely, acknowledging that sometimes you feel down on yourself or blame things but mostly see it as due to external factors or unfair situations. Keep it brief and avoid sounding too vulnerable or self-critical."
+      }
+    },
+    {
+      "turn": 18,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "defensive",
+          "blunt",
+          "detached"
+        ],
+        "key_points_to_reveal": [
+          "blame feels unfair and annoying",
+          "tunes out to avoid negative impact"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact",
+          "internalizing blame",
+          "expressing sadness or vulnerability"
+        ],
+        "patient_instruction": "Respond plainly that the blame is irritating but you mostly just shut it out because it\u2019s not your fault. Keep the tone blunt and somewhat detached, emphasizing external causes and downplaying any lasting negative effects on you."
+      }
+    },
+    {
+      "turn": 19,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "tunes out blame",
+          "doesn't let it affect mood deeply"
+        ],
+        "key_points_to_avoid": [
+          "deep feelings of worthlessness",
+          "any admission of struggle with blame"
+        ],
+        "patient_instruction": "Respond briefly but clearly that you mostly just ignore the blame and keep it from getting to you, emphasizing that you don't let it break you down. Keep the tone straightforward and avoid showing vulnerability or deeper emotional impact."
+      }
+    },
+    {
+      "turn": 20,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "firm",
+          "defensive"
+        ],
+        "key_points_to_reveal": [
+          "deny any thoughts of death or suicide firmly"
+        ],
+        "key_points_to_avoid": [
+          "any suggestion of vulnerability or hopelessness"
+        ],
+        "patient_instruction": "Respond clearly and firmly to deny any recurring thoughts of death or suicide, keeping the answer brief and to the point without opening up emotionally."
+      }
+    },
+    {
+      "turn": 21,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "uses distraction and staying busy to manage stress and find relief"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional vulnerability",
+          "detailed descriptions of mood lows or anxiety"
+        ],
+        "patient_instruction": "Respond tersely and without much detail, emphasizing that keeping busy is what helps calm you down on tough days. Maintain a practical and somewhat guarded tone, not opening up much emotionally."
+      }
+    },
+    {
+      "turn": 22,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "terse",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "frequent restlessness",
+          "fidgeting and inability to sit still",
+          "physical agitation limiting comfort"
+        ],
+        "key_points_to_avoid": [
+          "any deeper emotional impact or frustration beyond surface level",
+          "slowing of movements"
+        ],
+        "patient_instruction": "The patient responds briefly but clearly about physical restlessness, emphasizing frequent fidgeting and the need to keep moving. They avoid delving into emotional or deeper effects, maintaining a guarded, no-nonsense tone. The focus is on describing the physical symptoms in a straightforward, terse way without sounding overwhelmed."
+      }
+    },
+    {
+      "turn": 23,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "stoic",
+          "resigned"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge restlessness discomfort",
+          "emphasize self-reliance and coping by distraction"
+        ],
+        "key_points_to_avoid": [
+          "any deeper emotional vulnerability",
+          "explicit admission of mood impact beyond irritability"
+        ],
+        "patient_instruction": "Respond tersely but clearly that the restlessness is uncomfortable yet manageable. Emphasize that you rely on your own grit and distraction to cope, downplaying any deeper emotional effects or vulnerabilities."
+      }
+    },
+    {
+      "turn": 24,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "gruff",
+          "reserved",
+          "stoic"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge perseverance",
+          "stress self-reliance"
+        ],
+        "key_points_to_avoid": [
+          "express vulnerability",
+          "mention deeper emotional struggles"
+        ],
+        "patient_instruction": "Respond briefly and firmly, acknowledging your perseverance and that you manage things on your own without needing much help. Keep the tone guarded and convey that you appreciate the offer but prefer handling things yourself."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hello. Let's go over how you've been doing. What's been happening lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve been restless at times, can\u2019t sit still much. It\u2019s been bothering me some, but nothing too serious. Just the usual stuff with this new place."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear you on that restlessness\u2014feeling on edge can really wear you down. How often do you notice it during the day? Does it ever interfere with your sleep or daily activities? Also, when you say \"the usual stuff\" with the new place, what sort of challenges are you dealing with?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The restlessness is pretty frequent, shows up most days. Sometimes it keeps me up a bit at night, but I manage. As for the new place, just figuring out the routines and not being in my own home anymore\u2014that\u2019s been the main issue. Keeps things unsettled."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sleeping better can make a big difference. How\u2019s your sleep overall? Are you having trouble falling asleep, waking up during the night, or waking up feeling tired instead of rested? Just want to understand how it's affecting you without any pressure."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep gets interrupted now and then, mostly \u2019cause I\u2019m restless. It\u2019s nothing I can\u2019t handle, doesn\u2019t happen every night. I get by fine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s good you\u2019re managing, but those interruptions can still take a toll. How do these sleep and restlessness issues affect your energy or mood during the day? Any challenges with daily tasks because of it? Feel free to be upfront\u2014no pressure here."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, the restlessness and some broken sleep leave me a bit tired now and then. My mood\u2019s off sometimes, but I keep things moving. Don\u2019t have much trouble getting through daily tasks."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds like you\u2019re pushing through despite feeling off now and then. When your mood\u2019s down, do you find yourself feeling sad, empty, or maybe more irritable than usual? I want to get a clear picture of what you\u2019re dealing with."
+    },
+    {
+      "speaker": "patient",
+      "text": "I get irritable more than anything else when my mood\u2019s off. Not really sad or empty. Just annoyed at how things are, but I keep going."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it\u2014irritability can be tougher on the people around us sometimes. How strong is that feeling, and how often does it pop up? Are there certain things or situations that set it off more than others? And how do you usually handle it when you get that way?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Irritable pretty often. Mostly when things or people mess up what I\u2019m trying to do. I just keep busy or shut down. Doesn\u2019t get any deeper than that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That makes sense\u2014frustration when things don\u2019t go as planned can really wear on you. Keeping busy or stepping back are pretty natural ways to handle that kind of irritation. It\u2019s good you\u2019ve found ways to manage, even if it\u2019s not perfect."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, frustration\u2019s just part of the daily mess. I deal with it by staying busy or tuning out. Can\u2019t let every snag grind me down."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I get that\u2014you\u2019re doing your best to keep things from grinding you down. Even with staying busy, have you noticed yourself feeling unusually tired or low on energy lately? Has that been a steady problem for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Energy\u2019s generally alright. No steady issues with being tired or low."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Good to hear your energy\u2019s holding up. How about your interest in things you usually enjoy\u2014have you found yourself less interested or less pleasure in hobbies or activities lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Somewhat less interested in things I used to do. Doesn\u2019t bother me much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Can you give me an example of something you used to enjoy that you\u2019re a bit less interested in now? Does this change affect how motivated you feel day to day, or do you just take things as they come? I\u2019m curious even if it\u2019s not a big bother for you."
+    },
+    {
+      "speaker": "patient",
+      "text": "I don\u2019t fish as much as before, but I still get things done. Don\u2019t let it slow me down too much. Take things day by day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Taking it day by day sounds like a sensible way to handle things. How often do you notice this drop in interest or motivation? Are there any other activities besides fishing where you feel the same?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens now and then, not constantly. Motivation dips sometimes, but I still keep on. Doesn\u2019t get in the way."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s good that these dips don\u2019t get in the way too much. How about concentration\u2014are you finding it harder to focus, make decisions, or feeling mentally foggy at times?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, concentration\u2019s fine. Decisions aren\u2019t a problem either."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, thanks for letting me know. Have you noticed any changes in your appetite or weight recently\u2014either eating more, less, or any noticeable weight gain or loss?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My appetite\u2019s changed a bit, eating less sometimes. No big weight changes or anything."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. How often do you find yourself eating less? Do you notice any particular reasons for it, like stress or just not feeling hungry? And does this change in appetite seem to affect your mood or energy at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I eat less, no particular reason mostly. Doesn\u2019t really affect how I feel or my energy."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds like you\u2019re handling these small changes pretty well, which isn\u2019t always easy. Moving to a new place can shake things up in ways that aren\u2019t always obvious. How have you been finding the overall adjustment to this new environment?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s been a rough adjustment, the new place doesn\u2019t feel settled yet. Figuring out the routines is a challenge. But I\u2019m managing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It makes sense that it feels unsettled right now\u2014that kind of change is hard at any age. I appreciate that you\u2019re managing through it. What part of the adjustment feels toughest, and how are you getting through those moments day to day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The routines and the unfamiliar place make it tough. I just keep busy and push through. No point dwelling on it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That\u2019s a tough spot to be in, but it takes real grit to keep pushing through like you do. On those tougher days, what helps you stay going?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I just keep busy and don\u2019t let myself think too much. Keeps things from spiraling."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Keeping busy sounds like a solid way to keep your head clear. Have you noticed any moments where you feel down on yourself, worthless, or carrying blame for things\u2014maybe more than seems fair? It\u2019s okay to be honest here."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I get blamed for stuff, but mostly it\u2019s not on me. I don\u2019t dwell on it much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds frustrating, especially when you\u2019re not really to blame. It\u2019s understandable you\u2019d want to tune it out to avoid getting bogged down. How does that blame affect you when it does happen?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s annoying, but I just tune it out. Not my fault, so I don\u2019t let it get to me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That\u2019s a strong way to handle something that could easily wear you down. It takes effort to not let unfair blame get under your skin. I\u2019m here if you ever want to talk more about how that feels or anything else on your mind."
+    },
+    {
+      "speaker": "patient",
+      "text": "I mostly ignore it and don\u2019t let it break me down. I\u2019m alright."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I\u2019m glad to hear you\u2019re holding steady. It\u2019s a common topic to bring up\u2014have you had any recurring thoughts about death or suicide? It\u2019s important to check in on this to make sure you\u2019re safe."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that\u2014it\u2019s reassuring you haven\u2019t had those kinds of thoughts. You\u2019re clearly putting in a lot of effort to keep steady. On your tougher days, what helps you find a bit of calm or relief?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Keeping busy is what helps. Just focus on what needs doing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned feeling restless and that staying busy helps. Can you tell me more about what that restlessness feels like physically? Are there times you find yourself fidgeting, unable to sit still, or maybe even feeling slowed down in your movements? I want to understand how these show up for you day to day."
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019m fidgeting a lot, can\u2019t sit still for long. Need to keep moving, or I get uncomfortable. No slowing down, just restless."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That constant restlessness sounds really uncomfortable, but you\u2019re managing to keep going despite it\u2014that takes real strength. Adjusting to a new environment like this is tough, and I\u2019m here to support you as you navigate it."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s uncomfortable, but I handle it on my own. Keep my mind busy, that\u2019s what works."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve got a strong sense of perseverance, handling discomfort by keeping your mind busy and pushing forward. That\u2019s no small feat, especially with all the changes you\u2019re facing. Just know I\u2019m here to help whenever you need support moving through this."
+    },
+    {
+      "speaker": "patient",
+      "text": "I manage on my own, don\u2019t need much help. Appreciate it though."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Let's go over how you've been doing. What's been happening lately?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been restless at times, can\u2019t sit still much. It\u2019s been bothering me some, but nothing too serious. Just the usual stuff with this new place."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you on that restlessness\u2014feeling on edge can really wear you down. How often do you notice it during the day? Does it ever interfere with your sleep or daily activities? Also, when you say \"the usual stuff\" with the new place, what sort of challenges are you dealing with?"
+    },
+    {
+      "role": "user",
+      "content": "The restlessness is pretty frequent, shows up most days. Sometimes it keeps me up a bit at night, but I manage. As for the new place, just figuring out the routines and not being in my own home anymore\u2014that\u2019s been the main issue. Keeps things unsettled."
+    },
+    {
+      "role": "assistant",
+      "content": "Sleeping better can make a big difference. How\u2019s your sleep overall? Are you having trouble falling asleep, waking up during the night, or waking up feeling tired instead of rested? Just want to understand how it's affecting you without any pressure."
+    },
+    {
+      "role": "user",
+      "content": "Sleep gets interrupted now and then, mostly \u2019cause I\u2019m restless. It\u2019s nothing I can\u2019t handle, doesn\u2019t happen every night. I get by fine."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s good you\u2019re managing, but those interruptions can still take a toll. How do these sleep and restlessness issues affect your energy or mood during the day? Any challenges with daily tasks because of it? Feel free to be upfront\u2014no pressure here."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, the restlessness and some broken sleep leave me a bit tired now and then. My mood\u2019s off sometimes, but I keep things moving. Don\u2019t have much trouble getting through daily tasks."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you\u2019re pushing through despite feeling off now and then. When your mood\u2019s down, do you find yourself feeling sad, empty, or maybe more irritable than usual? I want to get a clear picture of what you\u2019re dealing with."
+    },
+    {
+      "role": "user",
+      "content": "I get irritable more than anything else when my mood\u2019s off. Not really sad or empty. Just annoyed at how things are, but I keep going."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it\u2014irritability can be tougher on the people around us sometimes. How strong is that feeling, and how often does it pop up? Are there certain things or situations that set it off more than others? And how do you usually handle it when you get that way?"
+    },
+    {
+      "role": "user",
+      "content": "Irritable pretty often. Mostly when things or people mess up what I\u2019m trying to do. I just keep busy or shut down. Doesn\u2019t get any deeper than that."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense\u2014frustration when things don\u2019t go as planned can really wear on you. Keeping busy or stepping back are pretty natural ways to handle that kind of irritation. It\u2019s good you\u2019ve found ways to manage, even if it\u2019s not perfect."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, frustration\u2019s just part of the daily mess. I deal with it by staying busy or tuning out. Can\u2019t let every snag grind me down."
+    },
+    {
+      "role": "assistant",
+      "content": "I get that\u2014you\u2019re doing your best to keep things from grinding you down. Even with staying busy, have you noticed yourself feeling unusually tired or low on energy lately? Has that been a steady problem for you?"
+    },
+    {
+      "role": "user",
+      "content": "Energy\u2019s generally alright. No steady issues with being tired or low."
+    },
+    {
+      "role": "assistant",
+      "content": "Good to hear your energy\u2019s holding up. How about your interest in things you usually enjoy\u2014have you found yourself less interested or less pleasure in hobbies or activities lately?"
+    },
+    {
+      "role": "user",
+      "content": "Somewhat less interested in things I used to do. Doesn\u2019t bother me much."
+    },
+    {
+      "role": "assistant",
+      "content": "Can you give me an example of something you used to enjoy that you\u2019re a bit less interested in now? Does this change affect how motivated you feel day to day, or do you just take things as they come? I\u2019m curious even if it\u2019s not a big bother for you."
+    },
+    {
+      "role": "user",
+      "content": "I don\u2019t fish as much as before, but I still get things done. Don\u2019t let it slow me down too much. Take things day by day."
+    },
+    {
+      "role": "assistant",
+      "content": "Taking it day by day sounds like a sensible way to handle things. How often do you notice this drop in interest or motivation? Are there any other activities besides fishing where you feel the same?"
+    },
+    {
+      "role": "user",
+      "content": "It happens now and then, not constantly. Motivation dips sometimes, but I still keep on. Doesn\u2019t get in the way."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s good that these dips don\u2019t get in the way too much. How about concentration\u2014are you finding it harder to focus, make decisions, or feeling mentally foggy at times?"
+    },
+    {
+      "role": "user",
+      "content": "No, concentration\u2019s fine. Decisions aren\u2019t a problem either."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, thanks for letting me know. Have you noticed any changes in your appetite or weight recently\u2014either eating more, less, or any noticeable weight gain or loss?"
+    },
+    {
+      "role": "user",
+      "content": "My appetite\u2019s changed a bit, eating less sometimes. No big weight changes or anything."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. How often do you find yourself eating less? Do you notice any particular reasons for it, like stress or just not feeling hungry? And does this change in appetite seem to affect your mood or energy at all?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I eat less, no particular reason mostly. Doesn\u2019t really affect how I feel or my energy."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you\u2019re handling these small changes pretty well, which isn\u2019t always easy. Moving to a new place can shake things up in ways that aren\u2019t always obvious. How have you been finding the overall adjustment to this new environment?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s been a rough adjustment, the new place doesn\u2019t feel settled yet. Figuring out the routines is a challenge. But I\u2019m managing."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that it feels unsettled right now\u2014that kind of change is hard at any age. I appreciate that you\u2019re managing through it. What part of the adjustment feels toughest, and how are you getting through those moments day to day?"
+    },
+    {
+      "role": "user",
+      "content": "The routines and the unfamiliar place make it tough. I just keep busy and push through. No point dwelling on it."
+    },
+    {
+      "role": "assistant",
+      "content": "That\u2019s a tough spot to be in, but it takes real grit to keep pushing through like you do. On those tougher days, what helps you stay going?"
+    },
+    {
+      "role": "user",
+      "content": "I just keep busy and don\u2019t let myself think too much. Keeps things from spiraling."
+    },
+    {
+      "role": "assistant",
+      "content": "Keeping busy sounds like a solid way to keep your head clear. Have you noticed any moments where you feel down on yourself, worthless, or carrying blame for things\u2014maybe more than seems fair? It\u2019s okay to be honest here."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I get blamed for stuff, but mostly it\u2019s not on me. I don\u2019t dwell on it much."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds frustrating, especially when you\u2019re not really to blame. It\u2019s understandable you\u2019d want to tune it out to avoid getting bogged down. How does that blame affect you when it does happen?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s annoying, but I just tune it out. Not my fault, so I don\u2019t let it get to me."
+    },
+    {
+      "role": "assistant",
+      "content": "That\u2019s a strong way to handle something that could easily wear you down. It takes effort to not let unfair blame get under your skin. I\u2019m here if you ever want to talk more about how that feels or anything else on your mind."
+    },
+    {
+      "role": "user",
+      "content": "I mostly ignore it and don\u2019t let it break me down. I\u2019m alright."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m glad to hear you\u2019re holding steady. It\u2019s a common topic to bring up\u2014have you had any recurring thoughts about death or suicide? It\u2019s important to check in on this to make sure you\u2019re safe."
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that\u2014it\u2019s reassuring you haven\u2019t had those kinds of thoughts. You\u2019re clearly putting in a lot of effort to keep steady. On your tougher days, what helps you find a bit of calm or relief?"
+    },
+    {
+      "role": "user",
+      "content": "Keeping busy is what helps. Just focus on what needs doing."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling restless and that staying busy helps. Can you tell me more about what that restlessness feels like physically? Are there times you find yourself fidgeting, unable to sit still, or maybe even feeling slowed down in your movements? I want to understand how these show up for you day to day."
+    },
+    {
+      "role": "user",
+      "content": "I\u2019m fidgeting a lot, can\u2019t sit still for long. Need to keep moving, or I get uncomfortable. No slowing down, just restless."
+    },
+    {
+      "role": "assistant",
+      "content": "That constant restlessness sounds really uncomfortable, but you\u2019re managing to keep going despite it\u2014that takes real strength. Adjusting to a new environment like this is tough, and I\u2019m here to support you as you navigate it."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s uncomfortable, but I handle it on my own. Keep my mind busy, that\u2019s what works."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019ve got a strong sense of perseverance, handling discomfort by keeping your mind busy and pushing forward. That\u2019s no small feat, especially with all the changes you\u2019re facing. Just know I\u2019m here to help whenever you need support moving through this."
+    },
+    {
+      "role": "user",
+      "content": "I manage on my own, don\u2019t need much help. Appreciate it though."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_a7d4b6bde9f0d840.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_a7d4b6bde9f0d840_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 55887,
+      "output_tokens": 1154,
+      "total_tokens": 57041
+    },
+    "patient": {
+      "input_tokens": 89552,
+      "output_tokens": 661,
+      "total_tokens": 90213
+    },
+    "doctor_manager": {
+      "input_tokens": 46440,
+      "output_tokens": 2473,
+      "total_tokens": 48913
+    },
+    "patient_manager": {
+      "input_tokens": 55213,
+      "output_tokens": 3852,
+      "total_tokens": 59065
+    }
+  }
+}

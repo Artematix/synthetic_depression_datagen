@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:54:24.947976",
+  "agent_id": "AGENT_3605d298b1b6bd1c",
+  "demographics": {
+    "AGE": "18-25",
+    "RACE": "Other",
+    "GENDER": "Female",
+    "SOCIOECONOMIC_STATUS": "Medium",
+    "COUNTRY_OF_ORIGIN": "Other",
+    "ENGLISH_PROFICIENCY": "Second-language",
+    "EDUCATION_LEVEL": "Doctorate"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Open",
+    "TRAITS_B_EMOTION": "Anxious",
+    "TRAITS_C_LANGUAGE": "Formal",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "OFTEN",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Fatigue or loss of energy",
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hello. It\u2019s nice to see you too. Recently, I've been feeling a bit anxious and tired. My sleep hasn't been great, and there have been several exhausting days."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you've been feeling anxious and tired. It's important to ensure you're getting the rest you need. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "I've felt down for about three to five days in the past two weeks. It's not constant, but it has been noticeable."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It's important for us to understand the full picture of how you're feeling. How often have you felt tired or without energy?"
+    },
+    {
+      "role": "user",
+      "content": "About six to ten days over the past two weeks, I\u2019ve felt really tired or lacking energy."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate your honesty, and I want to ensure you're supported. Have you experienced any thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I've had those kinds of thoughts for one or two days. It's concerning, and I'm hoping to address it."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s important to talk more about those thoughts and ensure you get the support you need. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, for about one or two days, I've noticed a loss of interest in things I normally find enjoyable."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

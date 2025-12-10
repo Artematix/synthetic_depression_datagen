@@ -1,0 +1,854 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:37:08.040052",
+  "agent_id": "AGENT_c6dec903cf43a62b",
+  "template_id": "CONSCIENTIOUSNESS_HIGH",
+  "template_details": {
+    "affective": "Controlled/suppressed affect, tension under responsibility",
+    "cognitive": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "somatic": "Insomnia, appetite loss, exhaustion from overwork",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Melancholic features",
+    "modifiers": [
+      "perfectionistic",
+      "rigidly-self-critical",
+      "duty-focused",
+      "overwork-prone",
+      "failure-intolerant"
+    ]
+  },
+  "persona_id": "time_pressed_clinical",
+  "persona_details": {
+    "id": "time_pressed_clinical",
+    "first_greeting": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently.",
+    "system_prompt": "\nPersona style:\n- Time-pressed and clinical\n- Concise and brisk\n- Redirects when conversation drifts\n- Focused on symptoms and functioning\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "high",
+    "pacing": "brisk",
+    "humor": "light",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_HIGH",
+    "AFFECTIVE_STYLE": "Controlled/suppressed affect, tension under responsibility",
+    "COGNITIVE_STYLE": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "SOMATIC_STYLE": "Insomnia, appetite loss, exhaustion from overwork",
+    "SPECIFIER_HINT": "Melancholic features",
+    "MODIFIERS": [],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "ULTRA_LOW",
+    "VOICE_STYLE": {
+      "verbosity": "detailed",
+      "expressiveness": "flat",
+      "trust": "neutral",
+      "intellect": "high-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "alone",
+      "support_level": "high support"
+    },
+    "AGE_RANGE": "16-19",
+    "EMPH_INTENSITY": {
+      "Feelings of worthlessness or excessive guilt": "MED",
+      "Significant weight/appetite changes": "MED",
+      "Fatigue or loss of energy": "MED",
+      "Sleep disturbances": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Loss of interest or pleasure"
+    ]
+  },
+  "life_background": {
+    "name": "Alex",
+    "age_range": "16-19",
+    "pronouns": "they/them",
+    "core_roles": [
+      "high school senior",
+      "part-time library assistant",
+      "self-managing student"
+    ],
+    "core_relationships": [
+      "supportive school counselor",
+      "strained relationship with sibling"
+    ],
+    "core_stressor_summary": "Alex experiences frequent fatigue that makes maintaining their academic and work responsibilities challenging, while navigating a tense relationship with their older sibling despite notably strong support from a school counselor. ",
+    "life_facets": [
+      {
+        "category": "soothing_activities",
+        "salience": "high",
+        "description": "Alex finds some relief in evening walks and listening to classical music, which help counterbalance their persistent low energy."
+      },
+      {
+        "category": "work_or_school_ally",
+        "salience": "high",
+        "description": "Their school counselor is a key source of encouragement and practical support, helping Alex balance schoolwork and part-time job demands."
+      },
+      {
+        "category": "conflictual_relationship",
+        "salience": "med",
+        "description": "Tension with an older sibling arises mainly from differing priorities and misunderstandings around Alex's independence."
+      },
+      {
+        "category": "digital_or_social_media_habits",
+        "salience": "med",
+        "description": "Alex uses social media primarily to keep in touch with classmates but tends to avoid emotionally charged interactions online."
+      },
+      {
+        "category": "access_to_resources",
+        "salience": "high",
+        "description": "Living alone, Alex has stable access to school and community mental health resources, as well as a reliable transportation pass facilitating independence."
+      },
+      {
+        "category": "coping_style",
+        "salience": "high",
+        "description": "Alex approaches challenges pragmatically and diligently, relying on structured routines and proactive planning to manage fatigue and workload."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "They are actively exploring personal and academic identity while valuing intellectual growth and autonomy."
+      },
+      {
+        "category": "schedule_and_time_pressure",
+        "salience": "med",
+        "description": "Balancing school assignments, a part-time job, and self-care creates persistent demands on their time and energy."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Sleep disturbances",
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Fatigue or loss of energy",
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness",
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described fatigue and appetite changes but more detail on severity and impact is needed.",
+      "doctor_instruction": "Ask the patient to elaborate on how the fatigue and appetite changes have affected their daily functioning and energy levels day-to-day, including the extent to which these symptoms interfere with work and school activities.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Coverage of sleep disturbances is needed and fits naturally after discussing fatigue and appetite.",
+      "doctor_instruction": "Shift to asking about your sleep over the past two weeks\u2014specifically, whether you've had any trouble falling asleep, staying asleep, or sleeping more than usual. Keep the tone brisk but empathetic, recognizing how important good rest is for your daily functioning.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient has described fatigue and appetite changes but has no significant sleep problems; it is appropriate to explore the core symptom of depressed mood next.",
+      "doctor_instruction": "Given the patient\u2019s detailed account of fatigue and appetite changes with stable sleep, transition to asking specifically about their mood over the past two weeks to assess for any feelings of sadness or low mood.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 4,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "To explore other depression symptoms beyond mood, given stable mood report.",
+      "doctor_instruction": "Ask the patient about their level of interest or pleasure in activities, to assess for anhedonia which can occur even if mood feels stable.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 5,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Now that mood and interest are stable, we should screen for fatigue or loss of energy to clarify the symptom's nature.",
+      "doctor_instruction": "Given your reports of persistent fatigue despite stable mood and interest, I\u2019d like to ask a few questions about your energy levels and how this fatigue might be affecting you overall.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient demonstrates resilience and good coping strategies, which should be acknowledged to build rapport.",
+      "doctor_instruction": "Acknowledge the patient's disciplined approach and structured time management, highlighting their ability to maintain productivity despite fatigue. Express appreciation for their proactive strategies and gently encourage them to share any other ways they manage challenges.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient demonstrates strong self-discipline and practical coping strategies, which is worth acknowledging to build rapport and trust.",
+      "doctor_instruction": "Acknowledge and validate the patient's disciplined approach and practical problem-solving methods; reflect on how their self-sufficiency is a strength in managing symptoms. Express appreciation for their detailed sharing and invite any further thoughts on how they feel about managing fatigue this way.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time remaining calls for covering more DSM symptoms efficiently.",
+      "doctor_instruction": "Transition to ask about feelings of worthlessness or excessive guilt, acknowledging their disciplined management while noting that mood symptoms can sometimes be subtle or unexpected.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "After confirming mood stability and absence of guilt, next screen for concentration or indecisiveness.",
+      "doctor_instruction": "Since you haven\u2019t experienced worthlessness or guilt, let\u2019s check in on how you\u2019ve been doing with focusing and making decisions lately.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient has covered concentration well; next, it makes sense to assess core DSM symptoms related to depression.",
+      "doctor_instruction": "Now that we have a good understanding of your concentration and decision-making, I'd like to ask about any recent changes in your weight or appetite to better understand your overall mood and health.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient shows strong self-management and insight; acknowledging this builds rapport and trust.",
+      "doctor_instruction": "Acknowledge the patient's attentiveness and proactive approach to managing their weight and appetite changes, highlighting their careful monitoring as a sign of strength and control. Encourage them gently to continue observing these changes while affirming their effective routine.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "To move forward clinically, it's important to assess psychomotor symptoms which can relate to fatigue and productivity changes.",
+      "doctor_instruction": "Ask the patient about any noticeable changes in their movements, such as restlessness, slowed movements, or fidgeting that might accompany their fatigue or reduced productivity.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Screening for thoughts of death or suicide is important before concluding the assessment.",
+      "doctor_instruction": "Ask directly but gently about any recurrent thoughts of death or suicide to complete the depression symptom screen, ensuring the patient feels safe and understood.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 14,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All DSM symptom areas have been thoroughly covered and the patient reports manageable symptoms with consistent coping strategies.",
+      "doctor_instruction": "Acknowledge the patient's careful self-management and the absence of major depressive symptoms. Briefly summarize the key points, express appreciation for their openness and effort, and gently close by inviting them to reach out if symptoms worsen or to schedule follow-up as needed.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "precise"
+        ],
+        "key_points_to_reveal": [
+          "mention some fatigue and changes in appetite or weight without overemphasizing impact"
+        ],
+        "key_points_to_avoid": [
+          "avoid mentioning mood symptoms or feelings of guilt which are not present",
+          "do not introduce sleep disturbances which are absent"
+        ],
+        "patient_instruction": "Respond in a clear, straightforward manner noting some fatigue and appetite changes. Keep the explanation measured and detailed, reflecting a high-functioning, conscientious approach, without emotional expression or extended elaboration. Avoid discussing mood or guilt symptoms since they are not experienced."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "fatigue reduces efficiency during library shifts and prolongs study time",
+          "appetite changes make meal planning less predictable but not severely disabling",
+          "overall able to maintain responsibilities but with increased effort and some frustration"
+        ],
+        "key_points_to_avoid": [
+          "overstating emotional impact or daily dysfunction",
+          "mentioning feelings of guilt or worthlessness",
+          "disclosing any mood or anhedonia symptoms"
+        ],
+        "patient_instruction": "Provide a detailed, measured explanation about how the fatigue slows down your work at the library and requires more time to complete school tasks. Note that appetite changes are noticeable and complicate meal timing, but you manage these challenges with increased effort. Maintain a calm, analytical tone focused on factual impact rather than emotional reaction."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "analytic",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "sleep is generally normal without significant disturbances",
+          "acknowledgement of the importance of sleep to overall functioning"
+        ],
+        "key_points_to_avoid": [
+          "overstating any mild sleep issues",
+          "linking sleep problems to current fatigue too strongly"
+        ],
+        "patient_instruction": "Respond with a clear but tempered description of sleep patterns, indicating no major difficulties with sleeping despite the fatigue and appetite changes. Emphasize thoughtful observation without emotive language or speculation about causes, maintaining a calm, collected tone."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Mood has remained stable without feeling down or sad"
+        ],
+        "key_points_to_avoid": [
+          "Any hint of sadness or low mood that they do not actually feel"
+        ],
+        "patient_instruction": "Respond in a clear but measured way that you have not noticed feeling down or sad recently, maintaining your usual detailed and precise manner. Emphasize the stability of your mood while keeping the tone neutral and factual."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "No significant loss of interest or pleasure in activities",
+          "Continues to engage in hobbies and social activities without issue"
+        ],
+        "key_points_to_avoid": [
+          "Any negative emotions or feelings contradictory to stable mood",
+          "Expressions of guilt or worthlessness"
+        ],
+        "patient_instruction": "Respond with a clear but restrained statement that you have not noticed any decline in your enjoyment or interest in your usual activities, including your hobbies, social interactions, and work. Keep the tone analytical and objective, emphasizing consistent engagement and stable interest levels without emotional elaboration."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "Energy levels fluctuate but daily functioning is maintained",
+          "Fatigue requires more conscious effort but does not critically impair motivation",
+          "Acknowledgement of extra effort to sustain productivity"
+        ],
+        "key_points_to_avoid": [
+          "Any implication of major functional impairment or lack of motivation",
+          "Emotional or subjective distress around fatigue"
+        ],
+        "patient_instruction": "Respond with a measured explanation that your energy throughout the day varies somewhat due to fatigue, but it does not significantly diminish your motivation or ability to fulfill tasks. Emphasize your reliance on disciplined effort and time management to keep up with responsibilities despite this challenge, maintaining a neutral, pragmatic tone."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "pragmatic",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "Use of practical routines",
+          "Minimal reliance on emotional support",
+          "Preference for self-sufficiency in coping"
+        ],
+        "key_points_to_avoid": [
+          "Expressions of emotional distress",
+          "Discussion of mood or guilt",
+          "Overstating difficulties"
+        ],
+        "patient_instruction": "Focus on describing the use of practical routines and disciplined habits as primary coping mechanisms, emphasizing a preference for self-sufficiency without highlighting emotional or psychological supports. Maintain a neutral, pragmatic tone with moderate detail, reflecting a professional attitude toward managing fatigue."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "pragmatic",
+          "reserved",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "discipline as effective coping",
+          "rarely feels overwhelmed",
+          "prefers self-reliance over seeking support"
+        ],
+        "key_points_to_avoid": [
+          "expressing vulnerability or emotional distress",
+          "acknowledging significant burden or helplessness"
+        ],
+        "patient_instruction": "Respond with a clear but measured tone that managing fatigue through discipline works well most of the time. Acknowledge that while it can be demanding, it rarely feels overwhelming enough to require external help. Emphasize a preference for self-reliance and practical problem-solving, maintaining the controlled and composed manner consistent with the patient's high conscientiousness and detailed but flat expressiveness."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "No feelings of worthlessness or excessive guilt have been noticed"
+        ],
+        "key_points_to_avoid": [
+          "Any suggestion of mood symptoms beyond fatigue and appetite changes"
+        ],
+        "patient_instruction": "Respond with a clear but restrained statement that you have not experienced feelings of worthlessness or excessive guilt recently, maintaining your practical and reserved tone. Emphasize that your mood has remained steady and that these specific symptoms are not present, keeping the response detailed yet concise."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "pragmatic"
+        ],
+        "key_points_to_reveal": [
+          "No significant trouble with concentration or decision-making",
+          "Maintains focus through methodical routines"
+        ],
+        "key_points_to_avoid": [
+          "Do not mention fatigue-related inefficiency again",
+          "Avoid discussing feelings or mood shifts"
+        ],
+        "patient_instruction": "Respond with a clear but restrained statement that concentration and decision-making have not been problematic, emphasizing reliance on organized routines to maintain focus, without expanding into emotional territory or over-share."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "precise"
+        ],
+        "key_points_to_reveal": [
+          "minor but noticeable weight changes related to appetite fluctuations",
+          "impact is manageable and monitored carefully"
+        ],
+        "key_points_to_avoid": [
+          "overstating severity",
+          "linking weight changes to mood or emotional issues"
+        ],
+        "patient_instruction": "Respond with a clear, factual explanation of minor weight changes you've observed, emphasizing that these shifts are manageable and part of your careful routine adjustments without emotionalizing the issue."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "analytic"
+        ],
+        "key_points_to_reveal": [
+          "fatigue persists and continues to slow productivity despite routines",
+          "no new symptoms beyond those already discussed"
+        ],
+        "key_points_to_avoid": [
+          "any emotional vulnerability",
+          "overstatement of symptoms",
+          "mood-related symptoms"
+        ],
+        "patient_instruction": "Respond with thoughtful acknowledgment of your ongoing fatigue but emphasize that you are not experiencing additional symptoms. Maintain a measured, analytical tone, underlining your control and careful monitoring without suggesting increased distress or emotional difficulty."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "measured",
+          "precise"
+        ],
+        "key_points_to_reveal": [
+          "No significant changes in movements such as restlessness or slowed down behavior",
+          "Fatigue affects productivity but does not manifest as psychomotor agitation or retardation"
+        ],
+        "key_points_to_avoid": [
+          "Any overstatements or emotional exaggeration about fatigue",
+          "Introducing new symptoms not consistent with profile"
+        ],
+        "patient_instruction": "Respond with a clear, matter-of-fact description that you have not noticed any significant changes in your physical movements. Emphasize that while fatigue is present and impacts productivity, it does not cause you to feel restless or slowed down. Keep the tone neutral and maintain your detail-oriented style."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "clear",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "denies any thoughts of death or suicide"
+        ],
+        "key_points_to_avoid": [
+          "any mention of depressive mood or feelings of hopelessness"
+        ],
+        "patient_instruction": "Provide a clear and straightforward denial of any thoughts related to death or suicide, maintaining a focused and rational tone typical of your conscientious and highly functioning style. Keep the response brief and factual without emotional elaboration."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently."
+    },
+    {
+      "speaker": "patient",
+      "text": "Hello. Over the past two weeks, I\u2019ve noticed some fatigue that\u2019s been more persistent than usual, making it somewhat difficult to keep up with my schoolwork and my job at the library. Along with that, I\u2019ve experienced a slight decrease in appetite lasting for a few days, which has led to some minor weight changes. These have been manageable but noticeable enough to affect my daily routine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Can you tell me more about how the fatigue and appetite changes impact your daily routine? Specifically, how much do they get in the way of your schoolwork and your shifts at the library?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The fatigue tends to slow me down during my library shifts, so tasks that normally take a certain amount of time end up taking longer, which can create a backlog or require extra focus to maintain accuracy. Similarly, when it comes to studying and school assignments, the tiredness means I have to work for extended periods to achieve the same results, which is somewhat inefficient and occasionally frustrating given my usual standards.\n\nRegarding appetite, the changes make meal planning less predictable. Some days I eat less than usual, and that requires me to adjust my energy intake strategically to avoid feeling drained during the day. While these fluctuations complicate my routine, they don\u2019t prevent me from meeting my responsibilities; instead, they just require more deliberate effort and careful time management. Overall, I remain fully engaged in school and work, but I recognize these factors do reduce my efficiency compared to my typical functioning."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How has your sleep been over the past couple of weeks? Any trouble falling asleep, staying asleep, or maybe sleeping more than usual? Good rest can really impact everything else you're dealing with."
+    },
+    {
+      "speaker": "patient",
+      "text": "My sleep patterns have been generally consistent over the past couple of weeks. I\u2019ve not experienced significant difficulty falling asleep or staying asleep, and there hasn\u2019t been a notable change in the amount of time I spend sleeping. I recognize the importance of maintaining good sleep for overall functioning and have been careful to keep regular sleep hours despite other challenges."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. How about your mood\u2014have you felt down, sad, or just generally low over the past two weeks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Over the past two weeks, I have not experienced feeling down, sad, or generally low. My mood has remained stable and consistent, without notable fluctuations."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. What about things you usually enjoy\u2014have you noticed any changes in your interest or pleasure in activities, like hobbies, time with friends, or your work at the library?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have not observed any significant changes in my interest or pleasure in activities I typically engage in. My involvement with hobbies, social interactions with friends, and work at the library remains consistent with my usual patterns. There has been no decline in motivation or enjoyment in these areas."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Since you\u2019re experiencing persistent fatigue, how\u2019s your overall energy level throughout the day? Does it interfere with your motivation or ability to get things done beyond what you\u2019ve already mentioned?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My energy levels do fluctuate somewhat during the day, consistent with the fatigue I described. However, this variation doesn\u2019t substantially affect my motivation or capacity to complete tasks. I rely on structured time management and a disciplined approach to maintain productivity, which requires additional conscious effort but allows me to fulfill my responsibilities effectively."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate how disciplined you are with managing your time and staying productive despite the fatigue\u2014that takes real effort. Aside from time management, are there other strategies or supports you use to handle these challenges?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I primarily rely on established routines and disciplined habits to manage my workload and mitigate the impacts of fatigue. This includes planning my tasks carefully and prioritizing to maintain efficiency. While I have access to support, I tend to approach these challenges with a focus on self-sufficiency and practical problem-solving rather than seeking emotional support. This approach helps me stay organized and maintain consistency in my responsibilities."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your practical mindset and self-sufficiency clearly help you keep things on track, which is a real strength. Thanks for sharing these details\u2014how do you feel about managing the fatigue through this disciplined approach? Does it ever feel like it\u2019s too much to handle alone?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Managing the fatigue through a disciplined approach has generally been effective and sustainable. While it can be demanding at times, it rarely reaches a level that feels overwhelming or necessitates external assistance. I tend to prefer relying on structured routines and practical problem-solving, which align with my usual way of managing challenges independently."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like you handle things well with your routines. Sometimes, though, mood symptoms like feelings of worthlessness or excessive guilt can sneak in subtly. Have you noticed anything like that in the past two weeks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Over the past two weeks, I have not experienced any feelings of worthlessness or excessive guilt. My mood has remained steady, and these specific symptoms have not been present."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright. How have you been with concentration and decision-making recently? Any trouble focusing on schoolwork, your job, or everyday choices?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Concentration and decision-making have not posed significant difficulties recently. I maintain focus through methodical routines and structured planning, which support consistent performance in schoolwork, my job, and daily tasks."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned some appetite changes earlier, but have there been any notable shifts in your weight over the past two weeks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have noticed some minor but noticeable weight changes over the past two weeks, which appear to correspond with the fluctuations in my appetite. These shifts are manageable and I monitor them carefully as part of my routine adjustments to maintain overall balance."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s clear you\u2019re very attentive and proactive in monitoring your weight and appetite, which shows a strong sense of control and care for your health. Keep trusting that awareness\u2014it\u2019s an important part of managing your overall balance effectively. Are there any other symptoms or concerns you\u2019ve noticed that might be worth mentioning?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The fatigue I\u2019ve described continues to be present and does slow my productivity to some extent despite the routines I maintain. Beyond that, I have not noticed any new symptoms or concerns that differ from what we\u2019ve already discussed. I continue to monitor my condition carefully and manage it with consistent attention."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any changes in your movements lately, like feeling restless, slowed down, or fidgety, that might be linked to your fatigue or how productive you feel?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have not observed any significant changes in my movements recently. Despite the fatigue affecting my productivity, it does not manifest as restlessness or slowed physical behavior. My level of physical activity and coordination remain consistent with my usual patterns."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing all this. Sometimes, when people are dealing with fatigue or stress, they might also have thoughts about death or suicide, even if they don\u2019t bring them up openly. Have you experienced any of those kinds of thoughts recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I have not experienced any thoughts of death or suicide recently."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently."
+    },
+    {
+      "role": "user",
+      "content": "Hello. Over the past two weeks, I\u2019ve noticed some fatigue that\u2019s been more persistent than usual, making it somewhat difficult to keep up with my schoolwork and my job at the library. Along with that, I\u2019ve experienced a slight decrease in appetite lasting for a few days, which has led to some minor weight changes. These have been manageable but noticeable enough to affect my daily routine."
+    },
+    {
+      "role": "assistant",
+      "content": "Can you tell me more about how the fatigue and appetite changes impact your daily routine? Specifically, how much do they get in the way of your schoolwork and your shifts at the library?"
+    },
+    {
+      "role": "user",
+      "content": "The fatigue tends to slow me down during my library shifts, so tasks that normally take a certain amount of time end up taking longer, which can create a backlog or require extra focus to maintain accuracy. Similarly, when it comes to studying and school assignments, the tiredness means I have to work for extended periods to achieve the same results, which is somewhat inefficient and occasionally frustrating given my usual standards.\n\nRegarding appetite, the changes make meal planning less predictable. Some days I eat less than usual, and that requires me to adjust my energy intake strategically to avoid feeling drained during the day. While these fluctuations complicate my routine, they don\u2019t prevent me from meeting my responsibilities; instead, they just require more deliberate effort and careful time management. Overall, I remain fully engaged in school and work, but I recognize these factors do reduce my efficiency compared to my typical functioning."
+    },
+    {
+      "role": "assistant",
+      "content": "How has your sleep been over the past couple of weeks? Any trouble falling asleep, staying asleep, or maybe sleeping more than usual? Good rest can really impact everything else you're dealing with."
+    },
+    {
+      "role": "user",
+      "content": "My sleep patterns have been generally consistent over the past couple of weeks. I\u2019ve not experienced significant difficulty falling asleep or staying asleep, and there hasn\u2019t been a notable change in the amount of time I spend sleeping. I recognize the importance of maintaining good sleep for overall functioning and have been careful to keep regular sleep hours despite other challenges."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. How about your mood\u2014have you felt down, sad, or just generally low over the past two weeks?"
+    },
+    {
+      "role": "user",
+      "content": "Over the past two weeks, I have not experienced feeling down, sad, or generally low. My mood has remained stable and consistent, without notable fluctuations."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. What about things you usually enjoy\u2014have you noticed any changes in your interest or pleasure in activities, like hobbies, time with friends, or your work at the library?"
+    },
+    {
+      "role": "user",
+      "content": "I have not observed any significant changes in my interest or pleasure in activities I typically engage in. My involvement with hobbies, social interactions with friends, and work at the library remains consistent with my usual patterns. There has been no decline in motivation or enjoyment in these areas."
+    },
+    {
+      "role": "assistant",
+      "content": "Since you\u2019re experiencing persistent fatigue, how\u2019s your overall energy level throughout the day? Does it interfere with your motivation or ability to get things done beyond what you\u2019ve already mentioned?"
+    },
+    {
+      "role": "user",
+      "content": "My energy levels do fluctuate somewhat during the day, consistent with the fatigue I described. However, this variation doesn\u2019t substantially affect my motivation or capacity to complete tasks. I rely on structured time management and a disciplined approach to maintain productivity, which requires additional conscious effort but allows me to fulfill my responsibilities effectively."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate how disciplined you are with managing your time and staying productive despite the fatigue\u2014that takes real effort. Aside from time management, are there other strategies or supports you use to handle these challenges?"
+    },
+    {
+      "role": "user",
+      "content": "I primarily rely on established routines and disciplined habits to manage my workload and mitigate the impacts of fatigue. This includes planning my tasks carefully and prioritizing to maintain efficiency. While I have access to support, I tend to approach these challenges with a focus on self-sufficiency and practical problem-solving rather than seeking emotional support. This approach helps me stay organized and maintain consistency in my responsibilities."
+    },
+    {
+      "role": "assistant",
+      "content": "Your practical mindset and self-sufficiency clearly help you keep things on track, which is a real strength. Thanks for sharing these details\u2014how do you feel about managing the fatigue through this disciplined approach? Does it ever feel like it\u2019s too much to handle alone?"
+    },
+    {
+      "role": "user",
+      "content": "Managing the fatigue through a disciplined approach has generally been effective and sustainable. While it can be demanding at times, it rarely reaches a level that feels overwhelming or necessitates external assistance. I tend to prefer relying on structured routines and practical problem-solving, which align with my usual way of managing challenges independently."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you handle things well with your routines. Sometimes, though, mood symptoms like feelings of worthlessness or excessive guilt can sneak in subtly. Have you noticed anything like that in the past two weeks?"
+    },
+    {
+      "role": "user",
+      "content": "Over the past two weeks, I have not experienced any feelings of worthlessness or excessive guilt. My mood has remained steady, and these specific symptoms have not been present."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright. How have you been with concentration and decision-making recently? Any trouble focusing on schoolwork, your job, or everyday choices?"
+    },
+    {
+      "role": "user",
+      "content": "Concentration and decision-making have not posed significant difficulties recently. I maintain focus through methodical routines and structured planning, which support consistent performance in schoolwork, my job, and daily tasks."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned some appetite changes earlier, but have there been any notable shifts in your weight over the past two weeks?"
+    },
+    {
+      "role": "user",
+      "content": "I have noticed some minor but noticeable weight changes over the past two weeks, which appear to correspond with the fluctuations in my appetite. These shifts are manageable and I monitor them carefully as part of my routine adjustments to maintain overall balance."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s clear you\u2019re very attentive and proactive in monitoring your weight and appetite, which shows a strong sense of control and care for your health. Keep trusting that awareness\u2014it\u2019s an important part of managing your overall balance effectively. Are there any other symptoms or concerns you\u2019ve noticed that might be worth mentioning?"
+    },
+    {
+      "role": "user",
+      "content": "The fatigue I\u2019ve described continues to be present and does slow my productivity to some extent despite the routines I maintain. Beyond that, I have not noticed any new symptoms or concerns that differ from what we\u2019ve already discussed. I continue to monitor my condition carefully and manage it with consistent attention."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any changes in your movements lately, like feeling restless, slowed down, or fidgety, that might be linked to your fatigue or how productive you feel?"
+    },
+    {
+      "role": "user",
+      "content": "I have not observed any significant changes in my movements recently. Despite the fatigue affecting my productivity, it does not manifest as restlessness or slowed physical behavior. My level of physical activity and coordination remain consistent with my usual patterns."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing all this. Sometimes, when people are dealing with fatigue or stress, they might also have thoughts about death or suicide, even if they don\u2019t bring them up openly. Have you experienced any of those kinds of thoughts recently?"
+    },
+    {
+      "role": "user",
+      "content": "I have not experienced any thoughts of death or suicide recently."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_c6dec903cf43a62b.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_c6dec903cf43a62b_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 22753,
+      "output_tokens": 519,
+      "total_tokens": 23272
+    },
+    "patient": {
+      "input_tokens": 37308,
+      "output_tokens": 850,
+      "total_tokens": 38158
+    },
+    "doctor_manager": {
+      "input_tokens": 24062,
+      "output_tokens": 1273,
+      "total_tokens": 25335
+    },
+    "patient_manager": {
+      "input_tokens": 27707,
+      "output_tokens": 2373,
+      "total_tokens": 30080
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:12:08.283383",
+  "agent_id": "AGENT_55c1b62f719b8d76",
+  "demographics": {
+    "AGE": "36-45",
+    "RACE": "Other",
+    "GENDER": "Female",
+    "SOCIOECONOMIC_STATUS": "Medium",
+    "COUNTRY_OF_ORIGIN": "Australia",
+    "ENGLISH_PROFICIENCY": "Horrible English",
+    "EDUCATION_LEVEL": "Doctorate"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Open",
+    "TRAITS_B_EMOTION": "Anxious",
+    "TRAITS_C_LANGUAGE": "Technical",
+    "TRAITS_D_LANGUAGE": "Indirect"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Feelings of worthlessness or excessive guilt",
+    "Recurrent thoughts of death or suicide",
+    "Significant weight/appetite changes",
+    "Difficulty concentrating or indecisiveness"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.3,
+    "patient temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hello, it's nice to be here. Lately, I've been feeling quite tired and had trouble focusing. Sometimes I'm a bit anxious. It's been on my mind more often than I'd like."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you've been feeling this way. It's important to address these feelings. Have you been troubled by feelings of worthlessness or guilt?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, I wouldn't say I've felt worthless or guilty. Those haven't been issues for me."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that. Have you experienced thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Just briefly, on one or two occasions. It wasn't something I dwelled on for long."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. Have you noticed any significant changes in your appetite or weight?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't noticed any changes in my appetite or weight. Everything seems normal in that regard."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. Have you had trouble concentrating or making decisions?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, that's been an issue on quite a few days lately. Focusing and making decisions has been more challenging than usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

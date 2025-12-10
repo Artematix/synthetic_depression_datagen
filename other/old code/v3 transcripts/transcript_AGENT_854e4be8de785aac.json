@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:06:15.644411",
+  "agent_id": "AGENT_854e4be8de785aac",
+  "demographics": {
+    "AGE": "36-45",
+    "RACE": "Hispanic",
+    "GENDER": "Female",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "Canada",
+    "ENGLISH_PROFICIENCY": "Second-language",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Slang-heavy",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "OFTEN",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation",
+    "Sleep disturbances"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey. It's been a mix. Some ups and downs, I guess. Been feeling pretty tired and kinda low energy sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear you've been feeling that way. Your well-being is important to me. \n\nHave you experienced thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Just once or twice. Not really something I've focused on."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It's important we address these feelings together.\n\nHave you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, a bit. Haven\u2019t really been feeling much excitement about stuff I normally like."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand. Let's work through this together.\n\nHave you felt unusually restless or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, just a little here and there, but mostly okay with that."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to know that's manageable for you. \n\nHow have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep\u2019s been pretty off, having trouble sticking to a regular pattern. Can't seem to get good rest."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

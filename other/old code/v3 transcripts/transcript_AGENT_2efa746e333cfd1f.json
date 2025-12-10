@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:09:00.012926",
+  "agent_id": "AGENT_2efa746e333cfd1f",
+  "demographics": {
+    "AGE": "15-18",
+    "RACE": "Black",
+    "GENDER": "Female",
+    "SOCIOECONOMIC_STATUS": "Medium",
+    "COUNTRY_OF_ORIGIN": "UK",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Open",
+    "TRAITS_B_EMOTION": "Outgoing",
+    "TRAITS_C_LANGUAGE": "Formal",
+    "TRAITS_D_LANGUAGE": "Concise"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Difficulty concentrating or indecisiveness",
+    "Recurrent thoughts of death or suicide",
+    "Psychomotor agitation or retardation",
+    "Loss of interest or pleasure"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.3,
+    "patient temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hello! It's nice to see you too. I've been feeling alright overall, but I've had a bit of trouble sleeping and concentrating recently. Nothing too major, though. How about you?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. I'm doing well, thank you for asking. Regarding your concentration difficulties, would you say you've had trouble concentrating or making decisions recently?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I've had trouble concentrating and making decisions for about six to ten days over the past two weeks."
+    },
+    {
+      "role": "assistant",
+      "content": "It's important to address those concentration issues. Have you experienced any thoughts about death or harming yourself during this time?"
+    },
+    {
+      "role": "user",
+      "content": "I've had a few days where those thoughts have come up, three to five days in the last two weeks."
+    },
+    {
+      "role": "assistant",
+      "content": "I\u2019m really sorry to hear that. We'll make sure to discuss that further. Have you felt unusually restless or sluggish recently?"
+    },
+    {
+      "role": "user",
+      "content": "Not really, I haven't felt unusually restless or sluggish."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for letting me know. Have you lost interest in activities you usually enjoy lately?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't really lost interest in things I enjoy."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

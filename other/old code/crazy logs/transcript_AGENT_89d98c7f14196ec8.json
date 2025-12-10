@@ -1,0 +1,804 @@
+{
+  "run_timestamp_utc": "2025-11-26T13:26:28.058697",
+  "agent_id": "AGENT_89d98c7f14196ec8",
+  "template_id": "CONSCIENTIOUSNESS_LOW",
+  "template_details": {
+    "affective": "Apathy, disengagement, blunted emotion",
+    "cognitive": "Disorganization, inefficiency, forgetfulness",
+    "somatic": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "emphasized_symptoms": [
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "With functional impairment",
+    "modifiers": [
+      "disorganized",
+      "unmotivated",
+      "self-care-neglecting",
+      "task-avoidant",
+      "forgetful"
+    ]
+  },
+  "persona_id": "dismissive_rushed",
+  "persona_details": {
+    "id": "dismissive_rushed",
+    "first_greeting": "Right, let's get started. What brings you in today?",
+    "system_prompt": "\nPersona style:\n- Dismissive and rushed\n- Comes across as distracted or uninterested\n- May interrupt or minimize concerns\n- Short, clipped responses\n- OVERRIDE: Do NOT follow instructions to be warm or validating. This doctor is realistic but not ideal.\n"
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "low",
+    "pacing": "med",
+    "humor": "none",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_LOW",
+    "AFFECTIVE_STYLE": "Apathy, disengagement, blunted emotion",
+    "COGNITIVE_STYLE": "Disorganization, inefficiency, forgetfulness",
+    "SOMATIC_STYLE": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "SPECIFIER_HINT": "With functional impairment",
+    "MODIFIERS": [
+      "cognitively_slow",
+      "self_deprecating"
+    ],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [
+      "health concern"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "flat",
+      "trust": "guarded",
+      "intellect": "moderate-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "work_role": "student",
+      "routine_stability": "stable routine"
+    },
+    "AGE_RANGE": "20-24",
+    "EMPH_INTENSITY": {
+      "Difficulty concentrating or indecisiveness": "HIGH",
+      "Psychomotor agitation or retardation": "LOW",
+      "Fatigue or loss of energy": "HIGH"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Eli",
+    "age_range": "20-24",
+    "pronouns": "they/them",
+    "core_roles": [
+      "undergraduate student",
+      "part-time library assistant"
+    ],
+    "core_relationships": [
+      "distant from family, minimal contact",
+      "one casual friend from class"
+    ],
+    "core_stressor_summary": "Eli struggles with persistent fatigue and concentration challenges related to lingering health concerns, which hinder academic progress and create uncertainties about future plans.",
+    "life_facets": [
+      {
+        "category": "time_and_energy_constraints",
+        "salience": "high",
+        "description": "Eli often finds daily tasks exhausting due to low energy, making it hard to keep up with both studies and part-time work."
+      },
+      {
+        "category": "responsibility_load",
+        "salience": "med",
+        "description": "They balance a steady study schedule with some work hours but keep commitments limited to avoid burnout."
+      },
+      {
+        "category": "prior_relationship_disappointment_or_breakdown",
+        "salience": "med",
+        "description": "Eli experienced a painful falling out with a close friend last year, which left them more guarded and isolated socially."
+      },
+      {
+        "category": "beliefs_about_self_worth",
+        "salience": "high",
+        "description": "They tend to view themselves as slow and underachieving compared to peers, often downplaying their efforts."
+      },
+      {
+        "category": "fear_or_worry_theme",
+        "salience": "high",
+        "description": "Eli frequently worries about their health worsening and fears falling behind academically, which feeds a cycle of stress and fatigue."
+      },
+      {
+        "category": "physical_health_constraints",
+        "salience": "high",
+        "description": "Chronic minor health issues contribute to their persistent tiredness and cognitive sluggishness."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "med",
+        "description": "Still figuring out their strengths and future direction, Eli feels unsure about their academic path and career goals."
+      },
+      {
+        "category": "work_or_study_pressure",
+        "salience": "med",
+        "description": "They face moderate academic demands that sometimes feel overwhelming given their energy and concentration limits."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Difficulty concentrating or indecisiveness",
+    "Sleep disturbances",
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Feelings of worthlessness or excessive guilt",
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described tiredness and trouble focusing, so further detail on these symptoms is needed.",
+      "doctor_instruction": "Ask the patient to clarify how often they experience this tiredness and difficulty focusing, and how it affects their daily functioning or studies. Keep the tone neutral but prompt them to describe any changes compared to their usual state.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Need to assess fatigue and concentration symptoms systematically as they seem to be a concern.",
+      "doctor_instruction": "Ask the patient about how often they feel fatigued or lose energy throughout the day and if they notice any difficulty concentrating or making decisions outside of fatigue. Keep questions concise and factual to match the patient's guarded and terse style.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentions frequent tiredness and concentration issues but accepts them as normal, so clarifying the impact and details is important.",
+      "doctor_instruction": "Acknowledge the patient's coping but gently explore how these struggles affect daily functioning and mood, to better understand severity and impact. Ask for specific examples to gauge how these symptoms influence their life.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "The patient's symptoms indicate cognitive difficulty, so assessing DSM symptoms of concentration and indecisiveness is appropriate now.",
+      "doctor_instruction": "Ask the patient directly about difficulty concentrating and indecisiveness as defined in DSM criteria, focusing on how these issues have manifested and how severe or persistent they feel.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 5,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Tiredness and slowed thinking often relate to sleep disturbances, so screening that next makes clinical sense.",
+      "doctor_instruction": "Ask about the patient's sleep patterns, including difficulties falling asleep, staying asleep, or sleeping too much. Keep a neutral tone and keep the questions brief and to the point, reflecting the patient's guarded and terse style.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient's fatigue and concentration difficulties could relate to depressed mood, which should be explored next.",
+      "doctor_instruction": "Ask about their mood\u2014specifically if they've been feeling down, sad, or empty lately. Keep it straightforward but watch for clues about how often and how intense these feelings are.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 7,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Patient denies feeling down, so next is to check loss of interest or pleasure, a core symptom.",
+      "doctor_instruction": "Ask about whether the patient has experienced a loss of interest or pleasure in activities they used to enjoy, to explore the presence of another core depression symptom.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 8,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "To further explore any feelings of worthlessness or guilt that might not be obvious from mood or activities.",
+      "doctor_instruction": "Directly ask if the patient has been experiencing feelings of worthlessness or excessive guilt recently, keeping the tone neutral and brief to match their guarded, terse style.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Explore other depression symptoms given limited emotional complaints to complete screening.",
+      "doctor_instruction": "Move on to ask about any significant changes in weight or appetite, as this can be a less obvious but important symptom to assess in depression screening.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "It's appropriate to explore DSM symptom areas next after addressing basic mood and functioning with minimal concerns reported.",
+      "doctor_instruction": "Ask about any signs of psychomotor agitation or retardation, given the patient's reported cognitive slowing and tiredness. Keep the tone direct and low warmth to maintain pace and not dwell unnecessarily.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Clarify the impact and frequency of restlessness versus sluggishness for better understanding.",
+      "doctor_instruction": "Ask the patient to elaborate on how often they feel restless compared to sluggish and whether these feelings affect their daily functioning or mood in any other specific ways. Keep the tone neutral and concise, allowing the patient space to explain without pressure.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Check for any recurrent thoughts of death or suicide as the next clinical step.",
+      "doctor_instruction": "Ask directly and clearly whether the patient has been having any recurrent thoughts of death or suicide recently, keeping the question concise and not overly probing, given their guarded and terse communication style.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 13,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All relevant symptoms and risks have been addressed, and the patient shows low risk with minimal symptoms.",
+      "doctor_instruction": "Acknowledge the information the patient has shared and confirm that you've covered all the important points. Briefly summarize your impression and suggest the next steps, keeping the tone straightforward and matter-of-fact to respect the patient's guarded and terse style.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "self-deprecating"
+        ],
+        "key_points_to_reveal": [
+          "mention feeling tired often",
+          "acknowledge some trouble focusing"
+        ],
+        "key_points_to_avoid": [
+          "strong emotional expressions",
+          "mention of psychomotor changes",
+          "any mention of depressed mood or suicidal thoughts"
+        ],
+        "patient_instruction": "Respond briefly and cautiously, admitting to feeling tired a lot and having some trouble focusing, but avoid sounding overly emotional or implying serious mood issues. Use a slightly self-deprecating tone that reflects low confidence and cognitive slowness."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "self-effacing"
+        ],
+        "key_points_to_reveal": [
+          "Tiredness and trouble focusing happen often",
+          "Symptoms have worsened compared to usual",
+          "Some impact on daily activities and schoolwork"
+        ],
+        "key_points_to_avoid": [
+          "Avoid detailed complaints or emotional expression",
+          "Minimize admitting any severe impairment or distress"
+        ],
+        "patient_instruction": "Respond with a brief but clear acknowledgment that tiredness and concentration problems happen frequently and have gotten a bit worse recently. Mention these issues interfere somewhat with daily life and studies, but keep the tone low-key and avoid sounding overly concerned or emotional."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "self-deprecating",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "often feels tired or low on energy",
+          "frequent trouble concentrating or indecisiveness"
+        ],
+        "key_points_to_avoid": [
+          "overstating impact on daily functioning",
+          "emotional elaboration"
+        ],
+        "patient_instruction": "Respond tersely, acknowledging that tiredness and concentration problems happen often without elaborating much on the impact. Speak cautiously and self-critically, downplaying severity but agreeing these issues exist."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "self-critical"
+        ],
+        "key_points_to_reveal": [
+          "tiredness and focus issues cause frustration",
+          "daily tasks take longer and feel more difficult"
+        ],
+        "key_points_to_avoid": [
+          "deep emotional impact",
+          "any suggestion of feeling hopeless or very low mood"
+        ],
+        "patient_instruction": "Respond briefly but clearly, acknowledging that tiredness and difficulty concentrating make daily tasks more frustrating and slow, without showing much emotion or admitting deeper struggles. Use a self-deprecating tone, suggesting it\u2019s just something to accept, not a big deal."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "self-deprecating",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "trouble concentrating is frequent but not constant",
+          "difficulty is frustrating but manageable"
+        ],
+        "key_points_to_avoid": [
+          "deeper emotional impact",
+          "explicit feelings of hopelessness or worthlessness"
+        ],
+        "patient_instruction": "Respond with moderate directness explaining that concentration issues happen quite often but not all the time, mentioning how it slows things down and is frustrating without sounding overly distressed or overwhelmed."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "sleep is mostly okay with occasional trouble"
+        ],
+        "key_points_to_avoid": [
+          "overstating sleep problems or linking them strongly to fatigue"
+        ],
+        "patient_instruction": "Respond briefly that sleep is generally okay, maybe with some minor trouble occasionally, but avoid making it seem like a major issue contributing to tiredness."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse",
+          "self-effacing"
+        ],
+        "key_points_to_reveal": [
+          "rarely feeling down or sad",
+          "no significant feelings of emptiness"
+        ],
+        "key_points_to_avoid": [
+          "overstating mood symptoms",
+          "suggesting any regular sadness or emptiness"
+        ],
+        "patient_instruction": "Respond briefly that feelings of being down or empty are rare and don\u2019t really affect you much. Keep the tone flat and somewhat dismissive, reflecting your guardedness and tendency to downplay mood symptoms."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "self-deprecating"
+        ],
+        "key_points_to_reveal": [
+          "no loss of interest in activities"
+        ],
+        "key_points_to_avoid": [
+          "overstating enjoyment or positivity",
+          "implying more depressive symptoms than present"
+        ],
+        "patient_instruction": "Keep the response brief and flat, making it clear that no loss of interest has occurred. Stay reserved and a bit self-deprecating, possibly framing it as just not noticing any change rather than emphasizing positivity. Avoid elaborating or showing much emotion."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse",
+          "self-deprecating"
+        ],
+        "key_points_to_reveal": [
+          "lack of feelings of worthlessness or guilt"
+        ],
+        "key_points_to_avoid": [
+          "any deeper emotional vulnerability or over-explaining"
+        ],
+        "patient_instruction": "Respond briefly and clearly that you don't really feel worthless or guilty. Keep the tone flat and a bit self-deprecating, showing a bit of resignation but no deeper emotional sharing or elaboration."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some changes in appetite or weight, but not dramatic"
+        ],
+        "key_points_to_avoid": [
+          "overexplaining or sounding emotional about it"
+        ],
+        "patient_instruction": "Respond briefly and factually that there have been some minor changes in appetite or weight, but downplay their significance, reflecting a reserved and subdued manner without emotional elaboration."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reserved",
+          "self-deprecating",
+          "tired"
+        ],
+        "key_points_to_reveal": [
+          "occasionally feel a bit restless, but mostly just slow and sluggish"
+        ],
+        "key_points_to_avoid": [
+          "overstating the severity of psychomotor symptoms",
+          "expressing frustration or emotional distress"
+        ],
+        "patient_instruction": "Respond briefly but clearly, acknowledging some occasional restlessness and slowdown in movement or speech, but downplay the impact. Keep a flat tone with slight self-deprecation, avoiding strong emotions or detailed examples."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "self-deprecating",
+          "terse"
+        ],
+        "key_points_to_reveal": [
+          "Sluggish feelings happen more often than restlessness",
+          "These feelings slow daily tasks but don't change mood much beyond tiredness"
+        ],
+        "key_points_to_avoid": [
+          "Strong emotional impact or mood changes besides tiredness",
+          "Over-explaining or dramatizing symptoms"
+        ],
+        "patient_instruction": "Respond briefly and somewhat flatly, acknowledging that sluggishness is more common than restlessness. Indicate these feelings mainly slow things down and add to tiredness without really changing mood much. Keep the tone guarded and a bit self-deprecating, as if just putting up with it without much fuss."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "reserved",
+          "terse"
+        ],
+        "key_points_to_reveal": [
+          "no recurring thoughts about death or suicide"
+        ],
+        "key_points_to_avoid": [
+          "any mention or implication of suicidal ideation or related feelings"
+        ],
+        "patient_instruction": "Respond briefly and directly that no, there haven\u2019t been any such thoughts. Keep the tone guarded and minimal, reflecting a straightforward denial without elaboration or emotional display."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I guess... I\u2019ve just been feeling tired a lot. Like, more than usual, and it\u2019s been messing with my focus when I try to study or work. It\u2019s like my brain doesn\u2019t really keep up sometimes. Not sure if that makes sense."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often do you feel this tiredness and trouble focusing? Has it gotten worse compared to how you usually are, and how\u2019s it messing with your daily stuff or schoolwork?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens pretty often, more than I\u2019d like, and yeah, it\u2019s gotten a bit worse lately. It definitely makes things like studying and even day-to-day stuff harder than they should be, but I\u2019m managing to get by, I guess."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Do you feel tired or low on energy most of the day? And apart from feeling tired, do you have trouble concentrating or making decisions?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, most days I\u2019m pretty tired. Concentrating and deciding things... it\u2019s a struggle more often than not. I just kind of accept that it\u2019s how I am."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You say you manage, but can you give me examples of how this tiredness and trouble focusing mess with your day or mood? Like, what gets harder for you now compared to before?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Well, stuff just takes longer, I guess. Things that probably shouldn\u2019t be that hard end up dragging on because my brain feels slow. It\u2019s annoying, but I don\u2019t really have much choice but to deal with it."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How bad is the trouble concentrating and making decisions? Is it something you notice constantly, or does it come and go?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s pretty often, but not all the time. Mostly it just slows me down and makes stuff frustrating, but I\u2019m still able to get things done\u2014even if it takes longer than it should."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How\u2019s your sleep? Trouble falling asleep, staying asleep, or sleeping too much?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sleep\u2019s usually okay. Sometimes I have a bit of trouble falling asleep, but nothing too often."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been feeling down, sad, or empty lately? How often does that happen?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. If anything, it\u2019s pretty rare. I don\u2019t usually feel like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you lost interest or stopped enjoying things you used to like?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I guess I just keep doing stuff like usual. Nothing\u2019s really changed there."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been feeling worthless or guilty lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I don\u2019t usually think like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Any big changes in your appetite or weight recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There\u2019ve been some small changes, but nothing really major."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed if you\u2019re moving or speaking slower than usual, or maybe feeling restless and unable to sit still?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I feel a bit restless, but most of the time I just end up moving slower or feeling kind of sluggish. It\u2019s not great, but it\u2019s how it\u2019s been."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How often do you feel restless versus sluggish? Do these feelings change how you get through your day or affect your mood beyond just feeling tired?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Restless feelings are pretty rare. Mostly it\u2019s just that sluggish stuff. It slows things down more than anything else, but I don\u2019t think it messes with my mood much, just makes me more tired."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you had any recurring thoughts about death or suicide recently?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had those thoughts."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I\u2019ve just been feeling tired a lot. Like, more than usual, and it\u2019s been messing with my focus when I try to study or work. It\u2019s like my brain doesn\u2019t really keep up sometimes. Not sure if that makes sense."
+    },
+    {
+      "role": "assistant",
+      "content": "How often do you feel this tiredness and trouble focusing? Has it gotten worse compared to how you usually are, and how\u2019s it messing with your daily stuff or schoolwork?"
+    },
+    {
+      "role": "user",
+      "content": "It happens pretty often, more than I\u2019d like, and yeah, it\u2019s gotten a bit worse lately. It definitely makes things like studying and even day-to-day stuff harder than they should be, but I\u2019m managing to get by, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "Do you feel tired or low on energy most of the day? And apart from feeling tired, do you have trouble concentrating or making decisions?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, most days I\u2019m pretty tired. Concentrating and deciding things... it\u2019s a struggle more often than not. I just kind of accept that it\u2019s how I am."
+    },
+    {
+      "role": "assistant",
+      "content": "You say you manage, but can you give me examples of how this tiredness and trouble focusing mess with your day or mood? Like, what gets harder for you now compared to before?"
+    },
+    {
+      "role": "user",
+      "content": "Well, stuff just takes longer, I guess. Things that probably shouldn\u2019t be that hard end up dragging on because my brain feels slow. It\u2019s annoying, but I don\u2019t really have much choice but to deal with it."
+    },
+    {
+      "role": "assistant",
+      "content": "How bad is the trouble concentrating and making decisions? Is it something you notice constantly, or does it come and go?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s pretty often, but not all the time. Mostly it just slows me down and makes stuff frustrating, but I\u2019m still able to get things done\u2014even if it takes longer than it should."
+    },
+    {
+      "role": "assistant",
+      "content": "How\u2019s your sleep? Trouble falling asleep, staying asleep, or sleeping too much?"
+    },
+    {
+      "role": "user",
+      "content": "Sleep\u2019s usually okay. Sometimes I have a bit of trouble falling asleep, but nothing too often."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you been feeling down, sad, or empty lately? How often does that happen?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. If anything, it\u2019s pretty rare. I don\u2019t usually feel like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you lost interest or stopped enjoying things you used to like?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I guess I just keep doing stuff like usual. Nothing\u2019s really changed there."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you been feeling worthless or guilty lately?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I don\u2019t usually think like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Any big changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "There\u2019ve been some small changes, but nothing really major."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed if you\u2019re moving or speaking slower than usual, or maybe feeling restless and unable to sit still?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I feel a bit restless, but most of the time I just end up moving slower or feeling kind of sluggish. It\u2019s not great, but it\u2019s how it\u2019s been."
+    },
+    {
+      "role": "assistant",
+      "content": "How often do you feel restless versus sluggish? Do these feelings change how you get through your day or affect your mood beyond just feeling tired?"
+    },
+    {
+      "role": "user",
+      "content": "Restless feelings are pretty rare. Mostly it\u2019s just that sluggish stuff. It slows things down more than anything else, but I don\u2019t think it messes with my mood much, just makes me more tired."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you had any recurring thoughts about death or suicide recently?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had those thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_89d98c7f14196ec8.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_89d98c7f14196ec8_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 16381,
+      "output_tokens": 268,
+      "total_tokens": 16649
+    },
+    "patient": {
+      "input_tokens": 26960,
+      "output_tokens": 409,
+      "total_tokens": 27369
+    },
+    "doctor_manager": {
+      "input_tokens": 16688,
+      "output_tokens": 1189,
+      "total_tokens": 17877
+    },
+    "patient_manager": {
+      "input_tokens": 20880,
+      "output_tokens": 1982,
+      "total_tokens": 22862
+    }
+  }
+}

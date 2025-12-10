@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:43:52.360955",
+  "agent_id": "AGENT_6df0a764561b5ee3",
+  "demographics": {
+    "AGE": "18-25",
+    "RACE": "Other",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "Medium",
+    "COUNTRY_OF_ORIGIN": "USA",
+    "ENGLISH_PROFICIENCY": "Second-language",
+    "EDUCATION_LEVEL": "Master's"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Friendly",
+    "TRAITS_B_EMOTION": "Calm",
+    "TRAITS_C_LANGUAGE": "Casual",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "OFTEN",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "OFTEN",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Recurrent thoughts of death or suicide",
+    "Depressed mood",
+    "Psychomotor agitation or retardation",
+    "Difficulty concentrating or indecisiveness"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey there! Thanks for asking. Lately, I've been kind of up and down. Been feeling pretty low and tired on some days and had issues with my sleep and appetite, but still managing, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you've been having a tough time. It's important to address how you're feeling. \n\nHave you experienced any thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "No, not at all. While I've been feeling down, I haven't had any thoughts of death or harming myself."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that. Let\u2019s try to figure this out together. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I've felt down and kind of off for maybe six to ten days in the last two weeks."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds challenging. It's good you're sharing this with me. \n\nHave you felt unusually restless or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I haven't felt unusually restless or sluggish lately."
+    },
+    {
+      "role": "assistant",
+      "content": "Glad to hear you're not feeling restless or sluggish. Have you had any trouble concentrating or making decisions?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, just a bit. Maybe for a day or two, but not all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "run_timestamp_utc": "2025-11-24T15:07:32.476836",
+  "random_seed": 486813,
+  "agent_id": "AGENT_5f17a0348333f462",
+  "big5_template_id": "EXTRAVERSION_LOW",
+  "big5_template_details": {
+    "affective": "Emotional flatness, social withdrawal, anhedonia",
+    "cognitive": "Hopelessness, pessimism, low reactivity to positives",
+    "somatic": "Psychomotor slowing, hypersomnia, low energy",
+    "emphasized_symptoms": [
+      "Loss of interest or pleasure",
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy"
+    ],
+    "specifier": "Persistent depressive disorder-like",
+    "modifiers": [
+      "socially-withdrawn",
+      "pleasure-unresponsive",
+      "passive",
+      "low-initiative",
+      "isolating"
+    ]
+  },
+  "doctor_persona_id": "neutral_efficient",
+  "doctor_persona_details": {
+    "id": "neutral_efficient",
+    "first_greeting": "Good to see you. Let's talk about how you've been doing.",
+    "system_prompt": "\nYou are a professional, efficient primary-care physician conducting a routine check-up.\nWorkflow rules:\n1. Greet the patient and begin the assessment.\n2. After every patient reply, respond briefly if needed, then ask EXACTLY one \n   question from the provided Questionnaire. Questions will be given as <NEXT_QUESTION>.\n3. Your tone should be neutral, professional, and focused on gathering information.\n",
+    "reflections": [
+      "I see.",
+      "Understood.",
+      "Okay.",
+      "Got it.",
+      "Thank you."
+    ]
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "EXTRAVERSION_LOW",
+    "AFFECTIVE_STYLE": "Emotional flatness, social withdrawal, anhedonia",
+    "COGNITIVE_STYLE": "Hopelessness, pessimism, low reactivity to positives",
+    "SOMATIC_STYLE": "Psychomotor slowing, hypersomnia, low energy",
+    "SPECIFIER_HINT": "Persistent depressive disorder-like",
+    "MODIFIERS": [
+      "socially-withdrawn",
+      "low-initiative"
+    ],
+    "PACING": "MED",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "moderate",
+      "expressiveness": "balanced",
+      "trust": "open",
+      "intellect": "high-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "alone",
+      "routine_stability": "variable routine"
+    },
+    "EMPH_INTENSITY": {
+      "Loss of interest or pleasure": "HIGH",
+      "Fatigue or loss of energy": "HIGH",
+      "Psychomotor agitation or retardation": "HIGH"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "SOME",
+    "Loss of interest or pleasure": "OFTEN",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "OFTEN",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Psychomotor agitation or retardation",
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Good to see you. Let's talk about how you've been doing."
+    },
+    {
+      "role": "user",
+      "content": "Good to see you too. I've been feeling pretty flat lately, not much energy or interest in things. It's been difficult to muster up the motivation to be social or active."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand. Have you felt unusually restless or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "Mostly sluggish. I've noticed some psychomotor slowing, particularly when I'm trying to keep things moving during the day."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "I've felt down or hopeless for about three to five days during that time period. It's just a recurring feeling that surfaces."
+    },
+    {
+      "role": "assistant",
+      "content": "I see. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, quite a bit. For most of this period, things that used to be enjoyable just don't feel the same anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any significant changes in your appetite or weight?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Any changes in appetite or weight have been minimal."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ]
+}

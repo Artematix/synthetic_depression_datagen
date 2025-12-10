@@ -1,0 +1,865 @@
+{
+  "run_timestamp_utc": "2025-11-26T08:00:01.078570",
+  "agent_id": "AGENT_2c2d3ac2c3414d86",
+  "template_id": "CONSCIENTIOUSNESS_LOW",
+  "template_details": {
+    "affective": "Apathy, disengagement, blunted emotion",
+    "cognitive": "Disorganization, inefficiency, forgetfulness",
+    "somatic": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "emphasized_symptoms": [
+      "Psychomotor agitation or retardation",
+      "Fatigue or loss of energy",
+      "Difficulty concentrating or indecisiveness"
+    ],
+    "specifier": "With functional impairment",
+    "modifiers": [
+      "disorganized",
+      "unmotivated",
+      "self-care-neglecting",
+      "task-avoidant",
+      "forgetful"
+    ]
+  },
+  "persona_id": "trauma_informed_slow",
+  "persona_details": {
+    "id": "trauma_informed_slow",
+    "first_greeting": "Hello. I want you to know this is a safe space. We can take our time today. How are you doing?",
+    "system_prompt": "\nPersona style:\n- Trauma-informed, deliberately paced primary-care physician.\n- Gentle, patient, and validating tone.\n- Gives the patient space, checks in about comfort, and moves carefully around sensitive topics.\n"
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "high",
+    "pacing": "brisk"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_LOW",
+    "AFFECTIVE_STYLE": "Apathy, disengagement, blunted emotion",
+    "COGNITIVE_STYLE": "Disorganization, inefficiency, forgetfulness",
+    "SOMATIC_STYLE": "Hypersomnia, low motivation, poor self-care, variable appetite",
+    "SPECIFIER_HINT": "With functional impairment",
+    "MODIFIERS": [
+      "unmotivated",
+      "disorganized"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "major life transition",
+      "work/role strain"
+    ],
+    "EPISODE_DENSITY": "LOW",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "balanced",
+      "trust": "guarded",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "shared housing",
+      "routine_stability": "variable routine"
+    },
+    "EMPH_INTENSITY": {
+      "Difficulty concentrating or indecisiveness": "MED",
+      "Psychomotor agitation or retardation": "LOW",
+      "Fatigue or loss of energy": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Feelings of worthlessness or excessive guilt"
+    ]
+  },
+  "life_background": {
+    "name": "Marcus",
+    "age_range": "late 20s",
+    "pronouns": "he/him",
+    "core_roles": [
+      "gig worker",
+      "housemate",
+      "son"
+    ],
+    "core_relationships": [
+      "frequent but surface interactions with housemates",
+      "keeps in touch with younger sister",
+      "occasional video calls with parents"
+    ],
+    "core_stressor_summary": "Currently struggling with instability after a recent job loss, which has left him feeling uncertain and less interested in daily plans. Work inconsistency and lack of clear progress undermine his sense of motivation.",
+    "life_facets": [
+      {
+        "category": "earlier_school_or_work_challenge",
+        "salience": "med",
+        "description": "Marcus had trouble staying organized and keeping up with assignments in college, often missing deadlines and nearly failing out before finishing his degree."
+      },
+      {
+        "category": "housing_and_neighbourhood_feel",
+        "salience": "med",
+        "description": "He rents a room in a busy, slightly chaotic shared house where chores and boundaries are loosely managed but people are generally friendly."
+      },
+      {
+        "category": "areas_of_competence_or_pride",
+        "salience": "med",
+        "description": "He\u2019s practical with basic repairs around the house and friends ask him for tech help, which gives him a small sense of usefulness."
+      },
+      {
+        "category": "family_history_of_health_or_mental_health_issues",
+        "salience": "low",
+        "description": "A maternal uncle reportedly struggled with depression, but family seldom discusses mental health openly."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "The loss of steady work and pressure to figure out next steps is making daily structure and motivation hard to maintain."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "med",
+        "description": "Marcus gets brief, encouraging messages from family, but avoids deeper check-ins; support is there if asked, but not persistent."
+      },
+      {
+        "category": "stalled_goal",
+        "salience": "high",
+        "description": "He\u2019s been planning to build his freelance skills to land more consistent gigs, but keeps putting this off due to distraction and low follow-through."
+      },
+      {
+        "category": "coping_style",
+        "salience": "med",
+        "description": "He tends to escape into YouTube or gaming instead of dealing with stress directly, which sometimes helps him unwind but also eats up time."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "high",
+        "description": "Some days he stays in bed late or skips meals, then suddenly tries to catch up all at once, leading to disorganization."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "OFTEN",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Sleep disturbances",
+    "Fatigue or loss of energy",
+    "Difficulty concentrating or indecisiveness",
+    "Psychomotor agitation or retardation",
+    "Feelings of worthlessness or excessive guilt",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "RAPPORT",
+      "reason": "The patient is guarded and terse, so building trust and rapport is essential before exploring symptoms.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "RAPPORT",
+      "reason": "The patient is guarded and terse, so building trust and rapport is important before moving into symptom areas.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "The patient is giving brief, non-specific answers; it's appropriate to move to a DSM symptom area to ensure coverage given time constraints.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 4,
+      "next_action": "RAPPORT",
+      "reason": "The patient is guarded and terse, so building rapport can help them feel safer and more open.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "The patient is giving brief, non-specific answers and several DSM symptom areas remain unaddressed.",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 6,
+      "next_action": "RAPPORT",
+      "reason": "The patient remains guarded and terse; building rapport can help increase trust and openness.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "The patient is not reporting mood or interest changes, so it's appropriate to move on to another DSM symptom area to ensure thorough screening.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "The patient has denied mood and appetite changes, so it's appropriate to screen another DSM symptom area.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 9,
+      "next_action": "DSM",
+      "reason": "The patient has denied changes in mood, interest, appetite, and sleep; it is appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "The patient has denied changes in mood, interest, sleep, appetite, and energy, so it is appropriate to explore another DSM symptom area.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 11,
+      "next_action": "DSM",
+      "reason": "Having screened other major symptom areas, it is appropriate to assess for psychomotor changes next.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 12,
+      "next_action": "DSM",
+      "reason": "It's time to gently assess for feelings of worthlessness or excessive guilt since other DSM areas have been screened.",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 13,
+      "next_action": "DSM",
+      "reason": "It's time to screen for recurrent thoughts of death or suicide as the last DSM symptom area.",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 14,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All DSM areas have been covered, the patient's responses have been consistent, and there are no immediate safety concerns.",
+      "doctor_instruction": "Begin to wrap up by warmly acknowledging Marcus\u2019s openness and the effort he made to come in today. Briefly summarize that you\u2019ve covered the main areas and that you\u2019re here to support him if anything changes. Invite him to mention anything else on his mind or any questions before ending the visit.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "reserved"
+        ],
+        "key_points_to_reveal": [
+          "general response",
+          "avoid specifics about mood or symptoms"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotions",
+          "symptom disclosure",
+          "personal struggles"
+        ],
+        "response_instruction": "Give a brief, cautious answer that doesn't reveal much about your mood or symptoms. Keep it neutral and reserved, only acknowledging the question in a general way."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "not much has changed",
+          "days feel pretty normal",
+          "nothing major to report"
+        ],
+        "key_points_to_avoid": [
+          "details about symptoms",
+          "mentioning agitation",
+          "disorganization",
+          "fatigue",
+          "concentration issues",
+          "any strong negative emotions"
+        ],
+        "response_instruction": "Keep it brief and guarded, giving a general answer that downplays any difficulties. Avoid sharing specifics about symptoms or struggles, and maintain a neutral, flat tone."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "nothing major stands out",
+          "days are mostly routine",
+          "no obvious sources of stress"
+        ],
+        "key_points_to_avoid": [
+          "details about agitation",
+          "energy issues",
+          "concentration problems",
+          "personal or emotional struggles"
+        ],
+        "response_instruction": "Keep your answer brief and neutral, sticking to the idea that nothing in particular stands out as stressful or positive. Avoid sharing specific challenges or emotions. Respond in a guarded, matter-of-fact way."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel down",
+          "nothing unusual emotionally"
+        ],
+        "key_points_to_avoid": [
+          "clear endorsement of depressed mood",
+          "mentioning hopelessness",
+          "elaborating on emotional struggles"
+        ],
+        "response_instruction": "Briefly deny feeling down or hopeless, keep the answer general and unemotional, and avoid sharing any emotional details or struggles."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "routine coping",
+          "nothing special helping",
+          "downplay difficulties"
+        ],
+        "key_points_to_avoid": [
+          "mentioning significant struggles",
+          "describing emotional impact",
+          "discussing specific coping strategies or supports"
+        ],
+        "response_instruction": "Keep it brief and neutral, giving a vague or noncommittal answer about coping. Avoid sharing any emotional details or specific challenges\u2014just suggest things are fine and nothing in particular is helping or hurting."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no big change in enjoyment",
+          "routine feels the same"
+        ],
+        "key_points_to_avoid": [
+          "openly admit loss of interest",
+          "describe specific examples of lost pleasure",
+          "show emotional vulnerability"
+        ],
+        "response_instruction": "Keep your answer brief and neutral, downplaying any loss of interest. Avoid sharing details or admitting to changes\u2014focus on things feeling mostly the same."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "routine ways of coping",
+          "not much stands out",
+          "no strong relaxation strategies"
+        ],
+        "key_points_to_avoid": [
+          "detailed discussion of stress",
+          "mentioning specific symptoms",
+          "revealing emotional impact",
+          "talking about loss of motivation or energy"
+        ],
+        "response_instruction": "Keep the answer brief and neutral, sticking to generalities. Mention that you don't really have any special ways to relax or cope, and keep the tone guarded and matter-of-fact. Avoid discussing symptoms or personal struggles."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "no noticeable changes in appetite or weight"
+        ],
+        "key_points_to_avoid": [
+          "any admission of significant appetite or weight changes",
+          "discussion of related emotional impact"
+        ],
+        "response_instruction": "Give a brief, indirect answer that downplays any changes. Keep the tone flat and guarded, and avoid elaborating or connecting appetite to mood or stress."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse"
+        ],
+        "key_points_to_reveal": [
+          "deny sleep problems",
+          "keep response brief"
+        ],
+        "key_points_to_avoid": [
+          "mentioning any sleep changes",
+          "discussing unrelated symptoms",
+          "providing extra detail"
+        ],
+        "response_instruction": "Give a short, guarded answer that denies any sleep trouble and avoids elaboration. Keep it neutral and stick to the minimum needed to answer the question."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "downplay tiredness",
+          "suggest energy is mostly normal"
+        ],
+        "key_points_to_avoid": [
+          "clear admission of fatigue",
+          "discussion of impact on daily function",
+          "examples of low motivation or energy"
+        ],
+        "response_instruction": "Keep the reply brief and neutral, downplaying any problems with energy. Avoid describing tiredness or fatigue, and suggest things are about the same as usual."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "terse"
+        ],
+        "key_points_to_reveal": [
+          "deny or downplay trouble concentrating",
+          "minimize indecisiveness",
+          "keep response brief"
+        ],
+        "key_points_to_avoid": [
+          "admitting clear problems with focus",
+          "providing examples of indecisiveness",
+          "offering detail about cognitive symptoms"
+        ],
+        "response_instruction": "Keep your answer brief and guarded. Downplay any issues with focus or decision-making, and avoid giving specific examples or admitting to real difficulty."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "deny or downplay changes in movement or restlessness"
+        ],
+        "key_points_to_avoid": [
+          "clear endorsement of psychomotor agitation or retardation",
+          "mentioning feeling restless or slowed down"
+        ],
+        "response_instruction": "Give a brief, neutral reply that downplays any changes in movement or restlessness. Avoid giving details or examples, and keep the tone flat and guarded."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "deny or downplay feelings of worthlessness or guilt",
+          "keep response vague or noncommittal"
+        ],
+        "key_points_to_avoid": [
+          "clear admission of feeling down on self",
+          "details about guilt or inadequacy",
+          "any emotional elaboration"
+        ],
+        "response_instruction": "Keep your answer brief and neutral, vaguely denying any issues with self-worth or guilt. Don\u2019t share details or examples, and avoid showing emotion."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "flat"
+        ],
+        "key_points_to_reveal": [
+          "deny thoughts of death or self-harm",
+          "keep response brief"
+        ],
+        "key_points_to_avoid": [
+          "do not volunteer any emotional distress",
+          "do not elaborate on mood or self-worth",
+          "avoid discussing any passive or fleeting thoughts"
+        ],
+        "response_instruction": "Give a brief, direct denial of any thoughts about death or self-harm. Keep the tone flat and guarded, with no extra detail or emotional content."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hello. I want you to know this is a safe space. We can take our time today. How are you doing?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019m alright. Nothing too out of the ordinary, I guess. Just here for the check-up."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for coming in today, Marcus. Can you tell me a little about what your days have been like recently, especially with everything that\u2019s been going on for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s pretty much the same as usual. My days are mostly normal\u2014nothing major to mention."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear you\u2014sometimes things can feel routine on the surface. Are there any particular parts of your day or sources of stress lately that have stood out, either in a positive or challenging way?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. Nothing jumps out. Overall, things are pretty routine\u2014nothing stands out good or bad."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that with me. Can I ask\u2014over the past couple of weeks, have you noticed yourself feeling down, sad, or hopeless more often than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. Haven\u2019t noticed anything like that. Pretty much the same as usual."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for letting me know, Marcus. With all the changes around work lately, what\u2019s been helping you get through the day or cope with any of the uncertainty?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Mostly just going through the day as usual. Nothing special, I guess. Just keeping to my routine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That makes sense. Over the past couple of weeks, have you found yourself losing interest or enjoyment in things you usually like doing, even if just a little?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, not really. Things feel about the same as usual for me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I appreciate your openness. Is there anything specific that helps you relax or take your mind off stress, especially with the uncertainties around work lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I just try to stick to what I usually do. Nothing special helps me relax or anything like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing that, Marcus. Have you noticed any changes in your appetite or weight recently, such as eating much more or less than usual, even if the change seems small?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, not that I\u2019ve noticed. Seems about the same as usual."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you had any trouble with your sleep recently, like struggling to fall asleep, waking up too often during the night, or sleeping much more or less than you used to?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No problems with sleep. It\u2019s been fine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for letting me know. Have you been feeling unusually tired or low on energy during the day, even after getting enough sleep?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. My energy feels about the same as it normally does."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, that\u2019s good to hear. How about your ability to focus or make decisions lately\u2014have you noticed any trouble concentrating on things or feeling more indecisive than you usually are?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, nothing unusual. I haven\u2019t noticed any problems with that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for letting me know. Have you noticed yourself moving or speaking much more slowly than usual, or, on the other hand, feeling unusually restless or fidgety lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t noticed anything different with that. Seems about the same as usual."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being open with me, Marcus. In the past couple of weeks, have you found yourself feeling really down on yourself, unusually guilty, or thinking you\u2019re not doing enough, even if those feelings don\u2019t quite match the situation?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I wouldn\u2019t say so. Nothing like that has stood out to me."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing that. Just to check in\u2014have you had any thoughts lately about not wanting to be here, wishing you were dead, or thinking about hurting yourself in any way?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I want you to know this is a safe space. We can take our time today. How are you doing?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019m alright. Nothing too out of the ordinary, I guess. Just here for the check-up."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for coming in today, Marcus. Can you tell me a little about what your days have been like recently, especially with everything that\u2019s been going on for you?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s pretty much the same as usual. My days are mostly normal\u2014nothing major to mention."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you\u2014sometimes things can feel routine on the surface. Are there any particular parts of your day or sources of stress lately that have stood out, either in a positive or challenging way?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Nothing jumps out. Overall, things are pretty routine\u2014nothing stands out good or bad."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that with me. Can I ask\u2014over the past couple of weeks, have you noticed yourself feeling down, sad, or hopeless more often than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Haven\u2019t noticed anything like that. Pretty much the same as usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know, Marcus. With all the changes around work lately, what\u2019s been helping you get through the day or cope with any of the uncertainty?"
+    },
+    {
+      "role": "user",
+      "content": "Mostly just going through the day as usual. Nothing special, I guess. Just keeping to my routine."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense. Over the past couple of weeks, have you found yourself losing interest or enjoyment in things you usually like doing, even if just a little?"
+    },
+    {
+      "role": "user",
+      "content": "No, not really. Things feel about the same as usual for me."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate your openness. Is there anything specific that helps you relax or take your mind off stress, especially with the uncertainties around work lately?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I just try to stick to what I usually do. Nothing special helps me relax or anything like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that, Marcus. Have you noticed any changes in your appetite or weight recently, such as eating much more or less than usual, even if the change seems small?"
+    },
+    {
+      "role": "user",
+      "content": "No, not that I\u2019ve noticed. Seems about the same as usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you had any trouble with your sleep recently, like struggling to fall asleep, waking up too often during the night, or sleeping much more or less than you used to?"
+    },
+    {
+      "role": "user",
+      "content": "No problems with sleep. It\u2019s been fine."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. Have you been feeling unusually tired or low on energy during the day, even after getting enough sleep?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. My energy feels about the same as it normally does."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, that\u2019s good to hear. How about your ability to focus or make decisions lately\u2014have you noticed any trouble concentrating on things or feeling more indecisive than you usually are?"
+    },
+    {
+      "role": "user",
+      "content": "No, nothing unusual. I haven\u2019t noticed any problems with that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. Have you noticed yourself moving or speaking much more slowly than usual, or, on the other hand, feeling unusually restless or fidgety lately?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t noticed anything different with that. Seems about the same as usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being open with me, Marcus. In the past couple of weeks, have you found yourself feeling really down on yourself, unusually guilty, or thinking you\u2019re not doing enough, even if those feelings don\u2019t quite match the situation?"
+    },
+    {
+      "role": "user",
+      "content": "No, I wouldn\u2019t say so. Nothing like that has stood out to me."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. Just to check in\u2014have you had any thoughts lately about not wanting to be here, wishing you were dead, or thinking about hurting yourself in any way?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any thoughts like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_2c2d3ac2c3414d86.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_2c2d3ac2c3414d86_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 13524,
+      "output_tokens": 470,
+      "total_tokens": 13994
+    },
+    "patient": {
+      "input_tokens": 29980,
+      "output_tokens": 252,
+      "total_tokens": 30232
+    },
+    "doctor_manager": {
+      "input_tokens": 18541,
+      "output_tokens": 1468,
+      "total_tokens": 20009
+    },
+    "patient_manager": {
+      "input_tokens": 25897,
+      "output_tokens": 2007,
+      "total_tokens": 27904
+    }
+  }
+}

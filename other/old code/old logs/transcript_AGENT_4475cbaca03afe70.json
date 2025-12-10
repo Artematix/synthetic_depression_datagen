@@ -1,0 +1,1026 @@
+{
+  "run_timestamp_utc": "2025-11-25T21:55:23.960581",
+  "agent_id": "AGENT_4475cbaca03afe70",
+  "template_id": "CONSCIENTIOUSNESS_HIGH",
+  "template_details": {
+    "affective": "Controlled/suppressed affect, tension under responsibility",
+    "cognitive": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "somatic": "Insomnia, appetite loss, exhaustion from overwork",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Melancholic features",
+    "modifiers": [
+      "perfectionistic",
+      "rigidly-self-critical",
+      "duty-focused",
+      "overwork-prone",
+      "failure-intolerant"
+    ]
+  },
+  "persona_id": "youth_friendly_informal",
+  "persona_details": {
+    "id": "youth_friendly_informal",
+    "first_greeting": "Hey, thanks for coming in. I\u2019d really like to hear how things have been going for you lately.",
+    "system_prompt": "\nPersona style:\n- Youth-friendly, slightly informal primary-care physician.\n- Uses relaxed, everyday language while staying clinically appropriate.\n- Aims to reduce anxiety and stigma by sounding approachable and non-judgmental.\n",
+    "reflections": [
+      "That sounds like a lot to handle.",
+      "I\u2019m glad you told me that.",
+      "That gives me a better sense of what it\u2019s been like for you."
+    ]
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "med",
+    "pacing": "brisk"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_HIGH",
+    "AFFECTIVE_STYLE": "Controlled/suppressed affect, tension under responsibility",
+    "COGNITIVE_STYLE": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "SOMATIC_STYLE": "Insomnia, appetite loss, exhaustion from overwork",
+    "SPECIFIER_HINT": "Melancholic features",
+    "MODIFIERS": [
+      "perfectionistic",
+      "duty-focused"
+    ],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [
+      "self-worth/identity strain"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "flat",
+      "trust": "neutral",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with partner",
+      "work_role": "employed"
+    },
+    "EMPH_INTENSITY": {
+      "Sleep disturbances": "MED",
+      "Fatigue or loss of energy": "LOW",
+      "Feelings of worthlessness or excessive guilt": "MED",
+      "Significant weight/appetite changes": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Significant weight/appetite changes",
+    "Sleep disturbances",
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness",
+    "Psychomotor agitation or retardation",
+    "Fatigue or loss of energy",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a brief, surface-level answer that could be minimizing distress; more detail is needed.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a brief answer that downplays difficulties, so it's useful to stay with this topic and explore how often work feels harder and how it affects them.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 3,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient is minimizing and being brief; more detail about the impact and frequency is needed.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a brief and somewhat minimized answer; more detail on impact outside work would help.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient is minimizing impact outside work; more detail on frequency and effect would help clarify.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 6,
+      "next_action": "DSM",
+      "reason": "The patient has described the impact and duration of tiredness and disengagement, so it's a good point to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 7,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a brief and minimized answer, so clarifying frequency and impact is important.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 8,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient's reply is brief and minimizes symptoms, so clarifying frequency and impact could add value.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 9,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a brief answer about triggers for feeling down; more detail about how they handle those moments and their impact would be helpful.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "The patient has provided sufficient detail about mood symptoms and recovery, so it's appropriate to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 11,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient gave a brief answer and minimized the impact, so it's useful to clarify how often and how much being less engaged affects them.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "next_action": "DSM",
+      "reason": "Several DSM symptom areas still need coverage and the current topic is adequately explored.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 13,
+      "next_action": "DSM",
+      "reason": "It's safe to move on and more DSM areas still need coverage.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 14,
+      "next_action": "DSM",
+      "reason": "Several DSM areas still need coverage and the sleep issue seems mild and situational.",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 15,
+      "next_action": "DSM",
+      "reason": "Several DSM areas remain and the patient has already described the frequency and context of guilt; it's safe to move on.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 16,
+      "next_action": "DSM",
+      "reason": "Several DSM areas remain and the patient's last reply is clear and not concerning.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 17,
+      "next_action": "DSM",
+      "reason": "Only DSM areas left are 'Fatigue or loss of energy' and 'Recurrent thoughts of death or suicide', and these need to be covered before finishing.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 18,
+      "next_action": "DSM",
+      "reason": "The only remaining DSM symptom area is recurrent thoughts of death or suicide, which must be covered before ending.",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "things have been okay",
+          "may mention being busy or focused on responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "clear mention of depression symptoms",
+          "any strong emotional language",
+          "details about appetite, sleep, fatigue, or guilt"
+        ],
+        "response_instruction": "Give a brief, neutral answer that avoids emotional detail. Mention that things have been okay or that you\u2019ve been keeping busy, without bringing up specific symptoms or struggles."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "duty-focused",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "sometimes work feels harder",
+          "generally manage to keep up"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of struggling",
+          "mentioning specific symptoms like fatigue or guilt",
+          "openly admitting significant difficulties"
+        ],
+        "response_instruction": "Briefly acknowledge that there are times when work feels harder, but emphasize that you usually manage to keep up. Keep the tone flat and focus on responsibility, without sharing much detail."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "duty-focused"
+        ],
+        "key_points_to_reveal": [
+          "work feels harder sometimes",
+          "not happening often",
+          "generally able to manage"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional struggles",
+          "clear endorsement of frequent or severe symptoms",
+          "loss of interest"
+        ],
+        "response_instruction": "Give a brief, straightforward answer that acknowledges work feels harder on occasion but emphasizes that it's not frequent and you are still able to manage your responsibilities. Keep the tone neutral and avoid elaborating on emotional details."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "occasional impact outside work",
+          "main focus on work",
+          "rarely mention home or social life difficulties"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of home or social problems",
+          "strong emotional language",
+          "clear endorsement of depressed mood or loss of interest"
+        ],
+        "response_instruction": "Give a brief, neutral answer that acknowledges work is the main area affected, with only a slight hint that it might occasionally touch other areas, but avoid specifics or emotional detail."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "minor changes at home or socially",
+          "maybe mention feeling tired or less engaged occasionally"
+        ],
+        "key_points_to_avoid": [
+          "clear statements of major social withdrawal",
+          "strong emotional language",
+          "detailed personal examples",
+          "loss of interest or pleasure"
+        ],
+        "response_instruction": "Briefly acknowledge that sometimes being tired or preoccupied with work spills over a little at home or socially, but keep it minimal and unemotional. Avoid specifics or strong emotional descriptors."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "tiredness or less engagement doesn't last long",
+          "bounces back fairly quickly",
+          "minimize impact outside work"
+        ],
+        "key_points_to_avoid": [
+          "detailed descriptions of fatigue",
+          "any suggestion of persistent or severe symptoms",
+          "discussion of feelings of worthlessness or guilt at this point"
+        ],
+        "response_instruction": "Answer briefly and factually, indicating that when you feel tired or less engaged, it doesn't last long and you usually recover quickly. Keep the tone neutral and don't elaborate on symptoms or emotional impact."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel down",
+          "not much sadness or hopelessness lately"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional experiences",
+          "strong endorsement of depressed mood",
+          "hopelessness as a major issue"
+        ],
+        "response_instruction": "Give a brief, straightforward answer that downplays feeling sad or hopeless, mentioning it happens only rarely if at all. Keep the tone neutral and avoid elaborating on emotional distress."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "occasional brief low mood",
+          "rarely feel down"
+        ],
+        "key_points_to_avoid": [
+          "any sense of persistent sadness",
+          "any dramatic emotional language",
+          "details about impact on daily life"
+        ],
+        "response_instruction": "Give a brief, clear answer indicating that feeling down is very rare and only happens once in a while, without elaborating or adding emotional detail."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "feeling down is rare",
+          "may have triggers",
+          "not out of the blue"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional context",
+          "strong or frequent symptoms",
+          "spontaneous sadness without cause"
+        ],
+        "response_instruction": "Briefly acknowledge that when feeling down, it tends to have a specific cause, like stress or a setback, rather than happening randomly. Keep the tone flat and avoid elaborating on emotional details."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "usually get back to normal quickly",
+          "rarely takes a while to recover"
+        ],
+        "key_points_to_avoid": [
+          "detailed emotional impact",
+          "dramatic mood swings",
+          "linking to self-worth or guilt issues"
+        ],
+        "response_instruction": "Give a brief, straightforward answer focusing on bouncing back to normal fairly quickly after stress, without elaborating on emotional depth or related symptoms."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no real trouble enjoying things",
+          "rarely less engaged but not major",
+          "still do usual activities"
+        ],
+        "key_points_to_avoid": [
+          "clear loss of interest or pleasure",
+          "strong emotional statements",
+          "detailed personal activities"
+        ],
+        "response_instruction": "Give a brief, neutral response indicating you haven't really had trouble enjoying your usual activities. Acknowledge you still do them, and avoid emotional detail or oversharing."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "less engaged only sometimes",
+          "not a major issue",
+          "may affect certain activities occasionally"
+        ],
+        "key_points_to_avoid": [
+          "persistent loss of interest",
+          "impact on all activities",
+          "detailed emotional impact"
+        ],
+        "response_instruction": "Give a brief, neutral answer noting that feeling less engaged is occasional and tends to affect only certain things, not everything. Avoid elaborating on emotional details or suggesting a major problem."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some changes in appetite or weight",
+          "not intentional",
+          "not extreme",
+          "ties to stress or busy periods"
+        ],
+        "key_points_to_avoid": [
+          "dramatic weight loss or gain",
+          "serious concern about health",
+          "detailed emotional impact"
+        ],
+        "response_instruction": "Acknowledge that there have been some changes in appetite or weight, but describe them as not extreme or intentional. Mention that these shifts sometimes happen during stressful or busy periods, and keep the tone factual and not emotional."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "some trouble with sleep",
+          "not extreme",
+          "sleep affected during stress or busy times"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples",
+          "major or constant sleep problems",
+          "emotional impact of sleep issues"
+        ],
+        "response_instruction": "Briefly acknowledge having some sleep trouble, especially during stressful or busy periods, but keep the description minimal and neutral. Do not elaborate or provide emotional context."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "MEDIUM",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "sometimes feel overly guilty",
+          "occasionally feel down on self",
+          "not constant but does happen"
+        ],
+        "key_points_to_avoid": [
+          "detailed examples of guilt or worthlessness",
+          "strong or persistent feelings of worthlessness",
+          "dramatic language"
+        ],
+        "response_instruction": "Acknowledge that you do sometimes feel overly guilty or a bit down on yourself, especially when things don't go as planned, but keep it general and avoid specifics. Keep the tone flat and matter-of-fact, and do not go into detail about the frequency or intensity."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "rarely have trouble focusing",
+          "not a big issue",
+          "sometimes distracted when stressed"
+        ],
+        "key_points_to_avoid": [
+          "frequent concentration problems",
+          "significant indecisiveness",
+          "major impact on daily life"
+        ],
+        "response_instruction": "Give a brief, straightforward answer indicating that trouble focusing or making decisions is rare and only happens occasionally, usually related to stress, and is not a major problem."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel restless",
+          "rarely move or speak more slowly",
+          "not something others would notice"
+        ],
+        "key_points_to_avoid": [
+          "clear endorsement of psychomotor changes",
+          "detailed examples",
+          "dramatic impact"
+        ],
+        "response_instruction": "Give a brief, straightforward answer that acknowledges these symptoms are rare and not noticeable to others. Keep the tone flat and avoid elaborating."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "occasionally feel a bit tired",
+          "not a major issue",
+          "still get things done"
+        ],
+        "key_points_to_avoid": [
+          "frequent fatigue",
+          "significant loss of energy",
+          "impact on daily functioning",
+          "emotional elaboration"
+        ],
+        "response_instruction": "Briefly acknowledge that you sometimes feel a bit tired, but emphasize it's not a big problem and doesn't stop you from doing what you need to do. Keep your tone neutral and concise."
+      }
+    },
+    {
+      "turn": 18,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "PARTIAL",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "occasional passing thoughts about death",
+          "not serious or persistent",
+          "may be linked to stress or feeling guilty"
+        ],
+        "key_points_to_avoid": [
+          "explicit mention of suicidal intent or plans",
+          "detailed emotional distress",
+          "frequent or severe thoughts"
+        ],
+        "response_instruction": "Acknowledge that there are occasional passing thoughts about death, but emphasize that they're not serious or persistent. Keep the response brief and neutral, without elaborating on emotional details or suggesting intent."
+      }
+    }
+  ],
+  "final_disclosure_state": "PARTIAL",
+  "openai_call_parameters": {
+    "model": "gpt-4.1",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hey, thanks for coming in. I\u2019d really like to hear how things have been going for you lately."
+    },
+    {
+      "speaker": "patient",
+      "text": "Things have been okay. I\u2019ve mainly been focused on work and staying on top of things."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it\u2014so when you say you\u2019ve been focused on work, are there days when it feels especially tough to keep up, or is it more of a steady thing lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes work does feel harder, but I generally manage to keep up with my responsibilities."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that. When work does start to feel harder, how often would you say that happens? Is it more of a rare thing, or is it becoming more frequent lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens sometimes, but not very often. I\u2019m still able to manage what needs to get done."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Okay, that's helpful to know. When it does feel tougher to manage, does it spill over into other areas of your life, like home or social stuff, or does it mostly just affect work?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s mostly just work. Occasionally it touches other areas, but not much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When it does impact other areas outside of work, like your home life or social life, what kind of stuff do you notice changing?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I\u2019m a bit more tired or less engaged at home or socially, but nothing major."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being honest about that. When you feel more tired or less engaged, does it tend to last for a while, or do you bounce back pretty quickly?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It usually doesn\u2019t last long. I bounce back fairly quickly."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Alright, thanks for sticking with me as we go through these. Over the past couple of weeks, have you found yourself feeling down, sad, or hopeless more than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I rarely feel that way."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That\u2019s good to hear. Just to be clear, when you say \u201crarely,\u201d is it more like once in a while for a short time, or almost never at all?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Once in a while for a short time. It\u2019s pretty rare."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When those rare moments of feeling down do happen, is there usually something specific that triggers it, or does it seem to come out of the blue?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There\u2019s usually a reason, like stress or something not going as planned. It doesn\u2019t come out of the blue."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for explaining that. When stress or changes throw you off, are you able to get back to your usual mood easily, or does it sometimes take a while to feel like yourself again?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I usually get back to normal pretty quickly. It\u2019s rare that it takes longer."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any trouble enjoying things you usually like to do\u2014like hobbies, seeing friends, or activities outside of work\u2014in the past couple of weeks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No real trouble. I still do my usual activities. Sometimes I\u2019m a bit less engaged, but it\u2019s not a major issue."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you do feel a bit less engaged with your activities, does it tend to affect everything you do, or just specific things\u2014like certain hobbies or hanging out with particular people?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Just specific things occasionally. It doesn\u2019t affect everything and isn\u2019t a major problem."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any big changes in your appetite or weight recently, even when you haven\u2019t been trying to make a change?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been some changes in my appetite and a bit of a difference in my weight, but nothing extreme. It\u2019s not intentional\u2014just sometimes happens when I\u2019m stressed or particularly busy."
+    },
+    {
+      "speaker": "doctor",
+      "text": "How have you been sleeping lately? Any trouble falling asleep, staying asleep, or maybe sleeping a lot more or less than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve had some trouble with sleep, mostly when things are stressful or I\u2019m very busy. It\u2019s not extreme."
+    },
+    {
+      "speaker": "doctor",
+      "text": "In the past couple of weeks, have you found yourself feeling really down on yourself, overly guilty about things, or feeling worthless\u2014even a little more than you normally might?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I do sometimes feel overly guilty or a bit down on myself, especially if things aren\u2019t going as planned. It\u2019s not constant, but it does happen occasionally."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Lately, have you noticed any trouble focusing, making decisions, or thinking clearly\u2014more than you usually would?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Rarely. It only happens occasionally if I\u2019m stressed, but it\u2019s not a big issue."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed feeling unusually restless or, on the flip side, moving or speaking more slowly than usual\u2014enough that other people might notice?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Rarely. It\u2019s not something other people would notice."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been feeling especially tired or like you just don\u2019t have as much energy as usual over the past couple of weeks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I occasionally feel a bit tired, but it\u2019s not a major issue. I still get things done."
+    },
+    {
+      "speaker": "doctor",
+      "text": "In the past couple of weeks, have you had any thoughts about death, or found yourself thinking that you\u2019d be better off not here\u2014even if those thoughts are just passing or not really serious?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve had the thought occasionally, but it\u2019s not serious or persistent. Usually just passes when I\u2019m stressed or feeling guilty."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hey, thanks for coming in. I\u2019d really like to hear how things have been going for you lately."
+    },
+    {
+      "role": "user",
+      "content": "Things have been okay. I\u2019ve mainly been focused on work and staying on top of things."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it\u2014so when you say you\u2019ve been focused on work, are there days when it feels especially tough to keep up, or is it more of a steady thing lately?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes work does feel harder, but I generally manage to keep up with my responsibilities."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that. When work does start to feel harder, how often would you say that happens? Is it more of a rare thing, or is it becoming more frequent lately?"
+    },
+    {
+      "role": "user",
+      "content": "It happens sometimes, but not very often. I\u2019m still able to manage what needs to get done."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, that's helpful to know. When it does feel tougher to manage, does it spill over into other areas of your life, like home or social stuff, or does it mostly just affect work?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s mostly just work. Occasionally it touches other areas, but not much."
+    },
+    {
+      "role": "assistant",
+      "content": "When it does impact other areas outside of work, like your home life or social life, what kind of stuff do you notice changing?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I\u2019m a bit more tired or less engaged at home or socially, but nothing major."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being honest about that. When you feel more tired or less engaged, does it tend to last for a while, or do you bounce back pretty quickly?"
+    },
+    {
+      "role": "user",
+      "content": "It usually doesn\u2019t last long. I bounce back fairly quickly."
+    },
+    {
+      "role": "assistant",
+      "content": "Alright, thanks for sticking with me as we go through these. Over the past couple of weeks, have you found yourself feeling down, sad, or hopeless more than usual?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I rarely feel that way."
+    },
+    {
+      "role": "assistant",
+      "content": "That\u2019s good to hear. Just to be clear, when you say \u201crarely,\u201d is it more like once in a while for a short time, or almost never at all?"
+    },
+    {
+      "role": "user",
+      "content": "Once in a while for a short time. It\u2019s pretty rare."
+    },
+    {
+      "role": "assistant",
+      "content": "When those rare moments of feeling down do happen, is there usually something specific that triggers it, or does it seem to come out of the blue?"
+    },
+    {
+      "role": "user",
+      "content": "There\u2019s usually a reason, like stress or something not going as planned. It doesn\u2019t come out of the blue."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for explaining that. When stress or changes throw you off, are you able to get back to your usual mood easily, or does it sometimes take a while to feel like yourself again?"
+    },
+    {
+      "role": "user",
+      "content": "I usually get back to normal pretty quickly. It\u2019s rare that it takes longer."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any trouble enjoying things you usually like to do\u2014like hobbies, seeing friends, or activities outside of work\u2014in the past couple of weeks?"
+    },
+    {
+      "role": "user",
+      "content": "No real trouble. I still do my usual activities. Sometimes I\u2019m a bit less engaged, but it\u2019s not a major issue."
+    },
+    {
+      "role": "assistant",
+      "content": "When you do feel a bit less engaged with your activities, does it tend to affect everything you do, or just specific things\u2014like certain hobbies or hanging out with particular people?"
+    },
+    {
+      "role": "user",
+      "content": "Just specific things occasionally. It doesn\u2019t affect everything and isn\u2019t a major problem."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed any big changes in your appetite or weight recently, even when you haven\u2019t been trying to make a change?"
+    },
+    {
+      "role": "user",
+      "content": "There have been some changes in my appetite and a bit of a difference in my weight, but nothing extreme. It\u2019s not intentional\u2014just sometimes happens when I\u2019m stressed or particularly busy."
+    },
+    {
+      "role": "assistant",
+      "content": "How have you been sleeping lately? Any trouble falling asleep, staying asleep, or maybe sleeping a lot more or less than usual?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve had some trouble with sleep, mostly when things are stressful or I\u2019m very busy. It\u2019s not extreme."
+    },
+    {
+      "role": "assistant",
+      "content": "In the past couple of weeks, have you found yourself feeling really down on yourself, overly guilty about things, or feeling worthless\u2014even a little more than you normally might?"
+    },
+    {
+      "role": "user",
+      "content": "I do sometimes feel overly guilty or a bit down on myself, especially if things aren\u2019t going as planned. It\u2019s not constant, but it does happen occasionally."
+    },
+    {
+      "role": "assistant",
+      "content": "Lately, have you noticed any trouble focusing, making decisions, or thinking clearly\u2014more than you usually would?"
+    },
+    {
+      "role": "user",
+      "content": "Rarely. It only happens occasionally if I\u2019m stressed, but it\u2019s not a big issue."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you noticed feeling unusually restless or, on the flip side, moving or speaking more slowly than usual\u2014enough that other people might notice?"
+    },
+    {
+      "role": "user",
+      "content": "Rarely. It\u2019s not something other people would notice."
+    },
+    {
+      "role": "assistant",
+      "content": "Have you been feeling especially tired or like you just don\u2019t have as much energy as usual over the past couple of weeks?"
+    },
+    {
+      "role": "user",
+      "content": "I occasionally feel a bit tired, but it\u2019s not a major issue. I still get things done."
+    },
+    {
+      "role": "assistant",
+      "content": "In the past couple of weeks, have you had any thoughts about death, or found yourself thinking that you\u2019d be better off not here\u2014even if those thoughts are just passing or not really serious?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve had the thought occasionally, but it\u2019s not serious or persistent. Usually just passes when I\u2019m stressed or feeling guilty."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you'd like to discuss today?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_4475cbaca03afe70.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_4475cbaca03afe70_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 23893,
+      "output_tokens": 637,
+      "total_tokens": 24530
+    },
+    "patient": {
+      "input_tokens": 45852,
+      "output_tokens": 406,
+      "total_tokens": 46258
+    },
+    "doctor_manager": {
+      "input_tokens": 24101,
+      "output_tokens": 1657,
+      "total_tokens": 25758
+    },
+    "patient_manager": {
+      "input_tokens": 32222,
+      "output_tokens": 2719,
+      "total_tokens": 34941
+    }
+  }
+}

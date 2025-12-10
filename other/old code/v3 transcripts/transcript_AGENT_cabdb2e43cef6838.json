@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:59:23.357870",
+  "agent_id": "AGENT_cabdb2e43cef6838",
+  "demographics": {
+    "AGE": "26-35",
+    "RACE": "Black",
+    "GENDER": "Other",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "USA",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Doctorate"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Open",
+    "TRAITS_B_EMOTION": "Angry",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "OFTEN",
+    "Fatigue or loss of energy": "NONE",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation",
+    "Difficulty concentrating or indecisiveness",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hi, it's nice to see you too. I've been feeling a bit off recently, mostly with sleep. It hasn't been great, and some days my thoughts have taken a darker turn. I'm dealing, but it's frustrating."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear about your sleep and thoughts. It\u2019s understandable why that would be frustrating. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "No, I don\u2019t think so. I still find pleasure in the things I usually enjoy. It's more about managing the other difficulties right now."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to hear you still find enjoyment in activities. Let's see how we can manage these challenges more effectively. Have you felt unusually restless or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, a bit of both actually. A lot of times I'm restless, and other times I just feel sluggish. It's been quite irritating dealing with this."
+    },
+    {
+      "role": "assistant",
+      "content": "I can imagine how irritating that must be for you. Let's see how we can address these symptoms effectively. Have you had trouble concentrating or making decisions?"
+    },
+    {
+      "role": "user",
+      "content": "Thankfully, no. I haven't really had issues with concentration or making decisions. My focus has been solid."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to hear your focus has been strong. It's important for your overall wellness. Have you experienced thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have had those thoughts on some days. It's been troubling, and that's something I'd really like help with."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

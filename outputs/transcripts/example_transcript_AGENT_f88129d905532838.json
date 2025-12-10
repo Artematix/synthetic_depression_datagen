@@ -1,0 +1,828 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:28:49.348288",
+  "agent_id": "AGENT_f88129d905532838",
+  "template_id": "CONSCIENTIOUSNESS_HIGH",
+  "template_details": {
+    "affective": "Controlled/suppressed affect, tension under responsibility",
+    "cognitive": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "somatic": "Insomnia, appetite loss, exhaustion from overwork",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Melancholic features",
+    "modifiers": [
+      "perfectionistic",
+      "rigidly-self-critical",
+      "duty-focused",
+      "overwork-prone",
+      "failure-intolerant"
+    ]
+  },
+  "persona_id": "structured_psychoeducational",
+  "persona_details": {
+    "id": "structured_psychoeducational",
+    "first_greeting": "Hello. Thanks for coming in today. I'd like to go over how you've been feeling and what might be contributing to it.",
+    "system_prompt": "\nPersona style:\n- Structured and psychoeducational\n- Explains why certain questions matter\n- Provides brief context for what they're asking about\n"
+  },
+  "microstyle": {
+    "warmth": "high",
+    "directness": "med",
+    "pacing": "brisk",
+    "humor": "light",
+    "animation": "reserved"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_HIGH",
+    "AFFECTIVE_STYLE": "Controlled/suppressed affect, tension under responsibility",
+    "COGNITIVE_STYLE": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "SOMATIC_STYLE": "Insomnia, appetite loss, exhaustion from overwork",
+    "SPECIFIER_HINT": "Melancholic features",
+    "MODIFIERS": [],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "HIGH",
+    "VOICE_STYLE": {
+      "verbosity": "moderate",
+      "expressiveness": "intense",
+      "trust": "open",
+      "intellect": "high-functioning",
+      "humor": "occasional"
+    },
+    "PERSONAL_BACKGROUND": {
+      "work_role": "employed",
+      "routine_stability": "variable routine"
+    },
+    "AGE_RANGE": "50-59",
+    "EMPH_INTENSITY": {
+      "Feelings of worthlessness or excessive guilt": "LOW",
+      "Significant weight/appetite changes": "MED",
+      "Fatigue or loss of energy": "MED",
+      "Sleep disturbances": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Depressed mood"
+    ]
+  },
+  "life_background": {
+    "name": "David",
+    "age_range": "50-59",
+    "pronouns": "he/him",
+    "core_roles": [
+      "team manager at a mid-sized tech firm",
+      "father of two adult children",
+      "volunteer community garden coordinator"
+    ],
+    "core_relationships": [
+      "supportive but occasionally strained relationship with spouse",
+      "mentoring relationship with young colleague at work"
+    ],
+    "core_stressor_summary": "Variable work schedule and mounting pressures at the tech firm contribute to persistent low mood and feelings of worthlessness, while occasional ruminations on mortality add to his emotional burden.",
+    "life_facets": [
+      {
+        "category": "short_term_goal",
+        "salience": "high",
+        "description": "David aims to improve his sleep quality and establish a more consistent daily rhythm to reduce fatigue and improve his mood."
+      },
+      {
+        "category": "past_help_seeking",
+        "salience": "med",
+        "description": "He has previously attended a few sessions of cognitive-behavioral therapy during a rough patch five years ago and found some techniques helpful but stopped due to work commitments."
+      },
+      {
+        "category": "small_joys",
+        "salience": "high",
+        "description": "He deeply enjoys early morning walks with his dog and listening to jazz records, which offer brief moments of calm and pleasure amid his busy life."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "med",
+        "description": "David\u2019s daily routine fluctuates significantly depending on work demands, often working late hours which disrupts his meal times and sleep schedule."
+      },
+      {
+        "category": "preoccupations_or_obsessions",
+        "salience": "high",
+        "description": "He frequently fixates on feelings of inadequacy as a leader and worries about being a burden to his family, which heightens his feelings of guilt."
+      },
+      {
+        "category": "work_or_school_ally",
+        "salience": "med",
+        "description": "A trusted junior colleague often acts as a sounding board and emotional support during stressful projects at work, providing some relief from isolation."
+      },
+      {
+        "category": "explanatory_style",
+        "salience": "high",
+        "description": "David tends to internalize setbacks as personal failures and attributes difficulties to inherent flaws rather than external factors."
+      },
+      {
+        "category": "family_history_of_health_or_mental_health_issues",
+        "salience": "low",
+        "description": "There is a history of depression on his mother\u2019s side, which David has reflected on given his own emotional struggles."
+      },
+      {
+        "category": "self_view",
+        "salience": "med",
+        "description": "He sees himself as intellectually capable and conscientious but currently struggles with feelings of worthlessness and self-doubt."
+      },
+      {
+        "category": "values_and_priorities",
+        "salience": "med",
+        "description": "David highly values personal responsibility and integrity but often feels unable to live up to these standards under current stress."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "SOME",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Difficulty concentrating or indecisiveness",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Fatigue or loss of energy",
+    "Feelings of worthlessness or excessive guilt",
+    "Sleep disturbances",
+    "Significant weight/appetite changes",
+    "Depressed mood"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "Patient shared detailed and complex symptoms needing further exploration, especially about suicidal thoughts and feelings of worthlessness.",
+      "doctor_instruction": "Acknowledge the detailed struggles the patient has described and gently invite them to share more about the persistent worthlessness they feel and the recurring thoughts about death. This allows the patient to expand on the most distressing and risky symptoms, helping you understand their severity and impact more deeply while maintaining a supportive and empathetic tone.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To continue comprehensive screening, ask about difficulty concentrating or indecisiveness next.",
+      "doctor_instruction": "Acknowledge the intensity of these feelings before transitioning to ask about your ability to concentrate or make decisions lately. Keep the tone caring and direct, linking these cognitive symptoms to how they might be affecting daily functioning.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient highlights a strong cognitive anchor amidst their struggles, which is important to affirm to build rapport and acknowledge their resilience.",
+      "doctor_instruction": "Reflect on and acknowledge the patient\u2019s insight about maintaining focus despite emotional challenges. Validate this as a strength that offers them some stability, and gently express empathy for how difficult balancing this must feel. This encourages continued openness while reinforcing their resourcefulness.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To address remaining DSM symptoms systematically given time constraints.",
+      "doctor_instruction": "Acknowledge the patient\u2019s insightful balance between cognitive clarity and emotional struggle, then gently transition to asking about the presence or absence of loss of interest or pleasure in activities to cover that DSM area next.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have covered mood and interest; next important DSM symptom to assess is psychomotor agitation or retardation.",
+      "doctor_instruction": "Shift gently to exploring whether the patient has noticed any changes in their movements or pace, such as feeling restless or unusually slowed down, framing it as a common feature of depression to understand its impact on their daily life.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared a nuanced and personal insight about internal restlessness that deserves empathic acknowledgment to build trust and ease tension.",
+      "doctor_instruction": "Reflect on the patient's experience of internal restlessness and acknowledge how challenging it must be to carry that subtle tension without visible signs. Highlight their self-awareness and encourage them to share more about how this unease affects their daily life or coping strategies.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to address suicidal thoughts specifically given the patient's high risk and recent disclosures.",
+      "doctor_instruction": "Gently explore the details of the patient's thoughts of death or suicide, assessing their frequency, intensity, and any plans or intentions, while maintaining warmth and ensuring the patient feels supported.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To further explore depressive symptoms, shifting focus to fatigue or loss of energy will complement the discussion on mood and suicidal thoughts.",
+      "doctor_instruction": "Acknowledge the patient's thoughtful awareness of their thoughts about death and then gently transition to ask more specifically about their experience with fatigue or loss of energy beyond what they\u2019ve already described, in a way that feels supportive and clear.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shares a deep and thoughtful description of draining fatigue and ongoing effort, indicating a need for empathetic connection and acknowledgment before moving on.",
+      "doctor_instruction": "Reflect on David\u2019s description of fatigue with warmth and validation, emphasizing his resilience and commitment. Acknowledge how hard it is to carry this burden daily, highlighting his insight and strength in managing despite the heaviness.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have covered fatigue extensively, so now it is appropriate to inquire about feelings of worthlessness or excessive guilt.",
+      "doctor_instruction": "Acknowledge the patient\u2019s ongoing effort and resilience, then gently transition to asking about how often they experience feelings of worthlessness or excessive guilt, exploring how these feelings impact their daily life and self-perception.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 11,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "To address remaining DSM criteria and explore the symptom of sleep disturbances further.",
+      "doctor_instruction": "Transition gently to asking about the patient\u2019s sleep patterns and quality, exploring the frequency, duration, and impact of any difficulties falling or staying asleep. Invite the patient to describe typical nights and how sleep issues may be contributing to overall distress.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient has described significant sleep difficulties impacting fatigue and mood, pointing to a key DSM symptom area to assess.",
+      "doctor_instruction": "Acknowledge the clear connection the patient makes between sleep problems and overall burden, then inquire specifically about appetite or weight changes to broaden the symptom assessment given the patient\u2019s noted shifts in eating patterns.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is sharing a deeply personal and challenging experience about appetite and weight loss that impacts both physical and emotional health.",
+      "doctor_instruction": "Express empathy and validate how difficult it is to manage appetite changes and weight loss amid emotional strain. Acknowledge their self-awareness and ongoing effort, and gently invite them to share more about how this experience affects their daily life or coping strategies, fostering a safe space for openness.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have covered many symptoms; next DSM area of depressed mood remains to be addressed directly.",
+      "doctor_instruction": "Acknowledge the patient\u2019s efforts to maintain structure around eating and the impact it has on their fatigue and mood, then shift focus to assess the presence and intensity of their depressed mood directly, inviting the patient to describe how their mood feels day to day and how persistent it is.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has thoroughly shared their experience and the doctor has acknowledged and supported them; it is now appropriate to begin wrapping up the visit with care.",
+      "doctor_instruction": "Express appreciation for David's openness and resilience in sharing such a detailed and difficult picture. Reinforce that you understand how heavy this burden is and reassure him that support will be in place moving forward. Gently transition toward discussing next steps and invite any final questions or concerns before closing.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "analytical",
+          "intense",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "Often feel down and fatigued despite trying to maintain structure",
+          "Significant changes in appetite affecting weight",
+          "Frequent sleep disturbances and restless nights",
+          "Persistent feelings of worthlessness that interfere with motivation",
+          "Some intrusive thoughts about death"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing symptoms",
+          "Avoiding emotional depth or intensity of impact"
+        ],
+        "patient_instruction": "Respond openly and thoughtfully, describing the frequent depressed mood and fatigue with a clear emphasis on how these symptoms disrupt daily routines. Highlight the noticeable weight and appetite changes and persistent sleep issues, linking these to feelings of worthlessness. Acknowledge some intrusive thoughts about death with measured candor, maintaining an analytical and intense tone throughout."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "The persistent worthlessness feels like an unrelenting internal critic, harsh and magnifying every perceived failure.",
+          "These feelings impact my motivation and how I view myself, contributing to a sense of defeat.",
+          "Recurring thoughts about death are not constant but have a quiet, persistent presence that adds weight and unease.",
+          "These thoughts influence my daily functioning by undermining energy and emotional resilience."
+        ],
+        "key_points_to_avoid": [
+          "Avoid appearing overwhelmed by emotions beyond what I can articulate calmly.",
+          "Minimize any indications of immediate risk or plans related to the thoughts of death."
+        ],
+        "patient_instruction": "Respond with candid and detailed reflections on the persistent sense of worthlessness as a harsh internal dialogue that deeply affects motivation and self-perception. Describe the recurring death-related thoughts as quietly persistent but not overwhelming or dramatic. Emphasize how these experiences weigh on daily functioning and emotional resilience, maintaining a composed and analytical tone with moderate length."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "analytical",
+          "controlled"
+        ],
+        "key_points_to_reveal": [
+          "No significant changes in concentration or decision-making",
+          "High self-awareness and cognitive functioning despite emotional struggles",
+          "Focus remains intact but energy and motivation are low"
+        ],
+        "key_points_to_avoid": [
+          "Overstating cognitive difficulties",
+          "Shifting focus away from emotional and physical symptoms"
+        ],
+        "patient_instruction": "Respond thoughtfully and clearly, emphasizing that despite the emotional and physical strain, concentration and decision-making abilities have remained fairly stable. Highlight a measured self-awareness that, while affected by low energy and motivation, cognition remains intact. Keep the tone reflective and insightful, without venturing into exaggerated claims about mental fog or indecisiveness."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "Acknowledgement of the complexity of balancing cognitive clarity with emotional burden",
+          "Recognition of resilience but also ongoing struggle with emotional and physical symptoms",
+          "Subtle frustration with the persistent fatigue and low mood despite maintaining mental focus"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing or denying the emotional weight",
+          "Introducing new symptoms not previously mentioned"
+        ],
+        "patient_instruction": "Respond with thoughtful reflection acknowledging the doctor\u2019s recognition of your resilience. Express that while your clear thinking provides an anchor, the emotional weight and fatigue remain a significant challenge that continues to affect your daily life and motivation. Keep the tone measured and analytical without downplaying the ongoing struggle."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "measured",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "Some reduction in pleasure from activities",
+          "Work and volunteering still provide some engagement but less joy",
+          "Family interaction remains important though energy is low"
+        ],
+        "key_points_to_avoid": [
+          "Complete loss of interest or total disengagement",
+          "Overly negative or hopeless statements at this stage"
+        ],
+        "patient_instruction": "Respond thoughtfully about experiencing some decrease in pleasure and interest in your usual activities. Explain that while work and volunteering still hold value and connection, they don't bring the same level of joy. Emphasize that family remains a meaningful part of your life, even if fatigue limits your full participation. Maintain a balanced, reflective tone acknowledging the struggle without giving a sense of total withdrawal."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "measured",
+          "introspective"
+        ],
+        "key_points_to_reveal": [
+          "No significant psychomotor changes observed",
+          "Some internal restlessness but no obvious outward signs",
+          "Aware of emotional tension but it doesn\u2019t visibly affect movement or speech"
+        ],
+        "key_points_to_avoid": [
+          "Exaggerating symptoms",
+          "Inventing psychomotor retardation or agitation",
+          "Minimizing internal restlessness to a degree that seems inconsistent with profile"
+        ],
+        "patient_instruction": "Respond with a thoughtful reflection that you have not noticed any marked changes in how quickly you move or speak, but internally you sometimes feel a subtle restlessness. Emphasize that while this internal tension is present, it doesn\u2019t translate into obvious outward changes in behavior, keeping your response balanced and introspective."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "The internal restlessness creates ongoing mental tension that saps energy",
+          "It complicates daily functioning by adding to fatigue and emotional strain",
+          "Attempts to manage include structured routines and intellectual engagement, but relief is limited"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the impact of restlessness",
+          "Avoiding acknowledgment of efforts to cope"
+        ],
+        "patient_instruction": "Respond with detailed reflection on how the internal restlessness manifests as mental tension rather than visible signs, explaining how it exacerbates fatigue and emotional burden. Describe specific efforts to manage this feeling through maintaining routines or intellectual activities, acknowledging these strategies help somewhat but do not eliminate the unrest. Express this insight with intense expressiveness and analytical clarity, maintaining a contemplative but steady tone."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "candid",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "Frequency of death thoughts as intermittent, not constant",
+          "The quiet persistence and subtle weight of these thoughts",
+          "Lack of immediate intent or plans to act on these thoughts",
+          "Impact of these thoughts on emotional resilience and motivation"
+        ],
+        "key_points_to_avoid": [
+          "Exaggerating the immediacy or intensity of suicidal ideation",
+          "Minimizing the presence of these thoughts altogether",
+          "Introducing unrelated personal history or trauma"
+        ],
+        "patient_instruction": "Respond with detailed, candid explanation of the intermittent nature of your thoughts about death, emphasizing they are quietly persistent but not overwhelming or accompanied by active intent to act. Convey how their subtle weight affects your emotional resilience and motivation, maintaining your analytical and thoughtful tone throughout."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "intense",
+          "analytic"
+        ],
+        "key_points_to_reveal": [
+          "fatigue feels both physical and mental",
+          "energy depletion is significant and constant",
+          "fatigue heavily impacts daily functioning and motivation",
+          "continues effort to manage responsibilities despite exhaustion"
+        ],
+        "key_points_to_avoid": [
+          "minimizing fatigue",
+          "suggesting fatigue is only mental or only physical",
+          "implying energy levels have improved"
+        ],
+        "patient_instruction": "Respond with thoughtful and intense reflection on how fatigue permeates both body and mind, describing it as a constant, significant drain that complicates both physical and mental effort. Emphasize how this persistent exhaustion affects your ability to manage daily tasks and your motivation, but also note your continued efforts to carry on despite the challenge. Maintain a high-functioning intellectual style and convey a clear awareness of this burden without emotional distress."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "grateful",
+          "measured"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the doctor's recognition of effort",
+          "describe how resilience feels complex rather than straightforward",
+          "reflect on the toll fatigue takes on emotional and physical reserves despite effort"
+        ],
+        "key_points_to_avoid": [
+          "overemphasizing hopelessness or despair",
+          "any drastic or impulsive thoughts",
+          "minimizing the impact of symptoms"
+        ],
+        "patient_instruction": "Respond thoughtfully and with some gratitude for the doctor's recognition of your effort. Emphasize that while you do push through fatigue intentionally, it is a complex and draining experience that weighs heavily on both your emotional and physical reserves. Keep tone measured and reflective, maintaining your characteristic high-functioning intellect and intense expressiveness without slipping into overt negativity."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "Frequency of worthlessness feelings as often",
+          "How worthlessness acts like a persistent internal critic",
+          "Impact on self-view and motivation",
+          "Effect on daily functioning and emotional resilience"
+        ],
+        "key_points_to_avoid": [
+          "New symptoms or feelings not previously mentioned",
+          "Suicidal ideation specifics beyond what was already shared"
+        ],
+        "patient_instruction": "Respond with deep reflection on the frequent feelings of worthlessness, describing them as a strong, persistent internal critic that shapes your self-perception and motivation. Explain how these feelings significantly impact daily life and emotional resilience, maintaining your intense but clear and analytical voice. Use a moderate to long response to provide context and insight, emphasizing the ongoing struggle without introducing new symptom details."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "analytical",
+          "intense",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "frequent trouble falling asleep and staying asleep",
+          "sleep is restless and fragmented",
+          "typically get fewer hours of sleep than needed",
+          "poor sleep worsens daytime fatigue and low mood",
+          "sleep difficulties contribute significantly to feeling drained and less motivated"
+        ],
+        "key_points_to_avoid": [
+          "minimizing sleep problems",
+          "suggesting sleep is adequate or restorative"
+        ],
+        "patient_instruction": "Respond with a thorough and intense description of your typical nights: explain that falling asleep is often difficult, and even when you do, sleep is broken and unsatisfying, leading to fewer hours than needed. Discuss how this poor quality sleep directly intensifies your fatigue and emotional exhaustion during the day, emphasizing the strong impact it has on your overall functioning."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "analytical",
+          "resilient"
+        ],
+        "key_points_to_reveal": [
+          "Irregular appetite fluctuations with periods of indifference to food",
+          "Noticeable but not extreme weight loss",
+          "Appetite shifts contribute to physical weakness and emotional weight",
+          "Struggle to maintain adequate nutrition despite awareness of its importance"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the impact of weight loss",
+          "Suggesting any immediate life-threatening concerns",
+          "Overly emotional or hopeless tone"
+        ],
+        "patient_instruction": "Respond thoughtfully with a clear and detailed explanation of how your appetite has become irregular, sometimes showing little interest in food, which has led to noticeable weight loss that impacts your physical and emotional energy. Express the tension between knowing the importance of nutrition and the difficulty in maintaining regular eating, emphasizing your ongoing struggle without sounding desperate or overly emotional."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "resilient",
+          "analytical"
+        ],
+        "key_points_to_reveal": [
+          "appetite struggles making meals feel like another task",
+          "coping through structured meal times despite lack of hunger",
+          "impact of appetite changes on energy and mood",
+          "awareness of importance of nutrition but difficulty maintaining it"
+        ],
+        "key_points_to_avoid": [
+          "excessive negativity or hopelessness about appetite",
+          "detailed descriptions of physical weakness beyond what has been said"
+        ],
+        "patient_instruction": "Respond thoughtfully, acknowledging that eating has become a challenge where meals sometimes feel like chores rather than nourishment. Emphasize your attempts to maintain structured meal times despite lack of natural hunger, and how this struggle impacts your energy and mood. Maintain a tone that is introspective but shows steady resilience and analytical awareness without sounding despondent."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense",
+          "resigned"
+        ],
+        "key_points_to_reveal": [
+          "Low mood tends to be fairly constant with few relief periods",
+          "The emotional heaviness is ongoing and affects daily experience deeply",
+          "Mood fluctuations happen but the underlying sadness remains pervasive"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the persistence of low mood",
+          "Avoiding discussion of how this mood affects motivation and daily life"
+        ],
+        "patient_instruction": "Respond with thoughtful intensity and clarity, describing that your low mood is mostly constant with only occasional fluctuations, emphasizing how this persistent sadness colors your daily experience and complicates motivation and energy levels. Maintain a tone that conveys resignation but also a high level of insight into the emotional impact."
+      }
+    }
+  ],
+  "final_disclosure_state": "OPEN",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hello. Thanks for coming in today. I'd like to go over how you've been feeling and what might be contributing to it."
+    },
+    {
+      "speaker": "patient",
+      "text": "Hello. I\u2019ve been struggling with a persistent low mood that seems to hang over me most days, despite my best efforts to keep some structure in my routine. It\u2019s frustrating because, logically, I know that maintaining order should help me feel more in control, yet I often wake up already drained, and that fatigue lingers throughout the day. It\u2019s as if my energy is eroded just by the weight of expectation, both from work and from myself.\n\nMy appetite has shifted noticeably, too\u2014sometimes I\u2019m almost indifferent to food altogether, which has led to some unwanted weight loss. Other times, I feel a vague sense of hunger but no real interest in eating. This irregular pattern not only affects my physical health but deepens this cycle of feeling disconnected from basic self-care.\n\nSleep\u2014the one thing I hoped might offer relief\u2014has become a battlefield. Nights are restless, fragmented, and often haunted by a mind too busy to rest. Even when I do fall asleep, it\u2019s shallow and unsatisfying, leaving me more exhausted upon waking. This chronic sleep disruption tightens the grip of worthlessness I feel. It\u2019s difficult to summon motivation when the body and mind both signal defeat.\n\nThe most troubling aspect, though, is the persistent sense of worthlessness that gnaws at my resolve. It\u2019s not just a fleeting thought but a background hum, an internal critique that amplifies every small failure, real or imagined. Combined with that, I\u2019ve had recurring, intrusive thoughts about death\u2014not in a dramatic or immediate sense, but these ideas intrude with a quiet persistence that I find hard to dismiss. They aren\u2019t constant, but when they come, they add a weight that\u2019s difficult to articulate.\n\nI\u2019m trying to navigate all of this with a clear head\u2014analyzing what\u2019s happening, trying to make sense of it\u2014but it\u2019s a heavy burden. The tension between what I know I should do and what my body and mind allow me to do creates a relentless cycle that disturbs every part of my life."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, I appreciate you sharing all that\u2014it\u2019s clear you\u2019re carrying a heavy load. When you mention that persistent sense of worthlessness and those recurring thoughts about death, can you tell me more about what those feel like for you day-to-day? How intense are they, and do they influence what you\u2019re able to do or how you see yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That persistent sense of worthlessness feels very much like an unrelenting internal critic that\u2019s constantly at work, scrutinizing every decision and magnifying every perceived shortcoming. It\u2019s a harsh voice that rarely gives me credit, instead focusing on what\u2019s gone wrong or what I might have done better. This doesn\u2019t just hover in the background\u2014it actively shapes how I view myself and inevitably chokes off motivation to push forward. It\u2019s a subtle but powerful force that leaches confidence and fosters this quiet sense of defeat, even when I try to remind myself of past successes or strengths.\n\nAs for the thoughts about death, they\u2019re not overwhelming or dramatic, but rather quietly persistent. They come and go, often unbidden and without any clear trigger, like faint echoes that refuse to fully fade. These thoughts create a sort of mental weight that subtly undermines my energy and emotional resilience, making it harder to engage fully with daily tasks or maintain emotional balance. They don\u2019t dominate my mind, but their presence adds a layer of unease that compounds the fatigue and discouragement I already feel.\n\nTogether, these aspects affect my functioning by sapping the energy I need to tackle both work and personal responsibilities. I can analyze and acknowledge these patterns with some distance, but that doesn\u2019t lessen the grip they hold over my day-to-day experience. The emotional exhaustion they cause makes even routine tasks feel like uphill battles, and the persistent negativity interferes with my usual sense of agency and control."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, that constant internal critic and those quiet but heavy thoughts certainly sound exhausting\u2014and it\u2019s understandable how they would drain your energy and resilience. How have your concentration and decision-making been lately? Have you noticed any changes in your ability to focus or make choices during the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Interestingly, despite the emotional and physical burden I\u2019m experiencing, I haven\u2019t noticed any significant changes in my concentration or decision-making abilities. My focus remains fairly intact, which is something I\u2019m quite aware of and grateful for, given how much else is challenging me right now. I can still analyze situations, weigh options, and carry out complex tasks at work, even though my energy and motivation to engage with those tasks are often diminished.\n\nI think this strong cognitive functioning offers me a kind of anchor amid the fatigue and low mood\u2014it allows me to maintain some control, even if the emotional weight sometimes feels overbearing. So, while my drive isn\u2019t what it used to be and I\u2019m certainly struggling with motivation, my capacity to think clearly and make sound decisions hasn\u2019t noticeably slipped. It\u2019s a strange contrast, but it also helps me stay engaged, albeit at a reduced pace."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That insight you have about holding onto your focus even when everything else feels heavy is really important\u2014it shows a real resilience and awareness on your part. It must be tough balancing that clear thinking with the emotional weight dragging you down, but holding onto that cognitive strength gives you something steady to lean on. It\u2019s good to recognize that, even in the midst of so much strain."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I appreciate you acknowledging that. It is a complex balance\u2014on one hand, I do feel a certain resilience in retaining mental clarity, and that clarity definitely offers a steadying presence amid all the emotional turmoil. It\u2019s like a small but reliable lifeline that keeps me tethered to reality and helps me fulfill my responsibilities.\n\nAt the same time, that emotional weight remains a persistent challenge. The fatigue and low mood aren\u2019t just background noise; they actively shape how I experience each day and sap my motivation. It\u2019s frustrating because, despite holding onto cognitive focus, the ongoing struggle with these symptoms feels like a constant fight. The tension between what my mind can do and what my emotional and physical state allows is exhausting in its own right.\n\nSo, while the cognitive strength offers some stability, it doesn\u2019t diminish the impact of the emotional burden or the toll the fatigue takes on my overall functioning. It\u2019s an ongoing struggle\u2014one where resilience and difficulty coexist in a delicate, often uneasy balance."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve described that balance between mental clarity and emotional struggle very thoughtfully\u2014it\u2019s a complex and exhausting place to be. I want to ask about something else that often comes up with low mood: have you noticed any loss of interest or pleasure in activities you used to enjoy, like your work, time with your family, or your community garden volunteering?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have noticed some reduction in the pleasure I derive from activities that used to bring me more satisfaction. Work and volunteering at the community garden still provide a sense of engagement and purpose, but the joy I once found in these roles feels muted now. It\u2019s like the activities are there, and I recognize their importance, yet the emotional reward is diminished.\n\nFamily interaction remains a meaningful part of my life; my relationships are important to me, and I make an effort to stay connected. However, the fatigue often limits the energy I can bring to those interactions, so while I\u2019m present, I\u2019m not always as involved as I\u2019d like to be. It\u2019s a subtle but noticeable shift\u2014I\u2019m still participating, but the enthusiasm and fulfillment I might have felt before are somewhat blunted.\n\nOverall, I recognize this change and find it challenging, but it hasn\u2019t led to a complete withdrawal. Rather, it\u2019s a gradual decrease in the vibrancy and satisfaction those activities provide, which contributes to the emotional weight I carry day to day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s meaningful that you\u2019re still engaged with your family, work, and volunteering, even if the joy feels muted\u2014that shift can be subtle but telling. Another thing we often see with depression is changes in physical movement or how quickly someone moves or talks. Have you noticed feeling more restless or, on the flip side, slowed down in your movements or speech lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t noticed any significant changes in how quickly I move or speak. From the outside, I think I maintain my usual pace. However, internally, there is sometimes a subtle restlessness\u2014a kind of internal tension that doesn\u2019t always find an outlet in physical movement or voice. It\u2019s more of an underlying unease or tightness rather than something that shows outwardly.\n\nI\u2019m quite aware of this emotional tension, but it doesn\u2019t manifest in obvious changes in my behavior or the way I carry myself. So while I feel that internal restlessness at times, it doesn\u2019t translate into visible psychomotor agitation or retardation. I view this as part of the broader emotional struggle rather than a distinct physical symptom, and it adds another layer to the complexity of what I\u2019m experiencing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That internal restlessness you describe sounds like a constant, quiet pressure that can be really draining, even without any outward signs. It takes real self-awareness to notice and name that tension, and it\u2019s no small thing to carry it alongside everything else. How does this unease impact your day-to-day, and are there ways you try to manage or soothe that feeling when it arises?"
+    },
+    {
+      "speaker": "patient",
+      "text": "That internal restlessness operates more like a persistent mental tension that never quite lets up. It\u2019s a subtle but unrelenting pressure in the background of my mind, and that constant strain saps energy in a way that\u2019s hard to capture just by looking at external behavior. This unseen burden complicates daily functioning significantly\u2014it makes even routine tasks feel heavier, adding layers of fatigue and emotional strain that pile up over time.\n\nI\u2019ve tried to counteract this restlessness by imposing structured routines on myself, hoping that order and predictability might create some relief. Early morning walks with my dog, carefully timed meals when possible, and intellectual engagement through work or reading are strategies I lean on. These actions provide fleeting moments of calm and the sense that I\u2019m actively managing the unrest, but they don\u2019t offer lasting respite.\n\nDespite these efforts, the restlessness persists\u2014a kind of low-grade tension that wears on both body and mind. It amplifies the fatigue and deepens this pervasive sense of being emotionally stretched thin. I feel caught in a cycle where the more I try to will myself to rest or find peace, the more that internal agitation surfaces, leaving me both exhausted and unsettled. It\u2019s a difficult balance, and one I continue to grapple with daily, aware of how much it shapes my overall experience of depression."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, thank you for sharing how that mental tension weaves into your daily life\u2014it sounds exhausting to carry that continuously. I want to understand a bit more about those thoughts of death you mentioned earlier. How often do they come up, how strongly do they affect you when they do, and have you ever had any thoughts about acting on them? It\u2019s important for me to get a clear picture so we can best support you."
+    },
+    {
+      "speaker": "patient",
+      "text": "The thoughts about death come intermittently, not constantly, but they have a quiet persistence that makes them feel like an unwelcome presence in the background of my mind. They\u2019re not loud or overwhelming, but their subtle weight lingers\u2014enough to chip away at my emotional resilience and blunt my motivation. When these thoughts arise, they don\u2019t carry a sense of urgency or immediate intent; there\u2019s no plan or desire to act on them, but rather a kind of contemplative heaviness.\n\nThese reflections on mortality drift in and out, sometimes triggered by fleeting moments of fatigue or frustration, but often emerging seemingly without reason. They influence how I feel about my capacity to cope, introducing a layer of unease that compounds the exhaustion I already experience. While they don\u2019t dominate my thinking, they do impact my overall emotional landscape, making it harder to sustain energy for daily responsibilities and personal engagement.\n\nI\u2019m mindful of the presence of these thoughts and strive to keep them in perspective. They\u2019re a part of this complex picture I\u2019m working to navigate, and I recognize the importance of addressing them openly. Understanding them as a persistent but manageable element helps me maintain some control over how they affect my daily functioning and motivation."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, I appreciate how thoughtfully you\u2019re able to observe those thoughts and keep them in perspective\u2014that\u2019s an important strength. You\u2019ve mentioned fatigue impacting you a lot already; could you tell me more about how your energy levels have been day to day? Does the tiredness feel physical, mental, or both, and how is it affecting what you\u2019re able to manage?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The fatigue I experience is a pervasive drain that affects both my body and mind simultaneously. It\u2019s not just a fleeting tiredness but a constant depletion of energy that feels significant and unrelenting. Physically, there\u2019s a heaviness and weariness that makes even simple movements or sustained activity more taxing than they used to be. Mentally, it manifests as a persistent sense of depletion that dulls my capacity for sustained effort or engagement, even when I intellectually want to push through.\n\nThis combined exhaustion complicates virtually every aspect of my daily functioning. Tasks that once felt routine now require a disproportionate amount of effort, and motivation often wanes under the weight of that tiredness. It\u2019s a constant negotiation\u2014balancing what needs to be done against the energy I have available, which often feels insufficient.\n\nDespite this, I continue to strive to manage my responsibilities both at work and home. While the fatigue imposes clear limits, I\u2019m aware of the necessity to maintain a level of functioning and do so with deliberate effort. I\u2019m analytical about how this fatigue operates and have developed coping strategies, but the energy drain remains substantial, shaping the tempo and quality of how I live day to day. It\u2019s a heavy burden to carry, but one I\u2019m committed to facing with as much clarity and resilience as I can muster."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, your detailed description really brings home just how heavy and all-encompassing this fatigue is for you. It\u2019s clear you\u2019re carrying a significant burden every day, yet you continue to face it with resilience and intentional effort\u2014that takes real strength and insight. Managing through that kind of exhaustion while staying engaged with your responsibilities is no small feat."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you for recognizing that effort. Resilience in this context feels far from straightforward\u2014it\u2019s more of a complex, ongoing negotiation than a simple matter of strength or willpower. I\u2019m very aware of the toll this fatigue takes, not just physically but emotionally as well. It wears down my reserves, leaving me constantly working against a current that pulls me toward exhaustion and discouragement.\n\nI intentionally push through, knowing that maintaining some level of engagement is crucial, but that effort doesn\u2019t erase the draining nature of the experience. It\u2019s a sustained balancing act\u2014one that demands both self-awareness and a kind of persistence that sometimes feels paradoxically exhausting in itself. I appreciate the acknowledgment, as it affirms that this struggle is real and that the work I\u2019m doing to carry on matters, even when the burden feels heavy."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, that ongoing effort and persistence you describe is truly meaningful\u2014it\u2019s a tough balancing act that requires deep self-awareness and determination. You mentioned earlier the sense of worthlessness; how often do these feelings come up for you, and in what ways do they affect how you see yourself or your day-to-day life?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Feelings of worthlessness come up quite often\u2014they\u2019re not fleeting but rather a persistent presence in my internal dialogue. It\u2019s like having an internal critic that rarely takes a break, constantly highlighting perceived failures and imperfections, no matter how small or insignificant they might objectively be. This critic shapes how I view myself, casting a shadow over my sense of worth and diminishing my confidence.\n\nThe impact on motivation is profound. When these feelings take hold, they erode the drive to engage fully with tasks or to pursue goals. It becomes harder to find the energy or will to push through challenges because there\u2019s this underlying belief that whatever I do might not be enough or isn\u2019t valuable. That sense of defeat quietly seeps into many areas of life, coloring how I approach work, family, and even moments of rest.\n\nThis emotional weight influences my daily functioning by adding a layer of resistance to even routine efforts. It\u2019s as if I\u2019m carrying invisible weight that slows me down and saps emotional resilience. Despite an intellectual awareness of these dynamics, the experience remains difficult\u2014a constant negotiation between wanting to move forward and the pull of feelings that tell me otherwise. This ongoing struggle shapes much of my experience right now, making it clear that worthlessness is not just a passing mood but a complex and entrenched challenge that I\u2019m actively grappling with."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, that persistent sense of worthlessness you describe clearly weighs heavily on you and affects many parts of your life. Let\u2019s talk about your sleep next. Can you walk me through a typical night\u2014how often you have trouble falling asleep or staying asleep, how long you\u2019re usually able to rest, and how these sleep difficulties impact how you feel during the day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Typically, I have significant trouble both falling asleep and staying asleep throughout the night. It\u2019s not unusual for me to lie awake for quite some time before drifting off, my mind often caught in a cycle of restlessness and tension. Even when I do manage to fall asleep, my rest is restless and fragmented\u2014frequent awakenings that disrupt any chance of restorative sleep. The total number of hours I get is usually well below what I need, leaving me feeling perpetually under-rested.\n\nThis poor quality sleep compounds the fatigue I experience during the day, making the exhaustion feel deeper and harder to shake. It directly worsens my low mood and emotional reserves, contributing to a persistent sense of being drained. The daytime consequences are significant: I struggle more to muster motivation or energy to tackle tasks, and the combined effect of tiredness and emotional depletion makes simple activities feel disproportionately challenging.\n\nThe cumulative impact of these sleep difficulties is one of the central factors in how overwhelmed and fatigued I feel. It\u2019s as if my body and mind are constantly running on a deficit, and that deficit makes every day harder to navigate. Understanding this connection clearly highlights how crucial improving my sleep would be to alleviating much of the burden I\u2019m carrying now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, you\u2019ve drawn a clear and important link between your disrupted sleep and the deep fatigue and emotional strain you\u2019re feeling\u2014that connection often plays a big role in the overall picture. You mentioned changes in appetite earlier; could you tell me more about how your eating patterns or weight have shifted recently, and how that\u2019s been affecting you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My appetite has become quite irregular lately, shifting between periods of relative indifference to food and occasional moments where I recognize I should be eating but struggle to follow through. This inconsistency has led to a noticeable, though not extreme, weight loss over the past weeks. The physical impact of that loss is tangible\u2014I feel weaker, and the lack of adequate nutrition only adds to the emotional weight I\u2019m carrying.\n\nThere\u2019s a clear tension between my intellectual understanding of how important it is to maintain regular, nourishing meals and the difficulty I face in actually doing so. Eating sometimes feels like an additional task to manage rather than a source of comfort or energy. This struggle compounds the fatigue because when I don\u2019t adequately fuel myself, the physical exhaustion deepens, and that, in turn, affects my mood and motivation further.\n\nI\u2019m aware of these dynamics and as much as I try to keep a balanced approach, it remains a challenge. The weight loss and appetite changes are a significant piece of this overall picture, influencing both how I feel physically and how I cope with the emotional demands I\u2019m facing. It\u2019s a delicate balance that I continue to work on, fully aware of its importance but also conscious of how difficult it is to maintain under the circumstances."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, managing those shifts in appetite and the weight loss alongside everything else must be incredibly challenging. Your awareness of how this impacts both your body and mind speaks to your resilience, even in the midst of difficulty. If you feel comfortable, I\u2019d be interested to hear more about how these changes affect your daily routine or the ways you try to cope when eating feels like a struggle."
+    },
+    {
+      "speaker": "patient",
+      "text": "Eating has definitely become more of a challenge, where meals sometimes feel like another task to check off rather than a source of nourishment or pleasure. Even when I don\u2019t feel much natural hunger, I try to maintain structured meal times to keep some consistency. It\u2019s a deliberate effort to create routine and ensure I\u2019m at least providing some fuel, even if the appetite isn\u2019t naturally there.\n\nThis struggle with eating influences both my energy and mood\u2014when I fall short on nutrition, the fatigue deepens, and my emotional reserves thin out accordingly. I\u2019m very aware of the importance of keeping up with nutrition for both physical and mental health, and that awareness motivates me to push through even when it doesn\u2019t come easily.\n\nSo, while eating can feel like a chore and sometimes lacks the usual enjoyment, I\u2019ve been working on it as part of my broader strategy to manage symptoms. It\u2019s a steady, sometimes difficult process, but maintaining that structure helps me hold onto some control amid the overall difficulty I\u2019m experiencing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "David, your commitment to keeping a structured approach to eating, despite the challenges and lack of appetite, is a powerful way to hold onto some control and support your energy. Let\u2019s talk more directly about your mood\u2014how would you describe how you feel emotionally on most days? Is that low mood constant, or does it come and go?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My low mood tends to be fairly constant, with only rare moments where I might experience a slight lift. It\u2019s an ongoing emotional heaviness that colors nearly every day, making it difficult to fully escape or find genuine relief. Even when fluctuations happen, the underlying sadness remains pervasive and seems to settle just beneath the surface.\n\nThis persistent low mood shapes not only how I feel emotionally but also deeply influences my energy and motivation levels. It creates a kind of fog that doesn\u2019t vanish easily, making routine tasks feel weighed down and my ability to engage with life more complicated. There\u2019s a resigned awareness that this sadness is a fundamental part of my current experience\u2014it\u2019s not just a passing phase but a continuous presence that I have to consciously manage throughout the day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_f88129d905532838.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_f88129d905532838_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 48170,
+      "output_tokens": 1010,
+      "total_tokens": 49180
+    },
+    "patient": {
+      "input_tokens": 69534,
+      "output_tokens": 3517,
+      "total_tokens": 73051
+    },
+    "doctor_manager": {
+      "input_tokens": 53034,
+      "output_tokens": 1540,
+      "total_tokens": 54574
+    },
+    "patient_manager": {
+      "input_tokens": 53015,
+      "output_tokens": 3315,
+      "total_tokens": 56330
+    }
+  }
+}

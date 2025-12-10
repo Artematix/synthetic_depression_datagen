@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T08:43:35.408574",
+  "agent_id": "AGENT_940aa3fc393203b7",
+  "demographics": {
+    "AGE": "56+",
+    "RACE": "White",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "UK",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Difficulty concentrating or indecisiveness",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Depressed mood"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.4,
+    "patient temperature": 1.4,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "It's good to be here. I've had my ups and downs, I'd say. A bit of a low mood at times."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad you came in today. It's important to talk about these things. How often have you been feeling this low mood? Have you had trouble concentrating or making decisions?"
+    },
+    {
+      "role": "user",
+      "content": "I've felt a bit low maybe six to ten days over the past couple of weeks. Concentration's been a bit off once or twice, but nothing too major."
+    },
+    {
+      "role": "assistant",
+      "content": "I appreciate you sharing that with me. Let's see how things are going otherwise. Have you felt unusually restless or sluggish lately?"
+    },
+    {
+      "role": "user",
+      "content": "Just a bit sluggish on one or two days, nothing too concerning."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for letting me know. How have you been coping with these days? Have you experienced any thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have had thoughts about death on six to ten days, though I haven't acted on them. It has been weighing on me a bit."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear that. It's important to address these feelings, and I'm here to help. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "Around six to ten days, I've felt that way. It's been difficult."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:13:34.879684",
+  "random_seed": 115,
+  "agent_id": "AGENT_b868150837f346a1",
+  "demographics": {
+    "AGE": "26-35",
+    "RACE": "Black",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "USA",
+    "ENGLISH_PROFICIENCY": "Horrible English",
+    "EDUCATION_LEVEL": "Doctorate"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Distrusting",
+    "TRAITS_B_EMOTION": "Angry",
+    "TRAITS_C_LANGUAGE": "Slang-heavy",
+    "TRAITS_D_LANGUAGE": "Direct"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "NONE",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Significant weight/appetite changes",
+    "Psychomotor agitation or retardation",
+    "Recurrent thoughts of death or suicide",
+    "Loss of interest or pleasure"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.3,
+    "patient temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Yo, what's up? Been alright, I guess. Just some days feel like they're draggin', ya know? Ain't really buzzin' \u2018bout things these days."
+    },
+    {
+      "role": "assistant",
+      "content": "I totally understand; some days can be tough. Have you noticed any significant changes in your appetite or weight lately?"
+    },
+    {
+      "role": "user",
+      "content": "Nah, not really. Just a couple days where I ain't felt it too much, but it's whatever."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it, thanks for sharing that. Have you felt unusually restless or sluggish recently?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, a few days had me feelin' all jumpy, couldn't sit still, ya dig?"
+    },
+    {
+      "role": "assistant",
+      "content": "I get that restlessness can be uncomfortable. Have you experienced any thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Just a day or two thinkin\u2019 like that, but nothing serious. Ain\u2019t tryin\u2019 to vibe on those thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that with me. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, kinda. Just a couple days where nothin\u2019 was hittin\u2019 right, ya feel?"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

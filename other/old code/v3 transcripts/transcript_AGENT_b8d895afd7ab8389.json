@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:09:37.617827",
+  "agent_id": "AGENT_b8d895afd7ab8389",
+  "demographics": {
+    "AGE": "46-55",
+    "RACE": "Asian",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "Low",
+    "COUNTRY_OF_ORIGIN": "UK",
+    "ENGLISH_PROFICIENCY": "Other",
+    "EDUCATION_LEVEL": "Doctorate"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Distrusting",
+    "TRAITS_B_EMOTION": "Angry",
+    "TRAITS_C_LANGUAGE": "Casual",
+    "TRAITS_D_LANGUAGE": "Descriptive"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "OFTEN",
+    "Difficulty concentrating or indecisiveness": "OFTEN",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Recurrent thoughts of death or suicide",
+    "Psychomotor agitation or retardation",
+    "Depressed mood",
+    "Sleep disturbances"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.3,
+    "patient temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey. It's been a bit all over the place. Sleep's been a pain, and I can't shake this feeling of guilt. Been hard to concentrate on anything too."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that things have been difficult for you. It's important to get to the bottom of these feelings to help you feel better. \n\nHave you experienced thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, those thoughts have been popping up more than usual. Feels like a constant battle some days."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry you're feeling this way, and I want to make sure you have the support you need.\n\nHave you felt unusually restless or sluggish?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, both, depending on the day. Some days I can't sit still, and other days I can barely move."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds really challenging, and it's good we're discussing this. \n\nOver the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "It's been a couple of days here and there, not all the time, but it sneaks up on me."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense, and it helps to understand how you're feeling. \n\nHow have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep\u2019s been pretty messed up\u2014up to ten days where it\u2019s just off. Feels like I'm either tossing and turning or can't drag myself out of bed."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

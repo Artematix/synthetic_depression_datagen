@@ -1,0 +1,791 @@
+{
+  "run_timestamp_utc": "2025-11-25T22:59:21.329362",
+  "agent_id": "AGENT_2bc784813bcea17e",
+  "template_id": "CONSCIENTIOUSNESS_HIGH",
+  "template_details": {
+    "affective": "Controlled/suppressed affect, tension under responsibility",
+    "cognitive": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "somatic": "Insomnia, appetite loss, exhaustion from overwork",
+    "emphasized_symptoms": [
+      "Significant weight/appetite changes",
+      "Sleep disturbances",
+      "Fatigue or loss of energy",
+      "Feelings of worthlessness or excessive guilt"
+    ],
+    "specifier": "Melancholic features",
+    "modifiers": [
+      "perfectionistic",
+      "rigidly-self-critical",
+      "duty-focused",
+      "overwork-prone",
+      "failure-intolerant"
+    ]
+  },
+  "persona_id": "youth_friendly_informal",
+  "persona_details": {
+    "id": "youth_friendly_informal",
+    "first_greeting": "Hey, thanks for coming in. I\u2019d really like to hear how things have been going for you lately.",
+    "system_prompt": "\nPersona style:\n- Youth-friendly, slightly informal primary-care physician.\n- Uses relaxed, everyday language while staying clinically appropriate.\n- Aims to reduce anxiety and stigma by sounding approachable and non-judgmental.\n",
+    "reflections": [
+      "That sounds like a lot to handle.",
+      "I\u2019m glad you told me that.",
+      "That gives me a better sense of what it\u2019s been like for you."
+    ]
+  },
+  "microstyle": {
+    "warmth": "low",
+    "directness": "high",
+    "pacing": "slow"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "CONSCIENTIOUSNESS_HIGH",
+    "AFFECTIVE_STYLE": "Controlled/suppressed affect, tension under responsibility",
+    "COGNITIVE_STYLE": "Perfectionism, strong self-criticism, guilt over small failures, indecision",
+    "SOMATIC_STYLE": "Insomnia, appetite loss, exhaustion from overwork",
+    "SPECIFIER_HINT": "Melancholic features",
+    "MODIFIERS": [
+      "perfectionistic",
+      "duty-focused"
+    ],
+    "PACING": "LOW",
+    "CONTEXT_DOMAINS": [
+      "self-worth/identity strain"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "terse",
+      "expressiveness": "flat",
+      "trust": "neutral",
+      "intellect": "moderate-functioning"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with partner",
+      "work_role": "employed"
+    },
+    "EMPH_INTENSITY": {
+      "Significant weight/appetite changes": "MED",
+      "Feelings of worthlessness or excessive guilt": "LOW",
+      "Sleep disturbances": "MED",
+      "Fatigue or loss of energy": "MED"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "RARE",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "SOME",
+    "Sleep disturbances": "SOME",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Depressed mood",
+    "Loss of interest or pleasure",
+    "Sleep disturbances",
+    "Significant weight/appetite changes",
+    "Fatigue or loss of energy",
+    "Psychomotor agitation or retardation",
+    "Feelings of worthlessness or excessive guilt",
+    "Difficulty concentrating or indecisiveness",
+    "Recurrent thoughts of death or suicide"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "next_action": "RAPPORT",
+      "reason": "The patient is giving a brief, neutral answer and may need a bit of rapport-building to open up, especially given their high conscientiousness and terse style.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "next_action": "RAPPORT",
+      "reason": "The patient described their daily routine and sense of duty, which is personal and may reveal stressors or coping style.",
+      "doctor_instruction": "Ask an open question about their daily life, stress, or coping that builds trust while gathering context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 3,
+      "next_action": "DSM",
+      "reason": "The patient has described their coping style, so it's appropriate to move on to assess a DSM symptom area.",
+      "doctor_instruction": "Ask about Depressed mood in a natural, conversational way.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 4,
+      "next_action": "DSM",
+      "reason": "The patient denies feeling down but may have other depressive symptoms; it's appropriate to screen another DSM area.",
+      "doctor_instruction": "Ask about Loss of interest or pleasure in a natural, conversational way.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 5,
+      "next_action": "DSM",
+      "reason": "The patient denies mood and interest changes, so it's appropriate to screen another DSM symptom area.",
+      "doctor_instruction": "Ask about Sleep disturbances in a natural, conversational way.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 6,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned some sleep disruption, so it's useful to clarify how often this happens and whether it affects them more than they admit.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "next_action": "DSM",
+      "reason": "Sleep issues are minor and clarified; time to assess another core DSM symptom area.",
+      "doctor_instruction": "Ask about Significant weight/appetite changes in a natural, conversational way.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 8,
+      "next_action": "DSM",
+      "reason": "The patient has addressed appetite and sleep, so it's appropriate to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Fatigue or loss of energy in a natural, conversational way.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 9,
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient mentioned feeling tired sometimes; clarifying frequency and impact will help understand the symptom better.",
+      "doctor_instruction": "Ask a follow-up question to clarify or deepen what they just said, focusing on frequency, impact, or context.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "next_action": "DSM",
+      "reason": "The patient has addressed energy, so it's appropriate to move on to another DSM symptom area for a more complete screening.",
+      "doctor_instruction": "Ask about Psychomotor agitation or retardation in a natural, conversational way.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 11,
+      "next_action": "DSM",
+      "reason": "The patient has denied most core depressive symptoms so far; it's appropriate to assess another DSM area, such as feelings of worthlessness or excessive guilt.",
+      "doctor_instruction": "Ask about Feelings of worthlessness or excessive guilt in a natural, conversational way.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 12,
+      "next_action": "DSM",
+      "reason": "The patient has addressed self-criticism, so it's appropriate to move to another DSM symptom area.",
+      "doctor_instruction": "Ask about Difficulty concentrating or indecisiveness in a natural, conversational way.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 13,
+      "next_action": "DSM",
+      "reason": "It's time to assess for recurrent thoughts of death or suicide given the patient's risk profile.",
+      "doctor_instruction": "Ask about Recurrent thoughts of death or suicide in a natural, conversational way.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 14,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "All DSM symptom areas have been covered and risk was re-checked; the patient denies current suicidal thoughts.",
+      "doctor_instruction": "Acknowledge that you\u2019ve covered a lot and thank the patient for being open. Briefly summarize what you\u2019ve heard about how they\u2019re managing, and invite them to mention anything else on their mind before wrapping up.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "general sense of being busy or tired",
+          "mention things are ok overall"
+        ],
+        "key_points_to_avoid": [
+          "specific mention of depression symptoms",
+          "details about sleep, appetite, guilt, or energy",
+          "emotional language"
+        ],
+        "response_instruction": "Give a brief, neutral response that keeps things general and avoids specifics about mood or symptoms. Sound flat and reserved, only mentioning that things are okay or busy without elaborating."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "duty-focused"
+        ],
+        "key_points_to_reveal": [
+          "describe routine",
+          "mention staying occupied with responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "avoid specific mention of depressive symptoms",
+          "do not discuss sleep, energy, appetite, or mood issues yet"
+        ],
+        "response_instruction": "Give a brief, straightforward description of a typical day focused on tasks or responsibilities, without mentioning emotional or physical difficulties. Keep the tone neutral and practical."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "duty-focused"
+        ],
+        "key_points_to_reveal": [
+          "routine helps manage stress",
+          "not much time for relaxation",
+          "stick to responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "clear admission of pleasure or enjoyment",
+          "mentioning significant coping strategies",
+          "discussing symptoms like fatigue or sleep issues yet"
+        ],
+        "response_instruction": "Briefly mention that sticking to routine or getting things done helps manage stress, but avoid talking about enjoyable activities or specific coping mechanisms. Keep the tone flat and focused on responsibility."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "rarely feel down",
+          "mostly keep busy",
+          "stick to routine"
+        ],
+        "key_points_to_avoid": [
+          "explicitly mention depressed mood",
+          "describe any hopelessness",
+          "share emotional struggles",
+          "talk about guilt or worthlessness"
+        ],
+        "response_instruction": "Give a brief, somewhat vague answer that downplays feeling down. Emphasize staying occupied and sticking to routine, without admitting to feeling depressed or hopeless."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "no clear loss of interest",
+          "routine continues as usual"
+        ],
+        "key_points_to_avoid": [
+          "any mention of loss of pleasure",
+          "downplaying any change in enjoyment"
+        ],
+        "response_instruction": "Keep the answer brief and neutral, stating that you haven't really noticed a change in interest or enjoyment. Do not elaborate or bring up any negative feelings."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "minor sleep trouble",
+          "downplay impact on functioning"
+        ],
+        "key_points_to_avoid": [
+          "detailed sleep problems",
+          "linking sleep issues to mood or energy",
+          "complaints about daytime impairment"
+        ],
+        "response_instruction": "Acknowledge some minor sleep issues but keep the answer brief and unemotional, suggesting it isn't a big problem or doesn't really interfere with getting things done."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "sleep is sometimes off",
+          "does not get in the way",
+          "briefly mention type of sleep issue if any"
+        ],
+        "key_points_to_avoid": [
+          "downplaying frequency or impact",
+          "avoiding specific details about how often",
+          "avoiding emotional language",
+          "not connecting sleep issues to mood or functioning"
+        ],
+        "response_instruction": "Give a brief, factual answer indicating the sleep issue happens occasionally but isn't a big problem. If mentioning a type (like trouble falling asleep or waking up), do so without elaborating or connecting to mood. Keep the tone flat and neutral."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "minor changes in appetite or weight",
+          "downplay impact",
+          "still managing routine"
+        ],
+        "key_points_to_avoid": [
+          "clearly stating significant weight loss or gain",
+          "describing distress or concern about changes"
+        ],
+        "response_instruction": "Briefly mention that there have been some minor changes with appetite or weight, but make it sound unimportant and emphasize that you are still keeping up with your responsibilities. Keep the tone flat and avoid giving details."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "may mention feeling a bit tired sometimes",
+          "emphasize still functioning and meeting responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "avoid describing fatigue as frequent or disabling",
+          "do not mention impact on work or duties",
+          "avoid emotional language or elaboration"
+        ],
+        "response_instruction": "Give a brief, matter-of-fact answer that lightly acknowledges occasional tiredness but minimizes its significance and impact. Keep the focus on still getting things done and do not elaborate on how tiredness affects you."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "tiredness happens occasionally",
+          "not a major problem",
+          "does not interfere with responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "frequent or severe fatigue",
+          "impact on daily functioning",
+          "specific triggers or patterns",
+          "emotional impact of fatigue"
+        ],
+        "response_instruction": "Briefly acknowledge that feeling tired happens now and then, but emphasize it's not frequent or disruptive and doesn't really change based on circumstances. Keep the tone neutral and avoid giving extra detail."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "no clear issues with restlessness or being slowed down",
+          "if anything, downplay any psychomotor changes"
+        ],
+        "key_points_to_avoid": [
+          "do not endorse feeling slowed down",
+          "do not mention restlessness",
+          "avoid elaborating on physical or mental slowing"
+        ],
+        "response_instruction": "Give a brief, flat response that downplays any problems with being slowed down or restless. Keep it vague and avoid details."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "may sometimes feel a bit hard on self",
+          "no strong feelings of worthlessness or guilt",
+          "still meeting responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "explicitly endorsing strong feelings of worthlessness",
+          "describing excessive guilt in detail",
+          "discussing impact on daily functioning"
+        ],
+        "response_instruction": "Give a brief, matter-of-fact answer that slightly acknowledges being self-critical at times, but downplays any significant feelings of worthlessness or guilt. Keep the tone neutral and avoid elaborating or giving examples."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "no real trouble focusing",
+          "still able to keep up with responsibilities"
+        ],
+        "key_points_to_avoid": [
+          "admitting significant concentration problems",
+          "describing indecisiveness",
+          "mentioning mental fatigue"
+        ],
+        "response_instruction": "Give a brief, flat denial of any trouble focusing or making decisions. Emphasize that you are still able to keep up with what needs to be done, without offering extra detail."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "LOW",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "SHORT",
+        "tone_tags": [
+          "flat",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "briefly deny or downplay thoughts of death or self-harm"
+        ],
+        "key_points_to_avoid": [
+          "open discussion of suicidal thoughts",
+          "mentioning frequency or detail of such thoughts",
+          "emotional elaboration"
+        ],
+        "response_instruction": "Give a brief, flat reply that minimizes or denies any significant thoughts of death or self-harm, with no elaboration or detail."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1",
+    "doctor_temperature": 1.3,
+    "patient_temperature": 1.3
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hey, thanks for coming in. I\u2019d really like to hear how things have been going for you lately."
+    },
+    {
+      "speaker": "patient",
+      "text": "Things are alright. Mostly just staying busy. Nothing out of the ordinary."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s good to hear you\u2019re keeping busy. Can you tell me a bit about what a typical day looks like for you right now?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Most days I get up, go to work, take care of things there, and handle what needs to be done at home after. I pretty much just go through my routine and keep up with what\u2019s expected."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds like you have a pretty full routine. Out of curiosity, do you have anything in your day\u2014big or small\u2014that helps you manage stress or take your mind off things when life gets busy?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Mostly I rely on keeping to my schedule and getting things ticked off. There's not much downtime, but following the routine helps me manage."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that\u2014it makes sense that having a routine helps you cope. Over the past couple of weeks, have you noticed feeling down, depressed, or hopeless at all, even if just some days?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I just focus on keeping busy and sticking to what needs to get done."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Totally hear you on staying busy. In the last couple of weeks, have you found yourself losing interest or enjoyment in things that you usually like to do\u2014even little stuff you normally don\u2019t think twice about?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I haven\u2019t noticed any real change. I just keep up with my usual routine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. Let\u2019s talk about sleep for a second\u2014have you had any trouble falling asleep, staying asleep, or sleeping too much lately?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Some nights are a little off, but it hasn\u2019t really gotten in the way. I still manage what I need to do."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you say \u201csome nights are a little off,\u201d does that happen pretty often, or is it more occasional? And when it does happen, is it more trouble falling asleep, waking up during the night, or waking up too early?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s occasional. Usually it\u2019s trouble falling asleep, but it doesn\u2019t interfere much."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for explaining that. Have you noticed any big changes in your appetite or weight lately, like eating much more or less than usual or gaining or losing weight without trying?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There have been some small changes in appetite or weight, but nothing major. I\u2019m still getting things done as usual."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Makes sense. Over the past couple of weeks, have you felt unusually tired or low on energy, even on days when you\u2019ve gotten enough sleep?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I feel a bit tired, but it hasn\u2019t stopped me from handling my responsibilities."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When you say \u201csometimes,\u201d do you find yourself feeling more tired than usual on a regular basis, or is it pretty rare? And is there anything that tends to make the tiredness better or worse for you?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s not that often. It comes up here and there, but it doesn\u2019t get in the way of my routine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for clarifying. Over the past couple of weeks, have you noticed feeling physically slowed down, like moving or thinking more slowly, or on the flip side, feeling unusually restless or fidgety?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not really. I haven\u2019t noticed much change in that area."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Understood. In the last couple of weeks, have you found yourself feeling unusually down on yourself, worthless, or struggling with guilt more than usual?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I can be a bit hard on myself sometimes, but it hasn\u2019t been anything out of the ordinary. I\u2019m still on top of things."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it. Lately, have you had any trouble focusing on things, making decisions, or keeping your mind on what needs to get done\u2014maybe more than you typically would?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t really had any problems with that. I\u2019m still able to do what I need to."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for letting me know. I want to check in on one more thing\u2014over the past couple of weeks, have you had any thoughts about death, or felt like you\u2019d be better off not here, or had any thoughts of hurting yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, nothing like that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hey, thanks for coming in. I\u2019d really like to hear how things have been going for you lately."
+    },
+    {
+      "role": "user",
+      "content": "Things are alright. Mostly just staying busy. Nothing out of the ordinary."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s good to hear you\u2019re keeping busy. Can you tell me a bit about what a typical day looks like for you right now?"
+    },
+    {
+      "role": "user",
+      "content": "Most days I get up, go to work, take care of things there, and handle what needs to be done at home after. I pretty much just go through my routine and keep up with what\u2019s expected."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you have a pretty full routine. Out of curiosity, do you have anything in your day\u2014big or small\u2014that helps you manage stress or take your mind off things when life gets busy?"
+    },
+    {
+      "role": "user",
+      "content": "Mostly I rely on keeping to my schedule and getting things ticked off. There's not much downtime, but following the routine helps me manage."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that\u2014it makes sense that having a routine helps you cope. Over the past couple of weeks, have you noticed feeling down, depressed, or hopeless at all, even if just some days?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I just focus on keeping busy and sticking to what needs to get done."
+    },
+    {
+      "role": "assistant",
+      "content": "Totally hear you on staying busy. In the last couple of weeks, have you found yourself losing interest or enjoyment in things that you usually like to do\u2014even little stuff you normally don\u2019t think twice about?"
+    },
+    {
+      "role": "user",
+      "content": "I haven\u2019t noticed any real change. I just keep up with my usual routine."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. Let\u2019s talk about sleep for a second\u2014have you had any trouble falling asleep, staying asleep, or sleeping too much lately?"
+    },
+    {
+      "role": "user",
+      "content": "Some nights are a little off, but it hasn\u2019t really gotten in the way. I still manage what I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say \u201csome nights are a little off,\u201d does that happen pretty often, or is it more occasional? And when it does happen, is it more trouble falling asleep, waking up during the night, or waking up too early?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s occasional. Usually it\u2019s trouble falling asleep, but it doesn\u2019t interfere much."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for explaining that. Have you noticed any big changes in your appetite or weight lately, like eating much more or less than usual or gaining or losing weight without trying?"
+    },
+    {
+      "role": "user",
+      "content": "There have been some small changes in appetite or weight, but nothing major. I\u2019m still getting things done as usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Makes sense. Over the past couple of weeks, have you felt unusually tired or low on energy, even on days when you\u2019ve gotten enough sleep?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I feel a bit tired, but it hasn\u2019t stopped me from handling my responsibilities."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say \u201csometimes,\u201d do you find yourself feeling more tired than usual on a regular basis, or is it pretty rare? And is there anything that tends to make the tiredness better or worse for you?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s not that often. It comes up here and there, but it doesn\u2019t get in the way of my routine."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for clarifying. Over the past couple of weeks, have you noticed feeling physically slowed down, like moving or thinking more slowly, or on the flip side, feeling unusually restless or fidgety?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I haven\u2019t noticed much change in that area."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. In the last couple of weeks, have you found yourself feeling unusually down on yourself, worthless, or struggling with guilt more than usual?"
+    },
+    {
+      "role": "user",
+      "content": "I can be a bit hard on myself sometimes, but it hasn\u2019t been anything out of the ordinary. I\u2019m still on top of things."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. Lately, have you had any trouble focusing on things, making decisions, or keeping your mind on what needs to get done\u2014maybe more than you typically would?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t really had any problems with that. I\u2019m still able to do what I need to."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting me know. I want to check in on one more thing\u2014over the past couple of weeks, have you had any thoughts about death, or felt like you\u2019d be better off not here, or had any thoughts of hurting yourself?"
+    },
+    {
+      "role": "user",
+      "content": "No, nothing like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_2bc784813bcea17e.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_2bc784813bcea17e_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 13007,
+      "output_tokens": 505,
+      "total_tokens": 13512
+    },
+    "patient": {
+      "input_tokens": 27635,
+      "output_tokens": 317,
+      "total_tokens": 27952
+    },
+    "doctor_manager": {
+      "input_tokens": 17659,
+      "output_tokens": 1373,
+      "total_tokens": 19032
+    },
+    "patient_manager": {
+      "input_tokens": 22552,
+      "output_tokens": 1980,
+      "total_tokens": 24532
+    }
+  }
+}

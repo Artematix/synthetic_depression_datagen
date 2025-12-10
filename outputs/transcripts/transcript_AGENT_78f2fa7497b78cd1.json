@@ -1,0 +1,1085 @@
+{
+  "run_timestamp_utc": "2025-11-26T14:47:57.581480",
+  "agent_id": "AGENT_78f2fa7497b78cd1",
+  "template_id": "AGREEABLENESS_LOW",
+  "template_details": {
+    "affective": "Irritability, anger, frustration, externalized blame",
+    "cognitive": "Defensive/hostile thoughts, rejection sensitivity",
+    "somatic": "Restlessness, agitation, appetite disturbance, insomnia",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Psychomotor agitation or retardation",
+      "Sleep disturbances"
+    ],
+    "specifier": "Mixed features",
+    "modifiers": [
+      "irritable",
+      "blame-externalizing",
+      "rejection-sensitive",
+      "defensively-hostile",
+      "interpersonally-strained"
+    ]
+  },
+  "persona_id": "time_pressed_clinical",
+  "persona_details": {
+    "id": "time_pressed_clinical",
+    "first_greeting": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently.",
+    "system_prompt": "\nPersona style:\n- Time-pressed and clinical\n- Concise and brisk\n- Redirects when conversation drifts\n- Focused on symptoms and functioning\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "low",
+    "pacing": "brisk",
+    "humor": "light",
+    "animation": "moderate"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "AGREEABLENESS_LOW",
+    "AFFECTIVE_STYLE": "Irritability, anger, frustration, externalized blame",
+    "COGNITIVE_STYLE": "Defensive/hostile thoughts, rejection sensitivity",
+    "SOMATIC_STYLE": "Restlessness, agitation, appetite disturbance, insomnia",
+    "SPECIFIER_HINT": "Mixed features",
+    "MODIFIERS": [
+      "rejection-sensitive",
+      "irritable"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [
+      "work/role strain",
+      "self-worth/identity strain"
+    ],
+    "EPISODE_DENSITY": "MED",
+    "VOICE_STYLE": {
+      "verbosity": "moderate",
+      "expressiveness": "balanced",
+      "trust": "open",
+      "intellect": "high-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "routine_stability": "stable routine",
+      "support_level": "high support"
+    },
+    "AGE_RANGE": "60-69",
+    "EMPH_INTENSITY": {
+      "Depressed mood": "MED",
+      "Sleep disturbances": "HIGH",
+      "Psychomotor agitation or retardation": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": [
+      "Feelings of worthlessness or excessive guilt"
+    ]
+  },
+  "life_background": {
+    "name": "Martin",
+    "age_range": "60-69",
+    "pronouns": "he/him",
+    "core_roles": [
+      "retired project manager",
+      "volunteer at local library"
+    ],
+    "core_relationships": [
+      "supportive spouse who encourages seeking help",
+      "strained relationship with adult son"
+    ],
+    "core_stressor_summary": "Martin struggles with feelings of diminished self-worth since retiring from a demanding role, compounded by a persistent sense of irritability and rejection sensitivity that affect his interpersonal interactions.",
+    "life_facets": [
+      {
+        "category": "past_help_seeking",
+        "salience": "med",
+        "description": "Has previously attended counseling for mood management after a workplace burnout but is hesitant to resume treatment frequently."
+      },
+      {
+        "category": "coping_style",
+        "salience": "high",
+        "description": "Relies on structured routines and avoids social conflicts but often internalizes frustrations, leading to worsening irritability."
+      },
+      {
+        "category": "beliefs_about_help_and_treatment",
+        "salience": "med",
+        "description": "Sees therapy as potentially helpful but worries about stigma and fears being perceived as weak or overly dependent."
+      },
+      {
+        "category": "self_view",
+        "salience": "high",
+        "description": "Views himself as competent and high-functioning but struggles with feeling less valued now without his professional identity."
+      },
+      {
+        "category": "time_and_energy_constraints",
+        "salience": "low",
+        "description": "Stable daily schedule with ample free time but often feels drained emotionally, which inhibits engagement in new activities."
+      },
+      {
+        "category": "physical_health_constraints",
+        "salience": "med",
+        "description": "Manages mild hypertension and occasional sleep disturbances which contribute to low energy but does not limit mobility."
+      },
+      {
+        "category": "role_conflicts",
+        "salience": "high",
+        "description": "Experiences internal conflict between wanting to remain active and valuable while feeling sidelined in family and social roles."
+      },
+      {
+        "category": "family_relationship_pattern",
+        "salience": "med",
+        "description": "Maintains a close yet sometimes tense dynamic with spouse; struggles with communication and perceived criticism from adult child."
+      },
+      {
+        "category": "values_and_priorities",
+        "salience": "med",
+        "description": "Values independence, respect, and meaningful contribution; prioritizes maintaining dignity and mental sharpness."
+      },
+      {
+        "category": "day_to_day_routines",
+        "salience": "high",
+        "description": "Keeps a consistent morning walk and volunteer shifts at the library; these routines provide structure and modest social interaction."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "OFTEN",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "SOME",
+    "Difficulty concentrating or indecisiveness": "SOME",
+    "Recurrent thoughts of death or suicide": "NONE"
+  },
+  "asked_question_order": [
+    "Significant weight/appetite changes",
+    "Feelings of worthlessness or excessive guilt",
+    "Loss of interest or pleasure",
+    "Recurrent thoughts of death or suicide",
+    "Difficulty concentrating or indecisiveness",
+    "Depressed mood",
+    "Fatigue or loss of energy",
+    "Sleep disturbances",
+    "Psychomotor agitation or retardation"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient shared several important symptoms but has only briefly touched on each; clarifying the impact on daily functioning can guide next steps.",
+      "doctor_instruction": "Acknowledge the patient\u2019s openness and ask them to tell you more about how these symptoms\u2014especially the restless sleep and agitation\u2014are affecting their daily activities and overall energy levels.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We have not yet covered appetite or weight changes, which fits naturally after sleep and energy issues.",
+      "doctor_instruction": "Acknowledge the difficulty the patient is facing with restlessness and fatigue, then transition to ask about any recent changes in appetite or weight, emphasizing the importance of these symptoms in understanding their depression.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Now that appetite and weight changes are ruled out, it\u2019s time to assess feelings of worthlessness or guilt to deepen the symptom profile.",
+      "doctor_instruction": "Shift focus to exploring whether the patient is experiencing feelings of worthlessness or excessive guilt, asking in a straightforward but supportive way to understand that part of their experience.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 4,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient shared feelings of worthlessness but minimized guilt; exploring this further can clarify severity and impact.",
+      "doctor_instruction": "Acknowledge the patient\u2019s frustration with these feelings and gently ask about how often and how intensely this sense of worthlessness occurs, and whether it affects his motivation or self-care. Encourage him to describe how this 'nagging voice' influences his daily thoughts or actions without pushing too hard.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Moving to assess loss of interest or pleasure complements the current discussion about mood and motivation.",
+      "doctor_instruction": "Transition from the discussion about worthlessness and motivation by asking about your interest or pleasure in activities you usually enjoy. This will help understand if anhedonia is present alongside your mood symptoms.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "To better understand his changes in interest and motivation related to anhedonia.",
+      "doctor_instruction": "Explore more about how much his reduced pleasure and motivation in activities like volunteering has changed over time, and how it affects his daily functioning and mood.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "There are still important DSM symptom areas to cover, and suicidal thoughts have not yet been addressed.",
+      "doctor_instruction": "Transition gently to ask about any recurrent thoughts of death or suicide, acknowledging how hard it is to carry such a weight while managing day-to-day tasks. Maintain a warm and direct tone to ensure the patient feels safe and understood.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 8,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We still need to cover difficulty concentrating or indecisiveness to complete key DSM symptoms.",
+      "doctor_instruction": "Directly and briefly ask about difficulty concentrating or indecisiveness, emphasizing the importance of understanding how these symptoms may be affecting daily functioning, while maintaining a respectful and empathetic tone.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient described concentration and decision-making difficulties, which suggests exploring cognitive symptoms within depression.",
+      "doctor_instruction": "Gently transition to asking about symptoms related to concentration and decision-making difficulties to better understand cognitive impacts of depression and their severity.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 10,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Clarify the patient's experience with fatigue or loss of energy to complete the symptom profile.",
+      "doctor_instruction": "Ask about how often and how severely the patient experiences fatigue or loss of energy, including its impact on daily functioning, to better understand this specific symptom area.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient described fatigue and irritability impacting daily routines, warranting more detail to understand severity and coping.",
+      "doctor_instruction": "Explore how frequently the fatigue occurs during the day and ask what strategies Martin uses to cope with the tiredness and irritability, to better understand its impact on his functioning and mood.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient expresses significant frustration and fatigue, which calls for empathetic connection to build trust before continuing.",
+      "doctor_instruction": "Acknowledge the patient\u2019s ongoing struggle with tiredness and irritability and validate how exhausting it must be to manage daily routines under those conditions. Express understanding and offer a moment for the patient to share more about how this affects their overall well-being or coping.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 13,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Sleep disturbances are a central issue raised but not yet fully explored in detail.",
+      "doctor_instruction": "Gently transition to gather more detailed information about the patient's sleep disturbances, asking about the nature, frequency, and impact of their insomnia or restlessness at night. Acknowledge how pivotal good sleep is for mental health and emphasize understanding this symptom better to help with overall management.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 14,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "There is a remaining DSM symptom area to explore that relates closely to the patient's current complaint of restlessness.",
+      "doctor_instruction": "Ask the patient specifically about psychomotor agitation or retardation symptoms, linking it to their described restlessness and sleep disturbance to deepen clinical understanding.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 15,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared detailed struggles that warrant empathy and acknowledgment before closing.",
+      "doctor_instruction": "Take a moment to acknowledge the sustained effort Martin is making despite these ongoing challenges and the impact on his well-being. Offer some empathetic reflection on how difficult it must be to deal with this fatigue, irritability, and restlessness every day, reinforcing that his experience is heard and understood before moving toward closing.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient expressed feeling worn down despite efforts and is cautiously hopeful but skeptical, deserving a warm acknowledgment before proceeding.",
+      "doctor_instruction": "Acknowledge Martin's frustration and the difficulty he's faced dealing with these symptoms for so long. Offer empathy for his perseverance and cautious hope, reinforcing that you value his willingness to try and that you\u2019ll work together to find meaningful relief.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 17,
+      "manager_type": "post_dsm",
+      "next_action": "RAPPORT",
+      "reason": "The patient expressed frank frustration and cautious hope, which deserves empathy and acknowledgment before closing.",
+      "doctor_instruction": "Acknowledge Martin's long struggle and the heavy toll it\u2019s taken, validating his frustration and skepticism. Affirm his courage in not giving up and reinforce that you\u2019ll be working closely together to find real improvements.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 18,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has expressed realistic expectations and a willingness to continue treatment, making this a good point to wrap up the visit with reassurance and next steps.",
+      "doctor_instruction": "Acknowledge Martin\u2019s perseverance and the realistic mindset he has about the treatment journey. Briefly outline the next steps in his care plan, reinforce your support, and thank him for his openness today while inviting him to reach out if things change.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "blunt",
+          "impatient"
+        ],
+        "key_points_to_reveal": [
+          "depressed mood is frequent",
+          "sleep problems are ongoing",
+          "psychomotor symptoms occur but less often"
+        ],
+        "key_points_to_avoid": [
+          "excessive guilt details",
+          "loss of interest"
+        ],
+        "patient_instruction": "Respond directly and without sugarcoating that the depressed mood is persistent and sleep disturbances are a major ongoing issue. Acknowledge psychomotor symptoms are rare but present. Keep the tone somewhat impatient and brusque given your irritation and low agreeableness, but don't overshare on guilt or pleasure loss."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "candid"
+        ],
+        "key_points_to_reveal": [
+          "Describe the significant impact of restless sleep on daytime fatigue and irritability",
+          "Explain how psychomotor agitation manifests as restlessness and inability to sit still, contributing to difficulty focusing",
+          "Mention that these symptoms disrupt work and personal activities, increasing overall stress"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the severity of sleep issues or agitation",
+          "Discussing feelings of worthlessness or guilt in detail at this time"
+        ],
+        "patient_instruction": "Respond with clear irritation about how the restless sleep leaves you exhausted and on edge during the day, making it hard to get anything done. Emphasize your frustration at the agitation that comes in waves, causing restlessness and distraction. Keep your tone direct and factual but let a hint of your irritability come through, showing how these symptoms wear on you."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "matter-of-fact"
+        ],
+        "key_points_to_reveal": [
+          "no changes in appetite or weight"
+        ],
+        "key_points_to_avoid": [
+          "downplaying or avoiding any physical symptom details"
+        ],
+        "patient_instruction": "Respond directly and clearly that you haven\u2019t noticed any appetite or weight changes, keeping your tone straightforward and factual without elaborating unnecessarily."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "guarded",
+          "frustrated",
+          "cynical"
+        ],
+        "key_points_to_reveal": [
+          "some feelings of worthlessness",
+          "frustration with self",
+          "avoid overdramatic language"
+        ],
+        "key_points_to_avoid": [
+          "excessive guilt",
+          "vulnerable emotional displays"
+        ],
+        "patient_instruction": "Respond with a tone that reflects restrained frustration and irritation. Acknowledge feeling some worthlessness but avoid sounding overly self-pitying or guilty. Maintain your direct and straightforward style, keeping your explanation balanced and slightly cynical, showing you recognize these feelings but don't dwell on them excessively."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "frustrated",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "worthlessness comes up sometimes but not constantly",
+          "it\u2019s more a background feeling than overwhelming",
+          "motivation dips but basic self-care usually managed despite it"
+        ],
+        "key_points_to_avoid": [
+          "overstating severity or frequency",
+          "labelling as guilt or self-loathing",
+          "mentioning suicidal thoughts"
+        ],
+        "patient_instruction": "Respond in a balanced, moderately expressive way explaining that feelings of worthlessness occur somewhat regularly but don\u2019t completely take over. Emphasize that while motivation suffers, you still manage basic self-care, reflecting a stoic yet irritated attitude shaped by rejection sensitivity."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "blunt",
+          "irritable",
+          "candid"
+        ],
+        "key_points_to_reveal": [
+          "Volunteer work still provides some satisfaction, but it's diminished",
+          "Overall some engagement retained despite mood",
+          "Frustration that motivation wavers despite wanting to keep up with activities"
+        ],
+        "key_points_to_avoid": [
+          "Overly sentimental or hopeful language",
+          "Excessive detail about other symptoms not asked about"
+        ],
+        "patient_instruction": "Respond with a straightforward but somewhat irritable tone, acknowledging that the volunteer work still brings some satisfaction but it's less than before. Express frustration that motivation fluctuates and that maintaining interest feels like a struggle, but you still push yourself to keep up with it."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "frustrated",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "volunteering pleasure and drive have gradually declined",
+          "motivation to engage fluctuates, requires effort",
+          "impact on daily mood is subtle but persistent, adding to frustration"
+        ],
+        "key_points_to_avoid": [
+          "overly negative or hopeless expressions",
+          "deep emotional vulnerability despite irritation"
+        ],
+        "patient_instruction": "Respond with moderate detail about how enjoyment and motivation for volunteering have slowly decreased over time. Emphasize the ongoing struggle to maintain engagement despite waning pleasure, without sounding defeated. Keep the tone reflective but laced with frustration about this persistent challenge in daily mood and functioning."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "SHORT",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "forthright",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "no recent thoughts of death or suicide"
+        ],
+        "key_points_to_avoid": [
+          "any hint of hopelessness or suicidal ideation"
+        ],
+        "patient_instruction": "Respond clearly and firmly that you have not had any thoughts of death or suicide recently, reflecting your irritable but straightforward style, keeping the answer brief and to the point without emotional elaboration."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "somewhat irritable",
+          "straightforward"
+        ],
+        "key_points_to_reveal": [
+          "difficulty concentrating and making decisions occurs with some frequency",
+          "this adds to frustration and impacts daily functioning",
+          "no overemphasis or dramatization, consistent with moderate impact"
+        ],
+        "key_points_to_avoid": [
+          "overstating the severity",
+          "shifting blame or externalizing",
+          "expressions of hopelessness"
+        ],
+        "patient_instruction": "Respond with a clear but not overly detailed description of how difficulty concentrating and decision-making happens regularly enough to be annoying and hinder your focus. Maintain a direct, somewhat irritable tone without exaggerating the problem. Keep it pragmatic and focused on how it affects your tasks and adds to your frustration."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "frustrated",
+          "straightforward"
+        ],
+        "key_points_to_reveal": [
+          "concentration and decision-making problems are significant but not debilitating",
+          "these issues contribute to daily frustration and slow down task completion"
+        ],
+        "key_points_to_avoid": [
+          "overstating severity",
+          "expressing helplessness or hopelessness"
+        ],
+        "patient_instruction": "Respond with a clear but measured description of how concentration and decision-making difficulties are frequent and impactful but still manageable. Acknowledge the frustration caused without sounding defeated or overwhelmed."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "blunt",
+          "irritable",
+          "resigned"
+        ],
+        "key_points_to_reveal": [
+          "fatigue occurs fairly often",
+          "fatigue significantly reduces energy and endurance",
+          "fatigue contributes to overall irritability and difficulty maintaining daily routines"
+        ],
+        "key_points_to_avoid": [
+          "minimizing fatigue impact",
+          "expressing hopelessness or despair"
+        ],
+        "patient_instruction": "Respond with straightforward detail about how fatigue is a frequent and real drain on your energy, making day-to-day tasks more taxing and feeding into your irritability. Keep a direct and slightly irritable tone, showing your frustration at having to push through this constant low energy but without sounding defeated."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "irritated",
+        "tone_tags": [
+          "frustrated",
+          "candid"
+        ],
+        "key_points_to_reveal": [
+          "fatigue hits multiple times daily, draining energy",
+          "fatigue and irritability feed into each other",
+          "coping strategies are limited and often not very effective",
+          "daily routines are harder but still managed with effort"
+        ],
+        "key_points_to_avoid": [
+          "overly negative or hopeless language",
+          "mention of thoughts of death or suicide",
+          "minimizing fatigue or irritability"
+        ],
+        "patient_instruction": "Answer candidly about how the tiredness strikes multiple times a day and drains you, making the irritability worse. Mention that you try to manage it but the strategies only help so much, and that it all just wears down your ability to keep up with daily stuff. Stay frustrated but measured, reflecting your high-functioning intellect and rejection sensitivity."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "blunt",
+          "irritable",
+          "candid"
+        ],
+        "key_points_to_reveal": [
+          "The fatigue and irritability not only drain me physically but also mess with my mental stability, making me more short-tempered and isolated.",
+          "I tend to shut down socially more often, which only makes things worse.",
+          "My usual coping strategies feel increasingly ineffective and I find myself getting annoyed more frequently.",
+          "I\u2019m struggling to maintain any sense of normalcy or control, which just adds to the stress and frustration."
+        ],
+        "key_points_to_avoid": [
+          "Disclosure of any suicidal thoughts or severe mental breakdowns (none present).",
+          "Overly emotional or tearful expressions inconsistent with current tone."
+        ],
+        "patient_instruction": "Respond straightforwardly and candidly about how the fatigue and irritability are messing with both physical and mental well-being, emphasizing the growing frustration and how usual coping methods aren't cutting it. Express the increased social withdrawal and stress without sounding overwhelmed, maintaining a blunt, irritable tone true to your personality."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "honest",
+          "direct"
+        ],
+        "key_points_to_reveal": [
+          "Frequent difficulty falling asleep with racing thoughts",
+          "Restlessness causes frequent awakenings through the night",
+          "Severe impact on next day energy, mood, and patience",
+          "Sleep problems contribute to social withdrawal and irritability",
+          "Efforts to manage sleep have been largely ineffective"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the frequency or severity of sleep problems",
+          "Mentioning any suicidal thoughts or unrelated symptoms"
+        ],
+        "patient_instruction": "Respond with clear frustration about the persistent insomnia and how racing thoughts keep you awake often. Explain that you wake multiple times nightly due to restlessness, leaving you exhausted and irritable the next day, which worsens your social withdrawal. Acknowledge that attempts to improve sleep haven\u2019t worked well, emphasizing how this cycle drains you deeply."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "irritable",
+          "direct",
+          "no-nonsense"
+        ],
+        "key_points_to_reveal": [
+          "psychomotor agitation occurs occasionally throughout the day",
+          "restlessness leads to pacing or shifting frequently",
+          "feeling annoyed by inability to stay still",
+          "sometimes movements feel slowed down but less frequently"
+        ],
+        "key_points_to_avoid": [
+          "minimizing or downplaying symptoms",
+          "talking about sleep again in detail",
+          "suggesting any positive coping success"
+        ],
+        "patient_instruction": "Respond candidly that the restlessness shows up several times daily, making it impossible to sit still and causing pacing or constant movement. Mention briefly that slowed movements happen but less often. Express irritation about how these symptoms interfere with your ability to relax or focus."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "honest",
+          "tired",
+          "irritable"
+        ],
+        "key_points_to_reveal": [
+          "understanding the doctor's support",
+          "resentment at the ongoing struggle despite effort",
+          "reserved hope for relief but skepticism about quick fixes"
+        ],
+        "key_points_to_avoid": [
+          "overly emotional outbursts",
+          "expressing hopelessness or suicidal thoughts",
+          "minimizing symptoms already detailed"
+        ],
+        "patient_instruction": "Respond with a tone that acknowledges the doctor's empathy but also conveys frustration at how long and hard the struggle has been. Express some weariness about the ongoing effort and a guarded hope that the plan might bring some tangible relief, without sounding too optimistic or dismissive."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "frustrated",
+        "tone_tags": [
+          "cautious",
+          "irritable",
+          "skeptical"
+        ],
+        "key_points_to_reveal": [
+          "frustration with ongoing struggle",
+          "reluctant but willing to try treatment",
+          "desire for real change",
+          "acknowledgment of the difficulty to stay hopeful"
+        ],
+        "key_points_to_avoid": [
+          "deep expressions of despair or hopelessness",
+          "overly optimistic or trusting statements",
+          "minimizing symptoms"
+        ],
+        "patient_instruction": "Express clear frustration about the long-lasting struggle and the energy it takes just to keep going. Convey cautious hope but maintain a skeptical tone regarding finding relief, reflecting your rejection sensitivity and irritability. Keep the response candid and moderately detailed, showing your determination to try but without sounding overly optimistic."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "guarded",
+          "skeptical",
+          "resilient"
+        ],
+        "key_points_to_reveal": [
+          "acknowledgment of struggle",
+          "skepticism about improvement",
+          "willingness to continue treatment"
+        ],
+        "key_points_to_avoid": [
+          "overly hopeful statements",
+          "detailed emotional vulnerability"
+        ],
+        "patient_instruction": "Respond with a calm but guarded acknowledgment of the long struggle and express cautious willingness to keep trying the treatment plan, emphasizing skepticism about big changes but a sense of resilience that keeps you going."
+      }
+    }
+  ],
+  "final_disclosure_state": "OPEN",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently."
+    },
+    {
+      "speaker": "patient",
+      "text": "Look, the mood\u2019s been a constant dark cloud most days\u2014six to ten days recently, if I\u2019m honest. Sleep\u2019s a nightmare; it\u2019s been dragging on just as long, restless nights that leave me wired and frustrated. The psychomotor agitation shows up now and then, not too often, but enough to be noticeable. That\u2019s where I\u2019m at, straightforward enough."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being straightforward about this, Martin. Can you tell me more about how the restless sleep and that agitation are impacting your day-to-day life and your energy overall?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s a constant grind\u2014when I don\u2019t sleep, I\u2019m running on empty all day, and that tiredness just turns into raw irritability. I snap at small things and find it nearly impossible to focus on anything meaningful. The restlessness hits in waves; I can\u2019t sit still, which drives me nuts because it\u2019s like my brain won\u2019t shut off, and I\u2019m stuck pacing or shifting around without relief. It screws with any routine or personal projects I try to do, and honestly, it piles on more stress instead of easing anything. It\u2019s aggravating to feel this dragged down and restless at the same time\u2014it\u2019s a lousy combination for getting anything done or feeling even halfway decent."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That combination of fatigue and restlessness sounds really tough and draining, especially when it\u2019s interfering with your routines and projects. Have you noticed any recent changes in your appetite or weight since these symptoms started? It\u2019s important to get a full picture for how your depression might be affecting you."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, there haven\u2019t been any changes in my appetite or weight. That part\u2019s stayed steady."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it\u2014appetite and weight are steady. Now, have you been feeling a lot of worthlessness or excessive guilt lately? It\u2019s important to hear how you\u2019re thinking about yourself during this time."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I\u2019ve felt worthless at times. It\u2019s frustrating because I know it\u2019s not productive, but it\u2019s there\u2014like this nagging voice that reminds me I\u2019m not what I used to be. It doesn\u2019t spiral into guilt or anything dramatic, just this tired sense that I\u2019m falling short or not measuring up. I don\u2019t dwell on it too much, but it\u2019s definitely part of the background noise."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I can hear how frustrating that nagging sense of not measuring up is for you. How often does this feeling of worthlessness show up, and when it does, how strongly does it affect your motivation or even how you take care of yourself day to day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It pops up now and then, not all the time\u2014but enough to be annoying. It\u2019s more like this low hum in the background than a full-blown takeover. When it hits, motivation definitely takes a hit, but I still manage to keep up with the basics. I\u2019m not falling apart or anything, just frustrated that it drags me down more than it should."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for explaining that\u2014sounds like it's a steady drain, even if not overwhelming. How about your interest or pleasure in things you usually enjoy? Are you still finding some satisfaction in your usual activities, like your volunteer work at the library?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, I still get some satisfaction from the volunteer work at the library, but it\u2019s nowhere near what it used to be. It\u2019s frustrating because I want to stay engaged, but the motivation wavers a lot. I have to push myself more than I\u2019d like just to keep up with it. It\u2019s not like I\u2019ve given up completely, but it\u2019s definitely been a struggle."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It sounds like your connection to the volunteering has taken a hit, even if you\u2019re still holding on to it. How has that drop in pleasure and drive changed over time, and what kind of impact is it having on your day-to-day mood and functioning?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s been a gradual decline\u2014little by little, the pleasure I used to get from volunteering has faded, and the drive to stay involved comes and goes. Some days I\u2019m able to push through, but other times it feels like a real effort just to show up. It\u2019s not always obvious on the surface, but that constant background frustration wears on me. It\u2019s this subtle weight dragging down my mood and making day-to-day functioning more of a chore than it should be."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That subtle but constant weight you describe can be really hard to carry day in and day out. Have you had any thoughts about death or suicide recently? It\u2019s important to talk about, and I want you to know you\u2019re in a safe space here."
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven\u2019t had any thoughts about death or suicide recently. Just so we\u2019re clear."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for being clear on that. Have you noticed any trouble concentrating or making decisions lately? Understanding this helps get a full picture of how things might be affecting your daily life."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, trouble concentrating and making decisions comes up fairly often. It\u2019s enough to slow me down and makes it harder to get anything done without feeling annoyed at myself. It\u2019s not a crash-and-burn situation, but it definitely adds to the daily frustration and makes things more difficult than they should be."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Understood\u2014it sounds like these cognitive issues, while not overwhelming, still weigh on you and complicate daily tasks. How severe would you say these problems with focus and making choices are on most days?"
+    },
+    {
+      "speaker": "patient",
+      "text": "They\u2019re definitely a significant nuisance on most days\u2014enough to slow me down and wear on my patience\u2014but not so severe that I can\u2019t manage. It\u2019s frustrating to have to work harder to get through routine tasks, but it\u2019s something I handle, even if it drains me more than it should."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Got it\u2014these issues slow you down and test your patience but don\u2019t completely stop you. How often do you feel fatigued or low on energy, and how much does that affect your daily functioning?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Fatigue hits me pretty often \u2014 enough to seriously drain my energy and endurance throughout the day. It\u2019s a real pain having to push through feeling worn out, and it definitely makes me more irritable than I\u2019d like. Keeping up with daily routines feels tougher, and it all just builds up on itself."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds like that fatigue is a big factor wearing you down. How often during the day does this tiredness hit you, and what do you do to try and manage it along with the irritability?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The tiredness hits me multiple times a day, draining whatever energy I have left. It feeds right into the irritability, so it\u2019s like a vicious cycle I can\u2019t shake. I try to push through \u2014 taking breaks, pacing myself \u2014 but those strategies only get me so far. At the end of the day, it still makes it harder to keep up with routines, even if I\u2019m managing just barely. It\u2019s frustrating, to say the least."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That ongoing cycle of fatigue and irritability sounds incredibly draining, Martin, especially when it\u2019s making everyday routines so hard to keep up with. It\u2019s understandable that you\u2019re frustrated. How else do you feel this has been affecting your overall well-being or the ways you cope day to day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The fatigue and irritability do more than just wear me out physically\u2014they mess with my head too. I find myself getting short-tempered more often, which just drives me into shutting down socially. That isolation only makes everything feel worse. The coping strategies I once relied on aren\u2019t working like they used to, and I\u2019m getting annoyed way quicker than before. It feels like I\u2019m barely holding onto any sense of normalcy or control, and that just piles on more stress and frustration every day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds really tough\u2014short temper and social withdrawal both feeding into the stress and frustration. Since good sleep plays a big role in this, tell me more about your sleep troubles: what\u2019s the nature of your insomnia or restlessness at night, how often does it happen, and how much does it impact you the next day?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Falling asleep is a battle most nights\u2014my mind races no matter what I try, and it\u2019s like there\u2019s no off switch. Once I finally drift off, I don\u2019t stay asleep for long; I wake up multiple times because of restlessness that just won\u2019t quit. The next day? I\u2019m drained, irritable, and my patience is worn thin before I even step outside. That exhaustion makes me avoid people more, which feeds the whole cycle. I\u2019ve tried different ways to manage the sleep issues, but honestly, none of it\u2019s done much good. This cycle just keeps dragging me down harder every day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thanks for sharing that, Martin. You mentioned restlessness and difficulty staying asleep\u2014how often do you find yourself physically unable to sit still or feeling slowed down in your movements during the day? This can help me understand more about your psychomotor symptoms."
+    },
+    {
+      "speaker": "patient",
+      "text": "The restlessness hits multiple times during the day\u2014I can\u2019t sit still for long without pacing or shifting constantly. It drives me crazy because it\u2019s impossible to just relax or focus. Slowed movements happen too, but nowhere near as often as the restlessness. Either way, it\u2019s frustrating and makes everything feel ten times harder to handle."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019re managing a lot, Martin\u2014constantly battling restlessness along with fatigue and irritability takes real effort, and it\u2019s clear it\u2019s wearing you down. I want you to know I hear you, and it\u2019s not easy facing all this day after day. We\u2019ll work on a plan to help ease some of this burden."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate that you hear me, but honestly, it\u2019s frustrating to have been fighting this for so long with little to show for it. I\u2019m tired of constantly pushing myself just to keep going. I\u2019m cautiously hopeful that whatever plan we come up with might actually bring some relief, but after all this, I\u2019m not holding my breath. Still, I\u2019m willing to give it a shot."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I understand how exhausting and discouraging this has been for you, Martin. It takes a lot to keep pushing through, and I respect your perseverance and cautious hope. We\u2019ll work together to find an approach that truly makes a difference."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s been a long haul, and I\u2019m frustrated with how much energy it takes just to keep going without really getting better. I\u2019m willing to try whatever you suggest, but I\u2019m skeptical it\u2019ll bring the kind of change I need. It\u2019s hard to stay hopeful when this has dragged on so long, but I\u2019m not ready to give up yet. Let\u2019s see if this plan can actually make a difference."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear the weight of this long struggle and how much it\u2019s worn you down, Martin. It\u2019s completely normal to feel skeptical after all this time, but it takes real courage to keep going and not give up. We\u2019re in this together, and I\u2019m committed to helping you find real, meaningful improvements."
+    },
+    {
+      "speaker": "patient",
+      "text": "I know this has been a tough road, and I\u2019m not expecting overnight changes or miracles. I\u2019m skeptical that things will improve much, but I\u2019m willing to keep at it and see where this treatment takes me. It\u2019s hard, but I\u2019ll keep pushing forward."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi. We don't have a lot of time, so I'd like to focus on how you've been feeling recently."
+    },
+    {
+      "role": "user",
+      "content": "Look, the mood\u2019s been a constant dark cloud most days\u2014six to ten days recently, if I\u2019m honest. Sleep\u2019s a nightmare; it\u2019s been dragging on just as long, restless nights that leave me wired and frustrated. The psychomotor agitation shows up now and then, not too often, but enough to be noticeable. That\u2019s where I\u2019m at, straightforward enough."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being straightforward about this, Martin. Can you tell me more about how the restless sleep and that agitation are impacting your day-to-day life and your energy overall?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s a constant grind\u2014when I don\u2019t sleep, I\u2019m running on empty all day, and that tiredness just turns into raw irritability. I snap at small things and find it nearly impossible to focus on anything meaningful. The restlessness hits in waves; I can\u2019t sit still, which drives me nuts because it\u2019s like my brain won\u2019t shut off, and I\u2019m stuck pacing or shifting around without relief. It screws with any routine or personal projects I try to do, and honestly, it piles on more stress instead of easing anything. It\u2019s aggravating to feel this dragged down and restless at the same time\u2014it\u2019s a lousy combination for getting anything done or feeling even halfway decent."
+    },
+    {
+      "role": "assistant",
+      "content": "That combination of fatigue and restlessness sounds really tough and draining, especially when it\u2019s interfering with your routines and projects. Have you noticed any recent changes in your appetite or weight since these symptoms started? It\u2019s important to get a full picture for how your depression might be affecting you."
+    },
+    {
+      "role": "user",
+      "content": "No, there haven\u2019t been any changes in my appetite or weight. That part\u2019s stayed steady."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it\u2014appetite and weight are steady. Now, have you been feeling a lot of worthlessness or excessive guilt lately? It\u2019s important to hear how you\u2019re thinking about yourself during this time."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I\u2019ve felt worthless at times. It\u2019s frustrating because I know it\u2019s not productive, but it\u2019s there\u2014like this nagging voice that reminds me I\u2019m not what I used to be. It doesn\u2019t spiral into guilt or anything dramatic, just this tired sense that I\u2019m falling short or not measuring up. I don\u2019t dwell on it too much, but it\u2019s definitely part of the background noise."
+    },
+    {
+      "role": "assistant",
+      "content": "I can hear how frustrating that nagging sense of not measuring up is for you. How often does this feeling of worthlessness show up, and when it does, how strongly does it affect your motivation or even how you take care of yourself day to day?"
+    },
+    {
+      "role": "user",
+      "content": "It pops up now and then, not all the time\u2014but enough to be annoying. It\u2019s more like this low hum in the background than a full-blown takeover. When it hits, motivation definitely takes a hit, but I still manage to keep up with the basics. I\u2019m not falling apart or anything, just frustrated that it drags me down more than it should."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for explaining that\u2014sounds like it's a steady drain, even if not overwhelming. How about your interest or pleasure in things you usually enjoy? Are you still finding some satisfaction in your usual activities, like your volunteer work at the library?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I still get some satisfaction from the volunteer work at the library, but it\u2019s nowhere near what it used to be. It\u2019s frustrating because I want to stay engaged, but the motivation wavers a lot. I have to push myself more than I\u2019d like just to keep up with it. It\u2019s not like I\u2019ve given up completely, but it\u2019s definitely been a struggle."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your connection to the volunteering has taken a hit, even if you\u2019re still holding on to it. How has that drop in pleasure and drive changed over time, and what kind of impact is it having on your day-to-day mood and functioning?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s been a gradual decline\u2014little by little, the pleasure I used to get from volunteering has faded, and the drive to stay involved comes and goes. Some days I\u2019m able to push through, but other times it feels like a real effort just to show up. It\u2019s not always obvious on the surface, but that constant background frustration wears on me. It\u2019s this subtle weight dragging down my mood and making day-to-day functioning more of a chore than it should be."
+    },
+    {
+      "role": "assistant",
+      "content": "That subtle but constant weight you describe can be really hard to carry day in and day out. Have you had any thoughts about death or suicide recently? It\u2019s important to talk about, and I want you to know you\u2019re in a safe space here."
+    },
+    {
+      "role": "user",
+      "content": "No, I haven\u2019t had any thoughts about death or suicide recently. Just so we\u2019re clear."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for being clear on that. Have you noticed any trouble concentrating or making decisions lately? Understanding this helps get a full picture of how things might be affecting your daily life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, trouble concentrating and making decisions comes up fairly often. It\u2019s enough to slow me down and makes it harder to get anything done without feeling annoyed at myself. It\u2019s not a crash-and-burn situation, but it definitely adds to the daily frustration and makes things more difficult than they should be."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood\u2014it sounds like these cognitive issues, while not overwhelming, still weigh on you and complicate daily tasks. How severe would you say these problems with focus and making choices are on most days?"
+    },
+    {
+      "role": "user",
+      "content": "They\u2019re definitely a significant nuisance on most days\u2014enough to slow me down and wear on my patience\u2014but not so severe that I can\u2019t manage. It\u2019s frustrating to have to work harder to get through routine tasks, but it\u2019s something I handle, even if it drains me more than it should."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it\u2014these issues slow you down and test your patience but don\u2019t completely stop you. How often do you feel fatigued or low on energy, and how much does that affect your daily functioning?"
+    },
+    {
+      "role": "user",
+      "content": "Fatigue hits me pretty often \u2014 enough to seriously drain my energy and endurance throughout the day. It\u2019s a real pain having to push through feeling worn out, and it definitely makes me more irritable than I\u2019d like. Keeping up with daily routines feels tougher, and it all just builds up on itself."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like that fatigue is a big factor wearing you down. How often during the day does this tiredness hit you, and what do you do to try and manage it along with the irritability?"
+    },
+    {
+      "role": "user",
+      "content": "The tiredness hits me multiple times a day, draining whatever energy I have left. It feeds right into the irritability, so it\u2019s like a vicious cycle I can\u2019t shake. I try to push through \u2014 taking breaks, pacing myself \u2014 but those strategies only get me so far. At the end of the day, it still makes it harder to keep up with routines, even if I\u2019m managing just barely. It\u2019s frustrating, to say the least."
+    },
+    {
+      "role": "assistant",
+      "content": "That ongoing cycle of fatigue and irritability sounds incredibly draining, Martin, especially when it\u2019s making everyday routines so hard to keep up with. It\u2019s understandable that you\u2019re frustrated. How else do you feel this has been affecting your overall well-being or the ways you cope day to day?"
+    },
+    {
+      "role": "user",
+      "content": "The fatigue and irritability do more than just wear me out physically\u2014they mess with my head too. I find myself getting short-tempered more often, which just drives me into shutting down socially. That isolation only makes everything feel worse. The coping strategies I once relied on aren\u2019t working like they used to, and I\u2019m getting annoyed way quicker than before. It feels like I\u2019m barely holding onto any sense of normalcy or control, and that just piles on more stress and frustration every day."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds really tough\u2014short temper and social withdrawal both feeding into the stress and frustration. Since good sleep plays a big role in this, tell me more about your sleep troubles: what\u2019s the nature of your insomnia or restlessness at night, how often does it happen, and how much does it impact you the next day?"
+    },
+    {
+      "role": "user",
+      "content": "Falling asleep is a battle most nights\u2014my mind races no matter what I try, and it\u2019s like there\u2019s no off switch. Once I finally drift off, I don\u2019t stay asleep for long; I wake up multiple times because of restlessness that just won\u2019t quit. The next day? I\u2019m drained, irritable, and my patience is worn thin before I even step outside. That exhaustion makes me avoid people more, which feeds the whole cycle. I\u2019ve tried different ways to manage the sleep issues, but honestly, none of it\u2019s done much good. This cycle just keeps dragging me down harder every day."
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for sharing that, Martin. You mentioned restlessness and difficulty staying asleep\u2014how often do you find yourself physically unable to sit still or feeling slowed down in your movements during the day? This can help me understand more about your psychomotor symptoms."
+    },
+    {
+      "role": "user",
+      "content": "The restlessness hits multiple times during the day\u2014I can\u2019t sit still for long without pacing or shifting constantly. It drives me crazy because it\u2019s impossible to just relax or focus. Slowed movements happen too, but nowhere near as often as the restlessness. Either way, it\u2019s frustrating and makes everything feel ten times harder to handle."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019re managing a lot, Martin\u2014constantly battling restlessness along with fatigue and irritability takes real effort, and it\u2019s clear it\u2019s wearing you down. I want you to know I hear you, and it\u2019s not easy facing all this day after day. We\u2019ll work on a plan to help ease some of this burden."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate that you hear me, but honestly, it\u2019s frustrating to have been fighting this for so long with little to show for it. I\u2019m tired of constantly pushing myself just to keep going. I\u2019m cautiously hopeful that whatever plan we come up with might actually bring some relief, but after all this, I\u2019m not holding my breath. Still, I\u2019m willing to give it a shot."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand how exhausting and discouraging this has been for you, Martin. It takes a lot to keep pushing through, and I respect your perseverance and cautious hope. We\u2019ll work together to find an approach that truly makes a difference."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s been a long haul, and I\u2019m frustrated with how much energy it takes just to keep going without really getting better. I\u2019m willing to try whatever you suggest, but I\u2019m skeptical it\u2019ll bring the kind of change I need. It\u2019s hard to stay hopeful when this has dragged on so long, but I\u2019m not ready to give up yet. Let\u2019s see if this plan can actually make a difference."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the weight of this long struggle and how much it\u2019s worn you down, Martin. It\u2019s completely normal to feel skeptical after all this time, but it takes real courage to keep going and not give up. We\u2019re in this together, and I\u2019m committed to helping you find real, meaningful improvements."
+    },
+    {
+      "role": "user",
+      "content": "I know this has been a tough road, and I\u2019m not expecting overnight changes or miracles. I\u2019m skeptical that things will improve much, but I\u2019m willing to keep at it and see where this treatment takes me. It\u2019s hard, but I\u2019ll keep pushing forward."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_78f2fa7497b78cd1.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_78f2fa7497b78cd1_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 37436,
+      "output_tokens": 861,
+      "total_tokens": 38297
+    },
+    "patient": {
+      "input_tokens": 61137,
+      "output_tokens": 1408,
+      "total_tokens": 62545
+    },
+    "doctor_manager": {
+      "input_tokens": 36430,
+      "output_tokens": 1685,
+      "total_tokens": 38115
+    },
+    "patient_manager": {
+      "input_tokens": 41909,
+      "output_tokens": 3438,
+      "total_tokens": 45347
+    }
+  }
+}

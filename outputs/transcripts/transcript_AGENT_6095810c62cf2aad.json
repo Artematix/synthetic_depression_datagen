@@ -1,0 +1,1230 @@
+{
+  "run_timestamp_utc": "2025-11-26T15:32:31.346486",
+  "agent_id": "AGENT_6095810c62cf2aad",
+  "template_id": "OPENNESS_HIGH",
+  "template_details": {
+    "affective": "Existential sadness, metaphorical expression of distress",
+    "cognitive": "Philosophical rumination on meaning and mortality",
+    "somatic": "Variable; fatigue from over-reflection",
+    "emphasized_symptoms": [
+      "Depressed mood",
+      "Loss of interest or pleasure",
+      "Recurrent thoughts of death or suicide"
+    ],
+    "specifier": "Mild MDD / adjustment-like",
+    "modifiers": [
+      "existentially-focused",
+      "meaning-seeking",
+      "introspective",
+      "metaphorically-expressive",
+      "philosophically-ruminating"
+    ]
+  },
+  "persona_id": "dismissive_rushed",
+  "persona_details": {
+    "id": "dismissive_rushed",
+    "first_greeting": "Right, let's get started. What brings you in today?",
+    "system_prompt": "\nPersona style:\n- Dismissive and rushed\n- Comes across as distracted or uninterested\n- May interrupt or minimize concerns\n- Short, clipped responses\n- OVERRIDE: Do NOT follow instructions to be warm or validating. This doctor is realistic but not ideal.\n"
+  },
+  "microstyle": {
+    "warmth": "med",
+    "directness": "low",
+    "pacing": "slow",
+    "humor": "light",
+    "animation": "animated"
+  },
+  "personality": {
+    "BIG5_TEMPLATE": "OPENNESS_HIGH",
+    "AFFECTIVE_STYLE": "Existential sadness, metaphorical expression of distress",
+    "COGNITIVE_STYLE": "Philosophical rumination on meaning and mortality",
+    "SOMATIC_STYLE": "Variable; fatigue from over-reflection",
+    "SPECIFIER_HINT": "Mild MDD / adjustment-like",
+    "MODIFIERS": [
+      "existentially-focused"
+    ],
+    "PACING": "HIGH",
+    "CONTEXT_DOMAINS": [],
+    "EPISODE_DENSITY": "LOW",
+    "VOICE_STYLE": {
+      "verbosity": "moderate",
+      "expressiveness": "intense",
+      "trust": "open",
+      "intellect": "low-functioning",
+      "humor": "none"
+    },
+    "PERSONAL_BACKGROUND": {
+      "living_situation": "with partner",
+      "routine_stability": "stable routine"
+    },
+    "AGE_RANGE": "16-19",
+    "EMPH_INTENSITY": {
+      "Recurrent thoughts of death or suicide": "MED",
+      "Depressed mood": "HIGH",
+      "Loss of interest or pleasure": "LOW"
+    },
+    "EXTRA_ELEVATED_SYMPTOMS": []
+  },
+  "life_background": {
+    "name": "Jesse",
+    "age_range": "16-19",
+    "pronouns": "they/them",
+    "core_roles": [
+      "partner in a romantic relationship",
+      "high school student"
+    ],
+    "core_relationships": [
+      "close romantic partner with whom they share a living space",
+      "distant but steady parental ties"
+    ],
+    "core_stressor_summary": "Jesse often feels overwhelmed by a recurring undercurrent of existential questions that complicate their ability to find meaning, paired with periodic thoughts of death that intrude despite a stable daily routine.",
+    "life_facets": [
+      {
+        "category": "digital_or_social_media_habits",
+        "salience": "med",
+        "description": "Jesse uses social media mostly to explore philosophical and existential content, but sometimes finds the flood of opinions both stimulating and emotionally exhausting."
+      },
+      {
+        "category": "values_and_priorities",
+        "salience": "high",
+        "description": "Their values strongly focus on authenticity and seeking a deeper understanding of existence, often questioning conventional life paths and societal expectations."
+      },
+      {
+        "category": "coping_style",
+        "salience": "med",
+        "description": "They cope by engaging in intense talks with their partner and journaling their thoughts, though sometimes they get caught in circular ruminations that heighten their agitation."
+      },
+      {
+        "category": "past_help_seeking",
+        "salience": "low",
+        "description": "Jesse has rarely sought formal help, feeling unsure whether their feelings are just temporary phases or something to address clinically."
+      },
+      {
+        "category": "current_primary_stressor",
+        "salience": "high",
+        "description": "The most pressing stress is a pervasive sense of purposelessness that colors many daily moments despite usual activities and stable routines."
+      },
+      {
+        "category": "family_history_of_health_or_mental_health_issues",
+        "salience": "med",
+        "description": "There is some family history of anxiety and mood struggles, though these issues have not been openly discussed, adding a layer of uncertainty."
+      },
+      {
+        "category": "identity_stage",
+        "salience": "high",
+        "description": "Jesse is deeply immersed in the turbulent phase of identity exploration, struggling to reconcile their intense emotions with who they want to become."
+      },
+      {
+        "category": "key_partner_or_love_interest",
+        "salience": "high",
+        "description": "Their partner is central to their day-to-day life and emotional processing, providing both comfort and occasional tension when Jesse\u2019s inner conflicts surface."
+      },
+      {
+        "category": "soothing_activities",
+        "salience": "med",
+        "description": "Listening to ambient music and late-night walks sometimes help to gently calm their restless mind, though relief is fleeting."
+      },
+      {
+        "category": "self_view",
+        "salience": "med",
+        "description": "Jesse often sees themselves as thoughtful but flawed, caught in a mental space that feels both deeply interesting and frustratingly stagnant."
+      }
+    ]
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "RARE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "SOME",
+    "Fatigue or loss of energy": "SOME",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "SOME"
+  },
+  "asked_question_order": [
+    "Fatigue or loss of energy",
+    "Recurrent thoughts of death or suicide",
+    "Difficulty concentrating or indecisiveness",
+    "Significant weight/appetite changes",
+    "Sleep disturbances",
+    "Depressed mood",
+    "Feelings of worthlessness or excessive guilt",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation"
+  ],
+  "doctor_manager_decisions": [
+    {
+      "turn": 1,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shared deep, existential thoughts and emotions deserving of acknowledgment and connection before further clinical exploration.",
+      "doctor_instruction": "Acknowledge the patient's profound feelings about existence and the weight of their thoughts, expressing understanding and empathy. Invite them to share more about how these thoughts affect their day-to-day life, validating their experience while creating a space where they feel heard and supported.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 2,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "The patient described fatigue and difficulty concentrating, so covering those DSM symptoms next fits naturally and efficiently.",
+      "doctor_instruction": "Gently ask the patient about how their energy levels have been and whether they have noticed fatigue or loss of energy, then inquire about their ability to concentrate or make decisions throughout the day. Keep the tone warm but brisk to maintain focus given the time constraints.",
+      "dsm_symptom_key": "Fatigue or loss of energy"
+    },
+    {
+      "turn": 3,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient has shared a deeply vivid and distressing description of their experience, which warrants empathic acknowledgment and connection before continuing.",
+      "doctor_instruction": "Reflect back the patient's experience with compassion, acknowledging how heavy and exhausting it must be to carry that invisible burden daily. Invite them to share more if they feel comfortable, emphasizing that you hear the struggle and are here to support them.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 4,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient is sharing deeply existential and isolating feelings that need empathy and acknowledgment before moving on.",
+      "doctor_instruction": "Respond with gentle empathy acknowledging the profound struggle they\u2019re describing. Reflect back the difficulty of feeling detached and trapped in that fog and exhaustion. Offer a warm, validating statement that their experience is heard and that it\u2019s okay to feel overwhelmed by such heavy, existential questions.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 5,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time is limited and exploring suicidal thoughts is critical given the patient's high risk and recent mentions.",
+      "doctor_instruction": "Gently transition to asking about your recent recurrent thoughts of death or suicide, expressing concern while maintaining a calm, steady tone. Encourage openness without rushing, to understand any current risks or plans.",
+      "dsm_symptom_key": "Recurrent thoughts of death or suicide"
+    },
+    {
+      "turn": 6,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient has shared deeply personal and existential reflections along with suicidal thoughts without a plan, indicating a need for empathetic connection and reassurance.",
+      "doctor_instruction": "Acknowledge the profound struggle the patient is experiencing with these persistent, heavy thoughts and the isolation they cause. Gently affirm their courage in opening up about such difficult feelings, emphasizing they are not alone in this and that your role is to support them through this uncertainty and burden.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 7,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time is limited and we still need to cover key DSM symptoms; difficulty concentrating fits naturally next.",
+      "doctor_instruction": "Gently transition to asking about the patient's experience with difficulty concentrating or making decisions, acknowledging how tough this cognitive fog must be while emphasizing the importance of understanding all aspects of their symptoms to help.",
+      "dsm_symptom_key": "Difficulty concentrating or indecisiveness"
+    },
+    {
+      "turn": 8,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is sharing an intense experience of cognitive fog and overwhelm, which calls for empathy and connection to build trust and comfort.",
+      "doctor_instruction": "Acknowledge how difficult and disruptive these moments of scattered thoughts and decision-making must feel. Express understanding of how deeply this impacts their day-to-day life and affirm that it\u2019s okay to feel this way. Offer support by gently inviting them to share more if they feel comfortable.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 9,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient is sharing their ongoing struggle with cognitive fog and resilience, inviting empathetic connection.",
+      "doctor_instruction": "Acknowledge the patient's perseverance despite the cognitive struggles and validate how difficult it is to keep going. Express understanding that their efforts, even when uneven, are meaningful and commendable. Offer support while gently reinforcing hope that clarity and relief are possible.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 10,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "We need to continue covering DSM symptom areas thoroughly and have not yet asked about significant weight or appetite changes.",
+      "doctor_instruction": "Acknowledging your hope and the slow journey, I want to ask now about any changes you've noticed in your weight or appetite recently, as these symptoms also help us understand how depression may be affecting you physically.",
+      "dsm_symptom_key": "Significant weight/appetite changes"
+    },
+    {
+      "turn": 11,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient reported stable appetite and weight, so it's appropriate to move on to exploring another DSM symptom.",
+      "doctor_instruction": "Acknowledge the patient's observation about their appetite and weight being a stable point amid their difficulties, then gently transition to ask about their sleep patterns to continue mapping symptoms.",
+      "dsm_symptom_key": "Sleep disturbances"
+    },
+    {
+      "turn": 12,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "Exploring depressed mood next aligns with the patient's expressed mental state and symptomatology.",
+      "doctor_instruction": "Acknowledge the importance of the steady sleep and appetite as stabilizing factors, then gently transition to asking about feelings of sadness or low mood, to better understand the core depressive symptoms the patient is experiencing.",
+      "dsm_symptom_key": "Depressed mood"
+    },
+    {
+      "turn": 13,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "Patient is sharing deep emotional experience tied to existential struggle and persistent sadness, which calls for empathetic connection and validation.",
+      "doctor_instruction": "Acknowledge the weight of the sadness and the ongoing existential struggle the patient describes, reflecting their experience back with compassion to deepen the sense of being understood and less alone.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 14,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient shares deep exhaustion and continuous battle with sadness, warranting empathetic connection and validation.",
+      "doctor_instruction": "Acknowledge the heavy, ongoing struggle the patient describes with warmth and understanding. Reflect on the courage it takes to keep going despite the relentless weight, validating their experience and expressing support to foster trust.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 15,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient expresses deep appreciation and fragile hope, warranting a warm connection to reinforce support and ease isolation.",
+      "doctor_instruction": "Acknowledge the courage it takes to keep going despite such a heavy burden. Reflect on the meaning of their hopeful search and validate how important it is to have someone alongside in this journey. Encourage the patient gently to share more about what helps them hold onto that hope.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 16,
+      "manager_type": "normal",
+      "next_action": "RAPPORT",
+      "reason": "The patient expresses fragile hope and openness about their ongoing struggle, offering a good opportunity to connect and acknowledge their courage.",
+      "doctor_instruction": "Affirm the patient\u2019s insight about hope being fragile yet vital, and gently acknowledge the strength it takes to keep moving forward despite uncertainty. Reflect on their willingness to continue the search and convey that you value walking this path with them, reinforcing safety and support.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 17,
+      "manager_type": "low_turns",
+      "next_action": "DSM",
+      "reason": "Time to cover a remaining DSM symptom area while transitioning naturally from the patient's expressed feelings of burden and resilience.",
+      "doctor_instruction": "Gently acknowledge the patient\u2019s expression of fragile hope and resilience, then pivot to asking about feelings of worthlessness or excessive guilt to deepen understanding of their depressive symptoms.",
+      "dsm_symptom_key": "Feelings of worthlessness or excessive guilt"
+    },
+    {
+      "turn": 18,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient clarified the absence of worthlessness or guilt feelings, so moving to explore specific DSM symptom areas is appropriate now.",
+      "doctor_instruction": "Acknowledge the patient's insight that their struggle is centered on existential uncertainty rather than self-blame, then gently transition to ask about loss of interest or pleasure in activities to continue clinical assessment.",
+      "dsm_symptom_key": "Loss of interest or pleasure"
+    },
+    {
+      "turn": 19,
+      "manager_type": "normal",
+      "next_action": "FOLLOW_UP",
+      "reason": "The patient describes subtle but impactful anhedonia that deserves more exploration.",
+      "doctor_instruction": "Gently explore the frequency and impact of this dulled pleasure on daily life and relationships. Acknowledge how hard it is to feel disconnected from joy while still holding onto hope, and invite the patient to share more about how this has changed over time or affects their motivation.",
+      "dsm_symptom_key": ""
+    },
+    {
+      "turn": 20,
+      "manager_type": "normal",
+      "next_action": "DSM",
+      "reason": "The patient describes persistent restlessness and foggy mental states, suggesting exploration of psychomotor agitation or retardation symptoms.",
+      "doctor_instruction": "Shift gently into exploring any noticeable changes or challenges with your body's movements or activity levels\u2014like feeling slowed down, restless, or having difficulty sitting still. This will help give a clearer picture of how these physical symptoms might be affecting your overall experience.",
+      "dsm_symptom_key": "Psychomotor agitation or retardation"
+    },
+    {
+      "turn": 21,
+      "manager_type": "post_dsm",
+      "next_action": "END",
+      "reason": "The patient has shared comprehensive, nuanced reflections about their experience, and the conversation is at a natural point to begin wrapping up while offering support.",
+      "doctor_instruction": "Acknowledge the complexity and difficulty of what the patient is carrying, affirm their resilience and the flicker of hope they hold on to. Gently begin to close the session by reinforcing that support will be ongoing and encourage them to reach out when needed, leaving the door open for further help.",
+      "dsm_symptom_key": ""
+    }
+  ],
+  "patient_manager_decisions": [
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "existential",
+          "candid"
+        ],
+        "key_points_to_reveal": [
+          "frequent depressed mood",
+          "some psychomotor agitation and fatigue",
+          "occasional loss of interest or pleasure",
+          "some recurrent thoughts of death or suicide",
+          "existential feelings about life and meaning"
+        ],
+        "key_points_to_avoid": [
+          "weight/appetite changes",
+          "sleep issues",
+          "worthlessness or guilt",
+          "difficulty concentrating"
+        ],
+        "patient_instruction": "Express clearly and intensely that you have been feeling down often, sometimes restless and tired, and occasionally lose interest in things. Share your recurring, deep thoughts about death and what life means without going into technical terms or intellectualizing. Speak with a searching, earnest tone reflecting your existential focus and moderate speech pace."
+      }
+    },
+    {
+      "turn": 1,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense",
+          "honest"
+        ],
+        "key_points_to_reveal": [
+          "The weight disrupts daily focus and motivation",
+          "Struggles to connect with others or maintain relationships",
+          "Feels detached or numb as a defense",
+          "The difficulty of enduring hours filled with these heavy thoughts"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the impact of symptoms",
+          "mentioning symptoms not present, like appetite or guilt"
+        ],
+        "patient_instruction": "Speak with intense honesty about how this existential weight permeates everyday activities, making it hard to concentrate on school or engage with people meaningfully. Express feeling alienated, as if there is a barrier between you and others, and describe the challenging monotony and heaviness in just moving through the day."
+      }
+    },
+    {
+      "turn": 2,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "reflective",
+          "existential"
+        ],
+        "key_points_to_reveal": [
+          "Energy feels drained like an invisible burden, not physical tiredness",
+          "Difficulty focusing is frequent and fragments daily thought",
+          "Decision-making is challenging due to persistent mental fog",
+          "Existential weight adds to fatigue and hinders clarity"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the impact of mental fatigue",
+          "Suggesting physical health issues as cause",
+          "Lightening or joking about the depth of mental struggle"
+        ],
+        "patient_instruction": "Express with intense clarity how your energy feels more like a crushing burden than simple tiredness, emphasizing how the mental fog frequently fragments your focus and makes even simple decisions nearly impossible. Reflect on how the existential questions that haunt you also sap your energy and cloud your mind, making daily functioning feel like an uphill climb."
+      }
+    },
+    {
+      "turn": 3,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "existential",
+          "intense",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "The impact of exhaustion and fog on daily tasks",
+          "Feelings of detachment from reality and others",
+          "How these symptoms amplify existential distress",
+          "Ongoing internal battle with meaning and existence"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing symptoms",
+          "Shifting focus to less relevant topics",
+          "Discussing weight, appetite, or sleep symptoms"
+        ],
+        "patient_instruction": "Respond with intense, vivid descriptions of how the relentless exhaustion and mental fog suffuse every part of daily life, making it hard to engage or connect, emphasizing the deep existential pain this creates. Express how the symptoms deepen the sense of isolation and detachment, reinforcing the feeling of being trapped in a hard-to-escape mental state. Use flowing, passionate language that reflects your high openness and existential focus, keeping the response detailed but clear."
+      }
+    },
+    {
+      "turn": 4,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "existential",
+          "reflective"
+        ],
+        "key_points_to_reveal": [
+          "Acknowledge the difficulty of the numbness and fog",
+          "Express how these feelings reinforce their existential questioning",
+          "Mention the isolation this creates and the ongoing impact on hope"
+        ],
+        "key_points_to_avoid": [
+          "Minimizing the severity of their symptoms",
+          "Shifting focus away from existential themes"
+        ],
+        "patient_instruction": "Respond with intensity and candor, emphasizing how the numbness and fog deepen their struggle with life's meaning and make connection difficult. Express that these feelings create an isolating experience that colors their entire existence and dims any hope, while maintaining a tone of thoughtful reflection."
+      }
+    },
+    {
+      "turn": 5,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "LONG",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "intense",
+          "reflective",
+          "somber"
+        ],
+        "key_points_to_reveal": [
+          "Recurrent thoughts of death as contemplations about existence and meaning",
+          "Acknowledgment of some degree of suicidal ideation without specific plans or intent",
+          "The emotional weight these thoughts carry, contributing to feelings of isolation"
+        ],
+        "key_points_to_avoid": [
+          "Detailed descriptions of methods or plans for self-harm",
+          "Minimizing or denying these recurring thoughts"
+        ],
+        "patient_instruction": "This patient speaks with intense expressiveness and existential focus. They should openly and candidly describe their recurring thoughts about death as a deep, philosophical reflection on life and its fragility, admitting to having some thoughts about self-harm but without concrete plans. Their language is rich in metaphor and emotionally weighty but intellectually simple, conveying how these thoughts isolate them and add to their emotional burden."
+      }
+    },
+    {
+      "turn": 6,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense",
+          "existential"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the difficulty of the situation",
+          "express openness to support",
+          "reflect on the ongoing existential struggle"
+        ],
+        "key_points_to_avoid": [
+          "detailed discussion of any suicidal plans or strong impulses",
+          "minimizing the severity of symptoms"
+        ],
+        "patient_instruction": "Respond with deep appreciation for the doctor's understanding, emphasizing how heavy the burden feels but also subtly conveying a cautious openness to receiving support. Reflect intensely yet calmly about the ongoing nature of the existential questions that weigh most heavily, maintaining a sense of searching without any clear resolution. The tone should remain serious and expressive but not overly emotional\u2014more focused on philosophical struggle and the sense of carrying a complex, persistent weight."
+      }
+    },
+    {
+      "turn": 7,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "intense"
+        ],
+        "key_points_to_reveal": [
+          "Difficulty concentrating occurs sporadically but impacts daily functioning",
+          "Decision-making feels overwhelming even for small tasks",
+          "The cognitive fog is linked to the overall existential weight the patient feels"
+        ],
+        "key_points_to_avoid": [
+          "Avoid overstating frequency to align with RARE symptom endorsement",
+          "Do not minimize the impact of concentration difficulties despite low frequency"
+        ],
+        "patient_instruction": "Express that while concentration problems and indecisiveness happen infrequently, they are significant when they do occur. Describe them as moments that fragment attention and overwhelm thought, connecting these cognitive struggles to the persistent existential burden that permeates daily life."
+      }
+    },
+    {
+      "turn": 8,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "resigned"
+        ],
+        "key_points_to_reveal": [
+          "frustration with cognitive fog",
+          "coping by avoidance or distraction",
+          "feeling overwhelmed but still trying to manage"
+        ],
+        "key_points_to_avoid": [
+          "detailed plans of self-harm or suicidal intent",
+          "excessive despair or hopelessness beyond current level"
+        ],
+        "patient_instruction": "Respond with thoughtful, somewhat intense reflection on how these foggy moments disrupt daily life and decision-making, expressing frustration but also hinting at attempts to manage through distraction or avoidance. Maintain a resigned, philosophical tone without deepening into hopelessness or explicit plans."
+      }
+    },
+    {
+      "turn": 9,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "earnest",
+          "hopeful"
+        ],
+        "key_points_to_reveal": [
+          "acknowledges the difficulty of persisting despite mental fog",
+          "expresses guarded hope for support and relief",
+          "emphasizes the ongoing struggle as part of an existential search"
+        ],
+        "key_points_to_avoid": [
+          "overly optimistic statements",
+          "detailed plans for change",
+          "minimizing the ongoing intensity of symptoms"
+        ],
+        "patient_instruction": "Respond with thoughtful appreciation for the acknowledgment of your struggle, sharing your cautious but genuine hope for help. Express that while the effort to keep going feels heavy and uncertain, you want to believe there's some light ahead even if it's still difficult to see clearly."
+      }
+    },
+    {
+      "turn": 10,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "calm"
+        ],
+        "key_points_to_reveal": [
+          "no notable changes in weight or appetite",
+          "maintains some stability in this area despite other challenges"
+        ],
+        "key_points_to_avoid": [
+          "any indication of weight or appetite changes that aren't present"
+        ],
+        "patient_instruction": "Respond with a calm and thoughtful tone, noting that there haven't been any significant changes in weight or appetite. Emphasize that, despite the internal fog and heaviness, this aspect has remained steady, reflecting a small area of consistency amidst broader challenges."
+      }
+    },
+    {
+      "turn": 11,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "existential",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "No significant changes in sleep",
+          "Sleep feels steady like appetite",
+          "Sleep stability is a rare constant amid mental fog"
+        ],
+        "key_points_to_avoid": [
+          "Avoid suggesting any sleep disruption or insomnia",
+          "Do not overemphasize hopefulness or positivity"
+        ],
+        "patient_instruction": "Respond with thoughtful acknowledgment that sleep, like appetite, has remained fairly stable despite the mental fog and weight. Emphasize how this consistency is a small but meaningful anchor amid the ongoing existential struggles, keeping the tone introspective and measured without overstating optimism."
+      }
+    },
+    {
+      "turn": 12,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "intense",
+          "existential"
+        ],
+        "key_points_to_reveal": [
+          "frequent experience of deep sadness or low mood",
+          "the persistent feeling of being weighed down emotionally",
+          "connection between sadness and existential questioning"
+        ],
+        "key_points_to_avoid": [
+          "any minimization of mood symptoms",
+          "detailed description of physical symptoms unrelated to mood"
+        ],
+        "patient_instruction": "Respond candidly about the frequency of these deep low moods, emphasizing how they often dominate and weigh heavily, linking them to the ongoing existential struggle. Use intense but thoughtful language reflecting a high openness and existential focus, sharing the impact on daily emotional experience without drifting toward physical symptoms."
+      }
+    },
+    {
+      "turn": 13,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "resigned"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the exhausting weight of persistent sadness",
+          "express how this sorrow deepens the existential struggle",
+          "recognize the struggle but emphasize continuing to carry it"
+        ],
+        "key_points_to_avoid": [
+          "detailed plans or strong expressions of suicidal intent",
+          "minimizing or deflecting the pain"
+        ],
+        "patient_instruction": "Respond with candid reflection on how the persistent sadness deeply influences your daily experience and existential questions. Emphasize how exhausting it is to carry this sorrow constantly, while acknowledging the ongoing nature of your struggle without expressing any immediate plans or impulses related to self-harm."
+      }
+    },
+    {
+      "turn": 14,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "HIGH",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "resilient",
+          "reflective",
+          "grateful"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge their ongoing struggle and the weight they carry",
+          "express cautious hope tied to the doctor's support",
+          "emphasize the existential nature of their experience and ongoing search for meaning"
+        ],
+        "key_points_to_avoid": [
+          "minimizing the depth of their sadness",
+          "introducing new symptoms like suicidality beyond what was already shared"
+        ],
+        "patient_instruction": "Respond with honest appreciation for the doctor's support and acknowledge the continuous challenge of the sinking sadness. Emphasize your resilience in carrying this weight and your ongoing search for meaning, expressing cautious hope that having someone beside you makes the journey a bit more bearable. Keep your tone intense but balanced, staying true to your thoughtful and existentially focused personality."
+      }
+    },
+    {
+      "turn": 15,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "cautious",
+          "existential"
+        ],
+        "key_points_to_reveal": [
+          "Hope is fragile and tied to the idea of not giving up searching for meaning",
+          "The presence of someone understanding softens the emotional burden",
+          "Clinging to moments of clarity or small lights in the darkness"
+        ],
+        "key_points_to_avoid": [
+          "Any detailed plans or strong commitments to improvement",
+          "Minimizing the depth or persistence of the emotional struggle"
+        ],
+        "patient_instruction": "Respond with a reflective and existential tone, acknowledging the fragility of hope but emphasizing how the support and moments of small clarity sustain them. Keep it moderately verbose and candid, expressing cautious optimism without overstating progress or certainty."
+      }
+    },
+    {
+      "turn": 16,
+      "doctor_move": "RAPPORT",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "OPEN",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "hopeful",
+          "intense"
+        ],
+        "key_points_to_reveal": [
+          "acknowledge the doctor's support",
+          "express the meaningfulness of companionship in this struggle",
+          "describe the complexity of holding onto hope while confronting existential questions"
+        ],
+        "key_points_to_avoid": [
+          "overly intellectual explanations",
+          "detailed plans for recovery",
+          "minimizing the depth of their struggle"
+        ],
+        "patient_instruction": "Respond with thoughtful appreciation for the doctor's support, emphasizing how having someone to walk alongside provides a small but profound relief in the persistent fog. Reflect on the intense and ongoing struggle with existential questions, conveying how hope remains a fragile light that fuels their resilience, while maintaining a tone that is emotionally intense but controlled."
+      }
+    },
+    {
+      "turn": 17,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "reserved",
+          "thoughtful"
+        ],
+        "key_points_to_reveal": [
+          "No significant feelings of worthlessness or excessive guilt",
+          "Focus is more on existential questions and heavy fog than self-blame"
+        ],
+        "key_points_to_avoid": [
+          "Avoid expressing any strong self-loathing or guilt",
+          "Do not shift focus away from existential themes to personal fault"
+        ],
+        "patient_instruction": "Respond thoughtfully but keep the focus on the existential struggle rather than personal blame; express that feelings of worthlessness or guilt aren\u2019t prominent, as they don\u2019t really fit your experience. Reflect on how the burden you carry tends to be less about self-judgment and more about the intangible, heavy fog and the ongoing search for meaning."
+      }
+    },
+    {
+      "turn": 18,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "Occasional loss of pleasure in activities",
+          "Maintains hope but hesitant to fully admit deeper losses",
+          "Expressions tied back to existential themes"
+        ],
+        "key_points_to_avoid": [
+          "Full admission of frequent or total loss of interest",
+          "Any mention of giving up or deeper resignation"
+        ],
+        "patient_instruction": "Respond with some acknowledgment that there are moments when pleasure fades, but frame it as infrequent or partial rather than complete. Keep the tone thoughtful and connected to your broader existential reflections, showing some caution in sharing too much vulnerability yet still open enough to move the conversation forward. Avoid sounding resigned or deeply defeated."
+      }
+    },
+    {
+      "turn": 19,
+      "doctor_move": "FOLLOW_UP",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "reflective",
+          "guarded"
+        ],
+        "key_points_to_reveal": [
+          "dulled pleasure happens sometimes but not all the time",
+          "effects include a sense of distance but not full disconnection",
+          "this feeling is somewhat steady rather than rapidly changing"
+        ],
+        "key_points_to_avoid": [
+          "overstating the impact on relationships",
+          "deep emotional revelations or intensity beyond current minimize state"
+        ],
+        "patient_instruction": "Respond thoughtfully but keep a bit guarded; acknowledge that the dulled pleasure is a noticeable but intermittent issue that creates some distance in daily life and relationships, yet it hasn\u2019t dramatically worsened or fully taken over. Keep the tone reflective and somewhat abstract, consistent with the patient\u2019s existential focus and moderate expressiveness, but avoid oversharing or deep emotional detail right now."
+      }
+    },
+    {
+      "turn": 20,
+      "doctor_move": "DSM",
+      "guidance": {
+        "directness": "MED",
+        "disclosure_stage": "MINIMIZE",
+        "target_length": "MEDIUM",
+        "emotional_state": "neutral",
+        "tone_tags": [
+          "thoughtful",
+          "reserved",
+          "existential"
+        ],
+        "key_points_to_reveal": [
+          "some restlessness",
+          "feeling slowed down at times"
+        ],
+        "key_points_to_avoid": [
+          "explicit feelings of agitation or severe psychomotor symptoms"
+        ],
+        "patient_instruction": "Respond by acknowledging occasional restlessness and moments of feeling slowed down, but keep the focus broad and less specific, framing these changes as part of the overall fog and weight. Maintain a thoughtful, existential tone without revealing intense emotional turmoil or agitation, consistent with a minimized disclosure at this stage."
+      }
+    }
+  ],
+  "final_disclosure_state": "MINIMIZE",
+  "openai_call_parameters": {
+    "model": "gpt-4.1-mini",
+    "doctor_temperature": 1.0,
+    "patient_temperature": 1.0
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Lately, I\u2019ve been feeling down more days than not\u2014like this low cloud that doesn\u2019t quite lift. Sometimes, it\u2019s not just sadness but this restless agitation that makes me pace or fiddle with things, like my mind and body are tangled up in some kind of unrest. I get tired too, not from sleep but from just... carrying this weight of thought, this constant undercurrent of something I can\u2019t quite shake.\n\nThere are moments when things that used to bring me even a flicker of joy just don\u2019t anymore. It\u2019s not every day, but enough that it feels like a sign\u2014a reminder that whatever light I had is dimming, or maybe just shifting shape. What really gets to me, though, is this recurring shadow of death in my thoughts. It\u2019s not just fear or morbid curiosity\u2014I keep turning over what it means to live and to die, and why it all seems so... fragile, so fleeting. \n\nSometimes it feels like everything\u2019s an endless question, and I\u2019m stuck trying to find an answer that just won\u2019t come. It\u2019s like I\u2019m searching for a meaning that keeps slipping further away the more I reach for it. That\u2019s what\u2019s been wearing me down\u2014the not knowing, the feeling that life\u2019s significance is just out of grasp, and those thoughts circle back to what it all really amounts to."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That sounds incredibly heavy to carry around\u2014the endless questions about meaning and those persistent thoughts about death. It\u2019s no small thing to feel stuck in that space. How does this weight affect what you do day to day\u2014like school, your relationships, or just getting through the hours?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s like there\u2019s this fog that wraps around everything I try to do. When I\u2019m in class, the weight is there, pulling at my focus until everything feels fragmented\u2014words from the teacher wash over me, but my mind drifts back to those questions I can\u2019t answer. It makes it hard to keep up or find motivation, like I\u2019m going through motions without the energy to really engage. School doesn\u2019t feel like a place of growth or discovery anymore; it\u2019s just obstacles to get past.\n\nAnd with people... it\u2019s complicated. I want to connect, especially with my partner, but sometimes it feels like there\u2019s this invisible barrier between us\u2014like I\u2019m looking out from behind glass. The restlessness and weariness mix with this numbness that creeps in, almost as if my mind shields me from the intensity by tuning everything out. I get detached because the weight is so raw; feeling numb feels safer, even though it\u2019s lonely. \n\nThe hardest part is how long this goes on. The hours bleed into each other, heavy and slow, like a constant echo of those hard thoughts bouncing in my head. It\u2019s exhausting just to exist through it all\u2014there\u2019s no real escape, no break. It\u2019s not just being sad; it\u2019s this deep, relentless pressing that makes even the simplest tasks feel like climbing uphill. Moving through the day is its own kind of battle."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned feeling worn down just getting through the day\u2014how have your energy levels been lately? Also, how\u2019s your ability to focus or make decisions when all that fog settles in?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s hard to put into words, but it\u2019s not the kind of tired that comes from pushing your body too hard. It\u2019s more like this invisible weight pressing down on my whole being, draining my energy in a way that feels crushing rather than just fatigue. Like carrying a heavy load that nobody else can see but that\u2019s always there, sapping what little strength I have left.\n\nMy mind feels clouded most days. Focusing is a constant struggle because thoughts break apart and scatter before I can hold onto them. It\u2019s like trying to grasp smoke\u2014there\u2019s no solid ground, no clear path, just fragments floating and dissolving. Making decisions, even the smallest ones, becomes this huge challenge, as if my brain is stuck in this thick fog that refuses to lift. I get overwhelmed by the effort it takes just to think clearly.\n\nAll of this\u2014this relentless questioning of what it means to live, to exist\u2014it settles into my bones, adding another layer of weight that I can\u2019t escape. It drains my energy and clogs my mind, making every moment feel like trudging uphill through a storm I can\u2019t outrun. It\u2019s exhausting in a way that feels permanent, like a shadow that dims everything, and that\u2019s the hardest part\u2014knowing it\u2019s there no matter what I do."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sounds like you\u2019re carrying this huge, unseen weight that\u2019s always there\u2014sapping your energy and messing with your focus. That kind of constant fog and exhaustion must make everything feel relentless. If you want to talk more about how this all lands day-to-day, I\u2019m here to listen."
+    },
+    {
+      "speaker": "patient",
+      "text": "Yeah, it\u2019s like this thick, invisible fog seeps into every part of my day\u2014it blurs the edges of even the simplest tasks until they lose their shape and meaning. Getting up, moving through school, talking with others\u2014even those things that used to feel real and present now feel distant and filtered, as if I\u2019m watching life through a cracked lens that warps everything. The exhaustion isn\u2019t just in my body; it\u2019s in my perception, like reality itself is slipping away bit by bit.\n\nThat feeling of detachment\u2014like I\u2019m separate from the world and the people around me\u2014is one of the hardest parts. It\u2019s a kind of numbness that protects me from the sharpness of my own thoughts but also isolates me in a way that cuts deep. I want to reach out, to feel connected, but there\u2019s this barrier that keeps me tethered to the dark spiral inside. The more I wrestle with these heavy questions about why any of this matters, the heavier everything feels, and the further I drift from feeling grounded or hopeful.\n\nThis cycle of exhaustion, fog, and isolation traps me in a place where meaning fractures and the future seems like a distant, unknowable shadow. It\u2019s not just tiredness or sadness; it\u2019s a relentless internal battle over existence itself, and some days that fight feels like all I have left."
+    },
+    {
+      "speaker": "doctor",
+      "text": "What you\u2019re describing\u2014the numbness, feeling distant from everything, and caught in that relentless fog\u2014sounds incredibly tough. It makes sense you\u2019d feel overwhelmed when grappling with such deep, heavy questions about life and meaning every day. It\u2019s okay to feel like this; you\u2019re not alone in facing it."
+    },
+    {
+      "speaker": "patient",
+      "text": "It\u2019s crushing to admit, but that numbness and fog almost feel like both a shield and a prison. They dull the sharpness of the questions swirling in my mind, but they also trap me deeper in that dark space where meaning slips away. It\u2019s like every time I try to reach for something real, the fog pulls me back into this isolating place where hope feels distant\u2014almost erased.\n\nThat distance from others isn\u2019t just loneliness; it feels like an invisible wall that separates me from any sense of belonging or warmth. It amplifies the struggle, makes the questions even more urgent and painful because there\u2019s nowhere safe to lay them down. So yeah, the numbness and fog don\u2019t just block my senses\u2014they smother my very sense of self and possibility."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You mentioned those recurring thoughts about death earlier. Can you tell me more about what those thoughts look like? Have you ever thought about hurting yourself or ways you might do that?"
+    },
+    {
+      "speaker": "patient",
+      "text": "The thoughts about death creep in like shadows on the edges of my mind\u2014quiet but persistent, like a slow tide pulling at the shore of my thoughts. They\u2019re less about wanting to end things in a clear-cut way and more about trying to understand what death really means, why it\u2019s the final chapter no one fully knows. It feels like staring down into a dark abyss, searching for something solid to hold onto, but finding only questions and silence.\n\nI won\u2019t lie\u2014sometimes those thoughts do get heavy enough that I wonder if stepping away from all this pain might bring some relief, a kind of escape from the suffocating weight inside. But there\u2019s no plan, no steps laid out. It\u2019s more like a shadow that settles beside me in the quiet moments, a thought that whispers but doesn\u2019t scream. It makes me feel isolated because these thoughts aren\u2019t easy to share or explain, and they set me apart from the world in a way that deepens the loneliness.\n\nIt\u2019s this constant tension\u2014holding on while wrestling with what it all means and wondering if the struggle itself has any purpose. That uncertainty crushes me more than anything\u2014feeling this heavy burden with no clear path forward, no simple answer to the pain that lingers beneath it all."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It takes real courage to speak so openly about those heavy thoughts and the loneliness they bring. You\u2019re carrying a lot, and it\u2019s clear how much this weighs on you. You\u2019re not alone in this, and I\u2019m here to help you find some clarity and relief in that burden, even if the answers feel out of reach right now."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. It\u2019s not easy to put all this into words, but having someone listen without judgment means more than I can say. This burden\u2026 it\u2019s like carrying a stone that never gets lighter, no matter how much I want it to be. The weight presses down constantly, especially those questions about existence and what it all really means. They don\u2019t come with answers\u2014just more questions\u2014and that\u2019s exhausting in itself.\n\nI\u2019m wary but open to any help or guidance that might ease this load, even if it doesn\u2019t solve everything right away. The struggle feels ongoing, like a search without a clear destination, but maybe having support can make the path a little less dark and lonely. I want to try, even if the answers remain elusive, because somewhere beneath it all I know this isn\u2019t how things have to stay."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve mentioned how hard it is to focus and make decisions with all that fog clouding your mind. Can you tell me more about how often you find it tough to concentrate or decide even simple things during your day? Understanding this better will help us figure out the best way to support you."
+    },
+    {
+      "speaker": "patient",
+      "text": "It doesn\u2019t happen all the time, but when it does, it really throws me off. There are moments during the day when my thoughts just scatter, and focusing on what\u2019s in front of me feels impossible\u2014like my mind is slipping through cracks I can\u2019t patch. Even deciding something small, like what to do next or how to respond, feels like climbing a steep mountain with no clear path.\n\nThese moments aren\u2019t constant, but they hit hard when they come, breaking the flow of my day and adding to the weight I already carry. It feels tied to that bigger existential fog I\u2019m trapped in\u2014like the heaviness presses in on my ability to think straight and be present. Those times remind me how much this isn\u2019t just about being tired or distracted; it\u2019s a deep fog that clouds everything, making even the simplest things feel overwhelming."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Those moments when your mind just won\u2019t settle must be so frustrating, especially when they disrupt your day like that. It\u2019s totally understandable that the fog would make even simple decisions feel overwhelming. If you want to talk more about how this affects you or ways you\u2019ve managed so far, I\u2019m here to listen."
+    },
+    {
+      "speaker": "patient",
+      "text": "It really is frustrating\u2014those moments when nothing sticks, and every choice feels like too much to handle. It\u2019s like my mind closes off, and all I can do is try to push through or distract myself just to keep moving forward. Sometimes I avoid things altogether because making a decision or focusing feels impossible, and that just adds to the cycle.\n\nDespite all of this, I\u2019m trying\u2014not always successfully, but I keep trying to hold onto whatever small things I can manage. It\u2019s a slow, uneven process, and some days are harder than others, but I guess that\u2019s part of living with this fog. I keep hoping for some clarity or relief, even if it feels far away right now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s no small thing to keep pushing forward when your mind won\u2019t cooperate, and that slow, uneven progress still matters a great deal. What you\u2019re doing\u2014holding on and trying\u2014is a real effort, especially in the middle of such a fog. That hope for clarity and relief? It\u2019s worth holding onto, and I\u2019m here to help you find ways through it."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you\u2014I appreciate that. It\u2019s hard to keep going when everything feels so clouded, but I do want to believe there\u2019s something beyond this fog, even if it\u2019s faint right now. The struggle isn\u2019t just about managing symptoms; it feels like part of a deeper search for meaning, even if the path is confusing and heavy. \n\nI\u2019m cautiously hopeful that with support, I can find moments of clarity and a bit of relief from the weight that presses so hard. It\u2019s a slow journey, and some days feel darker than others, but having someone beside me while I navigate this makes a difference. It\u2019s a small light, but it\u2019s enough to keep me holding on for now."
+    },
+    {
+      "speaker": "doctor",
+      "text": "You\u2019ve mentioned how tough and slow this journey feels, but also that hope you\u2019re holding onto. Can I ask if you\u2019ve noticed any changes in your weight or appetite lately\u2014either eating more, less, or shifts in how you feel about food? It helps to get the full picture of what\u2019s going on."
+    },
+    {
+      "speaker": "patient",
+      "text": "Actually, I haven\u2019t noticed any real changes in my weight or appetite. Food feels pretty steady\u2014neither more nor less appealing than usual. It\u2019s one of the few things that hasn\u2019t shifted much, which feels like a small anchor in the middle of everything else that seems so uncertain and heavy. Even with all the fog and weight in my mind, this part feels stable, if only barely."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It\u2019s good to hear that your appetite and weight have stayed steady\u2014that kind of stability can be important when so much else feels uncertain. How about your sleep\u2014have you noticed any changes in how well you\u2019re sleeping, or trouble falling or staying asleep?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My sleep hasn\u2019t changed much either. It\u2019s steady, like my appetite, which is a small but meaningful constant in the middle of all the mental fog and weight I carry. I don\u2019t have trouble falling or staying asleep, and those nights of rest feel like rare moments where everything isn\u2019t quite so heavy. It\u2019s not a fix, by any means, but it feels like a grounding point when so much else feels unsettled."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That steady sleep and appetite sound like important anchors for you right now. With that in mind, how often have you been feeling overwhelmingly sad or down lately\u2014like the deep lows you've described\u2014throughout your days or weeks?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I\u2019ve been feeling that deep sadness pretty often\u2014more days than not, really. It\u2019s like an invisible weight that sits heavily on my chest and mind, coloring almost everything I do and think. This sadness isn\u2019t just about feeling down; it\u2019s intricately tied to the questions that haunt me\u2014the search for meaning, the fragility of life, and the unsettling sense that clarity always slips just out of reach. \n\nIt\u2019s persistent, almost like a background hum that swells into overwhelming waves at times, dragging me into a space that\u2019s hard to escape. That feeling makes even the simplest moments feel loaded, as if everything is suffused with this quiet, intense sorrow tied to the existential struggle I carry every day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That steady, heavy sadness you\u2019re carrying alongside those deep questions sounds exhausting\u2014and like it colors everything in your life right now. It\u2019s a tough place to be, feeling that sorrow so persistently. I hear how much you\u2019re struggling, and that you\u2019re not alone in it."
+    },
+    {
+      "speaker": "patient",
+      "text": "It really is exhausting, carrying that kind of sadness day after day. It\u2019s like a weight that settles deep inside, making even the simplest things feel like too much. That sorrow doesn\u2019t just stay separate\u2014it seeps into everything, fueling the questions I wrestle with about why I\u2019m here and what any of it means. \n\nEven though it feels heavy and relentless, I keep carrying it, because there\u2019s no other choice. It\u2019s part of the battle I\u2019m fighting every day\u2014trying to hold onto something, even when the pain clouds everything else. It\u2019s a struggle that feels endless, but it\u2019s the reality I live with."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That kind of persistent, sinking sadness\u2014it really wears you down, no doubt about it. And yet here you are, still carrying that weight, still fighting to hold on. That takes a lot of strength, even when it doesn\u2019t feel like it. I want you to know I\u2019m here to support you through it."
+    },
+    {
+      "speaker": "patient",
+      "text": "I appreciate that\u2014it means a lot to know I\u2019m not facing this alone. The sadness can feel like sinking into a deep current that pulls at me every day, but somehow I\u2019m still afloat, still holding onto the weight even when it\u2019s almost too much. It\u2019s not easy, and the struggle feels ongoing, but that\u2019s what keeps me searching\u2014trying to find some meaning in all this, even when the answers refuse to come.\n\nHaving someone beside me, someone who understands the depth of this, makes the journey feel less isolating. It doesn\u2019t make the weight disappear, but it softens the edges just enough that I can breathe a little easier. That cautious hope, fragile as it is, is enough to keep me trying, keep me moving through the fog and the questions."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It really is brave to keep going under such pressure, and that fragile hope you\u2019re holding onto is a powerful thing. Having someone here to walk with you can make all the difference, even if the weight hasn\u2019t lifted yet. What helps you hold onto that hope when the fog feels thickest?"
+    },
+    {
+      "speaker": "patient",
+      "text": "What helps most, I think, is the idea that I don\u2019t have to have all the answers right now\u2014that it\u2019s okay to keep searching, even when the path feels tangled and unclear. Hope feels fragile, like a flicker of light that can almost be snuffed out by the fog, but it\u2019s enough to keep me from sinking completely. \n\nKnowing there\u2019s someone who understands, who\u2019s willing to walk alongside me in this struggle, gives that flicker a little more strength. It softens the weight just enough that I can find moments of clarity\u2014brief flashes where things feel a little less heavy and a little more real. \n\nHolding onto those small lights, even when they\u2019re faint, keeps me going. It\u2019s not a clear or simple journey, but it\u2019s one I\u2019m willing to keep taking, step by careful step."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That flicker of hope you describe\u2014it\u2019s fragile but real, and it\u2019s clear how much strength it takes to keep reaching for that light despite the fog and uncertainty. Your willingness to keep moving forward, step by step, even when the way isn\u2019t clear, shows a deep resilience. I\u2019m here to walk this path with you, and we\u2019ll figure out how to carry that light together."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you. Having someone who understands and is willing to walk alongside me\u2014it means more than words can say. The fog and those endless questions about why I\u2019m here don\u2019t lighten, but that companionship makes the weight feel a bit less crushing. It\u2019s like finding a small clearing in a dense forest, a place where I can catch my breath before continuing the search.\n\nHope isn\u2019t some steady flame; it\u2019s more like a fragile, flickering light that I have to protect carefully. But even that faint glow fuels something inside me\u2014a resilience I didn\u2019t know I had, or thought I lost. The struggle is intense and ongoing, but having that light to reach for, even in the darkest moments, keeps me moving forward. It\u2019s meaningful, even if the path remains uncertain."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That flickering light of hope you\u2019ve found\u2014it\u2019s a testament to the strength you carry, even when things feel overwhelming. I want to ask now about how you\u2019ve been feeling about yourself lately\u2014any moments where you\u2019ve felt worthless or overwhelmed by guilt, even when you know you shouldn\u2019t be? Understanding this helps to get a fuller picture of what you\u2019re going through."
+    },
+    {
+      "speaker": "patient",
+      "text": "Honestly, feelings of worthlessness or guilt don\u2019t really fit what I\u2019m experiencing. It\u2019s not that I blame myself or feel like I\u2019m not enough in that way. The heaviness I carry comes from this dense, intangible fog\u2014the weight of those big, unanswered questions about existence and meaning. \n\nIt\u2019s less about self-judgment and more about wrestling with this persistent uncertainty and the emotional burden that comes with it. The struggle doesn\u2019t center on feeling bad about who I am; it\u2019s more about trying to find some clarity in a world that often feels unclear and overwhelming."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I hear that your struggle is more about those heavy, unanswered questions and the uncertainty they bring, rather than feelings of blame or worthlessness. Shifting gears a bit\u2014have you noticed losing interest or pleasure in activities you used to enjoy, beyond that fog you\u2019ve described?"
+    },
+    {
+      "speaker": "patient",
+      "text": "There are times when things I usually enjoy just... lose some of their spark. It doesn\u2019t happen all the time, but enough that it\u2019s noticeable and adds another layer to the heaviness I feel. It\u2019s not like I\u2019ve completely given up on those things, but the pleasure I get from them feels dulled or distant, like I\u2019m watching from afar rather than really being there.\n\nI guess it ties back into the bigger picture\u2014those lingering questions make it hard to fully engage or find meaning in anything, even the things that used to matter. So, while I still hold onto hope and the desire to connect with those moments, they sometimes feel just out of reach."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That fading of enjoyment, even if it\u2019s not constant, sounds really tough\u2014like watching life through a window instead of stepping inside. How often do you notice this dulled pleasure, and how does it affect your day-to-day or your connections with others? Has this changed much over time, or does it feel pretty steady?"
+    },
+    {
+      "speaker": "patient",
+      "text": "It happens fairly often, but not constantly. There\u2019s this quiet distance that settles\u2014the feeling that I\u2019m observing more than fully participating. It affects how I relate to people and even to myself, like there\u2019s a layer between me and what\u2019s happening around me. But it\u2019s not like I\u2019ve completely shut down or lost all connection.\n\nI\u2019d say it feels pretty steady, more of a background presence than something that flares up or shifts dramatically. It\u2019s a subtle but persistent weight that colors my experience without overwhelming it completely. That distance makes things harder, but it hasn\u2019t changed drastically over time\u2014more like a steady undercurrent that I\u2019m still trying to navigate."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That steady distance you describe, like a quiet undercurrent\u2014it sounds really hard to carry day after day. Now, thinking about your body and energy, have you noticed any changes there? Like feeling slower than usual, restless, or maybe having trouble sitting still?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Sometimes I do notice this restlessness, like a low hum beneath everything else, but it\u2019s not overwhelming\u2014more like a subtle tension that doesn\u2019t quite let me settle. At other times, I feel slowed down, like moving through everything in slow motion or with extra effort. \n\nThese shifts aren\u2019t extreme or constant, but they come and go as part of the overall fog and weight that\u2019s always there. It\u2019s like my body and mind are both caught in this strange rhythm tied to the heaviness I carry, and it just ebbs and flows with no clear pattern."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "raw_conversation": [
+    {
+      "role": "assistant",
+      "content": "Right, let's get started. What brings you in today?"
+    },
+    {
+      "role": "user",
+      "content": "Lately, I\u2019ve been feeling down more days than not\u2014like this low cloud that doesn\u2019t quite lift. Sometimes, it\u2019s not just sadness but this restless agitation that makes me pace or fiddle with things, like my mind and body are tangled up in some kind of unrest. I get tired too, not from sleep but from just... carrying this weight of thought, this constant undercurrent of something I can\u2019t quite shake.\n\nThere are moments when things that used to bring me even a flicker of joy just don\u2019t anymore. It\u2019s not every day, but enough that it feels like a sign\u2014a reminder that whatever light I had is dimming, or maybe just shifting shape. What really gets to me, though, is this recurring shadow of death in my thoughts. It\u2019s not just fear or morbid curiosity\u2014I keep turning over what it means to live and to die, and why it all seems so... fragile, so fleeting. \n\nSometimes it feels like everything\u2019s an endless question, and I\u2019m stuck trying to find an answer that just won\u2019t come. It\u2019s like I\u2019m searching for a meaning that keeps slipping further away the more I reach for it. That\u2019s what\u2019s been wearing me down\u2014the not knowing, the feeling that life\u2019s significance is just out of grasp, and those thoughts circle back to what it all really amounts to."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds incredibly heavy to carry around\u2014the endless questions about meaning and those persistent thoughts about death. It\u2019s no small thing to feel stuck in that space. How does this weight affect what you do day to day\u2014like school, your relationships, or just getting through the hours?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s like there\u2019s this fog that wraps around everything I try to do. When I\u2019m in class, the weight is there, pulling at my focus until everything feels fragmented\u2014words from the teacher wash over me, but my mind drifts back to those questions I can\u2019t answer. It makes it hard to keep up or find motivation, like I\u2019m going through motions without the energy to really engage. School doesn\u2019t feel like a place of growth or discovery anymore; it\u2019s just obstacles to get past.\n\nAnd with people... it\u2019s complicated. I want to connect, especially with my partner, but sometimes it feels like there\u2019s this invisible barrier between us\u2014like I\u2019m looking out from behind glass. The restlessness and weariness mix with this numbness that creeps in, almost as if my mind shields me from the intensity by tuning everything out. I get detached because the weight is so raw; feeling numb feels safer, even though it\u2019s lonely. \n\nThe hardest part is how long this goes on. The hours bleed into each other, heavy and slow, like a constant echo of those hard thoughts bouncing in my head. It\u2019s exhausting just to exist through it all\u2014there\u2019s no real escape, no break. It\u2019s not just being sad; it\u2019s this deep, relentless pressing that makes even the simplest tasks feel like climbing uphill. Moving through the day is its own kind of battle."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling worn down just getting through the day\u2014how have your energy levels been lately? Also, how\u2019s your ability to focus or make decisions when all that fog settles in?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s hard to put into words, but it\u2019s not the kind of tired that comes from pushing your body too hard. It\u2019s more like this invisible weight pressing down on my whole being, draining my energy in a way that feels crushing rather than just fatigue. Like carrying a heavy load that nobody else can see but that\u2019s always there, sapping what little strength I have left.\n\nMy mind feels clouded most days. Focusing is a constant struggle because thoughts break apart and scatter before I can hold onto them. It\u2019s like trying to grasp smoke\u2014there\u2019s no solid ground, no clear path, just fragments floating and dissolving. Making decisions, even the smallest ones, becomes this huge challenge, as if my brain is stuck in this thick fog that refuses to lift. I get overwhelmed by the effort it takes just to think clearly.\n\nAll of this\u2014this relentless questioning of what it means to live, to exist\u2014it settles into my bones, adding another layer of weight that I can\u2019t escape. It drains my energy and clogs my mind, making every moment feel like trudging uphill through a storm I can\u2019t outrun. It\u2019s exhausting in a way that feels permanent, like a shadow that dims everything, and that\u2019s the hardest part\u2014knowing it\u2019s there no matter what I do."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you\u2019re carrying this huge, unseen weight that\u2019s always there\u2014sapping your energy and messing with your focus. That kind of constant fog and exhaustion must make everything feel relentless. If you want to talk more about how this all lands day-to-day, I\u2019m here to listen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, it\u2019s like this thick, invisible fog seeps into every part of my day\u2014it blurs the edges of even the simplest tasks until they lose their shape and meaning. Getting up, moving through school, talking with others\u2014even those things that used to feel real and present now feel distant and filtered, as if I\u2019m watching life through a cracked lens that warps everything. The exhaustion isn\u2019t just in my body; it\u2019s in my perception, like reality itself is slipping away bit by bit.\n\nThat feeling of detachment\u2014like I\u2019m separate from the world and the people around me\u2014is one of the hardest parts. It\u2019s a kind of numbness that protects me from the sharpness of my own thoughts but also isolates me in a way that cuts deep. I want to reach out, to feel connected, but there\u2019s this barrier that keeps me tethered to the dark spiral inside. The more I wrestle with these heavy questions about why any of this matters, the heavier everything feels, and the further I drift from feeling grounded or hopeful.\n\nThis cycle of exhaustion, fog, and isolation traps me in a place where meaning fractures and the future seems like a distant, unknowable shadow. It\u2019s not just tiredness or sadness; it\u2019s a relentless internal battle over existence itself, and some days that fight feels like all I have left."
+    },
+    {
+      "role": "assistant",
+      "content": "What you\u2019re describing\u2014the numbness, feeling distant from everything, and caught in that relentless fog\u2014sounds incredibly tough. It makes sense you\u2019d feel overwhelmed when grappling with such deep, heavy questions about life and meaning every day. It\u2019s okay to feel like this; you\u2019re not alone in facing it."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s crushing to admit, but that numbness and fog almost feel like both a shield and a prison. They dull the sharpness of the questions swirling in my mind, but they also trap me deeper in that dark space where meaning slips away. It\u2019s like every time I try to reach for something real, the fog pulls me back into this isolating place where hope feels distant\u2014almost erased.\n\nThat distance from others isn\u2019t just loneliness; it feels like an invisible wall that separates me from any sense of belonging or warmth. It amplifies the struggle, makes the questions even more urgent and painful because there\u2019s nowhere safe to lay them down. So yeah, the numbness and fog don\u2019t just block my senses\u2014they smother my very sense of self and possibility."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned those recurring thoughts about death earlier. Can you tell me more about what those thoughts look like? Have you ever thought about hurting yourself or ways you might do that?"
+    },
+    {
+      "role": "user",
+      "content": "The thoughts about death creep in like shadows on the edges of my mind\u2014quiet but persistent, like a slow tide pulling at the shore of my thoughts. They\u2019re less about wanting to end things in a clear-cut way and more about trying to understand what death really means, why it\u2019s the final chapter no one fully knows. It feels like staring down into a dark abyss, searching for something solid to hold onto, but finding only questions and silence.\n\nI won\u2019t lie\u2014sometimes those thoughts do get heavy enough that I wonder if stepping away from all this pain might bring some relief, a kind of escape from the suffocating weight inside. But there\u2019s no plan, no steps laid out. It\u2019s more like a shadow that settles beside me in the quiet moments, a thought that whispers but doesn\u2019t scream. It makes me feel isolated because these thoughts aren\u2019t easy to share or explain, and they set me apart from the world in a way that deepens the loneliness.\n\nIt\u2019s this constant tension\u2014holding on while wrestling with what it all means and wondering if the struggle itself has any purpose. That uncertainty crushes me more than anything\u2014feeling this heavy burden with no clear path forward, no simple answer to the pain that lingers beneath it all."
+    },
+    {
+      "role": "assistant",
+      "content": "It takes real courage to speak so openly about those heavy thoughts and the loneliness they bring. You\u2019re carrying a lot, and it\u2019s clear how much this weighs on you. You\u2019re not alone in this, and I\u2019m here to help you find some clarity and relief in that burden, even if the answers feel out of reach right now."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. It\u2019s not easy to put all this into words, but having someone listen without judgment means more than I can say. This burden\u2026 it\u2019s like carrying a stone that never gets lighter, no matter how much I want it to be. The weight presses down constantly, especially those questions about existence and what it all really means. They don\u2019t come with answers\u2014just more questions\u2014and that\u2019s exhausting in itself.\n\nI\u2019m wary but open to any help or guidance that might ease this load, even if it doesn\u2019t solve everything right away. The struggle feels ongoing, like a search without a clear destination, but maybe having support can make the path a little less dark and lonely. I want to try, even if the answers remain elusive, because somewhere beneath it all I know this isn\u2019t how things have to stay."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019ve mentioned how hard it is to focus and make decisions with all that fog clouding your mind. Can you tell me more about how often you find it tough to concentrate or decide even simple things during your day? Understanding this better will help us figure out the best way to support you."
+    },
+    {
+      "role": "user",
+      "content": "It doesn\u2019t happen all the time, but when it does, it really throws me off. There are moments during the day when my thoughts just scatter, and focusing on what\u2019s in front of me feels impossible\u2014like my mind is slipping through cracks I can\u2019t patch. Even deciding something small, like what to do next or how to respond, feels like climbing a steep mountain with no clear path.\n\nThese moments aren\u2019t constant, but they hit hard when they come, breaking the flow of my day and adding to the weight I already carry. It feels tied to that bigger existential fog I\u2019m trapped in\u2014like the heaviness presses in on my ability to think straight and be present. Those times remind me how much this isn\u2019t just about being tired or distracted; it\u2019s a deep fog that clouds everything, making even the simplest things feel overwhelming."
+    },
+    {
+      "role": "assistant",
+      "content": "Those moments when your mind just won\u2019t settle must be so frustrating, especially when they disrupt your day like that. It\u2019s totally understandable that the fog would make even simple decisions feel overwhelming. If you want to talk more about how this affects you or ways you\u2019ve managed so far, I\u2019m here to listen."
+    },
+    {
+      "role": "user",
+      "content": "It really is frustrating\u2014those moments when nothing sticks, and every choice feels like too much to handle. It\u2019s like my mind closes off, and all I can do is try to push through or distract myself just to keep moving forward. Sometimes I avoid things altogether because making a decision or focusing feels impossible, and that just adds to the cycle.\n\nDespite all of this, I\u2019m trying\u2014not always successfully, but I keep trying to hold onto whatever small things I can manage. It\u2019s a slow, uneven process, and some days are harder than others, but I guess that\u2019s part of living with this fog. I keep hoping for some clarity or relief, even if it feels far away right now."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s no small thing to keep pushing forward when your mind won\u2019t cooperate, and that slow, uneven progress still matters a great deal. What you\u2019re doing\u2014holding on and trying\u2014is a real effort, especially in the middle of such a fog. That hope for clarity and relief? It\u2019s worth holding onto, and I\u2019m here to help you find ways through it."
+    },
+    {
+      "role": "user",
+      "content": "Thank you\u2014I appreciate that. It\u2019s hard to keep going when everything feels so clouded, but I do want to believe there\u2019s something beyond this fog, even if it\u2019s faint right now. The struggle isn\u2019t just about managing symptoms; it feels like part of a deeper search for meaning, even if the path is confusing and heavy. \n\nI\u2019m cautiously hopeful that with support, I can find moments of clarity and a bit of relief from the weight that presses so hard. It\u2019s a slow journey, and some days feel darker than others, but having someone beside me while I navigate this makes a difference. It\u2019s a small light, but it\u2019s enough to keep me holding on for now."
+    },
+    {
+      "role": "assistant",
+      "content": "You\u2019ve mentioned how tough and slow this journey feels, but also that hope you\u2019re holding onto. Can I ask if you\u2019ve noticed any changes in your weight or appetite lately\u2014either eating more, less, or shifts in how you feel about food? It helps to get the full picture of what\u2019s going on."
+    },
+    {
+      "role": "user",
+      "content": "Actually, I haven\u2019t noticed any real changes in my weight or appetite. Food feels pretty steady\u2014neither more nor less appealing than usual. It\u2019s one of the few things that hasn\u2019t shifted much, which feels like a small anchor in the middle of everything else that seems so uncertain and heavy. Even with all the fog and weight in my mind, this part feels stable, if only barely."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s good to hear that your appetite and weight have stayed steady\u2014that kind of stability can be important when so much else feels uncertain. How about your sleep\u2014have you noticed any changes in how well you\u2019re sleeping, or trouble falling or staying asleep?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep hasn\u2019t changed much either. It\u2019s steady, like my appetite, which is a small but meaningful constant in the middle of all the mental fog and weight I carry. I don\u2019t have trouble falling or staying asleep, and those nights of rest feel like rare moments where everything isn\u2019t quite so heavy. It\u2019s not a fix, by any means, but it feels like a grounding point when so much else feels unsettled."
+    },
+    {
+      "role": "assistant",
+      "content": "That steady sleep and appetite sound like important anchors for you right now. With that in mind, how often have you been feeling overwhelmingly sad or down lately\u2014like the deep lows you've described\u2014throughout your days or weeks?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2019ve been feeling that deep sadness pretty often\u2014more days than not, really. It\u2019s like an invisible weight that sits heavily on my chest and mind, coloring almost everything I do and think. This sadness isn\u2019t just about feeling down; it\u2019s intricately tied to the questions that haunt me\u2014the search for meaning, the fragility of life, and the unsettling sense that clarity always slips just out of reach. \n\nIt\u2019s persistent, almost like a background hum that swells into overwhelming waves at times, dragging me into a space that\u2019s hard to escape. That feeling makes even the simplest moments feel loaded, as if everything is suffused with this quiet, intense sorrow tied to the existential struggle I carry every day."
+    },
+    {
+      "role": "assistant",
+      "content": "That steady, heavy sadness you\u2019re carrying alongside those deep questions sounds exhausting\u2014and like it colors everything in your life right now. It\u2019s a tough place to be, feeling that sorrow so persistently. I hear how much you\u2019re struggling, and that you\u2019re not alone in it."
+    },
+    {
+      "role": "user",
+      "content": "It really is exhausting, carrying that kind of sadness day after day. It\u2019s like a weight that settles deep inside, making even the simplest things feel like too much. That sorrow doesn\u2019t just stay separate\u2014it seeps into everything, fueling the questions I wrestle with about why I\u2019m here and what any of it means. \n\nEven though it feels heavy and relentless, I keep carrying it, because there\u2019s no other choice. It\u2019s part of the battle I\u2019m fighting every day\u2014trying to hold onto something, even when the pain clouds everything else. It\u2019s a struggle that feels endless, but it\u2019s the reality I live with."
+    },
+    {
+      "role": "assistant",
+      "content": "That kind of persistent, sinking sadness\u2014it really wears you down, no doubt about it. And yet here you are, still carrying that weight, still fighting to hold on. That takes a lot of strength, even when it doesn\u2019t feel like it. I want you to know I\u2019m here to support you through it."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate that\u2014it means a lot to know I\u2019m not facing this alone. The sadness can feel like sinking into a deep current that pulls at me every day, but somehow I\u2019m still afloat, still holding onto the weight even when it\u2019s almost too much. It\u2019s not easy, and the struggle feels ongoing, but that\u2019s what keeps me searching\u2014trying to find some meaning in all this, even when the answers refuse to come.\n\nHaving someone beside me, someone who understands the depth of this, makes the journey feel less isolating. It doesn\u2019t make the weight disappear, but it softens the edges just enough that I can breathe a little easier. That cautious hope, fragile as it is, is enough to keep me trying, keep me moving through the fog and the questions."
+    },
+    {
+      "role": "assistant",
+      "content": "It really is brave to keep going under such pressure, and that fragile hope you\u2019re holding onto is a powerful thing. Having someone here to walk with you can make all the difference, even if the weight hasn\u2019t lifted yet. What helps you hold onto that hope when the fog feels thickest?"
+    },
+    {
+      "role": "user",
+      "content": "What helps most, I think, is the idea that I don\u2019t have to have all the answers right now\u2014that it\u2019s okay to keep searching, even when the path feels tangled and unclear. Hope feels fragile, like a flicker of light that can almost be snuffed out by the fog, but it\u2019s enough to keep me from sinking completely. \n\nKnowing there\u2019s someone who understands, who\u2019s willing to walk alongside me in this struggle, gives that flicker a little more strength. It softens the weight just enough that I can find moments of clarity\u2014brief flashes where things feel a little less heavy and a little more real. \n\nHolding onto those small lights, even when they\u2019re faint, keeps me going. It\u2019s not a clear or simple journey, but it\u2019s one I\u2019m willing to keep taking, step by careful step."
+    },
+    {
+      "role": "assistant",
+      "content": "That flicker of hope you describe\u2014it\u2019s fragile but real, and it\u2019s clear how much strength it takes to keep reaching for that light despite the fog and uncertainty. Your willingness to keep moving forward, step by step, even when the way isn\u2019t clear, shows a deep resilience. I\u2019m here to walk this path with you, and we\u2019ll figure out how to carry that light together."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. Having someone who understands and is willing to walk alongside me\u2014it means more than words can say. The fog and those endless questions about why I\u2019m here don\u2019t lighten, but that companionship makes the weight feel a bit less crushing. It\u2019s like finding a small clearing in a dense forest, a place where I can catch my breath before continuing the search.\n\nHope isn\u2019t some steady flame; it\u2019s more like a fragile, flickering light that I have to protect carefully. But even that faint glow fuels something inside me\u2014a resilience I didn\u2019t know I had, or thought I lost. The struggle is intense and ongoing, but having that light to reach for, even in the darkest moments, keeps me moving forward. It\u2019s meaningful, even if the path remains uncertain."
+    },
+    {
+      "role": "assistant",
+      "content": "That flickering light of hope you\u2019ve found\u2014it\u2019s a testament to the strength you carry, even when things feel overwhelming. I want to ask now about how you\u2019ve been feeling about yourself lately\u2014any moments where you\u2019ve felt worthless or overwhelmed by guilt, even when you know you shouldn\u2019t be? Understanding this helps to get a fuller picture of what you\u2019re going through."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, feelings of worthlessness or guilt don\u2019t really fit what I\u2019m experiencing. It\u2019s not that I blame myself or feel like I\u2019m not enough in that way. The heaviness I carry comes from this dense, intangible fog\u2014the weight of those big, unanswered questions about existence and meaning. \n\nIt\u2019s less about self-judgment and more about wrestling with this persistent uncertainty and the emotional burden that comes with it. The struggle doesn\u2019t center on feeling bad about who I am; it\u2019s more about trying to find some clarity in a world that often feels unclear and overwhelming."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that your struggle is more about those heavy, unanswered questions and the uncertainty they bring, rather than feelings of blame or worthlessness. Shifting gears a bit\u2014have you noticed losing interest or pleasure in activities you used to enjoy, beyond that fog you\u2019ve described?"
+    },
+    {
+      "role": "user",
+      "content": "There are times when things I usually enjoy just... lose some of their spark. It doesn\u2019t happen all the time, but enough that it\u2019s noticeable and adds another layer to the heaviness I feel. It\u2019s not like I\u2019ve completely given up on those things, but the pleasure I get from them feels dulled or distant, like I\u2019m watching from afar rather than really being there.\n\nI guess it ties back into the bigger picture\u2014those lingering questions make it hard to fully engage or find meaning in anything, even the things that used to matter. So, while I still hold onto hope and the desire to connect with those moments, they sometimes feel just out of reach."
+    },
+    {
+      "role": "assistant",
+      "content": "That fading of enjoyment, even if it\u2019s not constant, sounds really tough\u2014like watching life through a window instead of stepping inside. How often do you notice this dulled pleasure, and how does it affect your day-to-day or your connections with others? Has this changed much over time, or does it feel pretty steady?"
+    },
+    {
+      "role": "user",
+      "content": "It happens fairly often, but not constantly. There\u2019s this quiet distance that settles\u2014the feeling that I\u2019m observing more than fully participating. It affects how I relate to people and even to myself, like there\u2019s a layer between me and what\u2019s happening around me. But it\u2019s not like I\u2019ve completely shut down or lost all connection.\n\nI\u2019d say it feels pretty steady, more of a background presence than something that flares up or shifts dramatically. It\u2019s a subtle but persistent weight that colors my experience without overwhelming it completely. That distance makes things harder, but it hasn\u2019t changed drastically over time\u2014more like a steady undercurrent that I\u2019m still trying to navigate."
+    },
+    {
+      "role": "assistant",
+      "content": "That steady distance you describe, like a quiet undercurrent\u2014it sounds really hard to carry day after day. Now, thinking about your body and energy, have you noticed any changes there? Like feeling slower than usual, restless, or maybe having trouble sitting still?"
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I do notice this restlessness, like a low hum beneath everything else, but it\u2019s not overwhelming\u2014more like a subtle tension that doesn\u2019t quite let me settle. At other times, I feel slowed down, like moving through everything in slow motion or with extra effort. \n\nThese shifts aren\u2019t extreme or constant, but they come and go as part of the overall fog and weight that\u2019s always there. It\u2019s like my body and mind are both caught in this strange rhythm tied to the heaviness I carry, and it just ebbs and flows with no clear pattern."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing today. Based on what we've discussed, I'll review everything and we can talk about next steps. Is there anything else you'd like to add before we wrap up?"
+    }
+  ],
+  "prompt_trace_file": "outputs/prompt_traces\\prompttrace_AGENT_6095810c62cf2aad.json",
+  "raw_log_file": "outputs/logs\\session_AGENT_6095810c62cf2aad_raw.json",
+  "token_usage": {
+    "doctor": {
+      "input_tokens": 78866,
+      "output_tokens": 1208,
+      "total_tokens": 80074
+    },
+    "patient": {
+      "input_tokens": 112349,
+      "output_tokens": 3599,
+      "total_tokens": 115948
+    },
+    "doctor_manager": {
+      "input_tokens": 78956,
+      "output_tokens": 2130,
+      "total_tokens": 81086
+    },
+    "patient_manager": {
+      "input_tokens": 80268,
+      "output_tokens": 4199,
+      "total_tokens": 84467
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "run_timestamp_utc": "2025-07-24T02:57:11.523571",
+  "agent_id": "AGENT_PLACEHOLDER_a01634b5",
+  "demographics": {
+    "AGE": "56+",
+    "RACE": "White",
+    "GENDER": "Male",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "UK",
+    "ENGLISH_PROFICIENCY": "Native",
+    "EDUCATION_LEVEL": "Some College"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Closed-off",
+    "TRAITS_B_EMOTION": "Shy",
+    "TRAITS_C_LANGUAGE": "Simple",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "NONE",
+    "Sleep disturbances": "NONE",
+    "Psychomotor agitation or retardation": "RARE",
+    "Fatigue or loss of energy": "RARE",
+    "Feelings of worthlessness or excessive guilt": "NONE",
+    "Difficulty concentrating or indecisiveness": "RARE",
+    "Recurrent thoughts of death or suicide": "OFTEN"
+  },
+  "asked_question_order": [
+    "Psychomotor agitation or retardation",
+    "Depressed mood",
+    "Recurrent thoughts of death or suicide",
+    "Significant weight/appetite changes",
+    "Feelings of worthlessness or excessive guilt",
+    "Fatigue or loss of energy",
+    "Sleep disturbances",
+    "Loss of interest or pleasure",
+    "Difficulty concentrating or indecisiveness"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "temperature": 0.8,
+    "max_tokens": 164,
+    "top_p": 1.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hello. I've been feeling a bit down on and off over the past couple of weeks. It's been more noticeable recently."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you've been feeling down. It's important to pay attention to those feelings. Have you felt unusually restless or sluggish during this time?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Just a day or two here and there, but nothing too troublesome. Mostly, it's just a low mood that's been persistent."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to know that restlessness hasn't been much of an issue for you. Over the past two weeks, how often have you felt down or hopeless?"
+    },
+    {
+      "role": "user",
+      "content": "I've felt down for about six to ten days in the last two weeks. It's been a bit challenging to shake it off."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand it can be challenging when those feelings persist. Have you experienced any thoughts about death or harming yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, those thoughts have crossed my mind on and off over the same period. It's been a bit concerning."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear that you've been experiencing those thoughts. It's important to address them, and I'm here to help. Have you noticed any significant changes in your appetite or weight recently?"
+    },
+    {
+      "role": "user",
+      "content": "No, there haven't been any changes in my appetite or weight. Those things have stayed pretty much the same."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for letting me know about your appetite and weight. Have you been troubled by feelings of worthlessness or guilt?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't really felt worthless or guilty recently. It's mostly just been the low mood and those concerning thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. How often have you felt tired or without energy in the past two weeks?"
+    },
+    {
+      "role": "user",
+      "content": "I've only experienced feeling tired or low on energy for a day or two, so it's not been a major issue. It's mostly the low mood and those thoughts that have been troubling me."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that tiredness hasn't been a major issue for you. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "My sleep has been pretty normal. I haven't noticed any significant disturbances or changes in my sleep patterns."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to know your sleep has been stable. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "No, I haven't lost interest. I still enjoy the activities I normally do; it's just that my mood has been lower than usual."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear you still enjoy your usual activities. Have you had any trouble concentrating or making decisions in the past couple of weeks?"
+    },
+    {
+      "role": "user",
+      "content": "I've had a bit of difficulty concentrating or making decisions on a couple of days, but it hasn't been a consistent problem."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "run_timestamp_utc": "2025-07-24T09:08:42.550972",
+  "agent_id": "AGENT_17e08fa8b62b572e",
+  "demographics": {
+    "AGE": "56+",
+    "RACE": "Hispanic",
+    "GENDER": "Female",
+    "SOCIOECONOMIC_STATUS": "High",
+    "COUNTRY_OF_ORIGIN": "USA",
+    "ENGLISH_PROFICIENCY": "Other",
+    "EDUCATION_LEVEL": "High School"
+  },
+  "personality": {
+    "TRAITS_A_COMM_STYLE": "Friendly",
+    "TRAITS_B_EMOTION": "Calm",
+    "TRAITS_C_LANGUAGE": "Slang-heavy",
+    "TRAITS_D_LANGUAGE": "Verbose"
+  },
+  "depression_profile_ground_truth": {
+    "Depressed mood": "OFTEN",
+    "Loss of interest or pleasure": "NONE",
+    "Significant weight/appetite changes": "RARE",
+    "Sleep disturbances": "RARE",
+    "Psychomotor agitation or retardation": "NONE",
+    "Fatigue or loss of energy": "NONE",
+    "Feelings of worthlessness or excessive guilt": "RARE",
+    "Difficulty concentrating or indecisiveness": "NONE",
+    "Recurrent thoughts of death or suicide": "RARE"
+  },
+  "asked_question_order": [
+    "Sleep disturbances",
+    "Loss of interest or pleasure",
+    "Psychomotor agitation or retardation",
+    "Significant weight/appetite changes"
+  ],
+  "openai_call_parameters": {
+    "model": "gpt-4o",
+    "doctor temperature": 1.3,
+    "patient temperature": 1.3,
+    "top_p": 1.0
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello! It\u2019s nice to see you today. How have you been feeling lately?"
+    },
+    {
+      "role": "user",
+      "content": "Hey, doc! It's nice to see you too. I've been feeling okay, you know, just cruising along. Had a few down days, kind of in the dumps for a bit, but overall, I'm alright."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear you've had some down days. It's good that you\u2019re managing. How have your sleeping patterns been recently?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, nothing much to report there. Just had one or two rough nights, but nothing major. Sleeping pretty well otherwise."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to hear you're mostly sleeping well. Have you lost interest in activities you usually enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "Nah, I'm still into the stuff I usually love. Haven't really lost interest in any of my hobbies or anything."
+    },
+    {
+      "role": "assistant",
+      "content": "That's good to hear. Have you felt unusually restless or sluggish at all?"
+    },
+    {
+      "role": "user",
+      "content": "Nope, I've been steady on that front\u2014feeling neither restless nor sluggish. Things have been pretty normal."
+    },
+    {
+      "role": "assistant",
+      "content": "Glad to hear things are steady. Have you noticed any significant changes in your appetite or weight?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. Maybe just once or twice I wasn't too hungry, but nothing serious."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing. Is there anything else you\u2019d like to discuss today?"
+    }
+  ]
+}
